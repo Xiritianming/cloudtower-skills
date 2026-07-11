@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `external_ip` | string | No |  |
-| `external_ips` | NestedVpcGatewaysCommonExternalIpsType[] | No |  |
 | `id` | string | Yes |  |
+| `external_ip` | string | No |  |
+| `external_ips` | Array of [NestedVpcGatewaysCommonExternalIpsType](../Nested/NestedVpcGatewaysCommonExternalIpsType.md) | No |  |
 

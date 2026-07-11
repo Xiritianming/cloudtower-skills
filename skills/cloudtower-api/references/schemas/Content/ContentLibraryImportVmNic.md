@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | Yes |  |
 | `mirror` | boolean | No |  |
-| `model` | [VmNicModel](VmNicModel.md) | Yes |  |
 | `enabled` | boolean | No |  |
 

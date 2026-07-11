@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmDisk](NestedAggregateVmDisk.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmDisk](../Nested/NestedAggregateVmDisk.md) | Yes |  |
 

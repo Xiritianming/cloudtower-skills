@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `code` | [ErrorCode](ErrorCode.md) | No |  |
-| `props` | any | No |  |
-| `stack` | string | No |  |
 | `message` | string | Yes |  |
 | `status` | integer (int32) | Yes |  |
-| `operationName` | string | No |  |
 | `path` | string | Yes |  |
+| `code` | [ErrorCode](../Error/ErrorCode.md) | No |  |
+| `props` | any | No |  |
+| `stack` | string | No |  |
+| `operationName` | string | No |  |
 

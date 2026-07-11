@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [CreateVcenterAccountParamsData](CreateVcenterAccountParamsData.md) | Yes |  |
+| `data` | [CreateVcenterAccountParamsData](../Create/CreateVcenterAccountParamsData.md) | Yes |  |
 

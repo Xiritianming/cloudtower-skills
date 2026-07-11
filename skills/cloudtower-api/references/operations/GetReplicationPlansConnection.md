@@ -1,4 +1,4 @@
-# POST /get-replication-plans-connection
+# POST /v2/api/get-replication-plans-connection
 
 **Resource:** [ReplicationPlan](../resources/ReplicationPlan.md)
 **Operation ID:** `GetReplicationPlansConnection`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetReplicationPlansConnectionRequestBody](../schemas/Get/GetReplicationPlansConnectionRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetReplicationPlansConnection /tmp/body.json
+bash scripts/call.sh /v2/api/get-replication-plans-connection /tmp/body.json
+```
 
 ## Responses
 

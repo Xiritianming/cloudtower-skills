@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmTemplateWhereInput[] | No |  |
-| `NOT` | VmTemplateWhereInput[] | No |  |
-| `OR` | VmTemplateWhereInput[] | No |  |
+| `AND` | Array of [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `NOT` | Array of [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `OR` | Array of [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
 | `clock_offset` | any | No |  |
-| `clock_offset_in` | VmClockOffset[] | No |  |
+| `clock_offset_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `clock_offset_not` | any | No |  |
-| `clock_offset_not_in` | VmClockOffset[] | No |  |
+| `clock_offset_not_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `cloud_init_supported` | boolean | No |  |
 | `cloud_init_supported_not` | boolean | No |  |
 | `cluster` | any | No |  |
@@ -46,13 +48,13 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `firmware` | any | No |  |
-| `firmware_in` | VmFirmware[] | No |  |
+| `firmware_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `firmware_not` | any | No |  |
-| `firmware_not_in` | VmFirmware[] | No |  |
+| `firmware_not_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `ha` | boolean | No |  |
 | `ha_not` | boolean | No |  |
 | `id` | string | No |  |
@@ -70,9 +72,9 @@
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
 | `io_policy` | any | No |  |
-| `io_policy_in` | VmDiskIoPolicy[] | No |  |
+| `io_policy_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `io_policy_not` | any | No |  |
-| `io_policy_not_in` | VmDiskIoPolicy[] | No |  |
+| `io_policy_not_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `labels_every` | any | No |  |
 | `labels_none` | any | No |  |
 | `labels_some` | any | No |  |
@@ -107,9 +109,9 @@
 | `max_bandwidth_not` | integer (int64) | No |  |
 | `max_bandwidth_not_in` | integer[] | No |  |
 | `max_bandwidth_policy` | any | No |  |
-| `max_bandwidth_policy_in` | VmDiskIoRestrictType[] | No |  |
+| `max_bandwidth_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_not` | any | No |  |
-| `max_bandwidth_policy_not_in` | VmDiskIoRestrictType[] | No |  |
+| `max_bandwidth_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
 | `max_iops_gt` | integer (int32) | No |  |
 | `max_iops_gte` | integer (int32) | No |  |
@@ -119,9 +121,9 @@
 | `max_iops_not` | integer (int32) | No |  |
 | `max_iops_not_in` | integer[] | No |  |
 | `max_iops_policy` | any | No |  |
-| `max_iops_policy_in` | VmDiskIoRestrictType[] | No |  |
+| `max_iops_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_not` | any | No |  |
-| `max_iops_policy_not_in` | VmDiskIoRestrictType[] | No |  |
+| `max_iops_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `memory` | integer (int64) | No |  |
 | `memory_gt` | integer (int64) | No |  |
 | `memory_gte` | integer (int64) | No |  |

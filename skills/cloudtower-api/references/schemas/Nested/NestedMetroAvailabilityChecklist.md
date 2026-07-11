@@ -4,12 +4,14 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `primaryZone` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
-| `primaryZoneAndWitness` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
-| `secondaryZone` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
-| `secondaryZoneAndWitness` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
-| `witness` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
-| `zoneAndZone` | [NestedMetroCheckResult](NestedMetroCheckResult.md) | Yes |  |
+| `primaryZone` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
+| `primaryZoneAndWitness` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
+| `secondaryZone` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
+| `secondaryZoneAndWitness` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
+| `witness` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
+| `zoneAndZone` | [NestedMetroCheckResult](../Nested/NestedMetroCheckResult.md) | Yes |  |
 

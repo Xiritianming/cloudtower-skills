@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SecurityPolicyWhereInput[] | No |  |
-| `NOT` | SecurityPolicyWhereInput[] | No |  |
-| `OR` | SecurityPolicyWhereInput[] | No |  |
+| `AND` | Array of [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
+| `NOT` | Array of [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
+| `OR` | Array of [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -55,8 +57,8 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `policy_mode` | any | No |  |
-| `policy_mode_in` | PolicyMode[] | No |  |
+| `policy_mode_in` | Array of [PolicyMode](../Policy/PolicyMode.md) | No |  |
 | `policy_mode_not` | any | No |  |
-| `policy_mode_not_in` | PolicyMode[] | No |  |
+| `policy_mode_not_in` | Array of [PolicyMode](../Policy/PolicyMode.md) | No |  |
 | `statistics` | any | No |  |
 

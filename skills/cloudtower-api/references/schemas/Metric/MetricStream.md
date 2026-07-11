@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `points` | DataPoint[] | No |  |
-| `labels` | [MetricLabel](MetricLabel.md) | Yes |  |
+| `labels` | [MetricLabel](../Metric/MetricLabel.md) | Yes |  |
+| `points` | Array of [DataPoint](../Data/DataPoint.md) | No |  |
 | `__typename` | enum: MetricStream | No |  |
 

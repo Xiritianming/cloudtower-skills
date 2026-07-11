@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | IscsiLunWhereInput[] | No |  |
-| `NOT` | IscsiLunWhereInput[] | No |  |
-| `OR` | IscsiLunWhereInput[] | No |  |
+| `AND` | Array of [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `NOT` | Array of [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `OR` | Array of [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
 | `allowed_initiators` | string | No |  |
 | `allowed_initiators_contains` | string | No |  |
 | `allowed_initiators_ends_with` | string | No |  |
@@ -112,9 +114,9 @@
 | `business_hosts_none` | any | No |  |
 | `business_hosts_some` | any | No |  |
 | `configuration_method` | any | No |  |
-| `configuration_method_in` | ConfigurationMethod[] | No |  |
+| `configuration_method_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_not` | any | No |  |
-| `configuration_method_not_in` | ConfigurationMethod[] | No |  |
+| `configuration_method_not_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `consistency_group` | any | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gt` | integer (int64) | No |  |
@@ -141,13 +143,13 @@
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
 | `encrypt_method` | any | No |  |
-| `encrypt_method_in` | EncryptMethod[] | No |  |
+| `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not` | any | No |  |
-| `encrypt_method_not_in` | EncryptMethod[] | No |  |
+| `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -304,9 +306,9 @@
 | `replication_plans_none` | any | No |  |
 | `replication_plans_some` | any | No |  |
 | `resiliency_type` | any | No |  |
-| `resiliency_type_in` | ResiliencyType[] | No |  |
+| `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not` | any | No |  |
-| `resiliency_type_not_in` | ResiliencyType[] | No |  |
+| `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `shared_size` | integer (int64) | No |  |
 | `shared_size_gt` | integer (int64) | No |  |
 | `shared_size_gte` | integer (int64) | No |  |

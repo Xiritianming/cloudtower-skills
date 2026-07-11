@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [LabelWhereInput](LabelWhereInput.md) | Yes |  |
+| `where` | [LabelWhereInput](../Label/LabelWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

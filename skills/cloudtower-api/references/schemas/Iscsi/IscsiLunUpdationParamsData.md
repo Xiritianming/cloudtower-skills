@@ -5,4 +5,4 @@
 ## Composition
 
 - (inline schema)
-- [IscsiLunCommonParams](IscsiLunCommonParams.md)
+- [IscsiLunCommonParams](../Iscsi/IscsiLunCommonParams.md)

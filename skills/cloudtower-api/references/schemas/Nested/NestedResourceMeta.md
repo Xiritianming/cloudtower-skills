@@ -4,12 +4,14 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `fields` | string[] | Yes |  |
 | `filter` | object | Yes |  |
 | `name` | string | Yes |  |
-| `type` | [ReportResourceInputEnum](ReportResourceInputEnum.md) | Yes |  |
+| `type` | [ReportResourceInputEnum](../Report/ReportResourceInputEnum.md) | Yes |  |
 
 ## Nested Fields
 
@@ -17,4 +19,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

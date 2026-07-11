@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VmVolumeSnapshotWhereInput](VmVolumeSnapshotWhereInput.md) | Yes |  |
+| `where` | [VmVolumeSnapshotWhereInput](../Vm/VmVolumeSnapshotWhereInput.md) | Yes |  |
 

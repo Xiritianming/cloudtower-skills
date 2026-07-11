@@ -1,4 +1,4 @@
-# POST /update-cluster-ha-setting
+# POST /v2/api/update-cluster-ha-setting
 
 **Resource:** [Cluster](../resources/Cluster.md)
 **Operation ID:** `UpdateClusterHaSetting`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [ClusterHaUpdationParams](../schemas/Cluster/ClusterHaUpdationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "ha": false,
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateClusterHaSetting /tmp/body.json
+bash scripts/call.sh /v2/api/update-cluster-ha-setting /tmp/body.json
+```
 
 ## Responses
 

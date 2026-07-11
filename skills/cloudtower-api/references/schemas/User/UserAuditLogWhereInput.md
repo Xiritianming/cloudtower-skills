@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | UserAuditLogWhereInput[] | No |  |
-| `NOT` | UserAuditLogWhereInput[] | No |  |
-| `OR` | UserAuditLogWhereInput[] | No |  |
+| `AND` | Array of [UserAuditLogWhereInput](../User/UserAuditLogWhereInput.md) | No |  |
+| `NOT` | Array of [UserAuditLogWhereInput](../User/UserAuditLogWhereInput.md) | No |  |
+| `OR` | Array of [UserAuditLogWhereInput](../User/UserAuditLogWhereInput.md) | No |  |
 | `action` | string | No |  |
 | `action_contains` | string | No |  |
 | `action_ends_with` | string | No |  |
@@ -133,9 +135,9 @@
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
 | `status` | any | No |  |
-| `status_in` | UserAuditLogStatus[] | No |  |
+| `status_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | UserAuditLogStatus[] | No |  |
+| `status_not_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `user` | any | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |

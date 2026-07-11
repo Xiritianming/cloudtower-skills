@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [ClusterWhereInput](ClusterWhereInput.md) | Yes |  |
+| `where` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

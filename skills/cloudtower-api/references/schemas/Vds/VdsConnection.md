@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVds](NestedAggregateVds.md) | Yes |  |
+| `aggregate` | [NestedAggregateVds](../Nested/NestedAggregateVds.md) | Yes |  |
 

@@ -4,38 +4,40 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `architecture` | [Architecture](Architecture.md) | Yes |  |
-| `clock_offset` | any | No |  |
+| `architecture` | [Architecture](../Architecture/Architecture.md) | Yes |  |
 | `cloud_init_supported` | boolean | Yes |  |
-| `clusters` | NestedCluster[] | No |  |
-| `cpu` | any | No |  |
-| `cpu_model` | string | No |  |
 | `createdAt` | string | Yes |  |
 | `description` | string | Yes |  |
+| `id` | string | Yes |  |
+| `memory` | integer (int64) | Yes |  |
+| `name` | string | Yes |  |
+| `size` | integer (int64) | Yes |  |
+| `vcpu` | integer (int32) | Yes |  |
+| `vm_template_uuids` | string[] | Yes |  |
+| `clock_offset` | any | No |  |
+| `clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
+| `cpu` | any | No |  |
+| `cpu_model` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
 | `firmware` | any | No |  |
 | `ha` | boolean | No |  |
-| `id` | string | Yes |  |
 | `io_policy` | any | No |  |
-| `labels` | NestedLabel[] | No |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
 | `max_bandwidth_policy` | any | No |  |
 | `max_iops` | integer (int32) | No |  |
 | `max_iops_policy` | any | No |  |
-| `memory` | integer (int64) | Yes |  |
-| `name` | string | Yes |  |
 | `os` | string | No |  |
-| `size` | integer (int64) | Yes |  |
 | `template_config` | any | No |  |
 | `usage` | any | No |  |
-| `vcpu` | integer (int32) | Yes |  |
 | `video_type` | string | No |  |
-| `vm_disks` | NestedContentLibraryVmTemplateDisk[] | No |  |
-| `vm_nics` | NestedContentLibraryVmTemplateNic[] | No |  |
-| `vm_template_uuids` | string[] | Yes |  |
-| `vm_templates` | NestedVmTemplate[] | No |  |
+| `vm_disks` | Array of [NestedContentLibraryVmTemplateDisk](../Nested/NestedContentLibraryVmTemplateDisk.md) | No |  |
+| `vm_nics` | Array of [NestedContentLibraryVmTemplateNic](../Nested/NestedContentLibraryVmTemplateNic.md) | No |  |
+| `vm_templates` | Array of [NestedVmTemplate](../Nested/NestedVmTemplate.md) | No |  |
 | `win_opt` | boolean | No |  |
-| `zbs_storage_info` | NestedZbsStorageInfo[] | No |  |
+| `zbs_storage_info` | Array of [NestedZbsStorageInfo](../Nested/NestedZbsStorageInfo.md) | No |  |
 

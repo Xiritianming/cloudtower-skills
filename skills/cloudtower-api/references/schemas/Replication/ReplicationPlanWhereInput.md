@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicationPlanWhereInput[] | No |  |
-| `NOT` | ReplicationPlanWhereInput[] | No |  |
-| `OR` | ReplicationPlanWhereInput[] | No |  |
+| `AND` | Array of [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `OR` | Array of [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
 | `abort_window_unfinished` | boolean | No |  |
 | `abort_window_unfinished_not` | boolean | No |  |
 | `activation_timestamp` | string | No |  |
@@ -30,9 +32,9 @@
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
 | `delete_strategy` | any | No |  |
-| `delete_strategy_in` | BackupPlanDeleteStrategy[] | No |  |
+| `delete_strategy_in` | Array of [BackupPlanDeleteStrategy](../Backup/BackupPlanDeleteStrategy.md) | No |  |
 | `delete_strategy_not` | any | No |  |
-| `delete_strategy_not_in` | BackupPlanDeleteStrategy[] | No |  |
+| `delete_strategy_not_in` | Array of [BackupPlanDeleteStrategy](../Backup/BackupPlanDeleteStrategy.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -66,9 +68,9 @@
 | `enable_window` | boolean | No |  |
 | `enable_window_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_cloudtower` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -100,9 +102,9 @@
 | `keep_mac_address` | boolean | No |  |
 | `keep_mac_address_not` | boolean | No |  |
 | `keep_policy` | any | No |  |
-| `keep_policy_in` | BackupPlanKeepPolicy[] | No |  |
+| `keep_policy_in` | Array of [BackupPlanKeepPolicy](../Backup/BackupPlanKeepPolicy.md) | No |  |
 | `keep_policy_not` | any | No |  |
-| `keep_policy_not_in` | BackupPlanKeepPolicy[] | No |  |
+| `keep_policy_not_in` | Array of [BackupPlanKeepPolicy](../Backup/BackupPlanKeepPolicy.md) | No |  |
 | `keep_policy_value` | integer (int32) | No |  |
 | `keep_policy_value_gt` | integer (int32) | No |  |
 | `keep_policy_value_gte` | integer (int32) | No |  |
@@ -112,7 +114,7 @@
 | `keep_policy_value_not` | integer (int32) | No |  |
 | `keep_policy_value_not_in` | integer[] | No |  |
 | `last_execute_status` | any | No |  |
-| `last_execute_status_in` | BackupPlanExecutionStatus[] | No |  |
+| `last_execute_status_in` | Array of [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | No |  |
 | `last_execute_status_message` | string | No |  |
 | `last_execute_status_message_contains` | string | No |  |
 | `last_execute_status_message_ends_with` | string | No |  |
@@ -128,7 +130,7 @@
 | `last_execute_status_message_not_starts_with` | string | No |  |
 | `last_execute_status_message_starts_with` | string | No |  |
 | `last_execute_status_not` | any | No |  |
-| `last_execute_status_not_in` | BackupPlanExecutionStatus[] | No |  |
+| `last_execute_status_not_in` | Array of [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | No |  |
 | `last_execute_success_job_count` | integer (int32) | No |  |
 | `last_execute_success_job_count_gt` | integer (int32) | No |  |
 | `last_execute_success_job_count_gte` | integer (int32) | No |  |
@@ -154,7 +156,7 @@
 | `last_executed_at_not` | string | No |  |
 | `last_executed_at_not_in` | string[] | No |  |
 | `last_manual_execute_status` | any | No |  |
-| `last_manual_execute_status_in` | BackupPlanExecutionStatus[] | No |  |
+| `last_manual_execute_status_in` | Array of [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | No |  |
 | `last_manual_execute_status_message` | string | No |  |
 | `last_manual_execute_status_message_contains` | string | No |  |
 | `last_manual_execute_status_message_ends_with` | string | No |  |
@@ -170,7 +172,7 @@
 | `last_manual_execute_status_message_not_starts_with` | string | No |  |
 | `last_manual_execute_status_message_starts_with` | string | No |  |
 | `last_manual_execute_status_not` | any | No |  |
-| `last_manual_execute_status_not_in` | BackupPlanExecutionStatus[] | No |  |
+| `last_manual_execute_status_not_in` | Array of [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | No |  |
 | `last_manual_execute_success_job_count` | integer (int32) | No |  |
 | `last_manual_execute_success_job_count_gt` | integer (int32) | No |  |
 | `last_manual_execute_success_job_count_gte` | integer (int32) | No |  |
@@ -218,17 +220,17 @@
 | `next_execution_time_not` | string | No |  |
 | `next_execution_time_not_in` | string[] | No |  |
 | `period` | any | No |  |
-| `period_in` | ReplicationPlanPeriod[] | No |  |
+| `period_in` | Array of [ReplicationPlanPeriod](../Replication/ReplicationPlanPeriod.md) | No |  |
 | `period_not` | any | No |  |
-| `period_not_in` | ReplicationPlanPeriod[] | No |  |
+| `period_not_in` | Array of [ReplicationPlanPeriod](../Replication/ReplicationPlanPeriod.md) | No |  |
 | `phase` | any | No |  |
-| `phase_in` | BackupPlanPhase[] | No |  |
+| `phase_in` | Array of [BackupPlanPhase](../Backup/BackupPlanPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | BackupPlanPhase[] | No |  |
+| `phase_not_in` | Array of [BackupPlanPhase](../Backup/BackupPlanPhase.md) | No |  |
 | `replica_name_rule` | any | No |  |
-| `replica_name_rule_in` | ReplicaNameRule[] | No |  |
+| `replica_name_rule_in` | Array of [ReplicaNameRule](../Replica/ReplicaNameRule.md) | No |  |
 | `replica_name_rule_not` | any | No |  |
-| `replica_name_rule_not_in` | ReplicaNameRule[] | No |  |
+| `replica_name_rule_not_in` | Array of [ReplicaNameRule](../Replica/ReplicaNameRule.md) | No |  |
 | `replica_name_setting` | string | No |  |
 | `replica_name_setting_contains` | string | No |  |
 | `replica_name_setting_ends_with` | string | No |  |
@@ -264,29 +266,29 @@
 | `replication_target_executions_none` | any | No |  |
 | `replication_target_executions_some` | any | No |  |
 | `resiliency_type` | any | No |  |
-| `resiliency_type_in` | ResiliencyType[] | No |  |
+| `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not` | any | No |  |
-| `resiliency_type_not_in` | ResiliencyType[] | No |  |
+| `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `snapshot_consistent_type` | any | No |  |
-| `snapshot_consistent_type_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_not` | any | No |  |
-| `snapshot_consistent_type_not_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_not_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `status` | any | No |  |
-| `status_in` | BackupPlanStatus[] | No |  |
+| `status_in` | Array of [BackupPlanStatus](../Backup/BackupPlanStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | BackupPlanStatus[] | No |  |
+| `status_not_in` | Array of [BackupPlanStatus](../Backup/BackupPlanStatus.md) | No |  |
 | `storage_policy` | any | No |  |
-| `storage_policy_in` | VmVolumeElfStoragePolicyType[] | No |  |
+| `storage_policy_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `storage_policy_not` | any | No |  |
-| `storage_policy_not_in` | VmVolumeElfStoragePolicyType[] | No |  |
+| `storage_policy_not_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `target_cluster` | any | No |  |
 | `target_replication_service` | any | No |  |
 | `thin_provision` | boolean | No |  |
 | `thin_provision_not` | boolean | No |  |
 | `type` | any | No |  |
-| `type_in` | ReplicationPlanType[] | No |  |
+| `type_in` | Array of [ReplicationPlanType](../Replication/ReplicationPlanType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | ReplicationPlanType[] | No |  |
+| `type_not_in` | Array of [ReplicationPlanType](../Replication/ReplicationPlanType.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |
 | `updatedAt_gte` | string | No |  |

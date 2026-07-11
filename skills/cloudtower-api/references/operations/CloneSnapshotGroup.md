@@ -1,4 +1,4 @@
-# POST /clone-snapshot-group
+# POST /v2/api/clone-snapshot-group
 
 **Resource:** [SnapshotGroup](../resources/SnapshotGroup.md)
 **Operation ID:** `CloneSnapshotGroup`
@@ -17,6 +17,31 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [SnapshotGroupCloneParams](../schemas/Snapshot/SnapshotGroupCloneParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "clone": [
+      {
+        "from_source_vm_id": "<from_source_vm_id>",
+        "to_cloned_vm_name": "<to_cloned_vm_name>"
+      }
+    ],
+    "id": "<id>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CloneSnapshotGroup /tmp/body.json
+bash scripts/call.sh /v2/api/clone-snapshot-group /tmp/body.json
+```
 
 ## Responses
 

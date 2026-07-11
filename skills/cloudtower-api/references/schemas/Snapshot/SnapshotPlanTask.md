@@ -4,17 +4,19 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
+| `id` | string | Yes |  |
+| `local_id` | string | Yes |  |
+| `snapshotPlan` | [NestedSnapshotPlan](../Nested/NestedSnapshotPlan.md) | Yes |  |
+| `start_time` | string | Yes |  |
+| `status` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | Yes |  |
+| `type` | [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | Yes |  |
 | `end_time` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `id` | string | Yes |  |
 | `internal` | boolean | No |  |
-| `local_id` | string | Yes |  |
 | `snapshotGroup` | any | No |  |
-| `snapshotPlan` | [NestedSnapshotPlan](NestedSnapshotPlan.md) | Yes |  |
-| `start_time` | string | Yes |  |
-| `status` | [SnapshotPlanExecuteStatus](SnapshotPlanExecuteStatus.md) | Yes |  |
-| `type` | [SnapshotPlanTaskType](SnapshotPlanTaskType.md) | Yes |  |
 

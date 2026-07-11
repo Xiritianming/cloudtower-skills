@@ -4,21 +4,23 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `auth_pass_phrase` | string | No |  |
-| `auth_protocol` | any | No |  |
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `community` | string | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `disabled` | boolean | Yes |  |
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `port` | integer (int32) | Yes |  |
+| `protocol` | [SnmpProtocol](../Snmp/SnmpProtocol.md) | Yes |  |
+| `version` | [SnmpVersion](../Snmp/SnmpVersion.md) | Yes |  |
+| `auth_pass_phrase` | string | No |  |
+| `auth_protocol` | any | No |  |
+| `community` | string | No |  |
+| `entityAsyncStatus` | any | No |  |
 | `privacy_pass_phrase` | string | No |  |
 | `privacy_protocol` | any | No |  |
-| `protocol` | [SnmpProtocol](SnmpProtocol.md) | Yes |  |
 | `username` | string | No |  |
-| `version` | [SnmpVersion](SnmpVersion.md) | Yes |  |
 

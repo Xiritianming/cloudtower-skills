@@ -1,4 +1,4 @@
-# POST /move-vm-to-recycle
+# POST /v2/api/move-vm-to-recycle
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `MoveVmToRecycleBin`
@@ -17,6 +17,23 @@
 **Content Types:** `application/json`
 
 **Schema:** [VmOperateParams](../schemas/Vm/VmOperateParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py MoveVmToRecycleBin /tmp/body.json
+bash scripts/call.sh /v2/api/move-vm-to-recycle /tmp/body.json
+```
 
 ## Responses
 

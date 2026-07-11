@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicaVmWhereInput[] | No |  |
-| `NOT` | ReplicaVmWhereInput[] | No |  |
-| `OR` | ReplicaVmWhereInput[] | No |  |
+| `AND` | Array of [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `OR` | Array of [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -18,9 +20,9 @@
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_cloudtower` | any | No |  |
 | `failover_test_replica_group` | string | No |  |
 | `failover_test_replica_group_contains` | string | No |  |
@@ -149,15 +151,15 @@
 | `restore_points_none` | any | No |  |
 | `restore_points_some` | any | No |  |
 | `state` | any | No |  |
-| `state_in` | ReplicaVmState[] | No |  |
+| `state_in` | Array of [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
 | `state_not` | any | No |  |
-| `state_not_in` | ReplicaVmState[] | No |  |
+| `state_not_in` | Array of [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
 | `targets_deletable` | boolean | No |  |
 | `targets_deletable_not` | boolean | No |  |
 | `type` | any | No |  |
-| `type_in` | ReplicationObjectType[] | No |  |
+| `type_in` | Array of [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | ReplicationObjectType[] | No |  |
+| `type_not_in` | Array of [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |
 | `updatedAt_gte` | string | No |  |

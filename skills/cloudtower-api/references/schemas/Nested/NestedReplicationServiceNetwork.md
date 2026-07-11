@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `gateway` | string | No |  |
 | `ip` | string | Yes |  |
 | `mask` | string | Yes |  |
-| `type` | [BackupServiceNetworkType](BackupServiceNetworkType.md) | Yes |  |
+| `type` | [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | Yes |  |
 | `vlanId` | string | Yes |  |
+| `gateway` | string | No |  |
 

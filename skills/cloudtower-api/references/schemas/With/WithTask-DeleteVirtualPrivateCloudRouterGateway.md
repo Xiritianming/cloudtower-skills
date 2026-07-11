@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [DeleteVirtualPrivateCloudRouterGateway](../Delete/DeleteVirtualPrivateCloudRouterGateway.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [DeleteVirtualPrivateCloudRouterGateway](DeleteVirtualPrivateCloudRouterGateway.md) | Yes |  |
 

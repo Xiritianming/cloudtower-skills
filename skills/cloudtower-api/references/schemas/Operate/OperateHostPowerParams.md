@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [OperateHostPowerData](OperateHostPowerData.md) | Yes |  |
+| `data` | [OperateHostPowerData](../Operate/OperateHostPowerData.md) | Yes |  |
 | `where` | object | Yes |  |
 
 ## Nested Fields

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [IsolationPolicyWhereInput](IsolationPolicyWhereInput.md) | Yes |  |
+| `where` | [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | Yes |  |
 

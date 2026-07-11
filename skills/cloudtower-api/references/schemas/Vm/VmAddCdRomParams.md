@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vm_cd_roms` | VmCdRomParams[] | Yes |  |
+| `vm_cd_roms` | Array of [VmCdRomParams](../Vm/VmCdRomParams.md) | Yes |  |
 

@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `brick_topoes` | NestedBrickTopo[] | No |  |
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `height` | integer (int32) | Yes |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `zone_topo` | [NestedZoneTopo](NestedZoneTopo.md) | Yes |  |
+| `zone_topo` | [NestedZoneTopo](../Nested/NestedZoneTopo.md) | Yes |  |
+| `brick_topoes` | Array of [NestedBrickTopo](../Nested/NestedBrickTopo.md) | No |  |
 

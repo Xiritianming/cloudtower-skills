@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [ElfImageWhereInput](ElfImageWhereInput.md) | Yes |  |
+| `where` | [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | Yes |  |
 

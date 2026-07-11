@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVlan](NestedAggregateVlan.md) | Yes |  |
+| `aggregate` | [NestedAggregateVlan](../Nested/NestedAggregateVlan.md) | Yes |  |
 

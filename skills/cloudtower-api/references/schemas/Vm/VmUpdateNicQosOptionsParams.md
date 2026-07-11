@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmNicWhereInput](VmNicWhereInput.md) | Yes |  |
+| `where` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `qos` | [VmNicQosOption](VmNicQosOption.md) | No |  |
+| `qos` | [VmNicQosOption](../Vm/VmNicQosOption.md) | No |  |
 

@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | any | No |  |
 | `customized` | boolean | Yes |  |
 | `disabled` | boolean | Yes |  |
-| `global_alert_rule` | [NestedGlobalAlertRule](NestedGlobalAlertRule.md) | Yes |  |
+| `global_alert_rule` | [NestedGlobalAlertRule](../Nested/NestedGlobalAlertRule.md) | Yes |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
-| `thresholds` | NestedThresholds[] | Yes |  |
+| `thresholds` | Array of [NestedThresholds](../Nested/NestedThresholds.md) | Yes |  |
+| `cluster` | any | No |  |
 

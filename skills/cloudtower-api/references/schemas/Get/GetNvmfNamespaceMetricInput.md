@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `hosts` | [HostWhereInput](HostWhereInput.md) | No |  |
-| `nvmfNamespaces` | [NvmfNamespaceWhereInput](NvmfNamespaceWhereInput.md) | Yes |  |
+| `nvmfNamespaces` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | Yes |  |
 | `metrics` | string[] | Yes |  |
 | `range` | string | Yes |  |
+| `hosts` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 

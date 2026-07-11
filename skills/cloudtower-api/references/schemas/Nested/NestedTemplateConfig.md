@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `cpu_exclusive_expected_enabled` | boolean | No |  |

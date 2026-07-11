@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [NamespaceGroupWhereInput](NamespaceGroupWhereInput.md) | Yes |  |
+| `where` | [NamespaceGroupWhereInput](../Namespace/NamespaceGroupWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

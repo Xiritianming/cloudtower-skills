@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [BackupPlanWhereInput](BackupPlanWhereInput.md) | Yes |  |
+| `where` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `delete_strategy` | [BackupPlanDeleteStrategy](BackupPlanDeleteStrategy.md) | Yes |  |
+| `delete_strategy` | [BackupPlanDeleteStrategy](../Backup/BackupPlanDeleteStrategy.md) | Yes |  |
 

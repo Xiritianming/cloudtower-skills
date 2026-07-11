@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSvtImage](NestedAggregateSvtImage.md) | Yes |  |
+| `aggregate` | [NestedAggregateSvtImage](../Nested/NestedAggregateSvtImage.md) | Yes |  |
 

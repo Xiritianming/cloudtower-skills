@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudExternalSubnetGroupWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudExternalSubnetGroupWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudExternalSubnetGroupWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudExternalSubnetGroupWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudExternalSubnetGroupWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudExternalSubnetGroupWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -25,9 +27,9 @@
 | `description_starts_with` | string | No |  |
 | `edge_gateway_group` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `exclusive` | boolean | No |  |
 | `exclusive_not` | boolean | No |  |
 | `floating_ips_every` | any | No |  |

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateCloudTowerApplication](NestedAggregateCloudTowerApplication.md) | Yes |  |
+| `aggregate` | [NestedAggregateCloudTowerApplication](../Nested/NestedAggregateCloudTowerApplication.md) | Yes |  |
 

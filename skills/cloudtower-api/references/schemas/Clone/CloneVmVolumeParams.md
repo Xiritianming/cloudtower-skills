@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VmVolumeWhereUniqueInput](VmVolumeWhereUniqueInput.md) | Yes |  |
+| `where` | [VmVolumeWhereUniqueInput](../Vm/VmVolumeWhereUniqueInput.md) | Yes |  |
 | `data` | object | Yes |  |
 
 ## Nested Fields
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `description` | string | No |  |
 

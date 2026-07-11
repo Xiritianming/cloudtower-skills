@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NvmfNamespaceSnapshotWhereInput[] | No |  |
-| `NOT` | NvmfNamespaceSnapshotWhereInput[] | No |  |
-| `OR` | NvmfNamespaceSnapshotWhereInput[] | No |  |
+| `AND` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
+| `NOT` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
+| `OR` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
 | `consistency_group_snapshot` | any | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_k_gt` | integer (int32) | No |  |
@@ -27,9 +29,9 @@
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -86,9 +88,9 @@
 | `nvmf_namespace` | any | No |  |
 | `nvmf_subsystem` | any | No |  |
 | `resiliency_type` | any | No |  |
-| `resiliency_type_in` | ResiliencyType[] | No |  |
+| `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not` | any | No |  |
-| `resiliency_type_not_in` | ResiliencyType[] | No |  |
+| `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `snapshot_group` | any | No |  |
 | `unique_size` | integer (int64) | No |  |
 | `unique_size_gt` | integer (int64) | No |  |

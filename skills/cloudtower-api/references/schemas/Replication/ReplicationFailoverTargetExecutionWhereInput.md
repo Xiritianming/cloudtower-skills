@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicationFailoverTargetExecutionWhereInput[] | No |  |
-| `NOT` | ReplicationFailoverTargetExecutionWhereInput[] | No |  |
-| `OR` | ReplicationFailoverTargetExecutionWhereInput[] | No |  |
+| `AND` | Array of [ReplicationFailoverTargetExecutionWhereInput](../Replication/ReplicationFailoverTargetExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicationFailoverTargetExecutionWhereInput](../Replication/ReplicationFailoverTargetExecutionWhereInput.md) | No |  |
+| `OR` | Array of [ReplicationFailoverTargetExecutionWhereInput](../Replication/ReplicationFailoverTargetExecutionWhereInput.md) | No |  |
 | `failover_execution` | any | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
@@ -47,9 +49,9 @@
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
 | `phase` | any | No |  |
-| `phase_in` | BackupJobPhase[] | No |  |
+| `phase_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | BackupJobPhase[] | No |  |
+| `phase_not_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |
 | `resource_version_gte` | integer (int32) | No |  |

@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `host` | [NestedHost](NestedHost.md) | Yes |  |
+| `host` | [NestedHost](../Nested/NestedHost.md) | Yes |  |
 | `id` | string | Yes |  |
 | `ip` | string | Yes |  |
 | `is_valid` | boolean | Yes |  |

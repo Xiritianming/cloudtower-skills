@@ -4,10 +4,14 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `boot` | integer (int32) | Yes |  |
-| `bus` | [Bus](Bus.md) | Yes |  |
+| `bus` | [Bus](../Bus/Bus.md) | Yes |  |
+| `index` | integer (int32) | Yes |  |
+| `type` | [VmDiskType](../Vm/VmDiskType.md) | Yes |  |
 | `content_library_image_id` | string | No |  |
 | `disabled` | boolean | No |  |
 | `disk_name` | string | No |  |
@@ -15,7 +19,6 @@
 | `elf_storage_policy_ec_m` | integer (int32) | No |  |
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
-| `index` | integer (int32) | Yes |  |
 | `max_bandwidth` | integer (int64) | No |  |
 | `max_bandwidth_policy` | any | No |  |
 | `max_iops` | integer (int32) | No |  |
@@ -25,5 +28,4 @@
 | `size` | integer (int64) | No |  |
 | `storage_encrypted` | boolean | No |  |
 | `storage_policy` | any | No |  |
-| `type` | [VmDiskType](VmDiskType.md) | Yes |  |
 

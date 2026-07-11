@@ -1,4 +1,4 @@
-# POST /get-scvm-service-metrics
+# POST /v2/api/get-scvm-service-metrics
 
 **Resource:** [Metrics](../resources/Metrics.md)
 **Operation ID:** `GetSCVMServicekMetrics`
@@ -16,6 +16,30 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetScvmServiceMetricInput](../schemas/Get/GetScvmServiceMetricInput.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "range": "<range>",
+  "hosts": {},
+  "services": [
+    "<services>"
+  ],
+  "metrics": [
+    "<metrics>"
+  ]
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetSCVMServicekMetrics /tmp/body.json
+bash scripts/call.sh /v2/api/get-scvm-service-metrics /tmp/body.json
+```
 
 ## Responses
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | PmemDimmWhereInput[] | No |  |
-| `NOT` | PmemDimmWhereInput[] | No |  |
-| `OR` | PmemDimmWhereInput[] | No |  |
+| `AND` | Array of [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `NOT` | Array of [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `OR` | Array of [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
 | `capacity` | integer (int64) | No |  |
 | `capacity_gt` | integer (int64) | No |  |
 | `capacity_gte` | integer (int64) | No |  |
@@ -33,9 +35,9 @@
 | `device_locator_starts_with` | string | No |  |
 | `disk` | any | No |  |
 | `health_status` | any | No |  |
-| `health_status_in` | DiskHealthStatus[] | No |  |
+| `health_status_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_not` | any | No |  |
-| `health_status_not_in` | DiskHealthStatus[] | No |  |
+| `health_status_not_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `host` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

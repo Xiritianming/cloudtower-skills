@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVirtualPrivateCloud](NestedAggregateVirtualPrivateCloud.md) | Yes |  |
+| `aggregate` | [NestedAggregateVirtualPrivateCloud](../Nested/NestedAggregateVirtualPrivateCloud.md) | Yes |  |
 

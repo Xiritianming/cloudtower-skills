@@ -1,4 +1,4 @@
-# POST /remove-vm-nic-by-where
+# POST /v2/api/remove-vm-nic-by-where
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `RemoveVmNicByWhere`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [VmRemoveNicByWhereParams](../schemas/Vm/VmRemoveNicByWhereParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "effect": {},
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py RemoveVmNicByWhere /tmp/body.json
+bash scripts/call.sh /v2/api/remove-vm-nic-by-where /tmp/body.json
+```
 
 ## Responses
 

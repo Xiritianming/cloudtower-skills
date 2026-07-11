@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
+| `entityAsyncStatus` | any | No |  |
 

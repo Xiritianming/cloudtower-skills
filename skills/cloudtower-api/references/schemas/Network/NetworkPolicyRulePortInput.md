@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `alg_protocol` | [NetworkPolicyRuleAlgProtocol](NetworkPolicyRuleAlgProtocol.md) | No |  |
-| `protocol` | [NetworkPolicyRulePortProtocol](NetworkPolicyRulePortProtocol.md) | Yes |  |
+| `protocol` | [NetworkPolicyRulePortProtocol](../Network/NetworkPolicyRulePortProtocol.md) | Yes |  |
+| `alg_protocol` | [NetworkPolicyRuleAlgProtocol](../Network/NetworkPolicyRuleAlgProtocol.md) | No |  |
 | `port` | string | No |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `tasks` | [TaskWhereInput](TaskWhereInput.md) | Yes |  |
+| `tasks` | [TaskWhereInput](../Task/TaskWhereInput.md) | Yes |  |
 

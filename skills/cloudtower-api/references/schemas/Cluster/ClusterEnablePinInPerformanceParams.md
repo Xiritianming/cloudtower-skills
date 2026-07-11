@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [ClusterWhereInput](ClusterWhereInput.md) | Yes |  |
+| `where` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `hosts` | ClusterEnablePinInPerformanceHostType[] | Yes |  |
+| `hosts` | Array of [ClusterEnablePinInPerformanceHostType](../Cluster/ClusterEnablePinInPerformanceHostType.md) | Yes |  |
 | `cluster_default_prio_percentage` | number (double) | Yes |  |
 

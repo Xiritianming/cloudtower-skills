@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `v` | number (double) | No |  |
 | `t` | integer (int64) | Yes |  |
+| `v` | number (double) | No |  |
 | `__typename` | enum: DataPoint | No |  |
 

@@ -1,4 +1,4 @@
-# POST /create-vcenter-account
+# POST /v2/api/create-vcenter-account
 
 **Resource:** [VcenterAccount](../resources/VcenterAccount.md)
 **Operation ID:** `CreateVcenterAccount`
@@ -17,6 +17,29 @@
 **Content Types:** `application/json`
 
 **Schema:** [CreateVcenterAccountParams](../schemas/Create/CreateVcenterAccountParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {
+    "port": 1,
+    "password": "<password>",
+    "username": "<username>",
+    "ip": "<ip>",
+    "cluster_id": "<cluster_id>"
+  }
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CreateVcenterAccount /tmp/body.json
+bash scripts/call.sh /v2/api/create-vcenter-account /tmp/body.json
+```
 
 ## Responses
 

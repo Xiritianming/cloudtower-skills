@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VmFolderWhereInput](VmFolderWhereInput.md) | Yes |  |
+| `where` | [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | Yes |  |
 

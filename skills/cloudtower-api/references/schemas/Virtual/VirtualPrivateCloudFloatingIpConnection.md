@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVirtualPrivateCloudFloatingIp](NestedAggregateVirtualPrivateCloudFloatingIp.md) | Yes |  |
+| `aggregate` | [NestedAggregateVirtualPrivateCloudFloatingIp](../Nested/NestedAggregateVirtualPrivateCloudFloatingIp.md) | Yes |  |
 

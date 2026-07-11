@@ -1,4 +1,4 @@
-# POST /get-my-info
+# POST /v2/api/get-my-info
 
 **Resource:** [User](../resources/User.md)
 **Operation ID:** `GetMyInfo`

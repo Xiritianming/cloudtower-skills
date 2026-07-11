@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `offlineMigrateVms` | MaintenanceModeVmInfo[] | Yes |  |
-| `liveMigrateVms` | MaintenanceModeVmInfo[] | Yes |  |
-| `shutDownVms` | MaintenanceModeVmInfo[] | Yes |  |
+| `offlineMigrateVms` | Array of [MaintenanceModeVmInfo](../Maintenance/MaintenanceModeVmInfo.md) | Yes |  |
+| `liveMigrateVms` | Array of [MaintenanceModeVmInfo](../Maintenance/MaintenanceModeVmInfo.md) | Yes |  |
+| `shutDownVms` | Array of [MaintenanceModeVmInfo](../Maintenance/MaintenanceModeVmInfo.md) | Yes |  |
 

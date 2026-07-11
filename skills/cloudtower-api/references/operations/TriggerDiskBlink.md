@@ -1,4 +1,4 @@
-# POST /trigger-disk-blink
+# POST /v2/api/trigger-disk-blink
 
 **Resource:** [Host](../resources/Host.md)
 **Operation ID:** `TriggerDiskBlink`
@@ -17,6 +17,26 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [TriggerDiskBlinkParams](../schemas/Trigger/TriggerDiskBlinkParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "disk_name": "<disk_name>",
+    "host_id": "<host_id>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py TriggerDiskBlink /tmp/body.json
+bash scripts/call.sh /v2/api/trigger-disk-blink /tmp/body.json
+```
 
 ## Responses
 

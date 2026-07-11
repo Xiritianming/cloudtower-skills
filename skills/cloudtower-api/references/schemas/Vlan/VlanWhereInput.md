@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VlanWhereInput[] | No |  |
-| `NOT` | VlanWhereInput[] | No |  |
-| `OR` | VlanWhereInput[] | No |  |
+| `AND` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
+| `NOT` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
+| `OR` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway_ip` | string | No |  |
 | `gateway_ip_contains` | string | No |  |
 | `gateway_ip_ends_with` | string | No |  |
@@ -73,9 +75,9 @@
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
 | `mode_type` | any | No |  |
-| `mode_type_in` | VlanModeType[] | No |  |
+| `mode_type_in` | Array of [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `mode_type_not` | any | No |  |
-| `mode_type_not_in` | VlanModeType[] | No |  |
+| `mode_type_not_in` | Array of [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
 | `name_ends_with` | string | No |  |
@@ -137,9 +139,9 @@
 | `subnetmask_not_starts_with` | string | No |  |
 | `subnetmask_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | NetworkType[] | No |  |
+| `type_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | NetworkType[] | No |  |
+| `type_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `vds` | any | No |  |
 | `vlan_id` | integer (int32) | No |  |
 | `vlan_id_gt` | integer (int32) | No |  |

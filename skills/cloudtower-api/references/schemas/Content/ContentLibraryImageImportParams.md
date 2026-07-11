@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [ContentLibraryImageImportData](ContentLibraryImageImportData.md) | Yes |  |
+| `data` | [ContentLibraryImageImportData](../Content/ContentLibraryImageImportData.md) | Yes |  |
 

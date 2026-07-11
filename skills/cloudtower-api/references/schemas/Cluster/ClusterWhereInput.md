@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ClusterWhereInput[] | No |  |
-| `NOT` | ClusterWhereInput[] | No |  |
-| `OR` | ClusterWhereInput[] | No |  |
+| `AND` | Array of [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `NOT` | Array of [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `OR` | Array of [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `access_write_compress_enabled` | boolean | No |  |
 | `access_write_compress_enabled_not` | boolean | No |  |
 | `allocated_prioritized_space` | integer (int64) | No |  |
@@ -45,9 +47,9 @@
 | `applications_none` | any | No |  |
 | `applications_some` | any | No |  |
 | `architecture` | any | No |  |
-| `architecture_in` | Architecture[] | No |  |
+| `architecture_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_not` | any | No |  |
-| `architecture_not_in` | Architecture[] | No |  |
+| `architecture_not_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `auto_converge` | boolean | No |  |
 | `auto_converge_not` | boolean | No |  |
 | `commited_memory_bytes` | integer (int64) | No |  |
@@ -59,9 +61,9 @@
 | `commited_memory_bytes_not` | integer (int64) | No |  |
 | `commited_memory_bytes_not_in` | integer[] | No |  |
 | `connect_state` | any | No |  |
-| `connect_state_in` | ConnectState[] | No |  |
+| `connect_state_in` | Array of [ConnectState](../Connect/ConnectState.md) | No |  |
 | `connect_state_not` | any | No |  |
-| `connect_state_not_in` | ConnectState[] | No |  |
+| `connect_state_not_in` | Array of [ConnectState](../Connect/ConnectState.md) | No |  |
 | `consistency_groups_every` | any | No |  |
 | `consistency_groups_none` | any | No |  |
 | `consistency_groups_some` | any | No |  |
@@ -123,9 +125,9 @@
 | `disconnected_date_not` | string | No |  |
 | `disconnected_date_not_in` | string[] | No |  |
 | `disconnected_reason` | any | No |  |
-| `disconnected_reason_in` | ClusterConnectorErrorCode[] | No |  |
+| `disconnected_reason_in` | Array of [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `disconnected_reason_not` | any | No |  |
-| `disconnected_reason_not_in` | ClusterConnectorErrorCode[] | No |  |
+| `disconnected_reason_not_in` | Array of [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gt` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gte` | integer (int64) | No |  |
@@ -138,9 +140,9 @@
 | `enable_tiering` | boolean | No |  |
 | `enable_tiering_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `everoute_cluster` | any | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_cache_space_gt` | integer (int64) | No |  |
@@ -172,9 +174,9 @@
 | `hosts_none` | any | No |  |
 | `hosts_some` | any | No |  |
 | `hypervisor` | any | No |  |
-| `hypervisor_in` | Hypervisor[] | No |  |
+| `hypervisor_in` | Array of [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `hypervisor_not` | any | No |  |
-| `hypervisor_not_in` | Hypervisor[] | No |  |
+| `hypervisor_not_in` | Array of [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -253,9 +255,9 @@
 | `license_sign_date_not` | string | No |  |
 | `license_sign_date_not_in` | string[] | No |  |
 | `license_type` | any | No |  |
-| `license_type_in` | LicenseType[] | No |  |
+| `license_type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `license_type_not` | any | No |  |
-| `license_type_not_in` | LicenseType[] | No |  |
+| `license_type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -393,9 +395,9 @@
 | `no_performance_layer` | boolean | No |  |
 | `no_performance_layer_not` | boolean | No |  |
 | `ntp_mode` | any | No |  |
-| `ntp_mode_in` | NtpMode[] | No |  |
+| `ntp_mode_in` | Array of [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `ntp_mode_not` | any | No |  |
-| `ntp_mode_not_in` | NtpMode[] | No |  |
+| `ntp_mode_not_in` | Array of [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `nvme_over_rdma_enabled` | boolean | No |  |
 | `nvme_over_rdma_enabled_not` | boolean | No |  |
 | `nvme_over_tcp_enabled` | boolean | No |  |
@@ -546,9 +548,9 @@
 | `running_vm_num_not_in` | integer[] | No |  |
 | `settings` | any | No |  |
 | `software_edition` | any | No |  |
-| `software_edition_in` | SoftwareEdition[] | No |  |
+| `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not` | any | No |  |
-| `software_edition_not_in` | SoftwareEdition[] | No |  |
+| `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `stopped_vm_num` | integer (int32) | No |  |
 | `stopped_vm_num_gt` | integer (int32) | No |  |
 | `stopped_vm_num_gte` | integer (int32) | No |  |
@@ -632,9 +634,9 @@
 | `total_prio_volume_size_usage_not` | number (double) | No |  |
 | `total_prio_volume_size_usage_not_in` | number[] | No |  |
 | `type` | any | No |  |
-| `type_in` | ClusterType[] | No |  |
+| `type_in` | Array of [ClusterType](../Cluster/ClusterType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | ClusterType[] | No |  |
+| `type_not_in` | Array of [ClusterType](../Cluster/ClusterType.md) | No |  |
 | `upgrade_for_tiering` | boolean | No |  |
 | `upgrade_for_tiering_not` | boolean | No |  |
 | `upgrade_tool_version` | string | No |  |

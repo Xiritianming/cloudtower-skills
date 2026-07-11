@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `consistent_type` | [ConsistentType](ConsistentType.md) | No |  |
 | `name` | string | Yes |  |
 | `vm_id` | string | Yes |  |
+| `consistent_type` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 

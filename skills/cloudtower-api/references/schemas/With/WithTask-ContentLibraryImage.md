@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [ContentLibraryImage](../Content/ContentLibraryImage.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [ContentLibraryImage](ContentLibraryImage.md) | Yes |  |
 

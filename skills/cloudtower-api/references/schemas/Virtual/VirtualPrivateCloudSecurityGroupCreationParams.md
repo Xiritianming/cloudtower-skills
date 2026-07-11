@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vm_ids` | string[] | No |  |
-| `label_groups` | LabelGroup[] | No |  |
 | `vpc_id` | string | Yes |  |
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `vm_ids` | string[] | No |  |
+| `label_groups` | Array of [LabelGroup](../Label/LabelGroup.md) | No |  |
+| `description` | string | No |  |
 

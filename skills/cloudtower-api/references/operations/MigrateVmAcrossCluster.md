@@ -1,4 +1,4 @@
-# POST /migrate-vm-across-cluster
+# POST /v2/api/migrate-vm-across-cluster
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `MigrateVmAcrossCluster`
@@ -17,6 +17,35 @@
 **Content Types:** `application/json`
 
 **Schema:** [VmMigrateAcrossClusterParams](../schemas/Vm/VmMigrateAcrossClusterParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {
+    "vm_config": {
+      "network_mapping": [
+        {
+          "src_vlan_local_id": "<src_vlan_local_id>",
+          "dest_vlan_local_id": "<dest_vlan_local_id>"
+        }
+      ],
+      "migrate_type": "COLD_MIGRATE"
+    },
+    "cluster_id": "<cluster_id>"
+  },
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py MigrateVmAcrossCluster /tmp/body.json
+bash scripts/call.sh /v2/api/migrate-vm-across-cluster /tmp/body.json
+```
 
 ## Responses
 

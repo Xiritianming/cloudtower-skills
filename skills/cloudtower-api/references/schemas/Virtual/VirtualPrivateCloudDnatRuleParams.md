@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `target_port` | integer (int32) | Yes |  |

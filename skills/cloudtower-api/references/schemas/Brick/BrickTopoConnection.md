@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateBrickTopo](NestedAggregateBrickTopo.md) | Yes |  |
+| `aggregate` | [NestedAggregateBrickTopo](../Nested/NestedAggregateBrickTopo.md) | Yes |  |
 

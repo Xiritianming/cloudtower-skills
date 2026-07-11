@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | IsolationPolicyWhereInput[] | No |  |
-| `NOT` | IsolationPolicyWhereInput[] | No |  |
-| `OR` | IsolationPolicyWhereInput[] | No |  |
+| `AND` | Array of [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
+| `NOT` | Array of [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
+| `OR` | Array of [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
 | `everoute_cluster` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -28,9 +30,9 @@
 | `labels_none` | any | No |  |
 | `labels_some` | any | No |  |
 | `mode` | any | No |  |
-| `mode_in` | IsolationMode[] | No |  |
+| `mode_in` | Array of [IsolationMode](../Isolation/IsolationMode.md) | No |  |
 | `mode_not` | any | No |  |
-| `mode_not_in` | IsolationMode[] | No |  |
+| `mode_not_in` | Array of [IsolationMode](../Isolation/IsolationMode.md) | No |  |
 | `statistics` | any | No |  |
 | `vm` | any | No |  |
 

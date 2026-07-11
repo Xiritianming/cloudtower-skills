@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | DatacenterWhereInput[] | No |  |
-| `NOT` | DatacenterWhereInput[] | No |  |
-| `OR` | DatacenterWhereInput[] | No |  |
+| `AND` | Array of [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `NOT` | Array of [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `OR` | Array of [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
 | `cluster_num` | integer (int32) | No |  |
 | `cluster_num_gt` | integer (int32) | No |  |
 | `cluster_num_gte` | integer (int32) | No |  |

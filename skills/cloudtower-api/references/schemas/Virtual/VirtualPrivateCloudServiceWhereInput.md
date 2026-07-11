@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudServiceWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudServiceWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudServiceWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 | `cluster_bindings_every` | any | No |  |
 | `cluster_bindings_none` | any | No |  |
 | `cluster_bindings_some` | any | No |  |
@@ -19,9 +21,9 @@
 | `edge_gateways_none` | any | No |  |
 | `edge_gateways_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `everoute_cluster` | any | No |  |
 | `external_subnets_every` | any | No |  |
 | `external_subnets_none` | any | No |  |
@@ -55,9 +57,9 @@
 | `internal_cidr_not_starts_with` | string | No |  |
 | `internal_cidr_starts_with` | string | No |  |
 | `phase` | any | No |  |
-| `phase_in` | EverouteClusterPhase[] | No |  |
+| `phase_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | EverouteClusterPhase[] | No |  |
+| `phase_not_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `vpcs_every` | any | No |  |
 | `vpcs_none` | any | No |  |
 | `vpcs_some` | any | No |  |

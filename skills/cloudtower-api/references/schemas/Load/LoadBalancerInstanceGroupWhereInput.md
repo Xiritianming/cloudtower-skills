@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | LoadBalancerInstanceGroupWhereInput[] | No |  |
-| `NOT` | LoadBalancerInstanceGroupWhereInput[] | No |  |
-| `OR` | LoadBalancerInstanceGroupWhereInput[] | No |  |
+| `AND` | Array of [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
+| `NOT` | Array of [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
+| `OR` | Array of [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -46,9 +48,9 @@
 | `display_name_not_starts_with` | string | No |  |
 | `display_name_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

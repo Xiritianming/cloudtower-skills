@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `datacenters` | NestedDatacenter[] | No |  |
 | `id` | string | Yes |  |
 | `name` | string | Yes |  |
+| `datacenters` | Array of [NestedDatacenter](../Nested/NestedDatacenter.md) | No |  |
 

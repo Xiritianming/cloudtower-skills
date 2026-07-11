@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `apply_to` | NestedSecurityPolicyApply[] | Yes |  |
+| `apply_to` | Array of [NestedSecurityPolicyApply](../Nested/NestedSecurityPolicyApply.md) | Yes |  |
 | `description` | string | Yes |  |
-| `egress` | NestedNetworkPolicyRule[] | No |  |
-| `everoute_cluster` | [NestedEverouteCluster](NestedEverouteCluster.md) | Yes |  |
+| `everoute_cluster` | [NestedEverouteCluster](../Nested/NestedEverouteCluster.md) | Yes |  |
 | `id` | string | Yes |  |
-| `ingress` | NestedNetworkPolicyRule[] | No |  |
 | `is_blocklist` | boolean | Yes |  |
 | `name` | string | Yes |  |
+| `egress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
+| `ingress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
 | `policy_mode` | any | No |  |
 | `statistics` | any | No |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NfsExportWhereInput[] | No |  |
-| `NOT` | NfsExportWhereInput[] | No |  |
-| `OR` | NfsExportWhereInput[] | No |  |
+| `AND` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
+| `NOT` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
+| `OR` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -41,13 +43,13 @@
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
 | `encrypt_method` | any | No |  |
-| `encrypt_method_in` | EncryptMethod[] | No |  |
+| `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not` | any | No |  |
-| `encrypt_method_not_in` | EncryptMethod[] | No |  |
+| `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `export_inode_id` | string | No |  |
 | `export_inode_id_contains` | string | No |  |
 | `export_inode_id_ends_with` | string | No |  |
@@ -137,9 +139,9 @@
 | `replica_num_not` | integer (int32) | No |  |
 | `replica_num_not_in` | integer[] | No |  |
 | `resiliency_type` | any | No |  |
-| `resiliency_type_in` | ResiliencyType[] | No |  |
+| `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not` | any | No |  |
-| `resiliency_type_not_in` | ResiliencyType[] | No |  |
+| `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `thin_provision` | boolean | No |  |
 | `thin_provision_not` | boolean | No |  |
 

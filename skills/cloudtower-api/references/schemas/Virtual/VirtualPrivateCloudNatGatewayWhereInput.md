@@ -4,19 +4,21 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudNatGatewayWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudNatGatewayWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudNatGatewayWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
 | `enable_dnat` | boolean | No |  |
 | `enable_dnat_not` | boolean | No |  |
 | `enable_snat` | boolean | No |  |
 | `enable_snat_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_ip` | string | No |  |
 | `external_ip_contains` | string | No |  |
 | `external_ip_ends_with` | string | No |  |

@@ -4,11 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `groups` | string[] | Yes |  |
-| `hosts` | NestedHost[] | No |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `log_ended_at` | string | Yes |  |
@@ -16,11 +17,12 @@
 | `owner` | string | Yes |  |
 | `path` | string | Yes |  |
 | `progress` | number (double) | Yes |  |
-| `service_groups` | object | No |  |
 | `services` | string[] | Yes |  |
 | `size` | integer (int64) | Yes |  |
 | `started_at` | string | Yes |  |
-| `status` | [LogCollectionStatus](LogCollectionStatus.md) | Yes |  |
+| `status` | [LogCollectionStatus](../Log/LogCollectionStatus.md) | Yes |  |
+| `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
+| `service_groups` | object | No |  |
 | `witness` | any | No |  |
 
 ## Nested Fields
@@ -29,4 +31,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

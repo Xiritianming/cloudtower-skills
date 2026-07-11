@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `hosts` | [HostWhereInput](HostWhereInput.md) | Yes |  |
+| `hosts` | [HostWhereInput](../Host/HostWhereInput.md) | Yes |  |
 | `range` | string | Yes |  |
-| `nics` | [NicWhereInput](NicWhereInput.md) | No |  |
 | `metrics` | string[] | Yes |  |
+| `nics` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
 

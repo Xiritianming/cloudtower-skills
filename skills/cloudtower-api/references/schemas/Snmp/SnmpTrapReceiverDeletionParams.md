@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [SnmpTrapReceiverWhereInput](SnmpTrapReceiverWhereInput.md) | Yes |  |
+| `where` | [SnmpTrapReceiverWhereInput](../Snmp/SnmpTrapReceiverWhereInput.md) | Yes |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | RegistryServiceWhereInput[] | No |  |
-| `NOT` | RegistryServiceWhereInput[] | No |  |
-| `OR` | RegistryServiceWhereInput[] | No |  |
+| `AND` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
+| `NOT` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
+| `OR` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
 | `application` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -25,9 +27,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `hostname` | string | No |  |
 | `hostname_contains` | string | No |  |
 | `hostname_ends_with` | string | No |  |
@@ -71,7 +73,7 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `usage` | any | No |  |
-| `usage_in` | RegistryServiceUsage[] | No |  |
+| `usage_in` | Array of [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
 | `usage_not` | any | No |  |
-| `usage_not_in` | RegistryServiceUsage[] | No |  |
+| `usage_not_in` | Array of [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
 

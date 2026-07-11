@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReportTemplateWhereInput[] | No |  |
-| `NOT` | ReportTemplateWhereInput[] | No |  |
-| `OR` | ReportTemplateWhereInput[] | No |  |
+| `AND` | Array of [ReportTemplateWhereInput](../Report/ReportTemplateWhereInput.md) | No |  |
+| `NOT` | Array of [ReportTemplateWhereInput](../Report/ReportTemplateWhereInput.md) | No |  |
+| `OR` | Array of [ReportTemplateWhereInput](../Report/ReportTemplateWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |

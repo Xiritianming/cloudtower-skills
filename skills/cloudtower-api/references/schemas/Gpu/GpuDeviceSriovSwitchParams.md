@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [GpuDeviceWhereInput](GpuDeviceWhereInput.md) | Yes |  |
+| `where` | [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

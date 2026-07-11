@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [NfsInodeUpdationParamsData](NfsInodeUpdationParamsData.md) | Yes |  |
-| `where` | [NfsInodeWhereInput](NfsInodeWhereInput.md) | Yes |  |
+| `data` | [NfsInodeUpdationParamsData](../Nfs/NfsInodeUpdationParamsData.md) | Yes |  |
+| `where` | [NfsInodeWhereInput](../Nfs/NfsInodeWhereInput.md) | Yes |  |
 

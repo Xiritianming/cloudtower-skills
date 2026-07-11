@@ -1,4 +1,4 @@
-# POST /create-virtual-private-cloud-router-gateway
+# POST /v2/api/create-virtual-private-cloud-router-gateway
 
 **Resource:** [VirtualPrivateCloudRouterGateway](../resources/VirtualPrivateCloudRouterGateway.md)
 **Operation ID:** `CreateVirtualPrivateCloudRouterGateway`
@@ -17,6 +17,34 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [VirtualPrivateCloudRouterGatewayCreationParams](../schemas/Virtual/VirtualPrivateCloudRouterGatewayCreationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "rules": [
+      {
+        "dst": "<dst>"
+      }
+    ],
+    "associated_subnets_ids": [
+      "<associated_subnets_ids>"
+    ],
+    "vpc_id": "<vpc_id>",
+    "name": "<name>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CreateVirtualPrivateCloudRouterGateway /tmp/body.json
+bash scripts/call.sh /v2/api/create-virtual-private-cloud-router-gateway /tmp/body.json
+```
 
 ## Responses
 

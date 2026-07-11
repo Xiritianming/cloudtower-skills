@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `iscsi_target_id` | string | Yes |  |

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateApplication](NestedAggregateApplication.md) | Yes |  |
+| `aggregate` | [NestedAggregateApplication](../Nested/NestedAggregateApplication.md) | Yes |  |
 

@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | VmGpuOperationParams[] | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `data` | Array of [VmGpuOperationParams](../Vm/VmGpuOperationParams.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 

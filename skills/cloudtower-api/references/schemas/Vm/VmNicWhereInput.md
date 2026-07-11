@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmNicWhereInput[] | No |  |
-| `NOT` | VmNicWhereInput[] | No |  |
-| `OR` | VmNicWhereInput[] | No |  |
+| `AND` | Array of [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `NOT` | Array of [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `OR` | Array of [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
 | `dpi_enabled` | boolean | No |  |
 | `dpi_enabled_not` | boolean | No |  |
 | `egress_rate_limit_burst_in_bit` | number (double) | No |  |
@@ -136,9 +138,9 @@
 | `mirror` | boolean | No |  |
 | `mirror_not` | boolean | No |  |
 | `model` | any | No |  |
-| `model_in` | VmNicModel[] | No |  |
+| `model_in` | Array of [VmNicModel](../Vm/VmNicModel.md) | No |  |
 | `model_not` | any | No |  |
-| `model_not_in` | VmNicModel[] | No |  |
+| `model_not_in` | Array of [VmNicModel](../Vm/VmNicModel.md) | No |  |
 | `nic` | any | No |  |
 | `order` | integer (int32) | No |  |
 | `order_gt` | integer (int32) | No |  |
@@ -163,9 +165,9 @@
 | `subnet_mask_not_starts_with` | string | No |  |
 | `subnet_mask_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | VmNicType[] | No |  |
+| `type_in` | Array of [VmNicType](../Vm/VmNicType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | VmNicType[] | No |  |
+| `type_not_in` | Array of [VmNicType](../Vm/VmNicType.md) | No |  |
 | `vlan` | any | No |  |
 | `vm` | any | No |  |
 | `vpc_nic` | any | No |  |

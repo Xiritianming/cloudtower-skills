@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmNic](NestedAggregateVmNic.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmNic](../Nested/NestedAggregateVmNic.md) | Yes |  |
 

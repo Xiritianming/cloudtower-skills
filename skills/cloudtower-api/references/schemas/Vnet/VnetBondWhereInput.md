@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VnetBondWhereInput[] | No |  |
-| `NOT` | VnetBondWhereInput[] | No |  |
-| `OR` | VnetBondWhereInput[] | No |  |
+| `AND` | Array of [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `NOT` | Array of [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `OR` | Array of [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
 | `bond_for_client` | boolean | No |  |
 | `bond_for_client_not` | boolean | No |  |
 | `bond_for_server` | boolean | No |  |
@@ -22,9 +24,9 @@
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -84,9 +86,9 @@
 | `namespace_not_starts_with` | string | No |  |
 | `namespace_starts_with` | string | No |  |
 | `network_type` | any | No |  |
-| `network_type_in` | VnetBondNetworkType[] | No |  |
+| `network_type_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `network_type_not` | any | No |  |
-| `network_type_not_in` | VnetBondNetworkType[] | No |  |
+| `network_type_not_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `vlan` | any | No |  |
 | `vnet_bond_group` | any | No |  |
 | `vpc` | any | No |  |

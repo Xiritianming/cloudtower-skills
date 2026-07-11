@@ -4,10 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `id` | string | Yes |  |
 | `local_created_at` | string | Yes |  |
 | `local_id` | string | Yes |  |
@@ -15,5 +16,6 @@
 | `path` | string | Yes |  |
 | `size` | integer (int64) | Yes |  |
 | `version` | integer (int32) | Yes |  |
-| `vm_disks` | NestedVmDisk[] | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `vm_disks` | Array of [NestedVmDisk](../Nested/NestedVmDisk.md) | No |  |
 

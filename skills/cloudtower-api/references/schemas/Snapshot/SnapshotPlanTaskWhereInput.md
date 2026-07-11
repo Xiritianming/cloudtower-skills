@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SnapshotPlanTaskWhereInput[] | No |  |
-| `NOT` | SnapshotPlanTaskWhereInput[] | No |  |
-| `OR` | SnapshotPlanTaskWhereInput[] | No |  |
+| `AND` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
+| `NOT` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
+| `OR` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `end_time` | string | No |  |
 | `end_time_gt` | string | No |  |
@@ -19,9 +21,9 @@
 | `end_time_not` | string | No |  |
 | `end_time_not_in` | string[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -63,11 +65,11 @@
 | `start_time_not` | string | No |  |
 | `start_time_not_in` | string[] | No |  |
 | `status` | any | No |  |
-| `status_in` | SnapshotPlanExecuteStatus[] | No |  |
+| `status_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | SnapshotPlanExecuteStatus[] | No |  |
+| `status_not_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | SnapshotPlanTaskType[] | No |  |
+| `type_in` | Array of [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | SnapshotPlanTaskType[] | No |  |
+| `type_not_in` | Array of [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
 

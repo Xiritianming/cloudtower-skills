@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ClusterTopoWhereInput[] | No |  |
-| `NOT` | ClusterTopoWhereInput[] | No |  |
-| `OR` | ClusterTopoWhereInput[] | No |  |
+| `AND` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
+| `NOT` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
+| `OR` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
 | `brick_topoes_every` | any | No |  |
 | `brick_topoes_none` | any | No |  |
 | `brick_topoes_some` | any | No |  |

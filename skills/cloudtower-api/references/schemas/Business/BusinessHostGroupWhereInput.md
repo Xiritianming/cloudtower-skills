@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BusinessHostGroupWhereInput[] | No |  |
-| `NOT` | BusinessHostGroupWhereInput[] | No |  |
-| `OR` | BusinessHostGroupWhereInput[] | No |  |
+| `AND` | Array of [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `NOT` | Array of [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `OR` | Array of [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
 | `business_hosts_every` | any | No |  |
 | `business_hosts_none` | any | No |  |
 | `business_hosts_some` | any | No |  |
@@ -28,9 +30,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

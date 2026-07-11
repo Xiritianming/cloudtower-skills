@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [ContentLibraryImageUpdationParamsData](ContentLibraryImageUpdationParamsData.md) | Yes |  |
-| `where` | [ContentLibraryImageWhereInput](ContentLibraryImageWhereInput.md) | Yes |  |
+| `data` | [ContentLibraryImageUpdationParamsData](../Content/ContentLibraryImageUpdationParamsData.md) | Yes |  |
+| `where` | [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | Yes |  |
 

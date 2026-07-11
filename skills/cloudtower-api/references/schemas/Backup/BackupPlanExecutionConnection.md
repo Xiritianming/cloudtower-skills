@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateBackupPlanExecution](NestedAggregateBackupPlanExecution.md) | Yes |  |
+| `aggregate` | [NestedAggregateBackupPlanExecution](../Nested/NestedAggregateBackupPlanExecution.md) | Yes |  |
 

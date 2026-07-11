@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VirtualPrivateCloudRouterGatewayWhereInput](VirtualPrivateCloudRouterGatewayWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | Yes |  |
 

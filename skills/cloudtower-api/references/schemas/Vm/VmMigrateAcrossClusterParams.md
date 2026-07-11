@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,7 +17,7 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vm_config` | [MigrateVmConfig](MigrateVmConfig.md) | Yes |  |
+| `vm_config` | [MigrateVmConfig](../Migrate/MigrateVmConfig.md) | Yes |  |
 | `cluster_id` | string | Yes |  |
 | `host_id` | string | No |  |
 

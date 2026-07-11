@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateIscsiLunSnapshot](NestedAggregateIscsiLunSnapshot.md) | Yes |  |
+| `aggregate` | [NestedAggregateIscsiLunSnapshot](../Nested/NestedAggregateIscsiLunSnapshot.md) | Yes |  |
 

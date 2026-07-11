@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `source` | [NestedReplicationNetworkInformation](NestedReplicationNetworkInformation.md) | Yes |  |
-| `target` | [NestedReplicationNetworkInformation](NestedReplicationNetworkInformation.md) | Yes |  |
+| `source` | [NestedReplicationNetworkInformation](../Nested/NestedReplicationNetworkInformation.md) | Yes |  |
+| `target` | [NestedReplicationNetworkInformation](../Nested/NestedReplicationNetworkInformation.md) | Yes |  |
 

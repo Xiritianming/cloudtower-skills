@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [NetworkPolicyRuleServiceWhereInput](NetworkPolicyRuleServiceWhereInput.md) | Yes |  |
+| `where` | [NetworkPolicyRuleServiceWhereInput](../Network/NetworkPolicyRuleServiceWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,7 +17,7 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `members` | NetworkPolicyRuleServiceMemberParams[] | No |  |
+| `members` | Array of [NetworkPolicyRuleServiceMemberParams](../Network/NetworkPolicyRuleServiceMemberParams.md) | No |  |
 | `description` | string | No |  |
 | `name` | string | No |  |
 

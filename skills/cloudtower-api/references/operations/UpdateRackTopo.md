@@ -1,4 +1,4 @@
-# POST /update-rack-topo
+# POST /v2/api/update-rack-topo
 
 **Resource:** [RackTopo](../resources/RackTopo.md)
 **Operation ID:** `UpdateRackTopo`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [RackTopoUpdationParams](../schemas/Rack/RackTopoUpdationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {},
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateRackTopo /tmp/body.json
+bash scripts/call.sh /v2/api/update-rack-topo /tmp/body.json
+```
 
 ## Responses
 

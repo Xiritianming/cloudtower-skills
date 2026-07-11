@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | AlertWhereInput[] | No |  |
-| `NOT` | AlertWhereInput[] | No |  |
-| `OR` | AlertWhereInput[] | No |  |
+| `AND` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
+| `NOT` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
+| `OR` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
 | `alert_rule` | any | No |  |
 | `cause` | string | No |  |
 | `cause_contains` | string | No |  |

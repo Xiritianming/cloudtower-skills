@@ -4,24 +4,26 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `backup_plan` | [NestedBackupPlan](NestedBackupPlan.md) | Yes |  |
-| `backup_restore_executions` | NestedBackupRestoreExecution[] | No |  |
-| `backup_target_execution` | [NestedBackupTargetExecution](NestedBackupTargetExecution.md) | Yes |  |
+| `backup_plan` | [NestedBackupPlan](../Nested/NestedBackupPlan.md) | Yes |  |
+| `backup_target_execution` | [NestedBackupTargetExecution](../Nested/NestedBackupTargetExecution.md) | Yes |  |
+| `id` | string | Yes |  |
+| `local_id` | string | Yes |  |
+| `slice` | string | Yes |  |
+| `backup_restore_executions` | Array of [NestedBackupRestoreExecution](../Nested/NestedBackupRestoreExecution.md) | No |  |
 | `cluster_local_id` | string | No |  |
 | `compressed` | boolean | No |  |
 | `compression_ratio` | number (double) | No |  |
 | `creation` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `id` | string | Yes |  |
 | `local_created_at` | string | No |  |
-| `local_id` | string | Yes |  |
 | `logical_size` | integer (int64) | No |  |
 | `parent_restore_point` | string | No |  |
 | `physical_size` | integer (int64) | No |  |
 | `size` | integer (int64) | No |  |
-| `slice` | string | Yes |  |
 | `snapshot_consistent_type` | any | No |  |
 | `type` | any | No |  |
 | `valid_capacity` | integer (int64) | No |  |

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster_id` | string | No |  |
 | `cloud_init_supported` | boolean | Yes |  |
 | `vm_id` | string | Yes |  |
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `cluster_id` | string | No |  |
+| `description` | string | No |  |
 

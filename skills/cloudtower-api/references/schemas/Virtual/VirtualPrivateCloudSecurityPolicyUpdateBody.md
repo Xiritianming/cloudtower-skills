@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [VirtualPrivateCloudSecurityPolicyUpdateParams](VirtualPrivateCloudSecurityPolicyUpdateParams.md) | Yes |  |
-| `where` | [VirtualPrivateCloudSecurityPolicyWhereInput](VirtualPrivateCloudSecurityPolicyWhereInput.md) | Yes |  |
+| `data` | [VirtualPrivateCloudSecurityPolicyUpdateParams](../Virtual/VirtualPrivateCloudSecurityPolicyUpdateParams.md) | Yes |  |
+| `where` | [VirtualPrivateCloudSecurityPolicyWhereInput](../Virtual/VirtualPrivateCloudSecurityPolicyWhereInput.md) | Yes |  |
 

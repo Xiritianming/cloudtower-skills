@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSystemAuditLog](NestedAggregateSystemAuditLog.md) | Yes |  |
+| `aggregate` | [NestedAggregateSystemAuditLog](../Nested/NestedAggregateSystemAuditLog.md) | Yes |  |
 

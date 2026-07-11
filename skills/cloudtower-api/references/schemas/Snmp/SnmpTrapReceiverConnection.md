@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSnmpTrapReceiver](NestedAggregateSnmpTrapReceiver.md) | Yes |  |
+| `aggregate` | [NestedAggregateSnmpTrapReceiver](../Nested/NestedAggregateSnmpTrapReceiver.md) | Yes |  |
 

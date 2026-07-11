@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudRouteTableWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudRouteTableWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudRouteTableWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
 | `default_for_vpc` | boolean | No |  |
 | `default_for_vpc_not` | boolean | No |  |
 | `description` | string | No |  |
@@ -26,9 +28,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

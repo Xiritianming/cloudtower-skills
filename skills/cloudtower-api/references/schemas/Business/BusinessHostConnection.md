@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateBusinessHost](NestedAggregateBusinessHost.md) | Yes |  |
+| `aggregate` | [NestedAggregateBusinessHost](../Nested/NestedAggregateBusinessHost.md) | Yes |  |
 

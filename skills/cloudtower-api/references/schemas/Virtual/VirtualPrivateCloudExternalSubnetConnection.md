@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVirtualPrivateCloudExternalSubnet](NestedAggregateVirtualPrivateCloudExternalSubnet.md) | Yes |  |
+| `aggregate` | [NestedAggregateVirtualPrivateCloudExternalSubnet](../Nested/NestedAggregateVirtualPrivateCloudExternalSubnet.md) | Yes |  |
 

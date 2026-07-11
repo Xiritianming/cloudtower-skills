@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BackupServiceWhereInput[] | No |  |
-| `NOT` | BackupServiceWhereInput[] | No |  |
-| `OR` | BackupServiceWhereInput[] | No |  |
+| `AND` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
+| `NOT` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
+| `OR` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
 | `application` | any | No |  |
 | `backup_clusters_every` | any | No |  |
 | `backup_clusters_none` | any | No |  |
@@ -56,9 +58,9 @@
 | `backup_network_subnet_mask_not_starts_with` | string | No |  |
 | `backup_network_subnet_mask_starts_with` | string | No |  |
 | `backup_network_type` | any | No |  |
-| `backup_network_type_in` | BackupServiceNetworkType[] | No |  |
+| `backup_network_type_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `backup_network_type_not` | any | No |  |
-| `backup_network_type_not_in` | BackupServiceNetworkType[] | No |  |
+| `backup_network_type_not_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `backup_network_vlan` | string | No |  |
 | `backup_network_vlan_contains` | string | No |  |
 | `backup_network_vlan_ends_with` | string | No |  |
@@ -110,9 +112,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -261,9 +263,9 @@
 | `retry_interval_not_in` | integer[] | No |  |
 | `running_vm` | any | No |  |
 | `status` | any | No |  |
-| `status_in` | BackupServiceStatus[] | No |  |
+| `status_in` | Array of [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | BackupServiceStatus[] | No |  |
+| `status_not_in` | Array of [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
 | `storage_network_gateway` | string | No |  |
 | `storage_network_gateway_contains` | string | No |  |
 | `storage_network_gateway_ends_with` | string | No |  |
@@ -307,9 +309,9 @@
 | `storage_network_subnet_mask_not_starts_with` | string | No |  |
 | `storage_network_subnet_mask_starts_with` | string | No |  |
 | `storage_network_type` | any | No |  |
-| `storage_network_type_in` | BackupServiceNetworkType[] | No |  |
+| `storage_network_type_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `storage_network_type_not` | any | No |  |
-| `storage_network_type_not_in` | BackupServiceNetworkType[] | No |  |
+| `storage_network_type_not_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `storage_network_vlan` | string | No |  |
 | `storage_network_vlan_contains` | string | No |  |
 | `storage_network_vlan_ends_with` | string | No |  |

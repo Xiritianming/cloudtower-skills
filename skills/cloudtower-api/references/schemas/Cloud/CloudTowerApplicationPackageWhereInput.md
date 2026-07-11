@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | CloudTowerApplicationPackageWhereInput[] | No |  |
-| `NOT` | CloudTowerApplicationPackageWhereInput[] | No |  |
-| `OR` | CloudTowerApplicationPackageWhereInput[] | No |  |
+| `AND` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
+| `NOT` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
+| `OR` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
 | `applications_every` | any | No |  |
 | `applications_none` | any | No |  |
 | `applications_some` | any | No |  |
 | `architecture` | any | No |  |
-| `architecture_in` | Architecture[] | No |  |
+| `architecture_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_not` | any | No |  |
-| `architecture_not_in` | Architecture[] | No |  |
+| `architecture_not_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

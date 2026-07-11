@@ -1,4 +1,4 @@
-# POST /get-backup-plan-executions-connection
+# POST /v2/api/get-backup-plan-executions-connection
 
 **Resource:** [BackupPlanExecution](../resources/BackupPlanExecution.md)
 **Operation ID:** `GetBackupPlanExecutionsConnection`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetBackupPlanExecutionsConnectionRequestBody](../schemas/Get/GetBackupPlanExecutionsConnectionRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetBackupPlanExecutionsConnection /tmp/body.json
+bash scripts/call.sh /v2/api/get-backup-plan-executions-connection /tmp/body.json
+```
 
 ## Responses
 

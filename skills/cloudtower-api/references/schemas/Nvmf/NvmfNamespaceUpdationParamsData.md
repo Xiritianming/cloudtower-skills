@@ -5,4 +5,4 @@
 ## Composition
 
 - (inline schema)
-- [NvmfNamespaceCommonParams](NvmfNamespaceCommonParams.md)
+- [NvmfNamespaceCommonParams](../Nvmf/NvmfNamespaceCommonParams.md)

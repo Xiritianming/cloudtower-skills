@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ElfDataStoreWhereInput[] | No |  |
-| `NOT` | ElfDataStoreWhereInput[] | No |  |
-| `OR` | ElfDataStoreWhereInput[] | No |  |
+| `AND` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
+| `NOT` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
+| `OR` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -98,7 +100,7 @@
 | `thin_provision` | boolean | No |  |
 | `thin_provision_not` | boolean | No |  |
 | `type` | any | No |  |
-| `type_in` | ElfDataStoreType[] | No |  |
+| `type_in` | Array of [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | ElfDataStoreType[] | No |  |
+| `type_not_in` | Array of [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
 

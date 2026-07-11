@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateConsistencyGroup](NestedAggregateConsistencyGroup.md) | Yes |  |
+| `aggregate` | [NestedAggregateConsistencyGroup](../Nested/NestedAggregateConsistencyGroup.md) | Yes |  |
 

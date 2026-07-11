@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [UserAuditLog](../User/UserAuditLog.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [UserAuditLog](UserAuditLog.md) | Yes |  |
 

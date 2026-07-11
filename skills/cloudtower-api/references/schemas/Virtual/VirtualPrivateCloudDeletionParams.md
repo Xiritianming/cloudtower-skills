@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VirtualPrivateCloudWhereInput](VirtualPrivateCloudWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | Yes |  |
 

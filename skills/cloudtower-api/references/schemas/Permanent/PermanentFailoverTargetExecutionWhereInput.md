@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | PermanentFailoverTargetExecutionWhereInput[] | No |  |
-| `NOT` | PermanentFailoverTargetExecutionWhereInput[] | No |  |
-| `OR` | PermanentFailoverTargetExecutionWhereInput[] | No |  |
+| `AND` | Array of [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
+| `OR` | Array of [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -48,9 +50,9 @@
 | `keep_test_vm_not` | boolean | No |  |
 | `permanent_failover_execution` | any | No |  |
 | `phase` | any | No |  |
-| `phase_in` | BackupJobPhase[] | No |  |
+| `phase_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | BackupJobPhase[] | No |  |
+| `phase_not_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `replica_vm` | any | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |

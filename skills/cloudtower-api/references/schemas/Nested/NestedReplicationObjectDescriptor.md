@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `cluster_local_id` | string | Yes |  |
-| `cluster_name` | string | No |  |
 | `object_local_id` | string | Yes |  |
+| `cluster_name` | string | No |  |
 | `object_name` | string | No |  |
 | `parent_object_local_id` | string | No |  |
 | `parent_object_name` | string | No |  |

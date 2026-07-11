@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [UploadTaskWhereInput](UploadTaskWhereInput.md) | Yes |  |
+| `where` | [UploadTaskWhereInput](../Upload/UploadTaskWhereInput.md) | Yes |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudEdgeGatewayGroupWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudEdgeGatewayGroupWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudEdgeGatewayGroupWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudEdgeGatewayGroupWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayGroupWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudEdgeGatewayGroupWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayGroupWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudEdgeGatewayGroupWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayGroupWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -27,9 +29,9 @@
 | `edge_gateways_none` | any | No |  |
 | `edge_gateways_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

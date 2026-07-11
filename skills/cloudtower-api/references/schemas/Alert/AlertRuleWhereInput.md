@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | AlertRuleWhereInput[] | No |  |
-| `NOT` | AlertRuleWhereInput[] | No |  |
-| `OR` | AlertRuleWhereInput[] | No |  |
+| `AND` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
+| `NOT` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
+| `OR` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `customized` | boolean | No |  |
 | `customized_not` | boolean | No |  |

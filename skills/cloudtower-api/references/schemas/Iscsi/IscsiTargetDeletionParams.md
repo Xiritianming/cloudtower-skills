@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [IscsiTargetWhereInput](IscsiTargetWhereInput.md) | Yes |  |
+| `where` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | Yes |  |
 

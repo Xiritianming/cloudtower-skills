@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | UserRoleNextWhereInput[] | No |  |
-| `NOT` | UserRoleNextWhereInput[] | No |  |
-| `OR` | UserRoleNextWhereInput[] | No |  |
+| `AND` | Array of [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `NOT` | Array of [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `OR` | Array of [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -38,13 +40,13 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `platform` | any | No |  |
-| `platform_in` | UserRolePlatform[] | No |  |
+| `platform_in` | Array of [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
 | `platform_not` | any | No |  |
-| `platform_not_in` | UserRolePlatform[] | No |  |
+| `platform_not_in` | Array of [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
 | `preset` | any | No |  |
-| `preset_in` | UserRolePreset[] | No |  |
+| `preset_in` | Array of [UserRolePreset](../User/UserRolePreset.md) | No |  |
 | `preset_not` | any | No |  |
-| `preset_not_in` | UserRolePreset[] | No |  |
+| `preset_not_in` | Array of [UserRolePreset](../User/UserRolePreset.md) | No |  |
 | `users_every` | any | No |  |
 | `users_none` | any | No |  |
 | `users_some` | any | No |  |

@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `verb` | [ApplicationVmSpecPlacementVerb](ApplicationVmSpecPlacementVerb.md) | Yes |  |
-| `situation` | [ApplicationVmSpecPlacementSituation](ApplicationVmSpecPlacementSituation.md) | Yes |  |
+| `verb` | [ApplicationVmSpecPlacementVerb](../Application/ApplicationVmSpecPlacementVerb.md) | Yes |  |
+| `situation` | [ApplicationVmSpecPlacementSituation](../Application/ApplicationVmSpecPlacementSituation.md) | Yes |  |
 

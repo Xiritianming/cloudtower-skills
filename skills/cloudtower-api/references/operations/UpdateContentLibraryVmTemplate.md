@@ -1,4 +1,4 @@
-# POST /update-content-library-vm-template
+# POST /v2/api/update-content-library-vm-template
 
 **Resource:** [ContentLibraryVmTemplate](../resources/ContentLibraryVmTemplate.md)
 **Operation ID:** `UpdateContentLibraryVmTemplate`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [ContentLibraryVmTemplateUpdationParams](../schemas/Content/ContentLibraryVmTemplateUpdationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {},
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateContentLibraryVmTemplate /tmp/body.json
+bash scripts/call.sh /v2/api/update-content-library-vm-template /tmp/body.json
+```
 
 ## Responses
 

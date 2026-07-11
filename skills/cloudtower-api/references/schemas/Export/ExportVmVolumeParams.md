@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmVolumeWhereInput](VmVolumeWhereInput.md) | Yes |  |
+| `where` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `type` | [VmVolumeExportFileType](VmVolumeExportFileType.md) | Yes |  |
+| `type` | [VmVolumeExportFileType](../Vm/VmVolumeExportFileType.md) | Yes |  |
 

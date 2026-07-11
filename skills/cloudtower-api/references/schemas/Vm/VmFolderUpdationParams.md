@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmFolderWhereInput](VmFolderWhereInput.md) | Yes |  |
+| `where` | [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

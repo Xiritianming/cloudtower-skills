@@ -4,27 +4,29 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | EntityFilterWhereInput[] | No |  |
-| `NOT` | EntityFilterWhereInput[] | No |  |
-| `OR` | EntityFilterWhereInput[] | No |  |
+| `AND` | Array of [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | No |  |
+| `NOT` | Array of [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | No |  |
+| `OR` | Array of [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | No |  |
 | `apply_to_all_clusters` | boolean | No |  |
 | `apply_to_all_clusters_not` | boolean | No |  |
 | `clusters_every` | any | No |  |
 | `clusters_none` | any | No |  |
 | `clusters_some` | any | No |  |
 | `entity_type` | any | No |  |
-| `entity_type_in` | EntityType[] | No |  |
+| `entity_type_in` | Array of [EntityType](../Entity/EntityType.md) | No |  |
 | `entity_type_not` | any | No |  |
-| `entity_type_not_in` | EntityType[] | No |  |
+| `entity_type_not_in` | Array of [EntityType](../Entity/EntityType.md) | No |  |
 | `exec_failed_cluster_every` | any | No |  |
 | `exec_failed_cluster_none` | any | No |  |
 | `exec_failed_cluster_some` | any | No |  |
 | `filter_status` | any | No |  |
-| `filter_status_in` | FilterStatus[] | No |  |
+| `filter_status_in` | Array of [FilterStatus](../Filter/FilterStatus.md) | No |  |
 | `filter_status_not` | any | No |  |
-| `filter_status_not_in` | FilterStatus[] | No |  |
+| `filter_status_not_in` | Array of [FilterStatus](../Filter/FilterStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

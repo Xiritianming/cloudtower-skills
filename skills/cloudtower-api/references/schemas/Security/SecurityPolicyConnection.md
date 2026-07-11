@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSecurityPolicy](NestedAggregateSecurityPolicy.md) | Yes |  |
+| `aggregate` | [NestedAggregateSecurityPolicy](../Nested/NestedAggregateSecurityPolicy.md) | Yes |  |
 

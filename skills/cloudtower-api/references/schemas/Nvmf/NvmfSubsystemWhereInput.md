@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NvmfSubsystemWhereInput[] | No |  |
-| `NOT` | NvmfSubsystemWhereInput[] | No |  |
-| `OR` | NvmfSubsystemWhereInput[] | No |  |
+| `AND` | Array of [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `NOT` | Array of [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `OR` | Array of [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
 | `bps` | integer (int64) | No |  |
 | `bps_gt` | integer (int64) | No |  |
 | `bps_gte` | integer (int64) | No |  |
@@ -91,9 +93,9 @@
 | `configuration_adaptive` | boolean | No |  |
 | `configuration_adaptive_not` | boolean | No |  |
 | `configuration_method` | any | No |  |
-| `configuration_method_in` | ConfigurationMethod[] | No |  |
+| `configuration_method_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_not` | any | No |  |
-| `configuration_method_not_in` | ConfigurationMethod[] | No |  |
+| `configuration_method_not_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -125,13 +127,13 @@
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
 | `encrypt_method` | any | No |  |
-| `encrypt_method_in` | EncryptMethod[] | No |  |
+| `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not` | any | No |  |
-| `encrypt_method_not_in` | EncryptMethod[] | No |  |
+| `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_use` | boolean | No |  |
 | `external_use_not` | boolean | No |  |
 | `id` | string | No |  |
@@ -321,9 +323,9 @@
 | `nvmf_namespaces_num_not` | integer (int32) | No |  |
 | `nvmf_namespaces_num_not_in` | integer[] | No |  |
 | `policy` | any | No |  |
-| `policy_in` | NvmfSubsystemPolicyType[] | No |  |
+| `policy_in` | Array of [NvmfSubsystemPolicyType](../Nvmf/NvmfSubsystemPolicyType.md) | No |  |
 | `policy_not` | any | No |  |
-| `policy_not_in` | NvmfSubsystemPolicyType[] | No |  |
+| `policy_not_in` | Array of [NvmfSubsystemPolicyType](../Nvmf/NvmfSubsystemPolicyType.md) | No |  |
 | `prioritized` | boolean | No |  |
 | `prioritized_not` | boolean | No |  |
 | `replica_num` | integer (int32) | No |  |
@@ -335,9 +337,9 @@
 | `replica_num_not` | integer (int32) | No |  |
 | `replica_num_not_in` | integer[] | No |  |
 | `resiliency_type` | any | No |  |
-| `resiliency_type_in` | ResiliencyType[] | No |  |
+| `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not` | any | No |  |
-| `resiliency_type_not_in` | ResiliencyType[] | No |  |
+| `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `stripe_num` | integer (int32) | No |  |
 | `stripe_num_gt` | integer (int32) | No |  |
 | `stripe_num_gte` | integer (int32) | No |  |

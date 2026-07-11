@@ -1,0 +1,69 @@
+<%
+function _typeCell(field) {
+	return it.schemaLink(field.schema?.ref ?? field.type);
+}
+function _sorted(fields) {
+	return [...fields.filter((f) => f.required), ...fields.filter((f) => !f.required)];
+}
+function _rows(fields) {
+	return _sorted(fields)
+		.map((f) => `| \`${f.name}\` | ${_typeCell(f)} | ${f.required ? "Yes" : "No"} | ${f.description ?? ""} |`)
+		.join("\n");
+}
+const _header = "| Field | Type | Required | Description |\n|-------|------|----------|-------------|\n";
+-%>
+# <%= it.name %>
+
+<% if (it.description) { -%>
+<%= it.description %>
+
+<% } -%>
+**Type:** <%= it.type %>
+
+<% if (it.type === "object" && it.fields) { -%>
+## Fields
+
+Required fields are listed first.
+
+<%~ _header %><%~ _rows(it.fields) %>
+
+<% const nestedFields = it.fields.filter(f => f.nestedFields); -%>
+<% if (nestedFields.length > 0) { -%>
+## Nested Fields
+
+<% nestedFields.forEach(field => { -%>
+### `<%= field.name %>`
+
+<%~ _header %><%~ _rows(field.nestedFields) %>
+
+<% field.nestedFields.filter(n => n.nestedFields).forEach(nested => { -%>
+#### `<%= field.name %>.<%= nested.name %>`
+
+<%~ _header %><%~ _rows(nested.nestedFields) %>
+
+<% }) -%>
+<% }) -%>
+<% } -%>
+<% } else if (it.type === "enum" && it.enumValues) { -%>
+## Values
+
+<% it.enumValues.forEach(v => { -%>
+- `<%= v %>`
+<% }) -%>
+<% } else if (it.composition) { -%>
+## Composition
+
+<% it.composition.forEach(item => { -%>
+<% if (item.ref) { -%>
+- <%= it.schemaLink(item.ref) %>
+<% } else { -%>
+- (inline schema)
+<% } -%>
+<% }) -%>
+<% } else if (it.type === "array" && it.items) { -%>
+<% if (it.items.ref) { -%>
+<%= it.schemaLink(it.items.ref + "[]") %>
+<% } else { -%>
+Array of object
+<% } -%>
+<% } -%>

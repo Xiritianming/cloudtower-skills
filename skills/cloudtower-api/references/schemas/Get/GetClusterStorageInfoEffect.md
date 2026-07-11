@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `ec` | ClusterStorageInfoEcConfig[] | No |  |
-| `replica` | ReplicaNum[] | No |  |
+| `ec` | Array of [ClusterStorageInfoEcConfig](../Cluster/ClusterStorageInfoEcConfig.md) | No |  |
+| `replica` | Array of [ReplicaNum](../Replica/ReplicaNum.md) | No |  |
 

@@ -5,4 +5,4 @@
 ## Composition
 
 - (inline schema)
-- [NvmfSubsystemCommonParams](NvmfSubsystemCommonParams.md)
+- [NvmfSubsystemCommonParams](../Nvmf/NvmfSubsystemCommonParams.md)

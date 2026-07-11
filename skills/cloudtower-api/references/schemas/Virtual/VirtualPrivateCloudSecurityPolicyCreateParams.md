@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `egress` | VirtualPrivateCloudNetworkPolicyRuleInput[] | No |  |
-| `ingress` | VirtualPrivateCloudNetworkPolicyRuleInput[] | No |  |
-| `apply_to` | VirtualPrivateCloudSecurityPolicyApplyInput[] | Yes |  |
-| `policy_mode` | [VirtualPrivateCloudSecurityPolicyMode](VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
+| `apply_to` | Array of [VirtualPrivateCloudSecurityPolicyApplyInput](../Virtual/VirtualPrivateCloudSecurityPolicyApplyInput.md) | Yes |  |
 | `vpc_id` | string | Yes |  |
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `egress` | Array of [VirtualPrivateCloudNetworkPolicyRuleInput](../Virtual/VirtualPrivateCloudNetworkPolicyRuleInput.md) | No |  |
+| `ingress` | Array of [VirtualPrivateCloudNetworkPolicyRuleInput](../Virtual/VirtualPrivateCloudNetworkPolicyRuleInput.md) | No |  |
+| `policy_mode` | [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
+| `description` | string | No |  |
 

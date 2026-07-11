@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ApplicationWhereInput[] | No |  |
-| `NOT` | ApplicationWhereInput[] | No |  |
-| `OR` | ApplicationWhereInput[] | No |  |
+| `AND` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
+| `NOT` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
+| `OR` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `error_message` | string | No |  |
 | `error_message_contains` | string | No |  |
@@ -75,9 +77,9 @@
 | `memory_not` | integer (int64) | No |  |
 | `memory_not_in` | integer[] | No |  |
 | `state` | any | No |  |
-| `state_in` | ApplicationState[] | No |  |
+| `state_in` | Array of [ApplicationState](../Application/ApplicationState.md) | No |  |
 | `state_not` | any | No |  |
-| `state_not_in` | ApplicationState[] | No |  |
+| `state_not_in` | Array of [ApplicationState](../Application/ApplicationState.md) | No |  |
 | `storage_ip` | string | No |  |
 | `storage_ip_contains` | string | No |  |
 | `storage_ip_ends_with` | string | No |  |
@@ -93,9 +95,9 @@
 | `storage_ip_not_starts_with` | string | No |  |
 | `storage_ip_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | ApplicationType[] | No |  |
+| `type_in` | Array of [ApplicationType](../Application/ApplicationType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | ApplicationType[] | No |  |
+| `type_not_in` | Array of [ApplicationType](../Application/ApplicationType.md) | No |  |
 | `update_time` | string | No |  |
 | `update_time_gt` | string | No |  |
 | `update_time_gte` | string | No |  |

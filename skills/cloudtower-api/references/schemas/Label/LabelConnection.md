@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateLabel](NestedAggregateLabel.md) | Yes |  |
+| `aggregate` | [NestedAggregateLabel](../Nested/NestedAggregateLabel.md) | Yes |  |
 

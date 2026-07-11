@@ -1,4 +1,4 @@
-# POST /update-nfs-export
+# POST /v2/api/update-nfs-export
 
 **Resource:** [NfsExport](../resources/NfsExport.md)
 **Operation ID:** `UpdateNfsExport`
@@ -17,6 +17,23 @@
 **Content Types:** `application/json`
 
 **Schema:** [NfsExportUpdationParams](../schemas/Nfs/NfsExportUpdationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateNfsExport /tmp/body.json
+bash scripts/call.sh /v2/api/update-nfs-export /tmp/body.json
+```
 
 ## Responses
 

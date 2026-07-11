@@ -1,4 +1,4 @@
-# POST /create-vm-from-content-library-template
+# POST /v2/api/create-vm-from-content-library-template
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `CreateVmFromContentLibraryTemplate`
@@ -17,6 +17,28 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [VmCreateVmFromContentLibraryTemplateParams](../schemas/Vm/VmCreateVmFromContentLibraryTemplateParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "is_full_copy": false,
+    "template_id": "<template_id>",
+    "name": "<name>",
+    "cluster_id": "<cluster_id>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CreateVmFromContentLibraryTemplate /tmp/body.json
+bash scripts/call.sh /v2/api/create-vm-from-content-library-template /tmp/body.json
+```
 
 ## Responses
 

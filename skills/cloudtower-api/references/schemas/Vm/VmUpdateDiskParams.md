@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,9 +17,9 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `vm_disk_id` | string | Yes |  |
 | `content_library_image_id` | string | No |  |
 | `elf_image_id` | string | No |  |
 | `vm_volume_id` | string | No |  |
-| `vm_disk_id` | string | Yes |  |
-| `bus` | [Bus](Bus.md) | No |  |
+| `bus` | [Bus](../Bus/Bus.md) | No |  |
 

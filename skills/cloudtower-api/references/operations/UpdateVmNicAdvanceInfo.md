@@ -1,4 +1,4 @@
-# POST /update-vm-nic-advance-info
+# POST /v2/api/update-vm-nic-advance-info
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `UpdateVmNicAdvanceInfo`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [VmUpdateNicAdvanceInfoParams](../schemas/Vm/VmUpdateNicAdvanceInfoParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {},
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateVmNicAdvanceInfo /tmp/body.json
+bash scripts/call.sh /v2/api/update-vm-nic-advance-info /tmp/body.json
+```
 
 ## Responses
 

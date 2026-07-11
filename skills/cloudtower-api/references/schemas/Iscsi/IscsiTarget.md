@@ -4,8 +4,25 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `chap_enabled` | boolean | Yes |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
+| `description` | string | Yes |  |
+| `external_use` | boolean | Yes |  |
+| `id` | string | Yes |  |
+| `internal` | boolean | Yes |  |
+| `ip_whitelist` | string | Yes |  |
+| `iqn_name` | string | Yes |  |
+| `iqn_whitelist` | string | Yes |  |
+| `local_id` | string | Yes |  |
+| `name` | string | Yes |  |
+| `replica_num` | integer (int32) | Yes |  |
+| `stripe_num` | integer (int32) | Yes |  |
+| `stripe_size` | integer (int64) | Yes |  |
+| `thin_provision` | boolean | Yes |  |
 | `bps` | integer (int64) | No |  |
 | `bps_max` | integer (int64) | No |  |
 | `bps_max_length` | integer (int64) | No |  |
@@ -15,23 +32,17 @@
 | `bps_wr` | integer (int64) | No |  |
 | `bps_wr_max` | integer (int64) | No |  |
 | `bps_wr_max_length` | integer (int64) | No |  |
-| `business_host_groups` | NestedBusinessHostGroup[] | No |  |
-| `business_hosts` | NestedBusinessHost[] | No |  |
-| `chap_enabled` | boolean | Yes |  |
+| `business_host_groups` | Array of [NestedBusinessHostGroup](../Nested/NestedBusinessHostGroup.md) | No |  |
+| `business_hosts` | Array of [NestedBusinessHost](../Nested/NestedBusinessHost.md) | No |  |
 | `chap_name` | string | No |  |
 | `chap_secret` | string | No |  |
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
 | `configuration_adaptive` | boolean | No |  |
 | `configuration_method` | any | No |  |
-| `description` | string | Yes |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
 | `encrypt_method` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `external_use` | boolean | Yes |  |
-| `id` | string | Yes |  |
-| `initiator_chaps` | NestedInitiatorChap[] | No |  |
-| `internal` | boolean | Yes |  |
+| `initiator_chaps` | Array of [NestedInitiatorChap](../Nested/NestedInitiatorChap.md) | No |  |
 | `io_size` | integer (int64) | No |  |
 | `iops` | integer (int64) | No |  |
 | `iops_max` | integer (int64) | No |  |
@@ -42,19 +53,10 @@
 | `iops_wr` | integer (int64) | No |  |
 | `iops_wr_max` | integer (int64) | No |  |
 | `iops_wr_max_length` | integer (int64) | No |  |
-| `ip_whitelist` | string | Yes |  |
-| `iqn_name` | string | Yes |  |
-| `iqn_whitelist` | string | Yes |  |
-| `iscsi_connections` | NestedIscsiConnection[] | No |  |
+| `iscsi_connections` | Array of [NestedIscsiConnection](../Nested/NestedIscsiConnection.md) | No |  |
 | `iscsi_luns_num` | integer (int32) | No |  |
-| `labels` | NestedLabel[] | No |  |
-| `local_id` | string | Yes |  |
-| `luns` | NestedIscsiLun[] | No |  |
-| `name` | string | Yes |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
+| `luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `prioritized` | boolean | No |  |
-| `replica_num` | integer (int32) | Yes |  |
 | `resiliency_type` | any | No |  |
-| `stripe_num` | integer (int32) | Yes |  |
-| `stripe_size` | integer (int64) | Yes |  |
-| `thin_provision` | boolean | Yes |  |
 

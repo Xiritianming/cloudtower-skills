@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | OrganizationWhereInput[] | No |  |
-| `NOT` | OrganizationWhereInput[] | No |  |
-| `OR` | OrganizationWhereInput[] | No |  |
+| `AND` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
+| `NOT` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
+| `OR` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
 | `datacenters_every` | any | No |  |
 | `datacenters_none` | any | No |  |
 | `datacenters_some` | any | No |  |

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VirtualPrivateCloudFloatingIpWhereInput](VirtualPrivateCloudFloatingIpWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | Yes |  |
 

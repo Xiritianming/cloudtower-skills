@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReportTaskWhereInput[] | No |  |
-| `NOT` | ReportTaskWhereInput[] | No |  |
-| `OR` | ReportTaskWhereInput[] | No |  |
+| `AND` | Array of [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
+| `NOT` | Array of [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
+| `OR` | Array of [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -62,8 +64,8 @@
 | `plan_id_not_starts_with` | string | No |  |
 | `plan_id_starts_with` | string | No |  |
 | `status` | any | No |  |
-| `status_in` | TaskStatus[] | No |  |
+| `status_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | TaskStatus[] | No |  |
+| `status_not_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `template` | any | No |  |
 

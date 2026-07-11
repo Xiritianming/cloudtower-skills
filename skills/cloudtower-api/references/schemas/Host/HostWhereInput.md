@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | HostWhereInput[] | No |  |
-| `NOT` | HostWhereInput[] | No |  |
-| `OR` | HostWhereInput[] | No |  |
+| `AND` | Array of [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `NOT` | Array of [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `OR` | Array of [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `access_ip` | string | No |  |
 | `access_ip_contains` | string | No |  |
 | `access_ip_ends_with` | string | No |  |
@@ -79,9 +81,9 @@
 | `commited_memory_bytes_not` | integer (int64) | No |  |
 | `commited_memory_bytes_not_in` | integer[] | No |  |
 | `connect_status` | any | No |  |
-| `connect_status_in` | HostConnectStatus[] | No |  |
+| `connect_status_in` | Array of [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
 | `connect_status_not` | any | No |  |
-| `connect_status_not_in` | HostConnectStatus[] | No |  |
+| `connect_status_not_in` | Array of [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
 | `cpu_brand` | string | No |  |
 | `cpu_brand_contains` | string | No |  |
 | `cpu_brand_ends_with` | string | No |  |
@@ -97,9 +99,9 @@
 | `cpu_brand_not_starts_with` | string | No |  |
 | `cpu_brand_starts_with` | string | No |  |
 | `cpu_fan_speed_unit` | any | No |  |
-| `cpu_fan_speed_unit_in` | CpuFanSpeedUnit[] | No |  |
+| `cpu_fan_speed_unit_in` | Array of [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_fan_speed_unit_not` | any | No |  |
-| `cpu_fan_speed_unit_not_in` | CpuFanSpeedUnit[] | No |  |
+| `cpu_fan_speed_unit_not_in` | Array of [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_hz_per_core` | integer (int64) | No |  |
 | `cpu_hz_per_core_gt` | integer (int64) | No |  |
 | `cpu_hz_per_core_gte` | integer (int64) | No |  |
@@ -181,9 +183,9 @@
 | `downgraded_prioritized_space_not` | integer (int64) | No |  |
 | `downgraded_prioritized_space_not_in` | integer[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_cache_space_gt` | integer (int64) | No |  |
 | `failure_cache_space_gte` | integer (int64) | No |  |
@@ -248,9 +250,9 @@
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
 | `iommu` | any | No |  |
-| `iommu_in` | IommuStatus[] | No |  |
+| `iommu_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_not` | any | No |  |
-| `iommu_not_in` | IommuStatus[] | No |  |
+| `iommu_not_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `ipmi` | any | No |  |
 | `is_os_in_raid1` | boolean | No |  |
 | `is_os_in_raid1_not` | boolean | No |  |
@@ -288,9 +290,9 @@
 | `management_ip_not_starts_with` | string | No |  |
 | `management_ip_starts_with` | string | No |  |
 | `merged_status` | any | No |  |
-| `merged_status_in` | HostMergedStatus[] | No |  |
+| `merged_status_in` | Array of [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `merged_status_not` | any | No |  |
-| `merged_status_not_in` | HostMergedStatus[] | No |  |
+| `merged_status_not_in` | Array of [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `model` | string | No |  |
 | `model_contains` | string | No |  |
 | `model_ends_with` | string | No |  |
@@ -544,13 +546,13 @@
 | `ssd_disk_count_not` | integer (int32) | No |  |
 | `ssd_disk_count_not_in` | integer[] | No |  |
 | `state` | any | No |  |
-| `state_in` | HostState[] | No |  |
+| `state_in` | Array of [HostState](../Host/HostState.md) | No |  |
 | `state_not` | any | No |  |
-| `state_not_in` | HostState[] | No |  |
+| `state_not_in` | Array of [HostState](../Host/HostState.md) | No |  |
 | `status` | any | No |  |
-| `status_in` | HostStatus[] | No |  |
+| `status_in` | Array of [HostStatus](../Host/HostStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | HostStatus[] | No |  |
+| `status_not_in` | Array of [HostStatus](../Host/HostStatus.md) | No |  |
 | `stopped_vm_num` | integer (int32) | No |  |
 | `stopped_vm_num_gt` | integer (int32) | No |  |
 | `stopped_vm_num_gte` | integer (int32) | No |  |

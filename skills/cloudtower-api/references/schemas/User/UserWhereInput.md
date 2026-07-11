@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | UserWhereInput[] | No |  |
-| `NOT` | UserWhereInput[] | No |  |
-| `OR` | UserWhereInput[] | No |  |
+| `AND` | Array of [UserWhereInput](../User/UserWhereInput.md) | No |  |
+| `NOT` | Array of [UserWhereInput](../User/UserWhereInput.md) | No |  |
+| `OR` | Array of [UserWhereInput](../User/UserWhereInput.md) | No |  |
 | `auth_config_id` | string | No |  |
 | `auth_config_id_contains` | string | No |  |
 | `auth_config_id_ends_with` | string | No |  |
@@ -120,16 +122,16 @@
 | `password_updated_at_not` | string | No |  |
 | `password_updated_at_not_in` | string[] | No |  |
 | `role` | any | No |  |
-| `role_in` | UserRole[] | No |  |
+| `role_in` | Array of [UserRole](../User/UserRole.md) | No |  |
 | `role_not` | any | No |  |
-| `role_not_in` | UserRole[] | No |  |
+| `role_not_in` | Array of [UserRole](../User/UserRole.md) | No |  |
 | `roles_every` | any | No |  |
 | `roles_none` | any | No |  |
 | `roles_some` | any | No |  |
 | `source` | any | No |  |
-| `source_in` | UserSource[] | No |  |
+| `source_in` | Array of [UserSource](../User/UserSource.md) | No |  |
 | `source_not` | any | No |  |
-| `source_not_in` | UserSource[] | No |  |
+| `source_not_in` | Array of [UserSource](../User/UserSource.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
 | `username_ends_with` | string | No |  |

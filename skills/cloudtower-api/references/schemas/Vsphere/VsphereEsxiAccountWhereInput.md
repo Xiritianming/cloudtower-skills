@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VsphereEsxiAccountWhereInput[] | No |  |
-| `NOT` | VsphereEsxiAccountWhereInput[] | No |  |
-| `OR` | VsphereEsxiAccountWhereInput[] | No |  |
+| `AND` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
+| `NOT` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
+| `OR` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
 | `host` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

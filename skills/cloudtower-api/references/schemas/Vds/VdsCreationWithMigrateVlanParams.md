@@ -4,5 +4,5 @@
 
 ## Composition
 
-- [VdsCreationParams](VdsCreationParams.md)
+- [VdsCreationParams](../Vds/VdsCreationParams.md)
 - (inline schema)

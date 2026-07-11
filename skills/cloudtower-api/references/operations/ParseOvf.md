@@ -1,4 +1,4 @@
-# POST /parse-ovf
+# POST /v2/api/parse-ovf
 
 **Resource:** [Ovf](../resources/Ovf.md)
 **Operation ID:** `ParseOvf`
@@ -15,6 +15,13 @@
 **Required:** Yes
 
 **Content Types:** `multipart/form-data`
+
+**Schema** (inline):
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `file` | string (binary) | Yes |  |
+| `cluster_id` | string | Yes |  |
 
 ## Responses
 

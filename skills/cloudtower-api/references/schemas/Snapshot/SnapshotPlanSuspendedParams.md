@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [SnapshotPlanWhereInput](SnapshotPlanWhereInput.md) | Yes |  |
+| `where` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | Yes |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | FailbackExecutionWhereInput[] | No |  |
-| `NOT` | FailbackExecutionWhereInput[] | No |  |
-| `OR` | FailbackExecutionWhereInput[] | No |  |
+| `AND` | Array of [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
+| `OR` | Array of [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -18,9 +20,9 @@
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_cloudtower` | any | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
@@ -59,9 +61,9 @@
 | `resource_version_not` | integer (int32) | No |  |
 | `resource_version_not_in` | integer[] | No |  |
 | `state` | any | No |  |
-| `state_in` | BackupExecutionState[] | No |  |
+| `state_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_not` | any | No |  |
-| `state_not_in` | BackupExecutionState[] | No |  |
+| `state_not_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `success_job_count` | integer (int32) | No |  |
 | `success_job_count_gt` | integer (int32) | No |  |
 | `success_job_count_gte` | integer (int32) | No |  |

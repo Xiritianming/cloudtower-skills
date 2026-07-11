@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [ContentLibraryVmTemplateUpdationParamsData](ContentLibraryVmTemplateUpdationParamsData.md) | Yes |  |
-| `where` | [ContentLibraryVmTemplateWhereInput](ContentLibraryVmTemplateWhereInput.md) | Yes |  |
+| `data` | [ContentLibraryVmTemplateUpdationParamsData](../Content/ContentLibraryVmTemplateUpdationParamsData.md) | Yes |  |
+| `where` | [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | Yes |  |
 

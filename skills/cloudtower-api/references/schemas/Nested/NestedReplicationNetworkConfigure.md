@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `gateway` | string | No |  |
 | `ip` | string | Yes |  |
+| `gateway` | string | No |  |
 | `subnet_mask` | string | No |  |
 

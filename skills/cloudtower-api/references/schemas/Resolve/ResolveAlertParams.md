@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [AlertWhereInput](AlertWhereInput.md) | Yes |  |
+| `where` | [AlertWhereInput](../Alert/AlertWhereInput.md) | Yes |  |
 

@@ -4,19 +4,21 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ConsistencyGroupSnapshotWhereInput[] | No |  |
+| `AND` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
 | `Iscsi_lun_snapshots_every` | any | No |  |
 | `Iscsi_lun_snapshots_none` | any | No |  |
 | `Iscsi_lun_snapshots_some` | any | No |  |
-| `NOT` | ConsistencyGroupSnapshotWhereInput[] | No |  |
-| `OR` | ConsistencyGroupSnapshotWhereInput[] | No |  |
+| `NOT` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
+| `OR` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
 | `consistency_group` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

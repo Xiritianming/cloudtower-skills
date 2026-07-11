@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `network_mapping` | Array of [VlanMapping](../Vlan/VlanMapping.md) | Yes |  |
+| `migrate_type` | [MigrateType](../Migrate/MigrateType.md) | Yes |  |
 | `remove_unmovable_devices` | boolean | No |  |
 | `new_name` | string | No |  |
-| `network_mapping` | VlanMapping[] | Yes |  |
-| `migrate_type` | [MigrateType](MigrateType.md) | Yes |  |
 | `elf_ec_storage_policy` | object | No |  |
-| `elf_replica_storage_policy` | [VmVolumeElfStoragePolicyType](VmVolumeElfStoragePolicyType.md) | No |  |
-| `elf_storage_policy` | [VmVolumeElfStoragePolicyType](VmVolumeElfStoragePolicyType.md) | No |  |
+| `elf_replica_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
+| `elf_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `delete_src_vm` | boolean | No |  |
 
 ## Nested Fields

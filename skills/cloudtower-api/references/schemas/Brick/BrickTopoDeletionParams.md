@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [BrickTopoWhereInput](BrickTopoWhereInput.md) | Yes |  |
+| `where` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | Yes |  |
 

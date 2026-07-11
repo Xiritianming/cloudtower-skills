@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SmtpServerWhereInput[] | No |  |
-| `NOT` | SmtpServerWhereInput[] | No |  |
-| `OR` | SmtpServerWhereInput[] | No |  |
+| `AND` | Array of [SmtpServerWhereInput](../Smtp/SmtpServerWhereInput.md) | No |  |
+| `NOT` | Array of [SmtpServerWhereInput](../Smtp/SmtpServerWhereInput.md) | No |  |
+| `OR` | Array of [SmtpServerWhereInput](../Smtp/SmtpServerWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -74,9 +76,9 @@
 | `port_not` | integer (int32) | No |  |
 | `port_not_in` | integer[] | No |  |
 | `secure_mode` | any | No |  |
-| `secure_mode_in` | SmtpSecureMode[] | No |  |
+| `secure_mode_in` | Array of [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `secure_mode_not` | any | No |  |
-| `secure_mode_not_in` | SmtpSecureMode[] | No |  |
+| `secure_mode_not_in` | Array of [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
 | `username_ends_with` | string | No |  |

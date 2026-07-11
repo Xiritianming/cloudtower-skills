@@ -1,4 +1,4 @@
-# POST /get-virtual-private-cloud-floating-ips
+# POST /v2/api/get-virtual-private-cloud-floating-ips
 
 **Resource:** [VirtualPrivateCloudFloatingIp](../resources/VirtualPrivateCloudFloatingIp.md)
 **Operation ID:** `GetVirtualPrivateCloudFloatingIps`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetVirtualPrivateCloudFloatingIpsRequestBody](../schemas/Get/GetVirtualPrivateCloudFloatingIpsRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetVirtualPrivateCloudFloatingIps /tmp/body.json
+bash scripts/call.sh /v2/api/get-virtual-private-cloud-floating-ips /tmp/body.json
+```
 
 ## Responses
 

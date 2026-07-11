@@ -1,4 +1,4 @@
-# POST /get-alert-rules-connection
+# POST /v2/api/get-alert-rules-connection
 
 **Resource:** [AlertRule](../resources/AlertRule.md)
 **Operation ID:** `GetAlertRulesConnection`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetAlertRulesConnectionRequestBody](../schemas/Get/GetAlertRulesConnectionRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetAlertRulesConnection /tmp/body.json
+bash scripts/call.sh /v2/api/get-alert-rules-connection /tmp/body.json
+```
 
 ## Responses
 

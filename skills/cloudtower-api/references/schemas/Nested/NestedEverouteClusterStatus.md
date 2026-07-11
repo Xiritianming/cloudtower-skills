@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `agents` | any | No |  |
-| `conditions` | NestedEverouteClusterCondition[] | No |  |
+| `conditions` | Array of [NestedEverouteClusterCondition](../Nested/NestedEverouteClusterCondition.md) | No |  |
 | `controllers` | any | No |  |
 | `message` | string | No |  |
 | `phase` | any | No |  |

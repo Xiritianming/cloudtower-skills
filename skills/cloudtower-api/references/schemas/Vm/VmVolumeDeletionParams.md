@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `effect` | [VmVolumeDeletionParamsEffect](VmVolumeDeletionParamsEffect.md) | No |  |
-| `where` | [VmVolumeWhereInput](VmVolumeWhereInput.md) | Yes |  |
+| `where` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | Yes |  |
+| `effect` | [VmVolumeDeletionParamsEffect](../Vm/VmVolumeDeletionParamsEffect.md) | No |  |
 

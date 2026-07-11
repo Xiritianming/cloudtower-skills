@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [BatchHosts](../Batch/BatchHosts.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [BatchHosts](BatchHosts.md) | Yes |  |
 

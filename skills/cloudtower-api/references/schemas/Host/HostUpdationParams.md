@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [HostWhereInput](HostWhereInput.md) | Yes |  |
+| `where` | [HostWhereInput](../Host/HostWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,7 +17,7 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `ipmi` | [HostBatchCreateIpmiInput](HostBatchCreateIpmiInput.md) | No |  |
+| `ipmi` | [HostBatchCreateIpmiInput](../Host/HostBatchCreateIpmiInput.md) | No |  |
 | `scvm_name` | string | No |  |
 | `name` | string | No |  |
 

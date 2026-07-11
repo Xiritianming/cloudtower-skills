@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudNicWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudNicWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudNicWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `floating_ip` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [GlobalAlertRuleWhereInput](GlobalAlertRuleWhereInput.md) | Yes |  |
+| `where` | [GlobalAlertRuleWhereInput](../Global/GlobalAlertRuleWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `thresholds` | AlertRuleThresholds[] | No |  |
+| `thresholds` | Array of [AlertRuleThresholds](../Alert/AlertRuleThresholds.md) | No |  |
 | `disabled` | boolean | No |  |
 

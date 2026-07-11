@@ -1,4 +1,4 @@
-# POST /create-user
+# POST /v2/api/create-user
 
 **Resource:** [User](../resources/User.md)
 **Operation ID:** `CreateUser`
@@ -17,6 +17,27 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [UserCreationParams](../schemas/User/UserCreationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "role_id": "<role_id>",
+    "name": "<name>",
+    "username": "<username>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CreateUser /tmp/body.json
+bash scripts/call.sh /v2/api/create-user /tmp/body.json
+```
 
 ## Responses
 

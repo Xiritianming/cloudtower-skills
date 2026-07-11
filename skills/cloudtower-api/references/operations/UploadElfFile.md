@@ -1,4 +1,4 @@
-# POST /upload-elf-file
+# POST /v2/api/upload-elf-file
 
 **Resource:** [Ovf](../resources/Ovf.md)
 **Operation ID:** `UploadElfFile`
@@ -15,6 +15,17 @@
 **Required:** Yes
 
 **Content Types:** `multipart/form-data`
+
+**Schema** (inline):
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `file` | string (binary) | Yes |  |
+| `cluster_id` | string | No |  |
+| `name` | string | No |  |
+| `size` | string | No |  |
+| `size_unit` | string | No |  |
+| `upload_task_id` | string | No |  |
 
 ## Responses
 

@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `disk_pools` | ClusterEnablePinInPerformanceDiskPoolType[] | No |  |
 | `percentage` | number (double) | Yes |  |
-| `where` | [HostWhereUniqueInput](HostWhereUniqueInput.md) | Yes |  |
+| `where` | [HostWhereUniqueInput](../Host/HostWhereUniqueInput.md) | Yes |  |
+| `disk_pools` | Array of [ClusterEnablePinInPerformanceDiskPoolType](../Cluster/ClusterEnablePinInPerformanceDiskPoolType.md) | No |  |
 

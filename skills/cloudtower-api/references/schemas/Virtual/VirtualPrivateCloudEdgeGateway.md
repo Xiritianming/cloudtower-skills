@@ -4,14 +4,16 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `id` | string | Yes |  |
+| `name` | string | Yes |  |
+| `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | Yes |  |
 | `description` | string | No |  |
 | `edge_gateway_group` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `id` | string | Yes |  |
-| `name` | string | Yes |  |
 | `status` | any | No |  |
-| `vdses` | NestedVds[] | No |  |
-| `vpc_service` | [NestedVirtualPrivateCloudService](NestedVirtualPrivateCloudService.md) | Yes |  |
+| `vdses` | Array of [NestedVds](../Nested/NestedVds.md) | No |  |
 

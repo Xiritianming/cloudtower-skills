@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [NetworkPolicyRuleServiceWhereInput](NetworkPolicyRuleServiceWhereInput.md) | Yes |  |
+| `where` | [NetworkPolicyRuleServiceWhereInput](../Network/NetworkPolicyRuleServiceWhereInput.md) | Yes |  |
 

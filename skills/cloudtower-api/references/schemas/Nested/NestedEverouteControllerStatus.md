@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `ipAddr` | string | No |  |
 | `isHealth` | boolean | Yes |  |
+| `ipAddr` | string | No |  |
 | `message` | string | No |  |
 | `metrics` | any | No |  |
 | `phase` | any | No |  |

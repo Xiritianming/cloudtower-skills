@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ViewWhereInput[] | No |  |
-| `NOT` | ViewWhereInput[] | No |  |
-| `OR` | ViewWhereInput[] | No |  |
+| `AND` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
+| `NOT` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
+| `OR` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `graphs_every` | any | No |  |
 | `graphs_none` | any | No |  |
 | `graphs_some` | any | No |  |
@@ -68,7 +70,7 @@
 | `time_span_not` | integer (int32) | No |  |
 | `time_span_not_in` | integer[] | No |  |
 | `time_unit` | any | No |  |
-| `time_unit_in` | TimeUnit[] | No |  |
+| `time_unit_in` | Array of [TimeUnit](../Time/TimeUnit.md) | No |  |
 | `time_unit_not` | any | No |  |
-| `time_unit_not_in` | TimeUnit[] | No |  |
+| `time_unit_not_in` | Array of [TimeUnit](../Time/TimeUnit.md) | No |  |
 

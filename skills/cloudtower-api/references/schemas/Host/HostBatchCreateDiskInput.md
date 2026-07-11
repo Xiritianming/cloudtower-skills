@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `drive` | string | Yes |  |
 | `type` | any | No |  |
 | `size` | number (double) | No |  |
 | `function` | any | No |  |
-| `drive` | string | Yes |  |
 | `chunk_ins_id` | integer (int32) | No |  |
 

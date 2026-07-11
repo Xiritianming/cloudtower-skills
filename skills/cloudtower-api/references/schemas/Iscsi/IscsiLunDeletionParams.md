@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [IscsiLunWhereInput](IscsiLunWhereInput.md) | Yes |  |
+| `where` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregatePmemDimm](NestedAggregatePmemDimm.md) | Yes |  |
+| `aggregate` | [NestedAggregatePmemDimm](../Nested/NestedAggregatePmemDimm.md) | Yes |  |
 

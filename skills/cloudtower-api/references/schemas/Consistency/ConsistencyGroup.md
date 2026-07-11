@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `consistency_group_snapshots` | NestedConsistencyGroupSnapshot[] | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `description` | string | Yes |  |
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
-| `iscsi_luns` | NestedIscsiLun[] | No |  |
-| `labels` | NestedLabel[] | No |  |
 | `local_created_at` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `namespaces` | NestedNvmfNamespace[] | No |  |
 | `unique_size` | integer (int64) | Yes |  |
+| `consistency_group_snapshots` | Array of [NestedConsistencyGroupSnapshot](../Nested/NestedConsistencyGroupSnapshot.md) | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
+| `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
 

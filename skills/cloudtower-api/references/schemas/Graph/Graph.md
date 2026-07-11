@@ -4,33 +4,35 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | any | No |  |
-| `disks` | NestedDisk[] | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `hosts` | NestedHost[] | No |  |
 | `id` | string | Yes |  |
 | `instance_ids` | string[] | Yes |  |
 | `local_id` | string | Yes |  |
-| `luns` | NestedIscsiLun[] | No |  |
 | `metric_count` | integer (int32) | Yes |  |
 | `metric_name` | string | Yes |  |
-| `metric_type` | [MetricType](MetricType.md) | Yes |  |
-| `namespaces` | NestedNvmfNamespace[] | No |  |
-| `network` | any | No |  |
-| `nics` | NestedNic[] | No |  |
+| `metric_type` | [MetricType](../Metric/MetricType.md) | Yes |  |
 | `resource_type` | string | Yes |  |
-| `service` | string | No |  |
 | `targets` | object | Yes |  |
 | `title` | string | Yes |  |
-| `type` | [GraphType](GraphType.md) | Yes |  |
-| `view` | [NestedView](NestedView.md) | Yes |  |
-| `vmNics` | NestedVmNic[] | No |  |
-| `vmVolumes` | NestedVmVolume[] | No |  |
-| `vms` | NestedVm[] | No |  |
-| `witnesses` | NestedWitness[] | No |  |
-| `zones` | NestedZone[] | No |  |
+| `type` | [GraphType](../Graph/GraphType.md) | Yes |  |
+| `view` | [NestedView](../Nested/NestedView.md) | Yes |  |
+| `cluster` | any | No |  |
+| `disks` | Array of [NestedDisk](../Nested/NestedDisk.md) | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
+| `luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
+| `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
+| `network` | any | No |  |
+| `nics` | Array of [NestedNic](../Nested/NestedNic.md) | No |  |
+| `service` | string | No |  |
+| `vmNics` | Array of [NestedVmNic](../Nested/NestedVmNic.md) | No |  |
+| `vmVolumes` | Array of [NestedVmVolume](../Nested/NestedVmVolume.md) | No |  |
+| `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
+| `witnesses` | Array of [NestedWitness](../Nested/NestedWitness.md) | No |  |
+| `zones` | Array of [NestedZone](../Nested/NestedZone.md) | No |  |
 
 ## Nested Fields
 
@@ -38,4 +40,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

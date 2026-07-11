@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [DeleteCluster](../Delete/DeleteCluster.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [DeleteCluster](DeleteCluster.md) | Yes |  |
 

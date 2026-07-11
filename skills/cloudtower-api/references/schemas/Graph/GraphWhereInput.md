@@ -4,19 +4,21 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | GraphWhereInput[] | No |  |
-| `NOT` | GraphWhereInput[] | No |  |
-| `OR` | GraphWhereInput[] | No |  |
+| `AND` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
+| `NOT` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
+| `OR` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `disks_every` | any | No |  |
 | `disks_none` | any | No |  |
 | `disks_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `hosts_every` | any | No |  |
 | `hosts_none` | any | No |  |
 | `hosts_some` | any | No |  |
@@ -74,16 +76,16 @@
 | `metric_name_not_starts_with` | string | No |  |
 | `metric_name_starts_with` | string | No |  |
 | `metric_type` | any | No |  |
-| `metric_type_in` | MetricType[] | No |  |
+| `metric_type_in` | Array of [MetricType](../Metric/MetricType.md) | No |  |
 | `metric_type_not` | any | No |  |
-| `metric_type_not_in` | MetricType[] | No |  |
+| `metric_type_not_in` | Array of [MetricType](../Metric/MetricType.md) | No |  |
 | `namespaces_every` | any | No |  |
 | `namespaces_none` | any | No |  |
 | `namespaces_some` | any | No |  |
 | `network` | any | No |  |
-| `network_in` | NetworkType[] | No |  |
+| `network_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `network_not` | any | No |  |
-| `network_not_in` | NetworkType[] | No |  |
+| `network_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `nics_every` | any | No |  |
 | `nics_none` | any | No |  |
 | `nics_some` | any | No |  |
@@ -130,9 +132,9 @@
 | `title_not_starts_with` | string | No |  |
 | `title_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | GraphType[] | No |  |
+| `type_in` | Array of [GraphType](../Graph/GraphType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | GraphType[] | No |  |
+| `type_not_in` | Array of [GraphType](../Graph/GraphType.md) | No |  |
 | `view` | any | No |  |
 | `vmNics_every` | any | No |  |
 | `vmNics_none` | any | No |  |

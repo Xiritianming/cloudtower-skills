@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [DatacenterWhereUniqueInput](DatacenterWhereUniqueInput.md) | Yes |  |
+| `where` | [DatacenterWhereUniqueInput](../Datacenter/DatacenterWhereUniqueInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `clusters` | [ClusterWhereInput](ClusterWhereInput.md) | No |  |
+| `clusters` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 

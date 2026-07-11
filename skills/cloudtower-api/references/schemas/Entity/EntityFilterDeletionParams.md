@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [EntityFilterWhereInput](EntityFilterWhereInput.md) | Yes |  |
+| `where` | [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | Yes |  |
 

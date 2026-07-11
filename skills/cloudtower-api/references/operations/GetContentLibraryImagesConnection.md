@@ -1,4 +1,4 @@
-# POST /get-content-library-images-connection
+# POST /v2/api/get-content-library-images-connection
 
 **Resource:** [ContentLibraryImage](../resources/ContentLibraryImage.md)
 **Operation ID:** `GetContentLibraryImagesConnection`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetContentLibraryImagesConnectionRequestBody](../schemas/Get/GetContentLibraryImagesConnectionRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetContentLibraryImagesConnection /tmp/body.json
+bash scripts/call.sh /v2/api/get-content-library-images-connection /tmp/body.json
+```
 
 ## Responses
 

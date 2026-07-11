@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | IscsiConnectionWhereInput[] | No |  |
-| `NOT` | IscsiConnectionWhereInput[] | No |  |
-| `OR` | IscsiConnectionWhereInput[] | No |  |
+| `AND` | Array of [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
+| `NOT` | Array of [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
+| `OR` | Array of [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
 | `client_port` | integer (int32) | No |  |
 | `client_port_gt` | integer (int32) | No |  |
 | `client_port_gte` | integer (int32) | No |  |
@@ -50,11 +52,11 @@
 | `iscsi_target` | any | No |  |
 | `nvmf_subsystem` | any | No |  |
 | `tr_type` | any | No |  |
-| `tr_type_in` | StoreTransportType[] | No |  |
+| `tr_type_in` | Array of [StoreTransportType](../Store/StoreTransportType.md) | No |  |
 | `tr_type_not` | any | No |  |
-| `tr_type_not_in` | StoreTransportType[] | No |  |
+| `tr_type_not_in` | Array of [StoreTransportType](../Store/StoreTransportType.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | StoreConnectionType[] | No |  |
+| `type_in` | Array of [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | StoreConnectionType[] | No |  |
+| `type_not_in` | Array of [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
 

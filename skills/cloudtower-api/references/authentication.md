@@ -1,22 +1,31 @@
 # Authentication
 
-This document describes the authentication methods supported by this API.
+CloudTower uses a token as the API credential, sent as the `Authorization` header. `scripts/call.sh` adds the header automatically from `$CLOUDTOWER_TOKEN`.
 
-## API Credentials
+Ask the user for a token directly, or for the names of environment variables / config files that already hold their username and password. The user MUST NOT paste a password into the conversation — always work through environment variables they name.
 
-CloudTower use token as credentials of the API. It will passed as `Authorization` header in request
+## Token workflow
 
-You SHOULD ask user to give you username, password and login source or a token directly, you MUST tell user MUST NOT directly pass username and password to you, instead to tell you which environment variables or configuration files has already storage them and ready to use.
+If a token is available (directly or via env), export it and call the API:
 
-## Authentication Workflow
+```bash
+export CLOUDTOWER_ENDPOINT="https://tower.example.com"
+export CLOUDTOWER_TOKEN="<token>"
+```
 
-### token workflow
+## Username and password workflow
 
-If user directly pass token to you, you can directly use it to call API.
+Call [Login](operations/Login.md) to obtain a token (`/v2/api/login` needs no `Authorization` header, so `call.sh` works before `CLOUDTOWER_TOKEN` is set). With credentials in env vars the user named (here `$TOWER_USER` / `$TOWER_PASS`):
 
-### username and password workflow
+```bash
+jq -n --arg u "$TOWER_USER" --arg p "$TOWER_PASS" \
+  '{username: $u, password: $p, source: "LOCAL"}' > /tmp/login.json
+bash scripts/call.sh /v2/api/login /tmp/login.json
+export CLOUDTOWER_TOKEN=$(jq -r '.data.token' /tmp/tower_*.json | tail -1)
+```
 
-Call the `POST /login` operation to obtain a token, then use it as credentials for subsequent API calls. See the references for detailed information on the login operation and related schemas.
+- `source` uses enum [UserSource](schemas/User/UserSource.md): `AUTHN`, `LDAP`, `LOCAL`, `SSO`. Use `LOCAL` unless the user explicitly requests another source.
+- The exact response file path is printed by `call.sh`; prefer it over the glob above when extracting the token.
 
 **References:**
 
@@ -25,12 +34,3 @@ Call the `POST /login` operation to obtain a token, then use it as credentials f
 - Request schema: [LoginInput](schemas/Login/LoginInput.md)
 - Response schema: [WithTask_LoginResponse_](schemas/With/WithTask-LoginResponse.md)
 - Data schema: [LoginResponse](schemas/Login/LoginResponse.md)
-
-**Default login source:**
-
-- `source` in `LoginInput` uses enum [UserSource](schemas/User/UserSource.md): `AUTHN`, `LDAP`, `LOCAL`, `SSO`.
-- Use `LOCAL` as the default `source` value unless the user explicitly requests another source.
-
-**Request and response schemas:**
-
-See the referenced schema files for full request/response details.

@@ -1,4 +1,4 @@
-# GET /get-version
+# GET /v2/api/get-version
 
 **Resource:** [ApiInfo](../resources/ApiInfo.md)
 **Operation ID:** `GetApiVersion`

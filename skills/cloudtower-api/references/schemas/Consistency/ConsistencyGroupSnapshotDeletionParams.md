@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [ConsistencyGroupSnapshotWhereInput](ConsistencyGroupSnapshotWhereInput.md) | Yes |  |
+| `where` | [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BackupRestorePointWhereInput[] | No |  |
-| `NOT` | BackupRestorePointWhereInput[] | No |  |
-| `OR` | BackupRestorePointWhereInput[] | No |  |
+| `AND` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
+| `NOT` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
+| `OR` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
 | `backup_plan` | any | No |  |
 | `backup_restore_executions_every` | any | No |  |
 | `backup_restore_executions_none` | any | No |  |
@@ -39,13 +41,13 @@
 | `compression_ratio_not` | number (double) | No |  |
 | `compression_ratio_not_in` | number[] | No |  |
 | `creation` | any | No |  |
-| `creation_in` | BackupRestorePointCreation[] | No |  |
+| `creation_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_not` | any | No |  |
-| `creation_not_in` | BackupRestorePointCreation[] | No |  |
+| `creation_not_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -135,13 +137,13 @@
 | `slice_not_starts_with` | string | No |  |
 | `slice_starts_with` | string | No |  |
 | `snapshot_consistent_type` | any | No |  |
-| `snapshot_consistent_type_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_not` | any | No |  |
-| `snapshot_consistent_type_not_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_not_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | BackupRestorePointType[] | No |  |
+| `type_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | BackupRestorePointType[] | No |  |
+| `type_not_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `valid_capacity` | integer (int64) | No |  |
 | `valid_capacity_gt` | integer (int64) | No |  |
 | `valid_capacity_gte` | integer (int64) | No |  |

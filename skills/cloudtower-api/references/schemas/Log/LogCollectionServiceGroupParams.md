@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `services` | string[] | No |  |
 | `group_name` | string | Yes |  |
+| `services` | string[] | No |  |
 

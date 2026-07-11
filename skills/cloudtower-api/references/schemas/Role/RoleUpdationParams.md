@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [UserRoleNextWhereInput](UserRoleNextWhereInput.md) | Yes |  |
+| `where` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `actions` | ROLE_ACTION[] | No |  |
+| `actions` | Array of [ROLE_ACTION](../Role/ROLE-ACTION.md) | No |  |
 | `name` | string | No |  |
 

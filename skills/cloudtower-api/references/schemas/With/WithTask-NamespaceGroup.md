@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [NamespaceGroup](../Namespace/NamespaceGroup.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [NamespaceGroup](NamespaceGroup.md) | Yes |  |
 

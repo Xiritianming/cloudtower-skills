@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudIsolationPolicyWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudIsolationPolicyWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudIsolationPolicyWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -45,9 +47,9 @@
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
 | `mode` | any | No |  |
-| `mode_in` | VirtualPrivateCloudIsolationPolicyMode[] | No |  |
+| `mode_in` | Array of [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
 | `mode_not` | any | No |  |
-| `mode_not_in` | VirtualPrivateCloudIsolationPolicyMode[] | No |  |
+| `mode_not_in` | Array of [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
 | `security_groups_every` | any | No |  |
 | `security_groups_none` | any | No |  |
 | `security_groups_some` | any | No |  |

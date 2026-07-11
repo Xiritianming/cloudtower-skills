@@ -2,4 +2,4 @@
 
 **Type:** array
 
-Array of [NodeTopUpdationParam](NodeTopUpdationParam.md)
+Array of [NodeTopUpdationParam](../Node/NodeTopUpdationParam.md)

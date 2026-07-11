@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateNvmfNamespace](NestedAggregateNvmfNamespace.md) | Yes |  |
+| `aggregate` | [NestedAggregateNvmfNamespace](../Nested/NestedAggregateNvmfNamespace.md) | Yes |  |
 

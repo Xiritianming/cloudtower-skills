@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateNfsInode](NestedAggregateNfsInode.md) | Yes |  |
+| `aggregate` | [NestedAggregateNfsInode](../Nested/NestedAggregateNfsInode.md) | Yes |  |
 

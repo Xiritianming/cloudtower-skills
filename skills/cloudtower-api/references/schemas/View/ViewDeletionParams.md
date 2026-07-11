@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [ViewWhereInput](ViewWhereInput.md) | Yes |  |
+| `where` | [ViewWhereInput](../View/ViewWhereInput.md) | Yes |  |
 

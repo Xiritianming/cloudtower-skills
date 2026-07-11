@@ -1,4 +1,4 @@
-# POST /update-cluster-virtualization-setting
+# POST /v2/api/update-cluster-virtualization-setting
 
 **Resource:** [Cluster](../resources/Cluster.md)
 **Operation ID:** `UpdateClusterVirtualizationSetting`
@@ -17,6 +17,24 @@
 **Content Types:** `application/json`
 
 **Schema:** [ClusterVirtualizationUpdationParams](../schemas/Cluster/ClusterVirtualizationUpdationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": {},
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py UpdateClusterVirtualizationSetting /tmp/body.json
+bash scripts/call.sh /v2/api/update-cluster-virtualization-setting /tmp/body.json
+```
 
 ## Responses
 

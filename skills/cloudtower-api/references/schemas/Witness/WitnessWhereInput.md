@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | WitnessWhereInput[] | No |  |
-| `NOT` | WitnessWhereInput[] | No |  |
-| `OR` | WitnessWhereInput[] | No |  |
+| `AND` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `NOT` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `OR` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `cpu_hz_per_core` | integer (int64) | No |  |
 | `cpu_hz_per_core_gt` | integer (int64) | No |  |

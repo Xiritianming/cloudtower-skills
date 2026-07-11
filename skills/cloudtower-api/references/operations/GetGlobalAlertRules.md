@@ -1,4 +1,4 @@
-# POST /get-global-alert-rules
+# POST /v2/api/get-global-alert-rules
 
 **Resource:** [GlobalAlertRule](../resources/GlobalAlertRule.md)
 **Operation ID:** `GetGlobalAlertRules`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetGlobalAlertRulesRequestBody](../schemas/Get/GetGlobalAlertRulesRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetGlobalAlertRules /tmp/body.json
+bash scripts/call.sh /v2/api/get-global-alert-rules /tmp/body.json
+```
 
 ## Responses
 

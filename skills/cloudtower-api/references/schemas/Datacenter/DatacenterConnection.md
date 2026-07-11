@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateDatacenter](NestedAggregateDatacenter.md) | Yes |  |
+| `aggregate` | [NestedAggregateDatacenter](../Nested/NestedAggregateDatacenter.md) | Yes |  |
 

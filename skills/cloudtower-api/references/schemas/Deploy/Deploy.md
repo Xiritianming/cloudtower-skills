@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `id` | string | Yes |  |
-| `license` | any | No |  |
 | `version` | string | Yes |  |
+| `license` | any | No |  |
 

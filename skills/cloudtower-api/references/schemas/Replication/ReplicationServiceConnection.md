@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateReplicationService](NestedAggregateReplicationService.md) | Yes |  |
+| `aggregate` | [NestedAggregateReplicationService](../Nested/NestedAggregateReplicationService.md) | Yes |  |
 

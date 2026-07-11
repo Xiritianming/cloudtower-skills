@@ -1,4 +1,4 @@
-# POST /get-virtual-private-cloud-nat-gateways-connection
+# POST /v2/api/get-virtual-private-cloud-nat-gateways-connection
 
 **Resource:** [VirtualPrivateCloudNatGateway](../resources/VirtualPrivateCloudNatGateway.md)
 **Operation ID:** `GetVirtualPrivateCloudNatGatewaysConnection`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetVirtualPrivateCloudNatGatewaysConnectionRequestBody](../schemas/Get/GetVirtualPrivateCloudNatGatewaysConnectionRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetVirtualPrivateCloudNatGatewaysConnection /tmp/body.json
+bash scripts/call.sh /v2/api/get-virtual-private-cloud-nat-gateways-connection /tmp/body.json
+```
 
 ## Responses
 

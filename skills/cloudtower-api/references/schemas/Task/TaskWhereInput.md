@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | TaskWhereInput[] | No |  |
-| `NOT` | TaskWhereInput[] | No |  |
-| `OR` | TaskWhereInput[] | No |  |
+| `AND` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
+| `NOT` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
+| `OR` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -195,12 +197,12 @@
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
 | `status` | any | No |  |
-| `status_in` | TaskStatus[] | No |  |
+| `status_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | TaskStatus[] | No |  |
+| `status_not_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | TaskType[] | No |  |
+| `type_in` | Array of [TaskType](../Task/TaskType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | TaskType[] | No |  |
+| `type_not_in` | Array of [TaskType](../Task/TaskType.md) | No |  |
 | `user` | any | No |  |
 

@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmPlacementGroupWhereInput](VmPlacementGroupWhereInput.md) | Yes |  |
+| `where` | [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,10 +17,10 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vm_vm_policy` | [VmVmPolicy](VmVmPolicy.md) | No |  |
-| `vms` | [VmWhereInput](VmWhereInput.md) | No |  |
-| `prefer_hosts` | [HostWhereInput](HostWhereInput.md) | No |  |
-| `must_hosts` | [HostWhereInput](HostWhereInput.md) | No |  |
+| `vm_vm_policy` | [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
+| `vms` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `prefer_hosts` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `must_hosts` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `vm_host_prefer_enabled` | boolean | No |  |
 | `vm_host_must_policy` | boolean | No |  |
 | `vm_host_must_enabled` | boolean | No |  |

@@ -4,15 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `alert_rule` | any | No |  |
 | `cause` | string | Yes |  |
-| `cluster` | any | No |  |
-| `create_time` | string | No |  |
-| `disk` | any | No |  |
 | `ended` | boolean | Yes |  |
-| `host` | any | No |  |
 | `id` | string | Yes |  |
 | `impact` | string | Yes |  |
 | `labels` | object | Yes |  |
@@ -26,7 +23,12 @@
 | `solution` | string | Yes |  |
 | `threshold` | number (double) | Yes |  |
 | `value` | number (double) | Yes |  |
-| `vms` | NestedVm[] | No |  |
+| `alert_rule` | any | No |  |
+| `cluster` | any | No |  |
+| `create_time` | string | No |  |
+| `disk` | any | No |  |
+| `host` | any | No |  |
+| `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
 
 ## Nested Fields
 
@@ -34,4 +36,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

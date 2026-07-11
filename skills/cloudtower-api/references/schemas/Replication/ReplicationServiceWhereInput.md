@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicationServiceWhereInput[] | No |  |
-| `NOT` | ReplicationServiceWhereInput[] | No |  |
-| `OR` | ReplicationServiceWhereInput[] | No |  |
+| `AND` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
+| `OR` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
 | `application` | any | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
@@ -33,9 +35,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failover_executions_every` | any | No |  |
 | `failover_executions_none` | any | No |  |
 | `failover_executions_some` | any | No |  |

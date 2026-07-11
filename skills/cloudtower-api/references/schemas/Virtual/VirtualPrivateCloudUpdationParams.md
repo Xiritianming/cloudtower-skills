@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [VirtualPrivateCloudUpdateDataParams](VirtualPrivateCloudUpdateDataParams.md) | Yes |  |
-| `where` | [VirtualPrivateCloudWhereInput](VirtualPrivateCloudWhereInput.md) | Yes |  |
+| `data` | [VirtualPrivateCloudUpdateDataParams](../Virtual/VirtualPrivateCloudUpdateDataParams.md) | Yes |  |
+| `where` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | Yes |  |
 

@@ -1,4 +1,4 @@
-# POST /create-report-template
+# POST /v2/api/create-report-template
 
 **Resource:** [ReportTemplate](../resources/ReportTemplate.md)
 **Operation ID:** `CreateReportTemplate`
@@ -17,6 +17,44 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [ReportTemplateCreationParams](../schemas/Report/ReportTemplateCreationParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "resource_meta": [
+      {
+        "type": "ALERT",
+        "name": "<name>",
+        "filter": "<filter>",
+        "fields": [
+          "<fields>"
+        ]
+      }
+    ],
+    "execute_plan": [
+      {
+        "start_at": "<start_at>",
+        "retain": 1,
+        "period": "<period>",
+        "id": "<id>",
+        "enabled": false
+      }
+    ],
+    "name": "<name>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CreateReportTemplate /tmp/body.json
+bash scripts/call.sh /v2/api/create-report-template /tmp/body.json
+```
 
 ## Responses
 

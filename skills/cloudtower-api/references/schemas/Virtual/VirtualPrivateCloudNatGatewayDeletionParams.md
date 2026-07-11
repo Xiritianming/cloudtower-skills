@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VirtualPrivateCloudNatGatewayWhereInput](VirtualPrivateCloudNatGatewayWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | Yes |  |
 

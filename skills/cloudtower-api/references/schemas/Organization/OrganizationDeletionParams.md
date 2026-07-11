@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [OrganizationWhereInput](OrganizationWhereInput.md) | Yes |  |
+| `where` | [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | Yes |  |
 

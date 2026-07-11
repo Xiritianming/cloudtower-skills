@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ZoneWhereInput[] | No |  |
-| `NOT` | ZoneWhereInput[] | No |  |
-| `OR` | ZoneWhereInput[] | No |  |
+| `AND` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `NOT` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `OR` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `datacenter` | any | No |  |
 | `failure_data_space` | integer (int64) | No |  |

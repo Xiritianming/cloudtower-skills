@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | UsbDeviceWhereInput[] | No |  |
-| `NOT` | UsbDeviceWhereInput[] | No |  |
-| `OR` | UsbDeviceWhereInput[] | No |  |
+| `AND` | Array of [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
+| `NOT` | Array of [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
+| `OR` | Array of [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
 | `binded` | boolean | No |  |
 | `binded_not` | boolean | No |  |
 | `description` | string | No |  |
@@ -26,9 +28,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `host` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -103,9 +105,9 @@
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
 | `status` | any | No |  |
-| `status_in` | UsbDeviceStatus[] | No |  |
+| `status_in` | Array of [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | UsbDeviceStatus[] | No |  |
+| `status_not_in` | Array of [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
 | `usb_type` | string | No |  |
 | `usb_type_contains` | string | No |  |
 | `usb_type_ends_with` | string | No |  |

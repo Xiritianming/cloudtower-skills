@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `args` | object | Yes |  |
@@ -13,8 +15,8 @@
 | `local_created_at` | string | Yes |  |
 | `progress` | number (double) | Yes |  |
 | `snapshot` | string | Yes |  |
-| `status` | [TaskStatus](TaskStatus.md) | Yes |  |
-| `steps` | NestedStep[] | Yes |  |
+| `status` | [TaskStatus](../Task/TaskStatus.md) | Yes |  |
+| `steps` | Array of [NestedStep](../Nested/NestedStep.md) | Yes |  |
 
 ## Nested Fields
 
@@ -22,4 +24,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

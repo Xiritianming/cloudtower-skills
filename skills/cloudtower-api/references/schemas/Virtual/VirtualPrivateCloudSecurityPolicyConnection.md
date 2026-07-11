@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVirtualPrivateCloudSecurityPolicy](NestedAggregateVirtualPrivateCloudSecurityPolicy.md) | Yes |  |
+| `aggregate` | [NestedAggregateVirtualPrivateCloudSecurityPolicy](../Nested/NestedAggregateVirtualPrivateCloudSecurityPolicy.md) | Yes |  |
 

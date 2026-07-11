@@ -4,12 +4,14 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `win_opt` | boolean | No |  |
 | `vm_tools_status` | any | No |  |
-| `vm_nics` | VmNicMetaData[] | No |  |
-| `vm_disks` | VmDiskMetaData[] | No |  |
+| `vm_nics` | Array of [VmNicMetaData](../Vm/VmNicMetaData.md) | No |  |
+| `vm_disks` | Array of [VmDiskMetaData](../Vm/VmDiskMetaData.md) | No |  |
 | `video_type` | any | No |  |
 | `vcpu` | integer (int32) | No |  |
 | `sync_vm_time_on_resume` | boolean | No |  |

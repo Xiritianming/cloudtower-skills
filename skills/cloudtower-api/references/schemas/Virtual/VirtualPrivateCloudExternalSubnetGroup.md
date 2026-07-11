@@ -4,19 +4,21 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `description` | string | No |  |
-| `edge_gateway_group` | [NestedVirtualPrivateCloudEdgeGatewayGroup](NestedVirtualPrivateCloudEdgeGatewayGroup.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateway_group` | [NestedVirtualPrivateCloudEdgeGatewayGroup](../Nested/NestedVirtualPrivateCloudEdgeGatewayGroup.md) | Yes |  |
 | `exclusive` | boolean | Yes |  |
-| `external_subnets_spec` | NestedVirtualPrivateCloudExternalSubnetGroupExternalSubnetsSpec[] | Yes |  |
-| `floating_ips` | NestedVirtualPrivateCloudFloatingIp[] | No |  |
+| `external_subnets_spec` | Array of [NestedVirtualPrivateCloudExternalSubnetGroupExternalSubnetsSpec](../Nested/NestedVirtualPrivateCloudExternalSubnetGroupExternalSubnetsSpec.md) | Yes |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `nat_gateways` | NestedVirtualPrivateCloudNatGateway[] | No |  |
-| `router_gateways` | NestedVirtualPrivateCloudRouterGateway[] | No |  |
 | `shared_in_edge_gateway_group` | boolean | Yes |  |
+| `description` | string | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `floating_ips` | Array of [NestedVirtualPrivateCloudFloatingIp](../Nested/NestedVirtualPrivateCloudFloatingIp.md) | No |  |
+| `nat_gateways` | Array of [NestedVirtualPrivateCloudNatGateway](../Nested/NestedVirtualPrivateCloudNatGateway.md) | No |  |
+| `router_gateways` | Array of [NestedVirtualPrivateCloudRouterGateway](../Nested/NestedVirtualPrivateCloudRouterGateway.md) | No |  |
 | `vpc` | any | No |  |
 

@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [SecurityPolicyUpdateParams](SecurityPolicyUpdateParams.md) | Yes |  |
-| `where` | [SecurityPolicyWhereInput](SecurityPolicyWhereInput.md) | Yes |  |
+| `data` | [SecurityPolicyUpdateParams](../Security/SecurityPolicyUpdateParams.md) | Yes |  |
+| `where` | [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | Yes |  |
 

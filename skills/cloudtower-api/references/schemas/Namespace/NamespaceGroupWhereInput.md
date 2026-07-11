@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NamespaceGroupWhereInput[] | No |  |
-| `NOT` | NamespaceGroupWhereInput[] | No |  |
-| `OR` | NamespaceGroupWhereInput[] | No |  |
+| `AND` | Array of [NamespaceGroupWhereInput](../Namespace/NamespaceGroupWhereInput.md) | No |  |
+| `NOT` | Array of [NamespaceGroupWhereInput](../Namespace/NamespaceGroupWhereInput.md) | No |  |
+| `OR` | Array of [NamespaceGroupWhereInput](../Namespace/NamespaceGroupWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BackupTargetExecutionWhereInput[] | No |  |
-| `NOT` | BackupTargetExecutionWhereInput[] | No |  |
-| `OR` | BackupTargetExecutionWhereInput[] | No |  |
+| `AND` | Array of [BackupTargetExecutionWhereInput](../Backup/BackupTargetExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [BackupTargetExecutionWhereInput](../Backup/BackupTargetExecutionWhereInput.md) | No |  |
+| `OR` | Array of [BackupTargetExecutionWhereInput](../Backup/BackupTargetExecutionWhereInput.md) | No |  |
 | `backup_group` | string | No |  |
 | `backup_group_contains` | string | No |  |
 | `backup_group_ends_with` | string | No |  |
@@ -48,9 +50,9 @@
 | `duration_not` | integer (int32) | No |  |
 | `duration_not_in` | integer[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `executed_at` | string | No |  |
 | `executed_at_gt` | string | No |  |
 | `executed_at_gte` | string | No |  |
@@ -118,9 +120,9 @@
 | `retry_times_not` | integer (int32) | No |  |
 | `retry_times_not_in` | integer[] | No |  |
 | `status` | any | No |  |
-| `status_in` | BackupExecutionStatus[] | No |  |
+| `status_in` | Array of [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | BackupExecutionStatus[] | No |  |
+| `status_not_in` | Array of [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `total_bytes` | integer (int64) | No |  |
 | `total_bytes_gt` | integer (int64) | No |  |
 | `total_bytes_gte` | integer (int64) | No |  |
@@ -130,9 +132,9 @@
 | `total_bytes_not` | integer (int64) | No |  |
 | `total_bytes_not_in` | integer[] | No |  |
 | `type` | any | No |  |
-| `type_in` | BackupExecutionType[] | No |  |
+| `type_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | BackupExecutionType[] | No |  |
+| `type_not_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `vm` | any | No |  |
 | `vm_local_id` | string | No |  |
 | `vm_local_id_contains` | string | No |  |

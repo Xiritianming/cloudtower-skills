@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `reason` | string | No |  |
 | `force` | boolean | Yes |  |
-| `action` | [OperateActionEnum](OperateActionEnum.md) | Yes |  |
+| `action` | [OperateActionEnum](../Operate/OperateActionEnum.md) | Yes |  |
+| `reason` | string | No |  |
 

@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `range` | string | Yes |  |
 | `metrics` | string[] | Yes |  |
-| `vms` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `vms` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 

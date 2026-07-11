@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [SecurityGroupWhereInput](SecurityGroupWhereInput.md) | Yes |  |
+| `where` | [SecurityGroupWhereInput](../Security/SecurityGroupWhereInput.md) | Yes |  |
 

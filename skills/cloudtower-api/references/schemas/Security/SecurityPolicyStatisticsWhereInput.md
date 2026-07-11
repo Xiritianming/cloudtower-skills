@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SecurityPolicyStatisticsWhereInput[] | No |  |
-| `NOT` | SecurityPolicyStatisticsWhereInput[] | No |  |
-| `OR` | SecurityPolicyStatisticsWhereInput[] | No |  |
+| `AND` | Array of [SecurityPolicyStatisticsWhereInput](../Security/SecurityPolicyStatisticsWhereInput.md) | No |  |
+| `NOT` | Array of [SecurityPolicyStatisticsWhereInput](../Security/SecurityPolicyStatisticsWhereInput.md) | No |  |
+| `OR` | Array of [SecurityPolicyStatisticsWhereInput](../Security/SecurityPolicyStatisticsWhereInput.md) | No |  |
 | `count_reset_timestamp` | string | No |  |
 | `count_reset_timestamp_gt` | string | No |  |
 | `count_reset_timestamp_gte` | string | No |  |

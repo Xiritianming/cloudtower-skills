@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateContentLibraryImage](NestedAggregateContentLibraryImage.md) | Yes |  |
+| `aggregate` | [NestedAggregateContentLibraryImage](../Nested/NestedAggregateContentLibraryImage.md) | Yes |  |
 

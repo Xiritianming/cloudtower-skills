@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateView](NestedAggregateView.md) | Yes |  |
+| `aggregate` | [NestedAggregateView](../Nested/NestedAggregateView.md) | Yes |  |
 

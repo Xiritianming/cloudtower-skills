@@ -4,17 +4,19 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `business_hosts` | NestedBusinessHost[] | No |  |
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `id` | string | Yes |  |
-| `iscsi_luns` | NestedIscsiLun[] | No |  |
-| `iscsi_targets` | NestedIscsiTarget[] | No |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `nvmf_namespaces` | NestedNvmfNamespace[] | No |  |
-| `nvmf_subsystems` | NestedNvmfSubsystem[] | No |  |
+| `business_hosts` | Array of [NestedBusinessHost](../Nested/NestedBusinessHost.md) | No |  |
+| `description` | string | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
+| `iscsi_targets` | Array of [NestedIscsiTarget](../Nested/NestedIscsiTarget.md) | No |  |
+| `nvmf_namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
+| `nvmf_subsystems` | Array of [NestedNvmfSubsystem](../Nested/NestedNvmfSubsystem.md) | No |  |
 

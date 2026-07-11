@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [ReportTemplateWhereInput](ReportTemplateWhereInput.md) | Yes |  |
+| `where` | [ReportTemplateWhereInput](../Report/ReportTemplateWhereInput.md) | Yes |  |
 

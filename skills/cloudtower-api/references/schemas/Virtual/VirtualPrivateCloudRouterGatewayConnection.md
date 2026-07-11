@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVirtualPrivateCloudRouterGateway](NestedAggregateVirtualPrivateCloudRouterGateway.md) | Yes |  |
+| `aggregate` | [NestedAggregateVirtualPrivateCloudRouterGateway](../Nested/NestedAggregateVirtualPrivateCloudRouterGateway.md) | Yes |  |
 

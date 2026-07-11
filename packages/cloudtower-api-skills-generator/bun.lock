@@ -5,6 +5,7 @@
     "": {
       "name": "cloudtower-api-skills-generator",
       "dependencies": {
+        "eta": "^4.5.0",
         "openapi-to-skills": "^0.3.0",
       },
       "devDependencies": {

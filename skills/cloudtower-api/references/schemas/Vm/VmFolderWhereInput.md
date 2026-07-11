@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmFolderWhereInput[] | No |  |
-| `NOT` | VmFolderWhereInput[] | No |  |
-| `OR` | VmFolderWhereInput[] | No |  |
+| `AND` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
+| `NOT` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
+| `OR` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

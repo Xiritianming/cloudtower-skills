@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -16,9 +18,9 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `vcpu` | integer (int32) | No |  |
-| `ha_priority` | [VmHaPriority](VmHaPriority.md) | No |  |
+| `ha_priority` | [VmHaPriority](../Vm/VmHaPriority.md) | No |  |
 | `ha` | boolean | No |  |
-| `memory_unit` | [ByteUnit](ByteUnit.md) | No |  |
+| `memory_unit` | [ByteUnit](../Byte/ByteUnit.md) | No |  |
 | `memory` | integer (int64) | No |  |
 | `cpu_cores` | integer (int32) | No |  |
 | `cpu_sockets` | integer (int32) | No |  |

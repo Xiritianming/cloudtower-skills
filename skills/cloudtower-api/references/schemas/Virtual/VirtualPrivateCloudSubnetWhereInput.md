@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudSubnetWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudSubnetWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudSubnetWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
 | `cidr` | string | No |  |
 | `cidr_contains` | string | No |  |
 | `cidr_ends_with` | string | No |  |
@@ -38,9 +40,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway` | string | No |  |
 | `gateway_contains` | string | No |  |
 | `gateway_ends_with` | string | No |  |

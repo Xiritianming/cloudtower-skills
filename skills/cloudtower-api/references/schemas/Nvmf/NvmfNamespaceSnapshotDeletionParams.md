@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [NvmfNamespaceSnapshotWhereInput](NvmfNamespaceSnapshotWhereInput.md) | Yes |  |
+| `where` | [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | Yes |  |
 

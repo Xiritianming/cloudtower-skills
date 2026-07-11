@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [NfsExportWhereInput](NfsExportWhereInput.md) | Yes |  |
+| `where` | [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | Yes |  |
 

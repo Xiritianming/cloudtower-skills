@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ExternalCloudTowerWhereInput[] | No |  |
-| `NOT` | ExternalCloudTowerWhereInput[] | No |  |
-| `OR` | ExternalCloudTowerWhereInput[] | No |  |
+| `AND` | Array of [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
+| `NOT` | Array of [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
+| `OR` | Array of [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `api_key` | string | No |  |
 | `api_key_contains` | string | No |  |
 | `api_key_ends_with` | string | No |  |
@@ -74,9 +76,9 @@
 | `endpoint_not_starts_with` | string | No |  |
 | `endpoint_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failback_executions_every` | any | No |  |
 | `failback_executions_none` | any | No |  |
 | `failback_executions_some` | any | No |  |
@@ -121,9 +123,9 @@
 | `replication_plans_none` | any | No |  |
 | `replication_plans_some` | any | No |  |
 | `status` | any | No |  |
-| `status_in` | ExternalCloudTowerStatus[] | No |  |
+| `status_in` | Array of [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | ExternalCloudTowerStatus[] | No |  |
+| `status_not_in` | Array of [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
 | `sync_replication_plans_every` | any | No |  |
 | `sync_replication_plans_none` | any | No |  |
 | `sync_replication_plans_some` | any | No |  |

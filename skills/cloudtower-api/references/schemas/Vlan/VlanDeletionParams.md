@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VlanWhereInput](VlanWhereInput.md) | Yes |  |
+| `where` | [VlanWhereInput](../Vlan/VlanWhereInput.md) | Yes |  |
 

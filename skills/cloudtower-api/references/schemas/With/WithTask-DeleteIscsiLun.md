@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [DeleteIscsiLun](../Delete/DeleteIscsiLun.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [DeleteIscsiLun](DeleteIscsiLun.md) | Yes |  |
 

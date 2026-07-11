@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [VcenterAccount](../Vcenter/VcenterAccount.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [VcenterAccount](VcenterAccount.md) | Yes |  |
 

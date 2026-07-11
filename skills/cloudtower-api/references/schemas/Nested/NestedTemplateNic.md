@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `enabled` | boolean | No |  |
 | `index` | integer (int32) | Yes |  |
+| `vlan` | [NestedFrozenVlan](../Nested/NestedFrozenVlan.md) | Yes |  |
+| `enabled` | boolean | No |  |
 | `ip_address` | string | No |  |
 | `mac_address` | string | No |  |
 | `mirror` | boolean | No |  |
 | `model` | any | No |  |
 | `type` | any | No |  |
-| `vlan` | [NestedFrozenVlan](NestedFrozenVlan.md) | Yes |  |
 | `vpc_nic` | any | No |  |
 

@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudPeeringWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudPeeringWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudPeeringWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
 | `dst_vpc` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `clusters` | [ClusterWhereInput](ClusterWhereInput.md) | No |  |
 | `organization_id` | string | Yes |  |
 | `name` | string | Yes |  |
+| `clusters` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 

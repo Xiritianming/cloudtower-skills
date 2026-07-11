@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VdsWhereInput](VdsWhereInput.md) | Yes |  |
+| `where` | [VdsWhereInput](../Vds/VdsWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

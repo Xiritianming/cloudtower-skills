@@ -1,4 +1,4 @@
-# POST /upload-elf-image
+# POST /v2/api/upload-elf-image
 
 **Resource:** [ElfImage](../resources/ElfImage.md)
 **Operation ID:** `CreateElfImage`
@@ -15,6 +15,18 @@
 **Required:** Yes
 
 **Content Types:** `multipart/form-data`
+
+**Schema** (inline):
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `file` | string (binary) | Yes |  |
+| `cluster_id` | string | No |  |
+| `name` | string | No |  |
+| `size` | string | No |  |
+| `size_unit` | string | No |  |
+| `description` | string | No |  |
+| `upload_task_id` | string | No |  |
 
 ## Responses
 

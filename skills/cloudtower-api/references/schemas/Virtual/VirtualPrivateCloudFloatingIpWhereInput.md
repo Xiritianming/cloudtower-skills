@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudFloatingIpWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudFloatingIpWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudFloatingIpWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_ip` | string | No |  |
 | `external_ip_contains` | string | No |  |
 | `external_ip_ends_with` | string | No |  |

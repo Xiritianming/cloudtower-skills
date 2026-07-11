@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [IscsiLunUpdationParamsData](IscsiLunUpdationParamsData.md) | Yes |  |
-| `where` | [IscsiLunWhereInput](IscsiLunWhereInput.md) | Yes |  |
+| `data` | [IscsiLunUpdationParamsData](../Iscsi/IscsiLunUpdationParamsData.md) | Yes |  |
+| `where` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | Yes |  |
 

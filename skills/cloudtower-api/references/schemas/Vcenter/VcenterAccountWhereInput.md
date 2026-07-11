@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VcenterAccountWhereInput[] | No |  |
-| `NOT` | VcenterAccountWhereInput[] | No |  |
-| `OR` | VcenterAccountWhereInput[] | No |  |
+| `AND` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
+| `NOT` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
+| `OR` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

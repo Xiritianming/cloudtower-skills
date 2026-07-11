@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `range` | string | Yes |  |
-| `disks` | [DiskWhereInput](DiskWhereInput.md) | Yes |  |
+| `disks` | [DiskWhereInput](../Disk/DiskWhereInput.md) | Yes |  |
 | `metrics` | string[] | Yes |  |
 

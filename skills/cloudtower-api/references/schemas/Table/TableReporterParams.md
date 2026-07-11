@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `filter` | object | Yes |  |
-| `columns` | ColumnConfig[] | Yes |  |
+| `columns` | Array of [ColumnConfig](../Column/ColumnConfig.md) | Yes |  |
 | `name` | string | Yes |  |
 
 ## Nested Fields
@@ -16,38 +18,38 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `nvmfSubsystems` | [GetNvmfSubsystemsRequestBody](GetNvmfSubsystemsRequestBody.md) | No |  |
-| `contentLibraryVmTemplates` | [GetContentLibraryVmTemplatesRequestBody](GetContentLibraryVmTemplatesRequestBody.md) | No |  |
-| `nvmfNamespaceSnapshots` | [GetNvmfNamespaceSnapshotsRequestBody](GetNvmfNamespaceSnapshotsRequestBody.md) | No |  |
-| `contentLibraryImages` | [GetContentLibraryImagesRequestBody](GetContentLibraryImagesRequestBody.md) | No |  |
-| `nvmfNamespaces` | [GetNvmfNamespacesRequestBody](GetNvmfNamespacesRequestBody.md) | No |  |
-| `namespaceGroups` | [GetNamespaceGroupsRequestBody](GetNamespaceGroupsRequestBody.md) | No |  |
-| `iscsiLuns` | [GetIscsiLunsRequestBody](GetIscsiLunsRequestBody.md) | No |  |
-| `tasks` | [GetTasksRequestBody](GetTasksRequestBody.md) | No |  |
-| `userAuditLogs` | [GetUserAuditLogsRequestBody](GetUserAuditLogsRequestBody.md) | No |  |
-| `systemAuditLogs` | [GetSystemAuditLogsRequestBody](GetSystemAuditLogsRequestBody.md) | No |  |
-| `iscsiLunSnapshots` | [GetIscsiLunSnapshotsRequestBody](GetIscsiLunSnapshotsRequestBody.md) | No |  |
-| `iscsiConnections` | [GetIscsiConnectionsRequestBody](GetIscsiConnectionsRequestBody.md) | No |  |
-| `consistencyGroups` | [GetConsistencyGroupsRequestBody](GetConsistencyGroupsRequestBody.md) | No |  |
-| `users` | [GetUsersRequestBody](GetUsersRequestBody.md) | No |  |
-| `vmEntityFilters` | [GetEntityFiltersRequestBody](GetEntityFiltersRequestBody.md) | No |  |
-| `snapshotPlans` | [GetSnapshotPlansRequestBody](GetSnapshotPlansRequestBody.md) | No |  |
-| `globalAlertRules` | [GetGlobalAlertRulesRequestBody](GetGlobalAlertRulesRequestBody.md) | No |  |
-| `alerts` | [GetAlertsRequestBody](GetAlertsRequestBody.md) | No |  |
-| `vmPlacementGroups` | [GetVmPlacementGroupsRequestBody](GetVmPlacementGroupsRequestBody.md) | No |  |
-| `vmTemplates` | [GetVmTemplatesRequestBody](GetVmTemplatesRequestBody.md) | No |  |
-| `elfImages` | [GetElfImagesRequestBody](GetElfImagesRequestBody.md) | No |  |
-| `vmVolumes` | [GetVmVolumesRequestBody](GetVmVolumesRequestBody.md) | No |  |
-| `vlans` | [GetVlansRequestBody](GetVlansRequestBody.md) | No |  |
-| `disks` | [GetDisksRequestBody](GetDisksRequestBody.md) | No |  |
-| `vdses` | [GetVdsesRequestBody](GetVdsesRequestBody.md) | No |  |
-| `elfDataStores` | [GetElfDataStoresRequestBody](GetElfDataStoresRequestBody.md) | No |  |
-| `vms` | [GetVmsRequestBody](GetVmsRequestBody.md) | No |  |
-| `nfsExports` | [GetNfsExportsRequestBody](GetNfsExportsRequestBody.md) | No |  |
-| `iscsiTargets` | [GetIscsiTargetsRequestBody](GetIscsiTargetsRequestBody.md) | No |  |
-| `usbDevices` | [GetUsbDevicesRequestBody](GetUsbDevicesRequestBody.md) | No |  |
-| `nics` | [GetNicsRequestBody](GetNicsRequestBody.md) | No |  |
-| `clusters` | [GetClustersRequestBody](GetClustersRequestBody.md) | No |  |
-| `datacenters` | [GetDatacentersRequestBody](GetDatacentersRequestBody.md) | No |  |
-| `hosts` | [GetHostsRequestBody](GetHostsRequestBody.md) | No |  |
+| `nvmfSubsystems` | [GetNvmfSubsystemsRequestBody](../Get/GetNvmfSubsystemsRequestBody.md) | No |  |
+| `contentLibraryVmTemplates` | [GetContentLibraryVmTemplatesRequestBody](../Get/GetContentLibraryVmTemplatesRequestBody.md) | No |  |
+| `nvmfNamespaceSnapshots` | [GetNvmfNamespaceSnapshotsRequestBody](../Get/GetNvmfNamespaceSnapshotsRequestBody.md) | No |  |
+| `contentLibraryImages` | [GetContentLibraryImagesRequestBody](../Get/GetContentLibraryImagesRequestBody.md) | No |  |
+| `nvmfNamespaces` | [GetNvmfNamespacesRequestBody](../Get/GetNvmfNamespacesRequestBody.md) | No |  |
+| `namespaceGroups` | [GetNamespaceGroupsRequestBody](../Get/GetNamespaceGroupsRequestBody.md) | No |  |
+| `iscsiLuns` | [GetIscsiLunsRequestBody](../Get/GetIscsiLunsRequestBody.md) | No |  |
+| `tasks` | [GetTasksRequestBody](../Get/GetTasksRequestBody.md) | No |  |
+| `userAuditLogs` | [GetUserAuditLogsRequestBody](../Get/GetUserAuditLogsRequestBody.md) | No |  |
+| `systemAuditLogs` | [GetSystemAuditLogsRequestBody](../Get/GetSystemAuditLogsRequestBody.md) | No |  |
+| `iscsiLunSnapshots` | [GetIscsiLunSnapshotsRequestBody](../Get/GetIscsiLunSnapshotsRequestBody.md) | No |  |
+| `iscsiConnections` | [GetIscsiConnectionsRequestBody](../Get/GetIscsiConnectionsRequestBody.md) | No |  |
+| `consistencyGroups` | [GetConsistencyGroupsRequestBody](../Get/GetConsistencyGroupsRequestBody.md) | No |  |
+| `users` | [GetUsersRequestBody](../Get/GetUsersRequestBody.md) | No |  |
+| `vmEntityFilters` | [GetEntityFiltersRequestBody](../Get/GetEntityFiltersRequestBody.md) | No |  |
+| `snapshotPlans` | [GetSnapshotPlansRequestBody](../Get/GetSnapshotPlansRequestBody.md) | No |  |
+| `globalAlertRules` | [GetGlobalAlertRulesRequestBody](../Get/GetGlobalAlertRulesRequestBody.md) | No |  |
+| `alerts` | [GetAlertsRequestBody](../Get/GetAlertsRequestBody.md) | No |  |
+| `vmPlacementGroups` | [GetVmPlacementGroupsRequestBody](../Get/GetVmPlacementGroupsRequestBody.md) | No |  |
+| `vmTemplates` | [GetVmTemplatesRequestBody](../Get/GetVmTemplatesRequestBody.md) | No |  |
+| `elfImages` | [GetElfImagesRequestBody](../Get/GetElfImagesRequestBody.md) | No |  |
+| `vmVolumes` | [GetVmVolumesRequestBody](../Get/GetVmVolumesRequestBody.md) | No |  |
+| `vlans` | [GetVlansRequestBody](../Get/GetVlansRequestBody.md) | No |  |
+| `disks` | [GetDisksRequestBody](../Get/GetDisksRequestBody.md) | No |  |
+| `vdses` | [GetVdsesRequestBody](../Get/GetVdsesRequestBody.md) | No |  |
+| `elfDataStores` | [GetElfDataStoresRequestBody](../Get/GetElfDataStoresRequestBody.md) | No |  |
+| `vms` | [GetVmsRequestBody](../Get/GetVmsRequestBody.md) | No |  |
+| `nfsExports` | [GetNfsExportsRequestBody](../Get/GetNfsExportsRequestBody.md) | No |  |
+| `iscsiTargets` | [GetIscsiTargetsRequestBody](../Get/GetIscsiTargetsRequestBody.md) | No |  |
+| `usbDevices` | [GetUsbDevicesRequestBody](../Get/GetUsbDevicesRequestBody.md) | No |  |
+| `nics` | [GetNicsRequestBody](../Get/GetNicsRequestBody.md) | No |  |
+| `clusters` | [GetClustersRequestBody](../Get/GetClustersRequestBody.md) | No |  |
+| `datacenters` | [GetDatacentersRequestBody](../Get/GetDatacentersRequestBody.md) | No |  |
+| `hosts` | [GetHostsRequestBody](../Get/GetHostsRequestBody.md) | No |  |
 

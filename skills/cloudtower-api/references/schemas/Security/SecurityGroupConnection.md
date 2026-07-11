@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSecurityGroup](NestedAggregateSecurityGroup.md) | Yes |  |
+| `aggregate` | [NestedAggregateSecurityGroup](../Nested/NestedAggregateSecurityGroup.md) | Yes |  |
 

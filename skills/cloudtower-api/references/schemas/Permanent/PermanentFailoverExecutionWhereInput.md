@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | PermanentFailoverExecutionWhereInput[] | No |  |
-| `NOT` | PermanentFailoverExecutionWhereInput[] | No |  |
-| `OR` | PermanentFailoverExecutionWhereInput[] | No |  |
+| `AND` | Array of [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `OR` | Array of [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -55,9 +57,9 @@
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
 | `state` | any | No |  |
-| `state_in` | BackupExecutionState[] | No |  |
+| `state_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_not` | any | No |  |
-| `state_not_in` | BackupExecutionState[] | No |  |
+| `state_not_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |
 | `updatedAt_gte` | string | No |  |

@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `egress` | NestedNetworkPolicyRule[] | No |  |
 | `enable` | boolean | Yes |  |
-| `ingress` | NestedNetworkPolicyRule[] | No |  |
+| `egress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
+| `ingress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
 

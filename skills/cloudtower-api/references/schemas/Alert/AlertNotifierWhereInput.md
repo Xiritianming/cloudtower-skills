@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | AlertNotifierWhereInput[] | No |  |
-| `NOT` | AlertNotifierWhereInput[] | No |  |
-| `OR` | AlertNotifierWhereInput[] | No |  |
+| `AND` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
+| `NOT` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
+| `OR` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
 | `clusters_every` | any | No |  |
 | `clusters_none` | any | No |  |
 | `clusters_some` | any | No |  |
@@ -29,9 +31,9 @@
 | `email_from_not_starts_with` | string | No |  |
 | `email_from_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -47,9 +49,9 @@
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
 | `language_code` | any | No |  |
-| `language_code_in` | NotifierLanguageCode[] | No |  |
+| `language_code_in` | Array of [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
 | `language_code_not` | any | No |  |
-| `language_code_not_in` | NotifierLanguageCode[] | No |  |
+| `language_code_not_in` | Array of [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
 | `name_ends_with` | string | No |  |
@@ -65,9 +67,9 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `security_mode` | any | No |  |
-| `security_mode_in` | NotifierSecurityMode[] | No |  |
+| `security_mode_in` | Array of [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
 | `security_mode_not` | any | No |  |
-| `security_mode_not_in` | NotifierSecurityMode[] | No |  |
+| `security_mode_not_in` | Array of [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
 | `smtp_server_config` | any | No |  |
 | `smtp_server_host` | string | No |  |
 | `smtp_server_host_contains` | string | No |  |

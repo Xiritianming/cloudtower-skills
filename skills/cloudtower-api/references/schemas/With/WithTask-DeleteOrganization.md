@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [DeleteOrganization](../Delete/DeleteOrganization.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [DeleteOrganization](DeleteOrganization.md) | Yes |  |
 

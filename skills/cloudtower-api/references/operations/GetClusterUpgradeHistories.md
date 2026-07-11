@@ -1,4 +1,4 @@
-# POST /get-cluster-upgrade-histories
+# POST /v2/api/get-cluster-upgrade-histories
 
 **Resource:** [ClusterUpgradeHistory](../resources/ClusterUpgradeHistory.md)
 **Operation ID:** `GetClusterUpgradeHistories`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetClusterUpgradeHistoriesRequestBody](../schemas/Get/GetClusterUpgradeHistoriesRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetClusterUpgradeHistories /tmp/body.json
+bash scripts/call.sh /v2/api/get-cluster-upgrade-histories /tmp/body.json
+```
 
 ## Responses
 

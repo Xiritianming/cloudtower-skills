@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudRouteWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudRouteWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudRouteWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -38,9 +40,9 @@
 | `destination_not_starts_with` | string | No |  |
 | `destination_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -85,9 +87,9 @@
 | `next_hop_local_id_not_starts_with` | string | No |  |
 | `next_hop_local_id_starts_with` | string | No |  |
 | `next_hop_type` | any | No |  |
-| `next_hop_type_in` | VirtualPrivateCloudRouteNextHopType[] | No |  |
+| `next_hop_type_in` | Array of [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
 | `next_hop_type_not` | any | No |  |
-| `next_hop_type_not_in` | VirtualPrivateCloudRouteNextHopType[] | No |  |
+| `next_hop_type_not_in` | Array of [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
 | `route_table` | any | No |  |
 | `router_gateway` | any | No |  |
 | `vpc_peering` | any | No |  |

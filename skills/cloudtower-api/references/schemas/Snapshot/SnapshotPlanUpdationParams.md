@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `where` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | Yes |  |
 | `data` | object | No |  |
-| `where` | [SnapshotPlanWhereInput](SnapshotPlanWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -17,7 +19,7 @@
 |-------|------|----------|-------------|
 | `vm_ids` | string[] | No |  |
 | `execute_intervals` | integer[] | No |  |
-| `execute_plan_type` | [SnapshotPlanExecuteType](SnapshotPlanExecuteType.md) | No |  |
+| `execute_plan_type` | [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
 | `exec_h_m` | string | No |  |
 | `end_time` | string | No |  |
 | `remain_snapshot_num` | integer (int32) | No |  |

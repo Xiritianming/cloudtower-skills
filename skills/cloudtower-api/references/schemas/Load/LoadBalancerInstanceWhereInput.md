@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | LoadBalancerInstanceWhereInput[] | No |  |
-| `NOT` | LoadBalancerInstanceWhereInput[] | No |  |
-| `OR` | LoadBalancerInstanceWhereInput[] | No |  |
+| `AND` | Array of [LoadBalancerInstanceWhereInput](../Load/LoadBalancerInstanceWhereInput.md) | No |  |
+| `NOT` | Array of [LoadBalancerInstanceWhereInput](../Load/LoadBalancerInstanceWhereInput.md) | No |  |
+| `OR` | Array of [LoadBalancerInstanceWhereInput](../Load/LoadBalancerInstanceWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -32,9 +34,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -79,9 +81,9 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `phase` | any | No |  |
-| `phase_in` | EverouteClusterPhase[] | No |  |
+| `phase_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | EverouteClusterPhase[] | No |  |
+| `phase_not_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `primary_in_load_balancer_group` | any | No |  |
 | `secondary_in_load_balancer_group` | any | No |  |
 | `vm_instances_every` | any | No |  |

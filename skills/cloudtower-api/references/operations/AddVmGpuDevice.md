@@ -1,4 +1,4 @@
-# POST /add-vm-gpu-device
+# POST /v2/api/add-vm-gpu-device
 
 **Resource:** [Vm](../resources/Vm.md)
 **Operation ID:** `AddVmGpuDevice`
@@ -17,6 +17,28 @@
 **Content Types:** `application/json`
 
 **Schema:** [VmAddGpuDeviceParams](../schemas/Vm/VmAddGpuDeviceParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "data": [
+    {
+      "gpu_id": "<gpu_id>"
+    }
+  ],
+  "where": {}
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py AddVmGpuDevice /tmp/body.json
+bash scripts/call.sh /v2/api/add-vm-gpu-device /tmp/body.json
+```
 
 ## Responses
 

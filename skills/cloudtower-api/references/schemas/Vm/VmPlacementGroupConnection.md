@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmPlacementGroup](NestedAggregateVmPlacementGroup.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmPlacementGroup](../Nested/NestedAggregateVmPlacementGroup.md) | Yes |  |
 

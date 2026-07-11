@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `date` | string | Yes |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
@@ -21,4 +23,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateCluster](NestedAggregateCluster.md) | Yes |  |
+| `aggregate` | [NestedAggregateCluster](../Nested/NestedAggregateCluster.md) | Yes |  |
 

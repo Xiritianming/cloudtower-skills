@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [ElfImage](../Elf/ElfImage.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [ElfImage](ElfImage.md) | Yes |  |
 

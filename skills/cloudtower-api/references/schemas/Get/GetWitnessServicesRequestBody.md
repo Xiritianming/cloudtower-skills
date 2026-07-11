@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [WitnessWhereUniqueInput](WitnessWhereUniqueInput.md) | Yes |  |
+| `where` | [WitnessWhereUniqueInput](../Witness/WitnessWhereUniqueInput.md) | Yes |  |
 

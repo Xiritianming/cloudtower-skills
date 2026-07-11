@@ -1,4 +1,4 @@
-# POST /get-ntp-service-url
+# POST /v2/api/get-ntp-service-url
 
 **Resource:** [Ntp](../resources/Ntp.md)
 **Operation ID:** `GetNtpServiceUrl`

@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vms` | VmCreateVmFromContentLibraryTemplateBatchVmParams[] | Yes |  |
+| `vms` | Array of [VmCreateVmFromContentLibraryTemplateBatchVmParams](../Vm/VmCreateVmFromContentLibraryTemplateBatchVmParams.md) | Yes |  |
 | `template_id` | string | Yes |  |
 

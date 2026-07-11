@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `id` | string | Yes |  |
+| `name` | string | Yes |  |
+| `organization` | [NestedOrganization](../Nested/NestedOrganization.md) | Yes |  |
 | `cluster_num` | integer (int32) | No |  |
-| `clusters` | NestedCluster[] | No |  |
+| `clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `failure_data_space` | integer (int64) | No |  |
 | `host_num` | integer (int32) | No |  |
-| `id` | string | Yes |  |
-| `labels` | NestedLabel[] | No |  |
-| `name` | string | Yes |  |
-| `organization` | [NestedOrganization](NestedOrganization.md) | Yes |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `total_cpu_hz` | integer (int64) | No |  |
 | `total_data_capacity` | integer (int64) | No |  |
 | `total_memory_bytes` | integer (int64) | No |  |

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | V2EverouteLicenseWhereInput[] | No |  |
-| `NOT` | V2EverouteLicenseWhereInput[] | No |  |
-| `OR` | V2EverouteLicenseWhereInput[] | No |  |
+| `AND` | Array of [V2EverouteLicenseWhereInput](../V2EverouteLicenseWhereInput/V2EverouteLicenseWhereInput.md) | No |  |
+| `NOT` | Array of [V2EverouteLicenseWhereInput](../V2EverouteLicenseWhereInput/V2EverouteLicenseWhereInput.md) | No |  |
+| `OR` | Array of [V2EverouteLicenseWhereInput](../V2EverouteLicenseWhereInput/V2EverouteLicenseWhereInput.md) | No |  |
 | `code` | string | No |  |
 | `code_contains` | string | No |  |
 | `code_ends_with` | string | No |  |
@@ -32,9 +34,9 @@
 | `expire_date_not` | string | No |  |
 | `expire_date_not_in` | string[] | No |  |
 | `feature_type` | any | No |  |
-| `feature_type_in` | EverouteFeatureType[] | No |  |
+| `feature_type_in` | Array of [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
 | `feature_type_not` | any | No |  |
-| `feature_type_not_in` | EverouteFeatureType[] | No |  |
+| `feature_type_not_in` | Array of [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -82,9 +84,9 @@
 | `max_vpc_socket_num_not` | integer (int32) | No |  |
 | `max_vpc_socket_num_not_in` | integer[] | No |  |
 | `pricing_type` | any | No |  |
-| `pricing_type_in` | EverouteLicensePricingType[] | No |  |
+| `pricing_type_in` | Array of [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 | `pricing_type_not` | any | No |  |
-| `pricing_type_not_in` | EverouteLicensePricingType[] | No |  |
+| `pricing_type_not_in` | Array of [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 | `serial` | string | No |  |
 | `serial_contains` | string | No |  |
 | `serial_ends_with` | string | No |  |
@@ -108,13 +110,13 @@
 | `sign_date_not` | string | No |  |
 | `sign_date_not_in` | string[] | No |  |
 | `software_edition` | any | No |  |
-| `software_edition_in` | SoftwareEdition[] | No |  |
+| `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not` | any | No |  |
-| `software_edition_not_in` | SoftwareEdition[] | No |  |
+| `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | LicenseType[] | No |  |
+| `type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | LicenseType[] | No |  |
+| `type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `uid` | string | No |  |
 | `uid_contains` | string | No |  |
 | `uid_ends_with` | string | No |  |

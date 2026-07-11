@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | EverouteClusterWhereInput[] | No |  |
-| `NOT` | EverouteClusterWhereInput[] | No |  |
-| `OR` | EverouteClusterWhereInput[] | No |  |
+| `AND` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
+| `NOT` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
+| `OR` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `agent_elf_clusters_every` | any | No |  |
 | `agent_elf_clusters_none` | any | No |  |
 | `agent_elf_clusters_some` | any | No |  |
@@ -16,13 +18,13 @@
 | `agent_elf_vdses_none` | any | No |  |
 | `agent_elf_vdses_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `global_default_action` | any | No |  |
-| `global_default_action_in` | GlobalPolicyAction[] | No |  |
+| `global_default_action_in` | Array of [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
 | `global_default_action_not` | any | No |  |
-| `global_default_action_not_in` | GlobalPolicyAction[] | No |  |
+| `global_default_action_not_in` | Array of [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -55,9 +57,9 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `phase` | any | No |  |
-| `phase_in` | EverouteClusterPhase[] | No |  |
+| `phase_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | EverouteClusterPhase[] | No |  |
+| `phase_not_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `version` | string | No |  |
 | `version_contains` | string | No |  |
 | `version_ends_with` | string | No |  |

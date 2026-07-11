@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [BackupPlanWhereInput](BackupPlanWhereInput.md) | Yes |  |
+| `where` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | Yes |  |
 

@@ -4,27 +4,37 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `architecture` | [Architecture](../Architecture/Architecture.md) | Yes |  |
+| `connect_state` | [ConnectState](../Connect/ConnectState.md) | Yes |  |
+| `dns` | string[] | Yes |  |
+| `id` | string | Yes |  |
+| `ip` | string | Yes |  |
+| `name` | string | Yes |  |
+| `ntp_servers` | string[] | Yes |  |
+| `recommended_cpu_models` | string[] | Yes |  |
+| `total_cpu_models` | string[] | Yes |  |
+| `type` | [ClusterType](../Cluster/ClusterType.md) | Yes |  |
+| `version` | string | Yes |  |
 | `access_write_compress_enabled` | boolean | No |  |
 | `allocated_prioritized_space` | integer (int64) | No |  |
 | `allocated_prioritized_space_usage` | number (double) | No |  |
 | `application_highest_version` | string | No |  |
-| `applications` | NestedApplication[] | No |  |
-| `architecture` | [Architecture](Architecture.md) | Yes |  |
+| `applications` | Array of [NestedApplication](../Nested/NestedApplication.md) | No |  |
 | `auto_converge` | boolean | No |  |
 | `commited_memory_bytes` | integer (int64) | No |  |
-| `connect_state` | [ConnectState](ConnectState.md) | Yes |  |
-| `consistency_groups` | NestedConsistencyGroup[] | No |  |
+| `consistency_groups` | Array of [NestedConsistencyGroup](../Nested/NestedConsistencyGroup.md) | No |  |
 | `current_cpu_model` | string | No |  |
 | `data_reduction_ratio` | number (double) | No |  |
 | `data_reduction_saving` | number (double) | No |  |
-| `datacenters` | NestedDatacenter[] | No |  |
+| `datacenters` | Array of [NestedDatacenter](../Nested/NestedDatacenter.md) | No |  |
 | `dirty_cache_space` | integer (int64) | No |  |
 | `dirty_cache_usage` | number (double) | No |  |
 | `disconnected_date` | string | No |  |
 | `disconnected_reason` | any | No |  |
-| `dns` | string[] | Yes |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `ecp_license` | any | No |  |
 | `enable_tiering` | boolean | No |  |
@@ -34,13 +44,11 @@
 | `failure_data_space` | integer (int64) | No |  |
 | `has_metrox` | boolean | No |  |
 | `host_num` | integer (int32) | No |  |
-| `hosts` | NestedHost[] | No |  |
+| `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `hypervisor` | any | No |  |
-| `id` | string | Yes |  |
-| `ip` | string | Yes |  |
 | `is_all_flash` | boolean | No |  |
 | `iscsi_vip` | string | No |  |
-| `labels` | NestedLabel[] | No |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `license_expire_date` | string | No |  |
 | `license_serial` | string | No |  |
 | `license_sign_date` | string | No |  |
@@ -58,10 +66,8 @@
 | `mgt_netmask` | string | No |  |
 | `migration_data_size` | integer (int64) | No |  |
 | `migration_speed` | integer (int64) | No |  |
-| `name` | string | Yes |  |
 | `no_performance_layer` | boolean | No |  |
 | `ntp_mode` | any | No |  |
-| `ntp_servers` | string[] | Yes |  |
 | `nvme_over_rdma_enabled` | boolean | No |  |
 | `nvme_over_tcp_enabled` | boolean | No |  |
 | `nvmf_enabled` | boolean | No |  |
@@ -80,7 +86,6 @@
 | `provisioned_memory_bytes` | integer (int64) | No |  |
 | `provisioned_ratio` | number (double) | No |  |
 | `rdma_enabled` | boolean | No |  |
-| `recommended_cpu_models` | string[] | Yes |  |
 | `recover_data_size` | integer (int64) | No |  |
 | `recover_speed` | integer (int64) | No |  |
 | `replica_capacity_only` | boolean | No |  |
@@ -94,13 +99,11 @@
 | `total_cache_capacity` | integer (int64) | No |  |
 | `total_cpu_cores` | integer (int32) | No |  |
 | `total_cpu_hz` | integer (int64) | No |  |
-| `total_cpu_models` | string[] | Yes |  |
 | `total_cpu_sockets` | integer (int32) | No |  |
 | `total_data_capacity` | integer (int64) | No |  |
 | `total_memory_bytes` | integer (int64) | No |  |
 | `total_prio_volume_size` | integer (int64) | No |  |
 | `total_prio_volume_size_usage` | number (double) | No |  |
-| `type` | [ClusterType](ClusterType.md) | Yes |  |
 | `upgrade_for_tiering` | boolean | No |  |
 | `upgrade_tool_version` | string | No |  |
 | `used_cache_space` | integer (int64) | No |  |
@@ -110,13 +113,12 @@
 | `valid_cache_space` | integer (int64) | No |  |
 | `valid_data_space` | integer (int64) | No |  |
 | `vcenterAccount` | any | No |  |
-| `vdses` | NestedVds[] | No |  |
-| `version` | string | Yes |  |
+| `vdses` | Array of [NestedVds](../Nested/NestedVds.md) | No |  |
 | `vhost_enabled` | boolean | No |  |
-| `vm_folders` | NestedVmFolder[] | No |  |
+| `vm_folders` | Array of [NestedVmFolder](../Nested/NestedVmFolder.md) | No |  |
 | `vm_num` | integer (int32) | No |  |
-| `vm_templates` | NestedVmTemplate[] | No |  |
-| `vms` | NestedVm[] | No |  |
+| `vm_templates` | Array of [NestedVmTemplate](../Nested/NestedVmTemplate.md) | No |  |
+| `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
 | `witness` | any | No |  |
-| `zones` | NestedZone[] | No |  |
+| `zones` | Array of [NestedZone](../Nested/NestedZone.md) | No |  |
 

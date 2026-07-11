@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVcenterAccount](NestedAggregateVcenterAccount.md) | Yes |  |
+| `aggregate` | [NestedAggregateVcenterAccount](../Nested/NestedAggregateVcenterAccount.md) | Yes |  |
 

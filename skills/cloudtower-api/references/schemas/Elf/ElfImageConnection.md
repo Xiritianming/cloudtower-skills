@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateElfImage](NestedAggregateElfImage.md) | Yes |  |
+| `aggregate` | [NestedAggregateElfImage](../Nested/NestedAggregateElfImage.md) | Yes |  |
 

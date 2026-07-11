@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `labels` | NestedLabel[] | Yes |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | Yes |  |
 

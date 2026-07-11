@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmEntityFilterResult](NestedAggregateVmEntityFilterResult.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmEntityFilterResult](../Nested/NestedAggregateVmEntityFilterResult.md) | Yes |  |
 

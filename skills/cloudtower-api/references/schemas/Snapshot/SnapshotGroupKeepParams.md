@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [SnapshotGroupWhereInput](SnapshotGroupWhereInput.md) | Yes |  |
+| `where` | [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | Yes |  |
 

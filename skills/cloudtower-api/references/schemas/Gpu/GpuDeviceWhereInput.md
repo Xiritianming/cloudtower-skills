@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | GpuDeviceWhereInput[] | No |  |
-| `NOT` | GpuDeviceWhereInput[] | No |  |
-| `OR` | GpuDeviceWhereInput[] | No |  |
+| `AND` | Array of [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
+| `NOT` | Array of [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
+| `OR` | Array of [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
 | `assigned_vgpus_num` | integer (int32) | No |  |
 | `assigned_vgpus_num_gt` | integer (int32) | No |  |
 | `assigned_vgpus_num_gte` | integer (int32) | No |  |
@@ -68,9 +70,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `host` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -146,13 +148,13 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `status` | any | No |  |
-| `status_in` | GpuDeviceStatus[] | No |  |
+| `status_in` | Array of [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | GpuDeviceStatus[] | No |  |
+| `status_not_in` | Array of [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
 | `user_usage` | any | No |  |
-| `user_usage_in` | GpuDeviceUsage[] | No |  |
+| `user_usage_in` | Array of [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `user_usage_not` | any | No |  |
-| `user_usage_not_in` | GpuDeviceUsage[] | No |  |
+| `user_usage_not_in` | Array of [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `user_vgpu_type_id` | string | No |  |
 | `user_vgpu_type_id_contains` | string | No |  |
 | `user_vgpu_type_id_ends_with` | string | No |  |

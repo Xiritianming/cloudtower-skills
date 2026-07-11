@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `shutdownVms` | ShutdownVmID[] | Yes |  |
+| `shutdownVms` | Array of [ShutdownVmID](../Shutdown/ShutdownVmID.md) | Yes |  |
 | `done` | boolean | Yes |  |
 

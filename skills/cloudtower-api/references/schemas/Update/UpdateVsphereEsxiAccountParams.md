@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | UpdateVsphereEsxiAccountParamsData[] | Yes |  |
+| `data` | Array of [UpdateVsphereEsxiAccountParamsData](../Update/UpdateVsphereEsxiAccountParamsData.md) | Yes |  |
 

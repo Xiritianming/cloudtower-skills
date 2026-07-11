@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | IpmiWhereInput[] | No |  |
-| `NOT` | IpmiWhereInput[] | No |  |
-| `OR` | IpmiWhereInput[] | No |  |
+| `AND` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
+| `NOT` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
+| `OR` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
 | `host` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

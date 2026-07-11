@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicationRestorePointWhereInput[] | No |  |
-| `NOT` | ReplicationRestorePointWhereInput[] | No |  |
-| `OR` | ReplicationRestorePointWhereInput[] | No |  |
+| `AND` | Array of [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
+| `OR` | Array of [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
 | `cluster_local_id` | string | No |  |
 | `cluster_local_id_contains` | string | No |  |
 | `cluster_local_id_ends_with` | string | No |  |
@@ -24,17 +26,17 @@
 | `cluster_local_id_not_starts_with` | string | No |  |
 | `cluster_local_id_starts_with` | string | No |  |
 | `creation` | any | No |  |
-| `creation_in` | BackupRestorePointCreation[] | No |  |
+| `creation_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_not` | any | No |  |
-| `creation_not_in` | BackupRestorePointCreation[] | No |  |
+| `creation_not_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `dedup` | any | No |  |
-| `dedup_in` | BackupDedupMode[] | No |  |
+| `dedup_in` | Array of [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
 | `dedup_not` | any | No |  |
-| `dedup_not_in` | BackupDedupMode[] | No |  |
+| `dedup_not_in` | Array of [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failover_executions_every` | any | No |  |
 | `failover_executions_none` | any | No |  |
 | `failover_executions_some` | any | No |  |
@@ -116,9 +118,9 @@
 | `slice_not_starts_with` | string | No |  |
 | `slice_starts_with` | string | No |  |
 | `snapshot_consistent_type` | any | No |  |
-| `snapshot_consistent_type_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_not` | any | No |  |
-| `snapshot_consistent_type_not_in` | ConsistentType[] | No |  |
+| `snapshot_consistent_type_not_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `sync_replication_plan` | any | No |  |
 | `tower_deploy_id` | string | No |  |
 | `tower_deploy_id_contains` | string | No |  |
@@ -135,9 +137,9 @@
 | `tower_deploy_id_not_starts_with` | string | No |  |
 | `tower_deploy_id_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | BackupRestorePointType[] | No |  |
+| `type_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | BackupRestorePointType[] | No |  |
+| `type_not_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `vm` | any | No |  |
 | `vm_local_id` | string | No |  |
 | `vm_local_id_contains` | string | No |  |

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | LabelWhereInput[] | No |  |
-| `NOT` | LabelWhereInput[] | No |  |
-| `OR` | LabelWhereInput[] | No |  |
+| `AND` | Array of [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `NOT` | Array of [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `OR` | Array of [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `cluster_num` | integer (int32) | No |  |
 | `cluster_num_gt` | integer (int32) | No |  |
 | `cluster_num_gte` | integer (int32) | No |  |

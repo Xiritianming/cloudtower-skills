@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `datacenter` | [NestedDatacenter](NestedDatacenter.md) | Yes |  |
-| `failure_data_space` | integer (int64) | No |  |
-| `host_num` | integer (int32) | No |  |
-| `hosts` | NestedHost[] | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
+| `datacenter` | [NestedDatacenter](../Nested/NestedDatacenter.md) | Yes |  |
 | `id` | string | Yes |  |
 | `is_preferred` | boolean | Yes |  |
+| `failure_data_space` | integer (int64) | No |  |
+| `host_num` | integer (int32) | No |  |
+| `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `local_id` | string | No |  |
 | `provisioned_cpu_cores` | integer (int32) | No |  |
 | `provisioned_cpu_cores_for_active_vm` | integer (int32) | No |  |

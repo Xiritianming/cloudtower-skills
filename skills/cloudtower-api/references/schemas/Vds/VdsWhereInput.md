@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VdsWhereInput[] | No |  |
-| `NOT` | VdsWhereInput[] | No |  |
-| `OR` | VdsWhereInput[] | No |  |
+| `AND` | Array of [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `NOT` | Array of [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `OR` | Array of [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
 | `bond_mode` | string | No |  |
 | `bond_mode_contains` | string | No |  |
 | `bond_mode_ends_with` | string | No |  |
@@ -25,9 +27,9 @@
 | `bond_mode_starts_with` | string | No |  |
 | `cluster` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `everoute_cluster` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -94,9 +96,9 @@
 | `ovsbr_name_not_starts_with` | string | No |  |
 | `ovsbr_name_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | NetworkType[] | No |  |
+| `type_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | NetworkType[] | No |  |
+| `type_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `vlans_every` | any | No |  |
 | `vlans_none` | any | No |  |
 | `vlans_num` | integer (int32) | No |  |

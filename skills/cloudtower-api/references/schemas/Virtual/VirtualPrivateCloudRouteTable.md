@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `default_for_vpc` | boolean | No |  |
-| `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `routes` | NestedVirtualPrivateCloudRoute[] | No |  |
-| `subnets` | NestedVirtualPrivateCloudSubnet[] | No |  |
-| `vpc` | [NestedVirtualPrivateCloud](NestedVirtualPrivateCloud.md) | Yes |  |
+| `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | Yes |  |
+| `default_for_vpc` | boolean | No |  |
+| `description` | string | No |  |
+| `entityAsyncStatus` | any | No |  |
+| `routes` | Array of [NestedVirtualPrivateCloudRoute](../Nested/NestedVirtualPrivateCloudRoute.md) | No |  |
+| `subnets` | Array of [NestedVirtualPrivateCloudSubnet](../Nested/NestedVirtualPrivateCloudSubnet.md) | No |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [ContentLibraryVmTemplateWhereInput](ContentLibraryVmTemplateWhereInput.md) | Yes |  |
+| `where` | [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | Yes |  |
 

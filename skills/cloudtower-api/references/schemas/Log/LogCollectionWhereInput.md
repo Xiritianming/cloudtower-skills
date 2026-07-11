@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | LogCollectionWhereInput[] | No |  |
-| `NOT` | LogCollectionWhereInput[] | No |  |
-| `OR` | LogCollectionWhereInput[] | No |  |
+| `AND` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
+| `NOT` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
+| `OR` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `hosts_every` | any | No |  |
 | `hosts_none` | any | No |  |
@@ -110,8 +112,8 @@
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
 | `status` | any | No |  |
-| `status_in` | LogCollectionStatus[] | No |  |
+| `status_in` | Array of [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | LogCollectionStatus[] | No |  |
+| `status_not_in` | Array of [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
 | `witness` | any | No |  |
 

@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [UsbDeviceWhereInput](UsbDeviceWhereInput.md) | Yes |  |
+| `where` | [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vms` | [VmWhereInput](VmWhereInput.md) | No |  |
+| `vms` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `vm_id` | string | No |  |
 

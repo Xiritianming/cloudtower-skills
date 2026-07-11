@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `task` | [NestedTask](NestedTask.md) | Yes |  |
+| `task` | [NestedTask](../Nested/NestedTask.md) | Yes |  |
 

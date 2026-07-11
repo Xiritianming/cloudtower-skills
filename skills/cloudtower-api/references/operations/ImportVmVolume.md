@@ -1,4 +1,4 @@
-# POST /import-vm-volume
+# POST /v2/api/import-vm-volume
 
 **Resource:** [VmVolume](../resources/VmVolume.md)
 **Operation ID:** `ImportVmVolume`
@@ -17,6 +17,27 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [ImportVmVolumeParams](../schemas/Import/ImportVmVolumeParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "upload_task_id": "<upload_task_id>",
+    "name": "<name>",
+    "cluster_id": "<cluster_id>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py ImportVmVolume /tmp/body.json
+bash scripts/call.sh /v2/api/import-vm-volume /tmp/body.json
+```
 
 ## Responses
 

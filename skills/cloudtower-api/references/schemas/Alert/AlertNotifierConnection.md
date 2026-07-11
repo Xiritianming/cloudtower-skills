@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateAlertNotifier](NestedAggregateAlertNotifier.md) | Yes |  |
+| `aggregate` | [NestedAggregateAlertNotifier](../Nested/NestedAggregateAlertNotifier.md) | Yes |  |
 

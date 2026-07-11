@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `clusters` | [ClusterWhereInput](ClusterWhereInput.md) | Yes |  |
-| `cloud_init_supported` | boolean | No |  |
-| `vm` | [VmWhereUniqueInput](VmWhereUniqueInput.md) | Yes |  |
-| `description` | string | No |  |
+| `clusters` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | Yes |  |
+| `vm` | [VmWhereUniqueInput](../Vm/VmWhereUniqueInput.md) | Yes |  |
 | `name` | string | Yes |  |
+| `cloud_init_supported` | boolean | No |  |
+| `description` | string | No |  |
 

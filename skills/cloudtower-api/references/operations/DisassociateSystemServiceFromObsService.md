@@ -1,4 +1,4 @@
-# POST /disassociate-system-service-from-obs-service
+# POST /v2/api/disassociate-system-service-from-obs-service
 
 **Resource:** [Observability](../resources/Observability.md)
 **Operation ID:** `DisassociateSystemServiceFromObsService`
@@ -17,6 +17,23 @@
 **Content Types:** `application/json`
 
 **Schema:** [DisassociateSystemServiceFromObsServiceParams](../schemas/Disassociate/DisassociateSystemServiceFromObsServiceParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{
+  "system_service_id": "<system_service_id>"
+}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py DisassociateSystemServiceFromObsService /tmp/body.json
+bash scripts/call.sh /v2/api/disassociate-system-service-from-obs-service /tmp/body.json
+```
 
 ## Responses
 

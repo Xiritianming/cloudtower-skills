@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `auth_info` | [HostAuthInfo](HostAuthInfo.md) | No |  |
-| `data` | HostCreationParamsData[] | Yes |  |
+| `data` | Array of [HostCreationParamsData](../Host/HostCreationParamsData.md) | Yes |  |
 | `cluster_id` | string | Yes |  |
+| `auth_info` | [HostAuthInfo](../Host/HostAuthInfo.md) | No |  |
 

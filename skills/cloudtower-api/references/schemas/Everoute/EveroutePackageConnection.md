@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateEveroutePackage](NestedAggregateEveroutePackage.md) | Yes |  |
+| `aggregate` | [NestedAggregateEveroutePackage](../Nested/NestedAggregateEveroutePackage.md) | Yes |  |
 

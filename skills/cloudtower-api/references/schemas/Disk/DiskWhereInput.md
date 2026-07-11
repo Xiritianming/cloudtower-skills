@@ -4,15 +4,17 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | DiskWhereInput[] | No |  |
-| `NOT` | DiskWhereInput[] | No |  |
-| `OR` | DiskWhereInput[] | No |  |
+| `AND` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `NOT` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `OR` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `firmware` | string | No |  |
 | `firmware_contains` | string | No |  |
 | `firmware_ends_with` | string | No |  |
@@ -28,13 +30,13 @@
 | `firmware_not_starts_with` | string | No |  |
 | `firmware_starts_with` | string | No |  |
 | `function` | any | No |  |
-| `function_in` | DiskFunction[] | No |  |
+| `function_in` | Array of [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `function_not` | any | No |  |
-| `function_not_in` | DiskFunction[] | No |  |
+| `function_not_in` | Array of [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `health_status` | any | No |  |
-| `health_status_in` | DiskHealthStatus[] | No |  |
+| `health_status_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_not` | any | No |  |
-| `health_status_not_in` | DiskHealthStatus[] | No |  |
+| `health_status_not_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `healthy` | boolean | No |  |
 | `healthy_not` | boolean | No |  |
 | `host` | any | No |  |
@@ -149,9 +151,9 @@
 | `pmem_dimms_none` | any | No |  |
 | `pmem_dimms_some` | any | No |  |
 | `recommended_usage` | any | No |  |
-| `recommended_usage_in` | DiskUsage[] | No |  |
+| `recommended_usage_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `recommended_usage_not` | any | No |  |
-| `recommended_usage_not_in` | DiskUsage[] | No |  |
+| `recommended_usage_not_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `remaining_life_percent` | integer (int32) | No |  |
 | `remaining_life_percent_gt` | integer (int32) | No |  |
 | `remaining_life_percent_gte` | integer (int32) | No |  |
@@ -183,15 +185,15 @@
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
 | `type` | any | No |  |
-| `type_in` | DiskType[] | No |  |
+| `type_in` | Array of [DiskType](../Disk/DiskType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | DiskType[] | No |  |
+| `type_not_in` | Array of [DiskType](../Disk/DiskType.md) | No |  |
 | `usage` | any | No |  |
-| `usage_in` | DiskUsage[] | No |  |
+| `usage_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `usage_not` | any | No |  |
-| `usage_not_in` | DiskUsage[] | No |  |
+| `usage_not_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `usage_status` | any | No |  |
-| `usage_status_in` | DiskUsageStatus[] | No |  |
+| `usage_status_in` | Array of [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
 | `usage_status_not` | any | No |  |
-| `usage_status_not_in` | DiskUsageStatus[] | No |  |
+| `usage_status_not_in` | Array of [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
 

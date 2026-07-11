@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmEntityFilterResultWhereInput[] | No |  |
-| `NOT` | VmEntityFilterResultWhereInput[] | No |  |
-| `OR` | VmEntityFilterResultWhereInput[] | No |  |
+| `AND` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
+| `NOT` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
+| `OR` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
 | `entityFilter` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

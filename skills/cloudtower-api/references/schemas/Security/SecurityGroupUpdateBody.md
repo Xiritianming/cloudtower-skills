@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [SecurityGroupUpdateParams](SecurityGroupUpdateParams.md) | Yes |  |
-| `where` | [SecurityGroupWhereInput](SecurityGroupWhereInput.md) | Yes |  |
+| `data` | [SecurityGroupUpdateParams](../Security/SecurityGroupUpdateParams.md) | Yes |  |
+| `where` | [SecurityGroupWhereInput](../Security/SecurityGroupWhereInput.md) | Yes |  |
 

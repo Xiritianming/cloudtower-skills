@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VmExportFileWhereUniqueInput](VmExportFileWhereUniqueInput.md) | Yes |  |
+| `where` | [VmExportFileWhereUniqueInput](../Vm/VmExportFileWhereUniqueInput.md) | Yes |  |
 

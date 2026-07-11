@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `amount` | integer (int32) | No |  |
 | `gpu_id` | string | Yes |  |
+| `amount` | integer (int32) | No |  |
 

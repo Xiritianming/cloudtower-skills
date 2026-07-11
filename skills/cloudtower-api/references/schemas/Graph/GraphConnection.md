@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateGraph](NestedAggregateGraph.md) | Yes |  |
+| `aggregate` | [NestedAggregateGraph](../Nested/NestedAggregateGraph.md) | Yes |  |
 

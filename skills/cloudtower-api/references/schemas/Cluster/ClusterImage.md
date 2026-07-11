@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `id` | string | Yes |  |
-| `local_id` | string | No |  |
 | `meta_name` | string | Yes |  |
 | `meta_size` | integer (int64) | Yes |  |
 | `name` | string | Yes |  |
 | `size` | integer (int64) | Yes |  |
 | `upgrade_from` | string[] | Yes |  |
-| `upgrade_tool_version` | string | No |  |
 | `version` | string | Yes |  |
+| `entityAsyncStatus` | any | No |  |
+| `local_id` | string | No |  |
+| `upgrade_tool_version` | string | No |  |
 | `zbs_version` | string | No |  |
 

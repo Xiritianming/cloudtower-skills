@@ -1,0 +1,143 @@
+<%
+function _typeCell(field) {
+	if (field.schema?.ref) {
+		const rn = field.schema.ref.replace("[]", "");
+		const arr = field.schema.ref.endsWith("[]");
+		return `${arr ? "Array of " : ""}[${rn}](../schemas/${it.toFileName(it.extractSchemaPrefix(rn))}/${it.toFileName(rn)}.md)`;
+	}
+	return field.type;
+}
+function _fieldRows(fields) {
+	return fields
+		.map((f) => `| \`${f.name}\` | ${_typeCell(f)} | ${f.required ? "Yes" : "No"} | ${f.description ?? ""} |`)
+		.join("\n");
+}
+function renderInlineSchema(s) {
+	if (!s) return "";
+	if (s.type === "object" && s.fields && s.fields.length) {
+		let out =
+			"| Field | Type | Required | Description |\n|-------|------|----------|-------------|\n" +
+			_fieldRows(s.fields);
+		for (const f of s.fields.filter((f) => f.nestedFields && f.nestedFields.length)) {
+			out +=
+				`\n\n**\`${f.name}\` fields:**\n\n| Field | Type | Required | Description |\n|-------|------|----------|-------------|\n` +
+				_fieldRows(f.nestedFields);
+		}
+		return out;
+	}
+	if (s.type === "array") {
+		return s.items?.ref
+			? `Array of [${s.items.ref}](../schemas/${it.toFileName(it.extractSchemaPrefix(s.items.ref))}/${it.toFileName(s.items.ref)}.md)`
+			: "Array";
+	}
+	if (s.type === "enum" && s.enumValues) {
+		return "Enum: " + s.enumValues.map((v) => `\`${v}\``).join(", ");
+	}
+	return "";
+}
+-%>
+# <%= it.method %> <%= it.apiPrefix %><%= it.path %>
+
+**Resource:** [<%= it.tag %>](../resources/<%= it.toFileName(it.tag) %>.md)
+<% if (it.summary) { -%>
+**<%= it.summary %>**
+<% } -%>
+**Operation ID:** `<%= it.operationId %>`
+<% if (it.deprecated) { -%>
+⚠️ **Deprecated**
+<% } -%>
+<% if (it.description && it.description !== it.summary) { %>
+<%= it.description %>
+<% } -%>
+
+<% if (it.parameters.length > 0) { -%>
+## Parameters
+
+| Name | In | Type | Required | Description |
+|------|------|------|----------|-------------|
+<% it.parameters.forEach(param => { -%>
+| `<%= param.name %>` | <%= param.in %> | <%= param.type %> | <%= param.required ? "Yes" : "No" %> | <%= param.description ?? "" %> |
+<% }) -%>
+
+<% } -%>
+<% if (it.requestBody) { -%>
+## Request Body
+
+<% if (it.requestBody.description) { -%>
+<%= it.requestBody.description %>
+
+<% } -%>
+<% if (it.requestBody.required) { -%>
+**Required:** Yes
+
+<% } -%>
+**Content Types:** <%= it.requestBody.contentTypes.map(ct => `\`${ct}\``).join(", ") %>
+
+<% if (it.requestBody.schema?.ref) { -%>
+<% const refName = it.requestBody.schema.ref.replace("[]", ""); -%>
+<% const prefix = it.extractSchemaPrefix(refName); -%>
+<% const isArray = it.requestBody.schema.ref.endsWith("[]"); -%>
+**Schema:** <%= isArray ? "Array of " : "" %>[<%= refName %>](../schemas/<%= it.toFileName(prefix) %>/<%= it.toFileName(refName) %>.md)
+
+<% } else if (it.requestBody.schema?.inline) { -%>
+<% const _reqInline = renderInlineSchema(it.requestBody.schema.inline); -%>
+<% if (_reqInline) { -%>
+**Schema** (inline):
+
+<%~ _reqInline %>
+
+<% } -%>
+<% } -%>
+<% } -%>
+<% if (it.exampleJson) { -%>
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+<%= it.exampleJson %>
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py <%= it.operationId %> /tmp/body.json
+bash scripts/call.sh <%= it.apiPrefix %><%= it.path %> /tmp/body.json
+```
+
+<% } -%>
+<% if (it.responses.length > 0) { -%>
+## Responses
+
+| Status | Description |
+|--------|-------------|
+<% it.responses.forEach(res => { -%>
+| <%= res.status %> | <%= res.description %> |
+<% }) -%>
+
+<% const successResponse = it.responses.find(r => r.status === "200" || r.status === "201"); -%>
+<% if (successResponse?.schema?.ref) { -%>
+<% const refName = successResponse.schema.ref.replace("[]", ""); -%>
+<% const prefix = it.extractSchemaPrefix(refName); -%>
+<% const isArray = successResponse.schema.ref.endsWith("[]"); -%>
+**Success Response Schema:**
+
+<%= isArray ? "Array of " : "" %>[<%= refName %>](../schemas/<%= it.toFileName(prefix) %>/<%= it.toFileName(refName) %>.md)
+
+<% } else if (successResponse?.schema?.inline) { -%>
+<% const _resInline = renderInlineSchema(successResponse.schema.inline); -%>
+<% if (_resInline) { -%>
+**Success Response Schema** (inline):
+
+<%~ _resInline %>
+
+<% } -%>
+<% } -%>
+<% } -%>
+<% if (it.security.length > 0) { -%>
+## Security
+
+<% it.security.forEach(sec => { -%>
+- **<%= sec.name %>**<%= sec.scopes.length > 0 ? `: ${sec.scopes.join(", ")}` : "" %>
+<% }) -%>
+<% } -%>

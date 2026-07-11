@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmWhereInput[] | No |  |
-| `NOT` | VmWhereInput[] | No |  |
-| `OR` | VmWhereInput[] | No |  |
+| `AND` | Array of [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `NOT` | Array of [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `OR` | Array of [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `anti_malware_enabled` | boolean | No |  |
 | `anti_malware_enabled_not` | boolean | No |  |
 | `backup_plans_every` | any | No |  |
@@ -29,9 +31,9 @@
 | `bios_uuid_not_starts_with` | string | No |  |
 | `bios_uuid_starts_with` | string | No |  |
 | `clock_offset` | any | No |  |
-| `clock_offset_in` | VmClockOffset[] | No |  |
+| `clock_offset_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `clock_offset_not` | any | No |  |
-| `clock_offset_not_in` | VmClockOffset[] | No |  |
+| `clock_offset_not_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `cloud_init_supported` | boolean | No |  |
 | `cloud_init_supported_not` | boolean | No |  |
 | `cluster` | any | No |  |
@@ -96,16 +98,16 @@
 | `dpi_enabled` | boolean | No |  |
 | `dpi_enabled_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entity_filter_results_every` | any | No |  |
 | `entity_filter_results_none` | any | No |  |
 | `entity_filter_results_some` | any | No |  |
 | `firmware` | any | No |  |
-| `firmware_in` | VmFirmware[] | No |  |
+| `firmware_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `firmware_not` | any | No |  |
-| `firmware_not_in` | VmFirmware[] | No |  |
+| `firmware_not_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `folder` | any | No |  |
 | `gpu_devices_every` | any | No |  |
 | `gpu_devices_none` | any | No |  |
@@ -125,9 +127,9 @@
 | `guest_cpu_model_not_starts_with` | string | No |  |
 | `guest_cpu_model_starts_with` | string | No |  |
 | `guest_os_type` | any | No |  |
-| `guest_os_type_in` | VmGuestsOperationSystem[] | No |  |
+| `guest_os_type_in` | Array of [VmGuestsOperationSystem](../Vm/VmGuestsOperationSystem.md) | No |  |
 | `guest_os_type_not` | any | No |  |
-| `guest_os_type_not_in` | VmGuestsOperationSystem[] | No |  |
+| `guest_os_type_not_in` | Array of [VmGuestsOperationSystem](../Vm/VmGuestsOperationSystem.md) | No |  |
 | `guest_size_usage` | number (double) | No |  |
 | `guest_size_usage_gt` | number (double) | No |  |
 | `guest_size_usage_gte` | number (double) | No |  |
@@ -147,9 +149,9 @@
 | `ha` | boolean | No |  |
 | `ha_not` | boolean | No |  |
 | `ha_priority` | any | No |  |
-| `ha_priority_in` | VmHaPriority[] | No |  |
+| `ha_priority_in` | Array of [VmHaPriority](../Vm/VmHaPriority.md) | No |  |
 | `ha_priority_not` | any | No |  |
-| `ha_priority_not_in` | VmHaPriority[] | No |  |
+| `ha_priority_not_in` | Array of [VmHaPriority](../Vm/VmHaPriority.md) | No |  |
 | `host` | any | No |  |
 | `hostname` | string | No |  |
 | `hostname_contains` | string | No |  |
@@ -212,9 +214,9 @@
 | `internal_product_not_starts_with` | string | No |  |
 | `internal_product_starts_with` | string | No |  |
 | `io_policy` | any | No |  |
-| `io_policy_in` | VmDiskIoPolicy[] | No |  |
+| `io_policy_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `io_policy_not` | any | No |  |
-| `io_policy_not_in` | VmDiskIoPolicy[] | No |  |
+| `io_policy_not_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `ips` | string | No |  |
 | `ips_contains` | string | No |  |
 | `ips_ends_with` | string | No |  |
@@ -294,9 +296,9 @@
 | `max_bandwidth_not` | integer (int64) | No |  |
 | `max_bandwidth_not_in` | integer[] | No |  |
 | `max_bandwidth_policy` | any | No |  |
-| `max_bandwidth_policy_in` | VmDiskIoRestrictType[] | No |  |
+| `max_bandwidth_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_not` | any | No |  |
-| `max_bandwidth_policy_not_in` | VmDiskIoRestrictType[] | No |  |
+| `max_bandwidth_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
 | `max_iops_gt` | integer (int32) | No |  |
 | `max_iops_gte` | integer (int32) | No |  |
@@ -306,9 +308,9 @@
 | `max_iops_not` | integer (int32) | No |  |
 | `max_iops_not_in` | integer[] | No |  |
 | `max_iops_policy` | any | No |  |
-| `max_iops_policy_in` | VmDiskIoRestrictType[] | No |  |
+| `max_iops_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_not` | any | No |  |
-| `max_iops_policy_not_in` | VmDiskIoRestrictType[] | No |  |
+| `max_iops_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `memory` | integer (int64) | No |  |
 | `memory_gt` | integer (int64) | No |  |
 | `memory_gte` | integer (int64) | No |  |
@@ -409,9 +411,9 @@
 | `snapshots_none` | any | No |  |
 | `snapshots_some` | any | No |  |
 | `status` | any | No |  |
-| `status_in` | VmStatus[] | No |  |
+| `status_in` | Array of [VmStatus](../Vm/VmStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | VmStatus[] | No |  |
+| `status_not_in` | Array of [VmStatus](../Vm/VmStatus.md) | No |  |
 | `unique_logical_size` | number (double) | No |  |
 | `unique_logical_size_gt` | number (double) | No |  |
 | `unique_logical_size_gte` | number (double) | No |  |
@@ -456,9 +458,9 @@
 | `vcpu_not` | integer (int32) | No |  |
 | `vcpu_not_in` | integer[] | No |  |
 | `video_type` | any | No |  |
-| `video_type_in` | VmVideoType[] | No |  |
+| `video_type_in` | Array of [VmVideoType](../Vm/VmVideoType.md) | No |  |
 | `video_type_not` | any | No |  |
-| `video_type_not_in` | VmVideoType[] | No |  |
+| `video_type_not_in` | Array of [VmVideoType](../Vm/VmVideoType.md) | No |  |
 | `vm_disks_every` | any | No |  |
 | `vm_disks_none` | any | No |  |
 | `vm_disks_some` | any | No |  |
@@ -469,9 +471,9 @@
 | `vm_placement_group_none` | any | No |  |
 | `vm_placement_group_some` | any | No |  |
 | `vm_tools_status` | any | No |  |
-| `vm_tools_status_in` | VmToolsStatus[] | No |  |
+| `vm_tools_status_in` | Array of [VmToolsStatus](../Vm/VmToolsStatus.md) | No |  |
 | `vm_tools_status_not` | any | No |  |
-| `vm_tools_status_not_in` | VmToolsStatus[] | No |  |
+| `vm_tools_status_not_in` | Array of [VmToolsStatus](../Vm/VmToolsStatus.md) | No |  |
 | `vm_tools_version` | string | No |  |
 | `vm_tools_version_contains` | string | No |  |
 | `vm_tools_version_ends_with` | string | No |  |
@@ -487,9 +489,9 @@
 | `vm_tools_version_not_starts_with` | string | No |  |
 | `vm_tools_version_starts_with` | string | No |  |
 | `vm_usage` | any | No |  |
-| `vm_usage_in` | VmUsage[] | No |  |
+| `vm_usage_in` | Array of [VmUsage](../Vm/VmUsage.md) | No |  |
 | `vm_usage_not` | any | No |  |
-| `vm_usage_not_in` | VmUsage[] | No |  |
+| `vm_usage_not_in` | Array of [VmUsage](../Vm/VmUsage.md) | No |  |
 | `win_opt` | boolean | No |  |
 | `win_opt_not` | boolean | No |  |
 

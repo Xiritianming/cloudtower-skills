@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | LicenseWhereInput[] | No |  |
-| `NOT` | LicenseWhereInput[] | No |  |
-| `OR` | LicenseWhereInput[] | No |  |
+| `AND` | Array of [LicenseWhereInput](../License/LicenseWhereInput.md) | No |  |
+| `NOT` | Array of [LicenseWhereInput](../License/LicenseWhereInput.md) | No |  |
+| `OR` | Array of [LicenseWhereInput](../License/LicenseWhereInput.md) | No |  |
 | `expire_date` | string | No |  |
 | `expire_date_gt` | string | No |  |
 | `expire_date_gte` | string | No |  |
@@ -86,11 +88,11 @@
 | `sign_date_not` | string | No |  |
 | `sign_date_not_in` | string[] | No |  |
 | `software_edition` | any | No |  |
-| `software_edition_in` | SoftwareEdition[] | No |  |
+| `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not` | any | No |  |
-| `software_edition_not_in` | SoftwareEdition[] | No |  |
+| `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | LicenseType[] | No |  |
+| `type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | LicenseType[] | No |  |
+| `type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 

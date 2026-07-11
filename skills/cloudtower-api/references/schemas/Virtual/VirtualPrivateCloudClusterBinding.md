@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [NestedCluster](NestedCluster.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | Yes |  |
 | `id` | string | Yes |  |
-| `mtu` | integer (int32) | No |  |
-| `vds` | [NestedVds](NestedVds.md) | Yes |  |
+| `vds` | [NestedVds](../Nested/NestedVds.md) | Yes |  |
 | `vlan_id` | integer (int32) | Yes |  |
-| `vpc_service` | [NestedVirtualPrivateCloudService](NestedVirtualPrivateCloudService.md) | Yes |  |
+| `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | Yes |  |
+| `entityAsyncStatus` | any | No |  |
+| `mtu` | integer (int32) | No |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudNicSnapshotWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudNicSnapshotWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudNicSnapshotWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
 | `floating_ip` | any | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

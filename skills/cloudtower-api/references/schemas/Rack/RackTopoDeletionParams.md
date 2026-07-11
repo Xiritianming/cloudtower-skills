@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [RackTopoWhereInput](RackTopoWhereInput.md) | Yes |  |
+| `where` | [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | Yes |  |
 

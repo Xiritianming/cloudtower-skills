@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `critical` | string[] | Yes |  |
@@ -11,7 +13,7 @@
 | `key` | string | Yes |  |
 | `labels` | object | Yes |  |
 | `notice` | string[] | Yes |  |
-| `status` | [MetroCheckStatusEnum](MetroCheckStatusEnum.md) | Yes |  |
+| `status` | [MetroCheckStatusEnum](../Metro/MetroCheckStatusEnum.md) | Yes |  |
 
 ## Nested Fields
 
@@ -19,4 +21,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+
 

@@ -4,17 +4,19 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `content_library_vm_template` | any | No |  |
 | `createdAt` | string | Yes |  |
 | `damaged` | boolean | Yes |  |
 | `data_port_id` | string | Yes |  |
-| `entityAsyncStatus` | any | No |  |
-| `files` | VmExportFileFile[] | Yes |  |
+| `files` | Array of [VmExportFileFile](../Vm/VmExportFileFile.md) | Yes |  |
 | `id` | string | Yes |  |
 | `storage_cluster_id` | string | Yes |  |
-| `type` | [VmExportFileType](VmExportFileType.md) | Yes |  |
+| `type` | [VmExportFileType](../Vm/VmExportFileType.md) | Yes |  |
+| `content_library_vm_template` | any | No |  |
+| `entityAsyncStatus` | any | No |  |
 | `vm` | any | No |  |
 | `vm_volume` | any | No |  |
 

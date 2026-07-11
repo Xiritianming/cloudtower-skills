@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BrickTopoWhereInput[] | No |  |
-| `NOT` | BrickTopoWhereInput[] | No |  |
-| `OR` | BrickTopoWhereInput[] | No |  |
+| `AND` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `NOT` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `OR` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `cluster_topo` | any | No |  |
 | `height` | integer (int32) | No |  |
@@ -87,12 +89,12 @@
 | `position_not` | integer (int32) | No |  |
 | `position_not_in` | integer[] | No |  |
 | `power_layout` | any | No |  |
-| `power_layout_in` | Direction[] | No |  |
+| `power_layout_in` | Array of [Direction](../Direction/Direction.md) | No |  |
 | `power_layout_not` | any | No |  |
-| `power_layout_not_in` | Direction[] | No |  |
+| `power_layout_not_in` | Array of [Direction](../Direction/Direction.md) | No |  |
 | `power_position` | any | No |  |
-| `power_position_in` | PowerPosition[] | No |  |
+| `power_position_in` | Array of [PowerPosition](../Power/PowerPosition.md) | No |  |
 | `power_position_not` | any | No |  |
-| `power_position_not_in` | PowerPosition[] | No |  |
+| `power_position_not_in` | Array of [PowerPosition](../Power/PowerPosition.md) | No |  |
 | `rack_topo` | any | No |  |
 

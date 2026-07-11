@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [GpuDeviceWhereInput](GpuDeviceWhereInput.md) | Yes |  |
+| `where` | [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -16,5 +18,5 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `vgpu_spec` | string | No |  |
-| `usage` | [GpuDeviceUsage](GpuDeviceUsage.md) | No |  |
+| `usage` | [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 

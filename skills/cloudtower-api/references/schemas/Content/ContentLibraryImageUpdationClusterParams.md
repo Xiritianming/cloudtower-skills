@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [ContentLibraryImageUpdationClusterParamsData](ContentLibraryImageUpdationClusterParamsData.md) | Yes |  |
-| `where` | [ContentLibraryImageWhereInput](ContentLibraryImageWhereInput.md) | Yes |  |
+| `data` | [ContentLibraryImageUpdationClusterParamsData](../Content/ContentLibraryImageUpdationClusterParamsData.md) | Yes |  |
+| `where` | [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | Yes |  |
 

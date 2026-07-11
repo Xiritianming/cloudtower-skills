@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [ConsistencyGroupWhereInput](ConsistencyGroupWhereInput.md) | Yes |  |
+| `where` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

@@ -4,13 +4,15 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `description` | string | No |  |
 | `host` | string | Yes |  |
 | `id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `port` | integer (int32) | Yes |  |
+| `description` | string | No |  |
 | `secure_mode` | any | No |  |
 | `username` | string | No |  |
 

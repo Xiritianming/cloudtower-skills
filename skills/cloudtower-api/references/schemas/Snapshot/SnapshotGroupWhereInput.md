@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SnapshotGroupWhereInput[] | No |  |
-| `NOT` | SnapshotGroupWhereInput[] | No |  |
-| `OR` | SnapshotGroupWhereInput[] | No |  |
+| `AND` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
+| `NOT` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
+| `OR` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `deleted` | boolean | No |  |
 | `deleted_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `estimated_recycling_time` | string | No |  |
 | `estimated_recycling_time_gt` | string | No |  |
 | `estimated_recycling_time_gte` | string | No |  |

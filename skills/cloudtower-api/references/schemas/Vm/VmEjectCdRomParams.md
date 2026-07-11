@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VmDiskWhereInput](VmDiskWhereInput.md) | Yes |  |
+| `where` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | Yes |  |
 

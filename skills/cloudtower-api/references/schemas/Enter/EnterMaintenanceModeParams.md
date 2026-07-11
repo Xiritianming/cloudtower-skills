@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [EnterMaintenanceModeInput](EnterMaintenanceModeInput.md) | Yes |  |
+| `data` | [EnterMaintenanceModeInput](../Enter/EnterMaintenanceModeInput.md) | Yes |  |
 | `where` | object | Yes |  |
 
 ## Nested Fields

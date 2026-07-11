@@ -4,35 +4,37 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `owner` | [VmOwnerParams](VmOwnerParams.md) | No |  |
-| `gpu_devices` | VmGpuOperationParams[] | No |  |
-| `is_full_copy` | boolean | No |  |
 | `rebuild_from_snapshot_id` | string | Yes |  |
-| `max_bandwidth_policy` | [VmDiskIoRestrictType](VmDiskIoRestrictType.md) | No |  |
-| `max_bandwidth_unit` | [BPSUnit](BPSUnit.md) | No |  |
+| `name` | string | Yes |  |
+| `owner` | [VmOwnerParams](../Vm/VmOwnerParams.md) | No |  |
+| `gpu_devices` | Array of [VmGpuOperationParams](../Vm/VmGpuOperationParams.md) | No |  |
+| `is_full_copy` | boolean | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
+| `max_bandwidth_unit` | [BPSUnit](../BPSUnit/BPSUnit.md) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_iops_policy` | [VmDiskIoRestrictType](VmDiskIoRestrictType.md) | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int64) | No |  |
-| `io_policy` | [VmDiskIoPolicy](VmDiskIoPolicy.md) | No |  |
+| `io_policy` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `vcpu` | integer (int32) | No |  |
-| `status` | [VmStatus](VmStatus.md) | No |  |
-| `firmware` | [VmFirmware](VmFirmware.md) | No |  |
-| `ha_priority` | [VmHaPriority](VmHaPriority.md) | No |  |
+| `status` | [VmStatus](../Vm/VmStatus.md) | No |  |
+| `firmware` | [VmFirmware](../Vm/VmFirmware.md) | No |  |
+| `ha_priority` | [VmHaPriority](../Vm/VmHaPriority.md) | No |  |
 | `ha` | boolean | No |  |
-| `pci_nics` | [NicWhereInput](NicWhereInput.md) | No |  |
-| `vm_placement_group` | [VmPlacementGroupWhereInput](VmPlacementGroupWhereInput.md) | No |  |
-| `vm_nics` | VmNicParams[] | No |  |
-| `vm_disks` | [VmDiskParams](VmDiskParams.md) | No |  |
-| `memory_unit` | [ByteUnit](ByteUnit.md) | No |  |
+| `pci_nics` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `vm_placement_group` | [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
+| `vm_nics` | Array of [VmNicParams](../Vm/VmNicParams.md) | No |  |
+| `vm_disks` | [VmDiskParams](../Vm/VmDiskParams.md) | No |  |
+| `memory_unit` | [ByteUnit](../Byte/ByteUnit.md) | No |  |
 | `memory` | integer (int64) | No |  |
 | `cpu_cores` | integer (int32) | No |  |
 | `cpu_sockets` | integer (int32) | No |  |
-| `guest_os_type` | [VmGuestsOperationSystem](VmGuestsOperationSystem.md) | No |  |
+| `guest_os_type` | [VmGuestsOperationSystem](../Vm/VmGuestsOperationSystem.md) | No |  |
 | `folder_id` | string | No |  |
 | `description` | string | No |  |
-| `name` | string | Yes |  |
 | `host_id` | string | No |  |
 | `cluster_id` | string | No |  |
 

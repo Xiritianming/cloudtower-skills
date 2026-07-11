@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [DiskWhereInput](DiskWhereInput.md) | Yes |  |
+| `where` | [DiskWhereInput](../Disk/DiskWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,5 +17,5 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `function` | [DiskFunction](DiskFunction.md) | Yes |  |
+| `function` | [DiskFunction](../Disk/DiskFunction.md) | Yes |  |
 

@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [BackupRestorePointWhereInput](BackupRestorePointWhereInput.md) | Yes |  |
+| `where` | [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

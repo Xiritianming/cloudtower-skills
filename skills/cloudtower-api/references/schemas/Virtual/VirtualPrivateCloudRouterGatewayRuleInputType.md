@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `nexthops` | VirtualPrivateCloudRouterGatewayNexthopInputType[] | No |  |
 | `dst` | string | Yes |  |
+| `nexthops` | Array of [VirtualPrivateCloudRouterGatewayNexthopInputType](../Virtual/VirtualPrivateCloudRouterGatewayNexthopInputType.md) | No |  |
 | `nexthop` | string | No |  |
 

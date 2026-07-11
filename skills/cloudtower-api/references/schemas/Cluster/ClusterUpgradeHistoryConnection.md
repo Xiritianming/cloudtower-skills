@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateClusterUpgradeHistory](NestedAggregateClusterUpgradeHistory.md) | Yes |  |
+| `aggregate` | [NestedAggregateClusterUpgradeHistory](../Nested/NestedAggregateClusterUpgradeHistory.md) | Yes |  |
 

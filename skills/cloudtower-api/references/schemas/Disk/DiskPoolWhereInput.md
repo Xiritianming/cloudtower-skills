@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | DiskPoolWhereInput[] | No |  |
-| `NOT` | DiskPoolWhereInput[] | No |  |
-| `OR` | DiskPoolWhereInput[] | No |  |
+| `AND` | Array of [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
+| `NOT` | Array of [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
+| `OR` | Array of [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
 | `chunk_id` | integer (int32) | No |  |
 | `chunk_id_gt` | integer (int32) | No |  |
 | `chunk_id_gte` | integer (int32) | No |  |
@@ -195,9 +197,9 @@
 | `sata_or_sas_ssd_disk_count_not` | integer (int32) | No |  |
 | `sata_or_sas_ssd_disk_count_not_in` | integer[] | No |  |
 | `status` | any | No |  |
-| `status_in` | DiskPoolStatus[] | No |  |
+| `status_in` | Array of [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | DiskPoolStatus[] | No |  |
+| `status_not_in` | Array of [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
 | `total_cache_capacity` | integer (int64) | No |  |
 | `total_cache_capacity_gt` | integer (int64) | No |  |
 | `total_cache_capacity_gte` | integer (int64) | No |  |
@@ -215,9 +217,9 @@
 | `total_data_capacity_not` | integer (int64) | No |  |
 | `total_data_capacity_not_in` | integer[] | No |  |
 | `use_state` | any | No |  |
-| `use_state_in` | DiskPoolUseState[] | No |  |
+| `use_state_in` | Array of [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
 | `use_state_not` | any | No |  |
-| `use_state_not_in` | DiskPoolUseState[] | No |  |
+| `use_state_not_in` | Array of [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
 | `used_cache_space` | integer (int64) | No |  |
 | `used_cache_space_gt` | integer (int64) | No |  |
 | `used_cache_space_gte` | integer (int64) | No |  |

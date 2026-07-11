@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `where` | [GraphWhereInput](../Graph/GraphWhereInput.md) | Yes |  |
 | `data` | object | No |  |
-| `where` | [GraphWhereInput](GraphWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -16,19 +18,19 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `instance_ids` | string[] | No |  |
-| `luns` | [IscsiLunWhereInput](IscsiLunWhereInput.md) | No |  |
-| `vmNics` | [VmNicWhereInput](VmNicWhereInput.md) | No |  |
-| `nics` | [NicWhereInput](NicWhereInput.md) | No |  |
-| `disks` | [DiskWhereInput](DiskWhereInput.md) | No |  |
-| `vmVolumes` | [VmVolumeWhereInput](VmVolumeWhereInput.md) | No |  |
-| `vms` | [VmWhereInput](VmWhereInput.md) | No |  |
-| `hosts` | [HostWhereInput](HostWhereInput.md) | No |  |
-| `network` | [NetworkType](NetworkType.md) | No |  |
-| `cluster` | [ClusterWhereInput](ClusterWhereInput.md) | No |  |
+| `luns` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `vmNics` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `nics` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `disks` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `vmVolumes` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `vms` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `hosts` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `network` | [NetworkType](../Network/NetworkType.md) | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `service` | string | No |  |
-| `metric_type` | [MetricType](MetricType.md) | No |  |
+| `metric_type` | [MetricType](../Metric/MetricType.md) | No |  |
 | `metric_count` | integer (int32) | No |  |
-| `type` | [GraphType](GraphType.md) | No |  |
+| `type` | [GraphType](../Graph/GraphType.md) | No |  |
 | `resource_type` | string | No |  |
 | `title` | string | No |  |
 | `metric_name` | string | No |  |

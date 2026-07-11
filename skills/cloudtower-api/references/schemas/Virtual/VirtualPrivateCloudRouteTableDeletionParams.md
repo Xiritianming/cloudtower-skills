@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VirtualPrivateCloudRouteTableWhereInput](VirtualPrivateCloudRouteTableWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | Yes |  |
 

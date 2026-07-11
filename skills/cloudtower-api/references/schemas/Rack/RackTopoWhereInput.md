@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | RackTopoWhereInput[] | No |  |
-| `NOT` | RackTopoWhereInput[] | No |  |
-| `OR` | RackTopoWhereInput[] | No |  |
+| `AND` | Array of [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
+| `NOT` | Array of [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
+| `OR` | Array of [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
 | `brick_topoes_every` | any | No |  |
 | `brick_topoes_none` | any | No |  |
 | `brick_topoes_some` | any | No |  |

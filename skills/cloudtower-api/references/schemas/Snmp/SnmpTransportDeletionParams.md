@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [SnmpTransportWhereInput](SnmpTransportWhereInput.md) | Yes |  |
+| `where` | [SnmpTransportWhereInput](../Snmp/SnmpTransportWhereInput.md) | Yes |  |
 

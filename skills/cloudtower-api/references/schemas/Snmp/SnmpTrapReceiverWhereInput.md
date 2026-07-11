@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SnmpTrapReceiverWhereInput[] | No |  |
-| `NOT` | SnmpTrapReceiverWhereInput[] | No |  |
-| `OR` | SnmpTrapReceiverWhereInput[] | No |  |
+| `AND` | Array of [SnmpTrapReceiverWhereInput](../Snmp/SnmpTrapReceiverWhereInput.md) | No |  |
+| `NOT` | Array of [SnmpTrapReceiverWhereInput](../Snmp/SnmpTrapReceiverWhereInput.md) | No |  |
+| `OR` | Array of [SnmpTrapReceiverWhereInput](../Snmp/SnmpTrapReceiverWhereInput.md) | No |  |
 | `auth_pass_phrase` | string | No |  |
 | `auth_pass_phrase_contains` | string | No |  |
 | `auth_pass_phrase_ends_with` | string | No |  |
@@ -24,9 +26,9 @@
 | `auth_pass_phrase_not_starts_with` | string | No |  |
 | `auth_pass_phrase_starts_with` | string | No |  |
 | `auth_protocol` | any | No |  |
-| `auth_protocol_in` | SnmpAuthProtocol[] | No |  |
+| `auth_protocol_in` | Array of [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
 | `auth_protocol_not` | any | No |  |
-| `auth_protocol_not_in` | SnmpAuthProtocol[] | No |  |
+| `auth_protocol_not_in` | Array of [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
 | `cluster` | any | No |  |
 | `community` | string | No |  |
 | `community_contains` | string | No |  |
@@ -59,9 +61,9 @@
 | `engine_id_not_starts_with` | string | No |  |
 | `engine_id_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `host` | string | No |  |
 | `host_contains` | string | No |  |
 | `host_ends_with` | string | No |  |
@@ -93,9 +95,9 @@
 | `inform` | boolean | No |  |
 | `inform_not` | boolean | No |  |
 | `language_code` | any | No |  |
-| `language_code_in` | SnmpLanguageCode[] | No |  |
+| `language_code_in` | Array of [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
 | `language_code_not` | any | No |  |
-| `language_code_not_in` | SnmpLanguageCode[] | No |  |
+| `language_code_not_in` | Array of [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -147,13 +149,13 @@
 | `privacy_pass_phrase_not_starts_with` | string | No |  |
 | `privacy_pass_phrase_starts_with` | string | No |  |
 | `privacy_protocol` | any | No |  |
-| `privacy_protocol_in` | SnmpPrivacyProtocol[] | No |  |
+| `privacy_protocol_in` | Array of [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
 | `privacy_protocol_not` | any | No |  |
-| `privacy_protocol_not_in` | SnmpPrivacyProtocol[] | No |  |
+| `privacy_protocol_not_in` | Array of [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
 | `protocol` | any | No |  |
-| `protocol_in` | SnmpProtocol[] | No |  |
+| `protocol_in` | Array of [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
 | `protocol_not` | any | No |  |
-| `protocol_not_in` | SnmpProtocol[] | No |  |
+| `protocol_not_in` | Array of [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
 | `username_ends_with` | string | No |  |
@@ -169,7 +171,7 @@
 | `username_not_starts_with` | string | No |  |
 | `username_starts_with` | string | No |  |
 | `version` | any | No |  |
-| `version_in` | SnmpVersion[] | No |  |
+| `version_in` | Array of [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
 | `version_not` | any | No |  |
-| `version_not_in` | SnmpVersion[] | No |  |
+| `version_not_in` | Array of [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [UserRoleNextWhereInput](UserRoleNextWhereInput.md) | Yes |  |
+| `where` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | Yes |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [DatacenterWhereInput](DatacenterWhereInput.md) | Yes |  |
+| `where` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | Yes |  |
 

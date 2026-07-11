@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [NvmfNamespaceWhereInput](NvmfNamespaceWhereInput.md) | Yes |  |
+| `where` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

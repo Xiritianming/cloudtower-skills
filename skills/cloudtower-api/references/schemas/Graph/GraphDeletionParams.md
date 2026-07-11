@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [GraphWhereInput](GraphWhereInput.md) | Yes |  |
+| `where` | [GraphWhereInput](../Graph/GraphWhereInput.md) | Yes |  |
 

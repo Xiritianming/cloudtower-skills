@@ -4,14 +4,16 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `type` | [VirtualPrivateCloudNetworkPolicyRuleType](../Virtual/VirtualPrivateCloudNetworkPolicyRuleType.md) | Yes |  |
 | `except_ip_block` | string[] | No |  |
 | `ip_block` | string | No |  |
-| `ports` | NestedVirtualPrivateCloudNetworkPolicyRulePort[] | No |  |
+| `ports` | Array of [NestedVirtualPrivateCloudNetworkPolicyRulePort](../Nested/NestedVirtualPrivateCloudNetworkPolicyRulePort.md) | No |  |
 | `security_group` | any | No |  |
 | `security_group_id` | string | No |  |
-| `selector` | NestedLabel[] | No |  |
+| `selector` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `selector_ids` | string[] | No |  |
-| `type` | [VirtualPrivateCloudNetworkPolicyRuleType](VirtualPrivateCloudNetworkPolicyRuleType.md) | Yes |  |
 

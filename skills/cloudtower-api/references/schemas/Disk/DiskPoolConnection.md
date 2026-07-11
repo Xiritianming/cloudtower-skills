@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateDiskPool](NestedAggregateDiskPool.md) | Yes |  |
+| `aggregate` | [NestedAggregateDiskPool](../Nested/NestedAggregateDiskPool.md) | Yes |  |
 

@@ -1,4 +1,4 @@
-# POST /upload-content-library-image
+# POST /v2/api/upload-content-library-image
 
 **Resource:** [ContentLibraryImage](../resources/ContentLibraryImage.md)
 **Operation ID:** `CreateContentLibraryImage`
@@ -15,6 +15,18 @@
 **Required:** Yes
 
 **Content Types:** `multipart/form-data`
+
+**Schema** (inline):
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `file` | string (binary) | Yes |  |
+| `clusters` | string | Yes |  |
+| `name` | string | No |  |
+| `size` | string | No |  |
+| `size_unit` | string | No |  |
+| `description` | string | No |  |
+| `upload_task_id` | string | No |  |
 
 ## Responses
 

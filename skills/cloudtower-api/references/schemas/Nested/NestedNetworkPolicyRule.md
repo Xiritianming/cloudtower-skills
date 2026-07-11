@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `type` | [NetworkPolicyRuleType](../Network/NetworkPolicyRuleType.md) | Yes |  |
 | `except_ip_block` | string[] | No |  |
 | `ip_block` | string | No |  |
-| `ports` | NestedNetworkPolicyRulePort[] | No |  |
+| `ports` | Array of [NestedNetworkPolicyRulePort](../Nested/NestedNetworkPolicyRulePort.md) | No |  |
 | `security_group` | any | No |  |
 | `security_group_id` | string | No |  |
-| `selector` | NestedLabel[] | No |  |
+| `selector` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `selector_ids` | string[] | No |  |
 | `service_ids` | string[] | No |  |
-| `services` | NestedNetworkPolicyRuleService[] | No |  |
-| `type` | [NetworkPolicyRuleType](NetworkPolicyRuleType.md) | Yes |  |
+| `services` | Array of [NestedNetworkPolicyRuleService](../Nested/NestedNetworkPolicyRuleService.md) | No |  |
 

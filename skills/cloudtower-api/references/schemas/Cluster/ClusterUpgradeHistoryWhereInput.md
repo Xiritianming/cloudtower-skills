@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ClusterUpgradeHistoryWhereInput[] | No |  |
-| `NOT` | ClusterUpgradeHistoryWhereInput[] | No |  |
-| `OR` | ClusterUpgradeHistoryWhereInput[] | No |  |
+| `AND` | Array of [ClusterUpgradeHistoryWhereInput](../Cluster/ClusterUpgradeHistoryWhereInput.md) | No |  |
+| `NOT` | Array of [ClusterUpgradeHistoryWhereInput](../Cluster/ClusterUpgradeHistoryWhereInput.md) | No |  |
+| `OR` | Array of [ClusterUpgradeHistoryWhereInput](../Cluster/ClusterUpgradeHistoryWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `date` | string | No |  |
 | `date_gt` | string | No |  |

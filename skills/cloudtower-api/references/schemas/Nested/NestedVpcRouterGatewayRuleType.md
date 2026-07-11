@@ -4,9 +4,11 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `dst` | string | Yes |  |
 | `nexthop` | string | No |  |
-| `nexthops` | NestedVpcRouterGatewayRuleNextHopsItemType[] | No |  |
+| `nexthops` | Array of [NestedVpcRouterGatewayRuleNextHopsItemType](../Nested/NestedVpcRouterGatewayRuleNextHopsItemType.md) | No |  |
 

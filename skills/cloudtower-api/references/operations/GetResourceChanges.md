@@ -1,4 +1,4 @@
-# GET /resource-changes
+# GET /v2/api/resource-changes
 
 **Resource:** [Internal](../resources/Internal.md)
 **Operation ID:** `GetResourceChanges`

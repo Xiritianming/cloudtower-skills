@@ -4,14 +4,16 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `is_blocklist` | boolean | No |  |
-| `ingress` | SecurityPolicyIngressEgressInput[] | No |  |
-| `egress` | SecurityPolicyIngressEgressInput[] | No |  |
-| `apply_to` | SecurityPolicyApplyToInput[] | No |  |
-| `policy_mode` | [PolicyMode](PolicyMode.md) | No |  |
 | `everoute_cluster_id` | string | Yes |  |
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `is_blocklist` | boolean | No |  |
+| `ingress` | Array of [SecurityPolicyIngressEgressInput](../Security/SecurityPolicyIngressEgressInput.md) | No |  |
+| `egress` | Array of [SecurityPolicyIngressEgressInput](../Security/SecurityPolicyIngressEgressInput.md) | No |  |
+| `apply_to` | Array of [SecurityPolicyApplyToInput](../Security/SecurityPolicyApplyToInput.md) | No |  |
+| `policy_mode` | [PolicyMode](../Policy/PolicyMode.md) | No |  |
+| `description` | string | No |  |
 

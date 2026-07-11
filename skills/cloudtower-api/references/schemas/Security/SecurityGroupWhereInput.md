@@ -4,6 +4,8 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `vms_some` | any | No |  |
@@ -26,9 +28,9 @@
 | `name_ends_with` | string | No |  |
 | `name_contains` | string | No |  |
 | `name` | string | No |  |
-| `member_type_not_in` | SecurityGroupMemberType[] | No |  |
+| `member_type_not_in` | Array of [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
 | `member_type_not` | any | No |  |
-| `member_type_in` | SecurityGroupMemberType[] | No |  |
+| `member_type_in` | Array of [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
 | `member_type` | any | No |  |
 | `isolation_policies_some` | any | No |  |
 | `isolation_policies_none` | any | No |  |
@@ -90,7 +92,7 @@
 | `description_ends_with` | string | No |  |
 | `description_contains` | string | No |  |
 | `description` | string | No |  |
-| `OR` | SecurityGroupWhereInput[] | No |  |
-| `NOT` | SecurityGroupWhereInput[] | No |  |
-| `AND` | SecurityGroupWhereInput[] | No |  |
+| `OR` | Array of [SecurityGroupWhereInput](../Security/SecurityGroupWhereInput.md) | No |  |
+| `NOT` | Array of [SecurityGroupWhereInput](../Security/SecurityGroupWhereInput.md) | No |  |
+| `AND` | Array of [SecurityGroupWhereInput](../Security/SecurityGroupWhereInput.md) | No |  |
 

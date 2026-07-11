@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [HostWhereInput](HostWhereInput.md) | Yes |  |
+| `where` | [HostWhereInput](../Host/HostWhereInput.md) | Yes |  |
 

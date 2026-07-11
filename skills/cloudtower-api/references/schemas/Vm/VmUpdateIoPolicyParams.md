@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,7 +17,7 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `each_disk` | VmUpdateEachDiskIoPolicyParams[] | No |  |
-| `whole_vm` | [VmRestrictIoParamsData](VmRestrictIoParamsData.md) | No |  |
+| `each_disk` | Array of [VmUpdateEachDiskIoPolicyParams](../Vm/VmUpdateEachDiskIoPolicyParams.md) | No |  |
+| `whole_vm` | [VmRestrictIoParamsData](../Vm/VmRestrictIoParamsData.md) | No |  |
 | `io_policy` | any | No |  |
 

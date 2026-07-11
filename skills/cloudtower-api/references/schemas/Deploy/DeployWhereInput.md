@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | DeployWhereInput[] | No |  |
-| `NOT` | DeployWhereInput[] | No |  |
-| `OR` | DeployWhereInput[] | No |  |
+| `AND` | Array of [DeployWhereInput](../Deploy/DeployWhereInput.md) | No |  |
+| `NOT` | Array of [DeployWhereInput](../Deploy/DeployWhereInput.md) | No |  |
+| `OR` | Array of [DeployWhereInput](../Deploy/DeployWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

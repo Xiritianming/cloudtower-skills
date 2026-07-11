@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateReportTemplate](NestedAggregateReportTemplate.md) | Yes |  |
+| `aggregate` | [NestedAggregateReportTemplate](../Nested/NestedAggregateReportTemplate.md) | Yes |  |
 

@@ -1,4 +1,4 @@
-# POST /get-tasks
+# POST /v2/api/get-tasks
 
 **Resource:** [Task](../resources/Task.md)
 **Operation ID:** `GetTasks`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetTasksRequestBody](../schemas/Get/GetTasksRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetTasks /tmp/body.json
+bash scripts/call.sh /v2/api/get-tasks /tmp/body.json
+```
 
 ## Responses
 

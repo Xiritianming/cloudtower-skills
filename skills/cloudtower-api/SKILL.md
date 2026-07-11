@@ -1,6 +1,6 @@
 ---
 name: cloudtower-api
-description: cloudtower operation API and SDK. Use when working with the cloudtower-api or when the user needs to interact with this API.
+description: cloudtower operation API and SDK. Use when the user wants to query or manage CloudTower resources (VMs, clusters, hosts, storage, networks, snapshots, backups) or otherwise interact with the cloudtower-api.
 metadata:
   api-version: "4.8.0"
   openapi-version: "3.0.0"
@@ -19,26 +19,29 @@ This API documentation is split into multiple files for on-demand loading.
 references/
 ├── resources/      # 130 resource index files
 ├── operations/     # 575 operation detail files
-└── schemas/        # 164 schema groups, 1894 schema files
+├── schemas/        # 163 schema groups, 1894 schema files
+└── openapi.json    # full spec, used by scripts/validate.py
+scripts/
+├── call.sh         # sends requests (auth, endpoint, response-to-file)
+└── validate.py     # validates a request body against the API schema
 ```
 
-**Navigation flow:**
-1. Find the resource you need in the list below
-2. Read `references/resources/<resource>.md` to see available operations
-3. Read `references/operations/<operation>.md` for full details
-4. If an operation references a schema, read `references/schemas/<prefix>/<schema>.md`
+**Calling flow — follow all five steps for every API call:**
 
-## Base URL
+1. Find the resource in the list below and read `references/resources/<resource>.md` to pick the operation
+2. Read `references/operations/<operation>.md` — it has the full request path, parameters, and an `## Example` request body
+3. Write the example body to a file (e.g. `/tmp/body.json`) and edit it. **Copy, don't compose**: every field name must come from the example or from a schema file you have read this session. To add an optional field, read its schema link first
+4. Validate: `python3 scripts/validate.py <OperationId> /tmp/body.json` — it checks required fields, types, enums, and unknown fields. Fix every reported error and re-run until it prints `OK`
+5. Send: `bash scripts/call.sh <path> /tmp/body.json` — the path comes from the operation file title
 
-- `/`
-## API Endpoint Prefix
+## Endpoint and Authentication
 
-- `/v2/api`
-- Operation paths in `references/operations/*.md` should be called as `/v2/api` + operation path.
+`scripts/call.sh` reads two environment variables:
 
-## Authentication
+- `CLOUDTOWER_ENDPOINT` — base URL, e.g. `https://tower.example.com` (paths in operation files already include the `/v2/api` prefix)
+- `CLOUDTOWER_TOKEN` — API token, sent as the `Authorization` header
 
-see [Authentication](./references/authentication.md)
+To obtain a token from username/password, see [Authentication](./references/authentication.md).
 
 ## Async Operations and Tasks
 
@@ -46,23 +49,18 @@ Most mutation operations are asynchronous. Instead of blocking, the API returns 
 
 Mutation responses are typically `WithTask<T>` or `Array<WithTask<T>>`. See the schema index at [With schemas](references/schemas/With/_index.md) for concrete types.
 
-Use the task ID to track completion via the Task resource:
+Use the task ID to track completion via [GetTasks](references/operations/GetTasks.md):
 
-- Resource: [Task](references/resources/Task.md)
-- Operation: [GetTasks](references/operations/GetTasks.md)
+```bash
+echo '{"where": {"id": "<task_id>"}, "first": 1}' > /tmp/task-query.json
+bash scripts/call.sh /v2/api/get-tasks /tmp/task-query.json
+```
 
-Poll the task until it finishes (success or failure), then fetch the latest resource state by ID. If `task_id` is `null`, the operation is synchronous and no polling is required.
+Poll until `status` is `SUCCESSED` or `FAILED`, then fetch the latest resource state by ID. If `task_id` is `null`, the operation is synchronous and no polling is required.
 
 ## Response handling
 
-For **any CloudTower API request**, as the response may be larget, you MUST NOT load the response directly into the agent context. Instead:
-
-1. generate a random request id based on timestamp and a random suffix, e.g. `tower_20240601_123456_abcdef`
-2. Write the full response to `/tmp/tower_{request_id}.json`.
-3. Return only a summary and the file path to the caller.
-4. Subsequent reads must use `head`, `tail`, `grep`, or `jq` to extract small portions.
-
-Exception: task query in [**Async Operations and Tasks**](#async-operations-and-tasks) section may bypass this rule when the response is small and ephemeral.
+`scripts/call.sh` writes every response to a file under `/tmp/` and prints the HTTP status, the file path, and a short preview — responses can be large, so this keeps them out of context. Read small portions of the file with `jq`, `grep`, or `head`, and load only the fields you need.
 
 ## Resources
 

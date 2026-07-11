@@ -4,20 +4,22 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `id` | string | Yes |  |
+| `local_created_at` | string | Yes |  |
+| `local_id` | string | Yes |  |
+| `method` | [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | Yes |  |
+| `status` | [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | Yes |  |
+| `type` | [BackupExecutionType](../Backup/BackupExecutionType.md) | Yes |  |
 | `backup_plan` | any | No |  |
 | `deletable_flag_marked` | boolean | No |  |
 | `duration` | integer (int32) | No |  |
 | `entityAsyncStatus` | any | No |  |
 | `executed_at` | string | No |  |
-| `id` | string | Yes |  |
-| `local_created_at` | string | Yes |  |
-| `local_id` | string | Yes |  |
-| `method` | [BackupExecutionMethod](BackupExecutionMethod.md) | Yes |  |
 | `state` | any | No |  |
-| `status` | [BackupPlanExecutionStatus](BackupPlanExecutionStatus.md) | Yes |  |
 | `success_job_count` | integer (int32) | No |  |
 | `total_job_count` | integer (int32) | No |  |
-| `type` | [BackupExecutionType](BackupExecutionType.md) | Yes |  |
 

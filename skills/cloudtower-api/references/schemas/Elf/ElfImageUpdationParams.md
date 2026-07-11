@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [ElfImageWhereInput](ElfImageWhereInput.md) | Yes |  |
+| `where` | [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

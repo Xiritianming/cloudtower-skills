@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `cidr` | string | Yes |  |
+| `id` | string | Yes |  |
+| `local_id` | string | Yes |  |
+| `name` | string | Yes |  |
+| `route_table` | [NestedVirtualPrivateCloudRouteTable](../Nested/NestedVirtualPrivateCloudRouteTable.md) | Yes |  |
+| `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | Yes |  |
 | `description` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
 | `gateway` | string | No |  |
-| `id` | string | Yes |  |
-| `ip_pools` | NestedVpcSubnetIpPooType[] | No |  |
-| `local_id` | string | Yes |  |
-| `name` | string | Yes |  |
-| `route_table` | [NestedVirtualPrivateCloudRouteTable](NestedVirtualPrivateCloudRouteTable.md) | Yes |  |
+| `ip_pools` | Array of [NestedVpcSubnetIpPooType](../Nested/NestedVpcSubnetIpPooType.md) | No |  |
 | `total_ip_count` | integer (int32) | No |  |
 | `unused_ip_count` | integer (int32) | No |  |
-| `vpc` | [NestedVirtualPrivateCloud](NestedVirtualPrivateCloud.md) | Yes |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | GlobalSettingsWhereInput[] | No |  |
-| `NOT` | GlobalSettingsWhereInput[] | No |  |
-| `OR` | GlobalSettingsWhereInput[] | No |  |
+| `AND` | Array of [GlobalSettingsWhereInput](../Global/GlobalSettingsWhereInput.md) | No |  |
+| `NOT` | Array of [GlobalSettingsWhereInput](../Global/GlobalSettingsWhereInput.md) | No |  |
+| `OR` | Array of [GlobalSettingsWhereInput](../Global/GlobalSettingsWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

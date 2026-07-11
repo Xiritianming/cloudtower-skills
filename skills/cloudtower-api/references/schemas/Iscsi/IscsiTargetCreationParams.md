@@ -5,4 +5,4 @@
 ## Composition
 
 - (inline schema)
-- [IscsiTargetCommonParams](IscsiTargetCommonParams.md)
+- [IscsiTargetCommonParams](../Iscsi/IscsiTargetCommonParams.md)

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ConsistencyGroupWhereInput[] | No |  |
-| `NOT` | ConsistencyGroupWhereInput[] | No |  |
-| `OR` | ConsistencyGroupWhereInput[] | No |  |
+| `AND` | Array of [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
+| `NOT` | Array of [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
+| `OR` | Array of [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `consistency_group_snapshots_every` | any | No |  |
 | `consistency_group_snapshots_none` | any | No |  |
@@ -28,9 +30,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

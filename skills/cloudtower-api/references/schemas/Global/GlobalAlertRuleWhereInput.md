@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | GlobalAlertRuleWhereInput[] | No |  |
-| `NOT` | GlobalAlertRuleWhereInput[] | No |  |
-| `OR` | GlobalAlertRuleWhereInput[] | No |  |
+| `AND` | Array of [GlobalAlertRuleWhereInput](../Global/GlobalAlertRuleWhereInput.md) | No |  |
+| `NOT` | Array of [GlobalAlertRuleWhereInput](../Global/GlobalAlertRuleWhereInput.md) | No |  |
+| `OR` | Array of [GlobalAlertRuleWhereInput](../Global/GlobalAlertRuleWhereInput.md) | No |  |
 | `alert_rules_every` | any | No |  |
 | `alert_rules_none` | any | No |  |
 | `alert_rules_some` | any | No |  |
@@ -87,9 +89,9 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `object` | any | No |  |
-| `object_in` | AlertRuleObject[] | No |  |
+| `object_in` | Array of [AlertRuleObject](../Alert/AlertRuleObject.md) | No |  |
 | `object_not` | any | No |  |
-| `object_not_in` | AlertRuleObject[] | No |  |
+| `object_not_in` | Array of [AlertRuleObject](../Alert/AlertRuleObject.md) | No |  |
 | `operator` | string | No |  |
 | `operator_contains` | string | No |  |
 | `operator_ends_with` | string | No |  |
@@ -119,7 +121,7 @@
 | `solution_not_starts_with` | string | No |  |
 | `solution_starts_with` | string | No |  |
 | `unit` | any | No |  |
-| `unit_in` | AlertRuleUnit[] | No |  |
+| `unit_in` | Array of [AlertRuleUnit](../Alert/AlertRuleUnit.md) | No |  |
 | `unit_not` | any | No |  |
-| `unit_not_in` | AlertRuleUnit[] | No |  |
+| `unit_not_in` | Array of [AlertRuleUnit](../Alert/AlertRuleUnit.md) | No |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateWitness](NestedAggregateWitness.md) | Yes |  |
+| `aggregate` | [NestedAggregateWitness](../Nested/NestedAggregateWitness.md) | Yes |  |
 

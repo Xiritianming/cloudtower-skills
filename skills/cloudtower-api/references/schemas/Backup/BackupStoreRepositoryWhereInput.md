@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | BackupStoreRepositoryWhereInput[] | No |  |
-| `NOT` | BackupStoreRepositoryWhereInput[] | No |  |
-| `OR` | BackupStoreRepositoryWhereInput[] | No |  |
+| `AND` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
+| `NOT` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
+| `OR` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
 | `backup_plans_every` | any | No |  |
 | `backup_plans_none` | any | No |  |
 | `backup_plans_some` | any | No |  |
@@ -39,9 +41,9 @@
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `error_code` | string | No |  |
 | `error_code_contains` | string | No |  |
 | `error_code_ends_with` | string | No |  |
@@ -191,9 +193,9 @@
 | `nfs_server_not_starts_with` | string | No |  |
 | `nfs_server_starts_with` | string | No |  |
 | `status` | any | No |  |
-| `status_in` | BackupStoreStatus[] | No |  |
+| `status_in` | Array of [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | BackupStoreStatus[] | No |  |
+| `status_not_in` | Array of [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
 | `total_capacity` | integer (int64) | No |  |
 | `total_capacity_gt` | integer (int64) | No |  |
 | `total_capacity_gte` | integer (int64) | No |  |
@@ -203,9 +205,9 @@
 | `total_capacity_not` | integer (int64) | No |  |
 | `total_capacity_not_in` | integer[] | No |  |
 | `type` | any | No |  |
-| `type_in` | BackupStoreType[] | No |  |
+| `type_in` | Array of [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | BackupStoreType[] | No |  |
+| `type_not_in` | Array of [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
 | `update_timestamp` | string | No |  |
 | `update_timestamp_contains` | string | No |  |
 | `update_timestamp_ends_with` | string | No |  |

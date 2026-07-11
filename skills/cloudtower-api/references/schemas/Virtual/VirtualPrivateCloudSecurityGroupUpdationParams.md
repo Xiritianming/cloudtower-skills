@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VirtualPrivateCloudSecurityGroupWhereInput](VirtualPrivateCloudSecurityGroupWhereInput.md) | Yes |  |
+| `where` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -16,7 +18,7 @@
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `vm_ids` | string[] | No |  |
-| `label_groups` | LabelGroup[] | No |  |
+| `label_groups` | Array of [LabelGroup](../Label/LabelGroup.md) | No |  |
 | `description` | string | No |  |
 | `name` | string | No |  |
 

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVsphereEsxiAccount](NestedAggregateVsphereEsxiAccount.md) | Yes |  |
+| `aggregate` | [NestedAggregateVsphereEsxiAccount](../Nested/NestedAggregateVsphereEsxiAccount.md) | Yes |  |
 

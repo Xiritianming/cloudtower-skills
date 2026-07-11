@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `cluster` | [ClusterWhereUniqueInput](ClusterWhereUniqueInput.md) | Yes |  |
+| `cluster` | [ClusterWhereUniqueInput](../Cluster/ClusterWhereUniqueInput.md) | Yes |  |
 | `host_address` | string[] | No |  |
 

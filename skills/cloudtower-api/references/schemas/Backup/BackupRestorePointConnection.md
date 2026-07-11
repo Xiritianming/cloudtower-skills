@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateBackupRestorePoint](NestedAggregateBackupRestorePoint.md) | Yes |  |
+| `aggregate` | [NestedAggregateBackupRestorePoint](../Nested/NestedAggregateBackupRestorePoint.md) | Yes |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ApiKeyWhereInput[] | No |  |
-| `NOT` | ApiKeyWhereInput[] | No |  |
-| `OR` | ApiKeyWhereInput[] | No |  |
+| `AND` | Array of [ApiKeyWhereInput](../Api/ApiKeyWhereInput.md) | No |  |
+| `NOT` | Array of [ApiKeyWhereInput](../Api/ApiKeyWhereInput.md) | No |  |
+| `OR` | Array of [ApiKeyWhereInput](../Api/ApiKeyWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |

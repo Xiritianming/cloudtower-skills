@@ -1,4 +1,4 @@
-# POST /upload-cloudtower-application-package
+# POST /v2/api/upload-cloudtower-application-package
 
 **Resource:** [CloudTowerApplication](../resources/CloudTowerApplication.md)
 **Operation ID:** `UploadCloudTowerApplicationPackage`
@@ -15,6 +15,16 @@
 **Required:** Yes
 
 **Content Types:** `multipart/form-data`
+
+**Schema** (inline):
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `file` | string (binary) | Yes |  |
+| `name` | string | No |  |
+| `size` | string | No |  |
+| `size_unit` | string | No |  |
+| `upload_task_id` | string | No |  |
 
 ## Responses
 

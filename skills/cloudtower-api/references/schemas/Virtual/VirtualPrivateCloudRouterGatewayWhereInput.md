@@ -4,18 +4,20 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudRouterGatewayWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudRouterGatewayWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudRouterGatewayWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
 | `associated_subnets_every` | any | No |  |
 | `associated_subnets_none` | any | No |  |
 | `associated_subnets_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_ip` | string | No |  |
 | `external_ip_contains` | string | No |  |
 | `external_ip_ends_with` | string | No |  |

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | SnapshotPlanWhereInput[] | No |  |
-| `NOT` | SnapshotPlanWhereInput[] | No |  |
-| `OR` | SnapshotPlanWhereInput[] | No |  |
+| `AND` | Array of [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
+| `NOT` | Array of [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
+| `OR` | Array of [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
 | `auto_delete_num` | integer (int32) | No |  |
 | `auto_delete_num_gt` | integer (int32) | No |  |
 | `auto_delete_num_gte` | integer (int32) | No |  |
@@ -49,13 +51,13 @@
 | `end_time_not` | string | No |  |
 | `end_time_not_in` | string[] | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `execute_plan_type` | any | No |  |
-| `execute_plan_type_in` | SnapshotPlanExecuteType[] | No |  |
+| `execute_plan_type_in` | Array of [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
 | `execute_plan_type_not` | any | No |  |
-| `execute_plan_type_not_in` | SnapshotPlanExecuteType[] | No |  |
+| `execute_plan_type_not_in` | Array of [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
 | `execution_tasks_every` | any | No |  |
 | `execution_tasks_none` | any | No |  |
 | `execution_tasks_some` | any | No |  |
@@ -84,9 +86,9 @@
 | `last_execute_end_time_not` | string | No |  |
 | `last_execute_end_time_not_in` | string[] | No |  |
 | `last_execute_status` | any | No |  |
-| `last_execute_status_in` | SnapshotPlanExecuteStatus[] | No |  |
+| `last_execute_status_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `last_execute_status_not` | any | No |  |
-| `last_execute_status_not_in` | SnapshotPlanExecuteStatus[] | No |  |
+| `last_execute_status_not_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `last_execute_time` | string | No |  |
 | `last_execute_time_gt` | string | No |  |
 | `last_execute_time_gte` | string | No |  |
@@ -198,9 +200,9 @@
 | `start_time_not` | string | No |  |
 | `start_time_not_in` | string[] | No |  |
 | `status` | any | No |  |
-| `status_in` | SnapshotPlanStatus[] | No |  |
+| `status_in` | Array of [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
 | `status_not` | any | No |  |
-| `status_not_in` | SnapshotPlanStatus[] | No |  |
+| `status_not_in` | Array of [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
 | `vms_every` | any | No |  |
 | `vms_none` | any | No |  |
 | `vms_some` | any | No |  |

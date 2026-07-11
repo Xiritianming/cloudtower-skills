@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmVolumeWhereInput[] | No |  |
-| `NOT` | VmVolumeWhereInput[] | No |  |
-| `OR` | VmVolumeWhereInput[] | No |  |
+| `AND` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `NOT` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `OR` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -41,9 +43,9 @@
 | `elf_storage_policy_ec_m_lte` | integer (int32) | No |  |
 | `elf_storage_policy_ec_m_not` | integer (int32) | No |  |
 | `elf_storage_policy_ec_m_not_in` | integer[] | No |  |
-| `elf_storage_policy_in` | VmVolumeElfStoragePolicyType[] | No |  |
+| `elf_storage_policy_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_not` | any | No |  |
-| `elf_storage_policy_not_in` | VmVolumeElfStoragePolicyType[] | No |  |
+| `elf_storage_policy_not_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_replica_num_gt` | integer (int32) | No |  |
 | `elf_storage_policy_replica_num_gte` | integer (int32) | No |  |
@@ -63,9 +65,9 @@
 | `elf_storage_policy_thin_provision` | boolean | No |  |
 | `elf_storage_policy_thin_provision_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `guest_size_usage` | number (double) | No |  |
 | `guest_size_usage_gt` | number (double) | No |  |
 | `guest_size_usage_gte` | number (double) | No |  |
@@ -165,9 +167,9 @@
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
 | `type` | any | No |  |
-| `type_in` | VmVolumeType[] | No |  |
+| `type_in` | Array of [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | VmVolumeType[] | No |  |
+| `type_not_in` | Array of [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `unique_logical_size` | number (double) | No |  |
 | `unique_logical_size_gt` | number (double) | No |  |
 | `unique_logical_size_gte` | number (double) | No |  |

@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmVolumeSnapshot](NestedAggregateVmVolumeSnapshot.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmVolumeSnapshot](../Nested/NestedAggregateVmVolumeSnapshot.md) | Yes |  |
 

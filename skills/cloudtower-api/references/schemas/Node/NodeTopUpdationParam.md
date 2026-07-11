@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `data` | [NodeTopoUpdationParamsData](NodeTopoUpdationParamsData.md) | Yes |  |
-| `where` | [NodeTopoWhereUniqueInput](NodeTopoWhereUniqueInput.md) | Yes |  |
+| `data` | [NodeTopoUpdationParamsData](../Node/NodeTopoUpdationParamsData.md) | Yes |  |
+| `where` | [NodeTopoWhereUniqueInput](../Node/NodeTopoWhereUniqueInput.md) | Yes |  |
 

@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `routes` | VirtualPrivateCloudRouteParams[] | No |  |
 | `vpc_id` | string | Yes |  |
-| `description` | string | No |  |
 | `name` | string | Yes |  |
+| `routes` | Array of [VirtualPrivateCloudRouteParams](../Virtual/VirtualPrivateCloudRouteParams.md) | No |  |
+| `description` | string | No |  |
 

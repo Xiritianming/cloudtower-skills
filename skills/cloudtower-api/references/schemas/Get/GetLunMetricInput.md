@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `range` | string | Yes |  |
-| `hosts` | [HostWhereInput](HostWhereInput.md) | No |  |
-| `luns` | [IscsiLunWhereInput](IscsiLunWhereInput.md) | Yes |  |
+| `luns` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | Yes |  |
 | `metrics` | string[] | Yes |  |
+| `hosts` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 

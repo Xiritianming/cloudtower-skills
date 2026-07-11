@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ZoneTopoWhereInput[] | No |  |
-| `NOT` | ZoneTopoWhereInput[] | No |  |
-| `OR` | ZoneTopoWhereInput[] | No |  |
+| `AND` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
+| `NOT` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
+| `OR` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `cluster_topo` | any | No |  |
 | `id` | string | No |  |

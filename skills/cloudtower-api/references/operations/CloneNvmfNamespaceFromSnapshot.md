@@ -1,4 +1,4 @@
-# POST /clone-nvmf-namespace-from-snapshot
+# POST /v2/api/clone-nvmf-namespace-from-snapshot
 
 **Resource:** [NvmfNamespace](../resources/NvmfNamespace.md)
 **Operation ID:** `CloneNvmfNamespaceFromSnapshot`
@@ -17,6 +17,27 @@
 **Content Types:** `application/json`
 
 **Schema:** Array of [NvmfNamespaceCloneParams](../schemas/Nvmf/NvmfNamespaceCloneParams.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+[
+  {
+    "nvmf_subsystem_id": "<nvmf_subsystem_id>",
+    "name": "<name>",
+    "snapshot_id": "<snapshot_id>"
+  }
+]
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py CloneNvmfNamespaceFromSnapshot /tmp/body.json
+bash scripts/call.sh /v2/api/clone-nvmf-namespace-from-snapshot /tmp/body.json
+```
 
 ## Responses
 

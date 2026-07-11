@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | EverouteLicenseWhereInput[] | No |  |
-| `NOT` | EverouteLicenseWhereInput[] | No |  |
-| `OR` | EverouteLicenseWhereInput[] | No |  |
+| `AND` | Array of [EverouteLicenseWhereInput](../Everoute/EverouteLicenseWhereInput.md) | No |  |
+| `NOT` | Array of [EverouteLicenseWhereInput](../Everoute/EverouteLicenseWhereInput.md) | No |  |
+| `OR` | Array of [EverouteLicenseWhereInput](../Everoute/EverouteLicenseWhereInput.md) | No |  |
 | `code` | string | No |  |
 | `code_contains` | string | No |  |
 | `code_ends_with` | string | No |  |
@@ -76,13 +78,13 @@
 | `sign_date_not` | string | No |  |
 | `sign_date_not_in` | string[] | No |  |
 | `software_edition` | any | No |  |
-| `software_edition_in` | SoftwareEdition[] | No |  |
+| `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not` | any | No |  |
-| `software_edition_not_in` | SoftwareEdition[] | No |  |
+| `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `type` | any | No |  |
-| `type_in` | LicenseType[] | No |  |
+| `type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | LicenseType[] | No |  |
+| `type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `uid` | string | No |  |
 | `uid_contains` | string | No |  |
 | `uid_ends_with` | string | No |  |

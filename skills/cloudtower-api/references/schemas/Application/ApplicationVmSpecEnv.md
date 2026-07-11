@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `value` | string | No |  |
 | `name` | string | Yes |  |
+| `value` | string | No |  |
 

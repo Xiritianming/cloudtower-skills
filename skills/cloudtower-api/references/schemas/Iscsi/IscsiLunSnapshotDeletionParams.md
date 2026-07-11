@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [IscsiLunSnapshotWhereInput](IscsiLunSnapshotWhereInput.md) | Yes |  |
+| `where` | [IscsiLunSnapshotWhereInput](../Iscsi/IscsiLunSnapshotWhereInput.md) | Yes |  |
 

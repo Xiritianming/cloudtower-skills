@@ -4,16 +4,18 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VirtualPrivateCloudClusterBindingWhereInput[] | No |  |
-| `NOT` | VirtualPrivateCloudClusterBindingWhereInput[] | No |  |
-| `OR` | VirtualPrivateCloudClusterBindingWhereInput[] | No |  |
+| `AND` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
+| `NOT` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
+| `OR` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

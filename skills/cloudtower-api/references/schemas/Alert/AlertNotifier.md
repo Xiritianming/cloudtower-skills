@@ -4,17 +4,19 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `clusters` | NestedCluster[] | No |  |
 | `disabled` | boolean | Yes |  |
-| `email_from` | string | No |  |
 | `email_tos` | string[] | Yes |  |
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
+| `notice_severities` | string[] | Yes |  |
+| `clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
+| `email_from` | string | No |  |
+| `entityAsyncStatus` | any | No |  |
 | `language_code` | any | No |  |
 | `name` | string | No |  |
-| `notice_severities` | string[] | Yes |  |
 | `security_mode` | any | No |  |
 | `smtp_server_config` | any | No |  |
 | `smtp_server_host` | string | No |  |

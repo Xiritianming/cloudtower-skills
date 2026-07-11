@@ -1,4 +1,4 @@
-# POST /get-vm-folders
+# POST /v2/api/get-vm-folders
 
 **Resource:** [VmFolder](../resources/VmFolder.md)
 **Operation ID:** `GetVmFolders`
@@ -17,6 +17,21 @@
 **Content Types:** `application/json`
 
 **Schema:** [GetVmFoldersRequestBody](../schemas/Get/GetVmFoldersRequestBody.md)
+
+## Example
+
+Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.
+
+```json
+{}
+```
+
+Validate the body, then send (paths relative to the skill root):
+
+```bash
+python3 scripts/validate.py GetVmFolders /tmp/body.json
+bash scripts/call.sh /v2/api/get-vm-folders /tmp/body.json
+```
 
 ## Responses
 

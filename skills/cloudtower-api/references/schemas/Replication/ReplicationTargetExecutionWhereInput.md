@@ -4,19 +4,21 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ReplicationTargetExecutionWhereInput[] | No |  |
-| `NOT` | ReplicationTargetExecutionWhereInput[] | No |  |
-| `OR` | ReplicationTargetExecutionWhereInput[] | No |  |
+| `AND` | Array of [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `NOT` | Array of [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `OR` | Array of [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
 | `creation` | any | No |  |
-| `creation_in` | ReplicationTargetExecutionCreation[] | No |  |
+| `creation_in` | Array of [ReplicationTargetExecutionCreation](../Replication/ReplicationTargetExecutionCreation.md) | No |  |
 | `creation_not` | any | No |  |
-| `creation_not_in` | ReplicationTargetExecutionCreation[] | No |  |
+| `creation_not_in` | Array of [ReplicationTargetExecutionCreation](../Replication/ReplicationTargetExecutionCreation.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
 | `finished_at_gte` | string | No |  |
@@ -54,9 +56,9 @@
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
 | `phase` | any | No |  |
-| `phase_in` | BackupJobPhase[] | No |  |
+| `phase_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `phase_not` | any | No |  |
-| `phase_not_in` | BackupJobPhase[] | No |  |
+| `phase_not_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `replica_vm` | any | No |  |
 | `replication_plan` | any | No |  |
 | `replication_plan_execution` | any | No |  |
@@ -78,7 +80,7 @@
 | `started_at_not_in` | string[] | No |  |
 | `sync_replication_plan` | any | No |  |
 | `type` | any | No |  |
-| `type_in` | BackupExecutionType[] | No |  |
+| `type_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | BackupExecutionType[] | No |  |
+| `type_not_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 

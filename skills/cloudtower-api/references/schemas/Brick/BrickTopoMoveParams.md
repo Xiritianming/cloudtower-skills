@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [BrickTopoWhereInput](BrickTopoWhereInput.md) | Yes |  |
+| `where` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,6 +17,6 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `rack_topo_id` | string | No |  |
 | `position` | integer (int32) | Yes |  |
+| `rack_topo_id` | string | No |  |
 

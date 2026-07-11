@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmExportFileWhereInput[] | No |  |
-| `NOT` | VmExportFileWhereInput[] | No |  |
-| `OR` | VmExportFileWhereInput[] | No |  |
+| `AND` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
+| `NOT` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
+| `OR` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
 | `content_library_vm_template` | any | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
@@ -35,9 +37,9 @@
 | `data_port_id_not_starts_with` | string | No |  |
 | `data_port_id_starts_with` | string | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -67,9 +69,9 @@
 | `storage_cluster_id_not_starts_with` | string | No |  |
 | `storage_cluster_id_starts_with` | string | No |  |
 | `type` | any | No |  |
-| `type_in` | VmExportFileType[] | No |  |
+| `type_in` | Array of [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | VmExportFileType[] | No |  |
+| `type_not_in` | Array of [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
 | `vm` | any | No |  |
 | `vm_volume` | any | No |  |
 

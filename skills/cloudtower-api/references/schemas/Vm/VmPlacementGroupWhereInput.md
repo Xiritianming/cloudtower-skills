@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | VmPlacementGroupWhereInput[] | No |  |
-| `NOT` | VmPlacementGroupWhereInput[] | No |  |
-| `OR` | VmPlacementGroupWhereInput[] | No |  |
+| `AND` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
+| `NOT` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
+| `OR` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
 | `cluster` | any | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -27,9 +29,9 @@
 | `enabled` | boolean | No |  |
 | `enabled_not` | boolean | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -89,9 +91,9 @@
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
 | `usage` | any | No |  |
-| `usage_in` | VmPlacementGroupUsage[] | No |  |
+| `usage_in` | Array of [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `usage_not` | any | No |  |
-| `usage_not_in` | VmPlacementGroupUsage[] | No |  |
+| `usage_not_in` | Array of [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `vm_host_must_enabled` | boolean | No |  |
 | `vm_host_must_enabled_not` | boolean | No |  |
 | `vm_host_must_host_uuids_every` | any | No |  |
@@ -109,9 +111,9 @@
 | `vm_vm_policy` | any | No |  |
 | `vm_vm_policy_enabled` | boolean | No |  |
 | `vm_vm_policy_enabled_not` | boolean | No |  |
-| `vm_vm_policy_in` | VmVmPolicy[] | No |  |
+| `vm_vm_policy_in` | Array of [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
 | `vm_vm_policy_not` | any | No |  |
-| `vm_vm_policy_not_in` | VmVmPolicy[] | No |  |
+| `vm_vm_policy_not_in` | Array of [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
 | `vms_every` | any | No |  |
 | `vms_none` | any | No |  |
 | `vms_some` | any | No |  |

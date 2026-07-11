@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | ContentLibraryImageWhereInput[] | No |  |
-| `NOT` | ContentLibraryImageWhereInput[] | No |  |
-| `OR` | ContentLibraryImageWhereInput[] | No |  |
+| `AND` | Array of [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | No |  |
+| `NOT` | Array of [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | No |  |
+| `OR` | Array of [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | No |  |
 | `clusters_every` | any | No |  |
 | `clusters_none` | any | No |  |
 | `clusters_some` | any | No |  |
@@ -38,9 +40,9 @@
 | `elf_images_none` | any | No |  |
 | `elf_images_some` | any | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

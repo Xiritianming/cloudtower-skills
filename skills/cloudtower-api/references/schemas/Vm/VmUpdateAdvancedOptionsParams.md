@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [VmWhereInput](VmWhereInput.md) | Yes |  |
+| `where` | [VmWhereInput](../Vm/VmWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,8 +17,8 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `video_type` | [VmVideoType](VmVideoType.md) | No |  |
+| `video_type` | [VmVideoType](../Vm/VmVideoType.md) | No |  |
 | `windows_optimize` | boolean | No |  |
 | `cpu_model` | string | No |  |
-| `clock_offset` | [VmClockOffset](VmClockOffset.md) | No |  |
+| `clock_offset` | [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 

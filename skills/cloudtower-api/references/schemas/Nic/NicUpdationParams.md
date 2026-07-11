@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [NicWhereInput](NicWhereInput.md) | Yes |  |
+| `where` | [NicWhereInput](../Nic/NicWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,7 +17,7 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `nic_user_usage` | [NicUserUsage](NicUserUsage.md) | No |  |
+| `nic_user_usage` | [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
 | `total_vf_num` | integer (int32) | No |  |
 | `mtu` | integer (int32) | No |  |
 

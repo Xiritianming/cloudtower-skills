@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [BackupPlan](../Backup/BackupPlan.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [BackupPlan](BackupPlan.md) | Yes |  |
 

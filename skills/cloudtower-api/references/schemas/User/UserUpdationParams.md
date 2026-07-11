@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [UserWhereInput](UserWhereInput.md) | Yes |  |
+| `where` | [UserWhereInput](../User/UserWhereInput.md) | Yes |  |
 
 ## Nested Fields
 

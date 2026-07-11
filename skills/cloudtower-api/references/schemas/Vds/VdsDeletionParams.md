@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `where` | [VdsWhereInput](VdsWhereInput.md) | Yes |  |
+| `where` | [VdsWhereInput](../Vds/VdsWhereInput.md) | Yes |  |
 

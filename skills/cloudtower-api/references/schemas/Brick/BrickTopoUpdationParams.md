@@ -4,10 +4,12 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `data` | object | Yes |  |
-| `where` | [BrickTopoWhereInput](BrickTopoWhereInput.md) | Yes |  |
+| `where` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | Yes |  |
 
 ## Nested Fields
 
@@ -15,9 +17,9 @@
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `tag_position_in_brick` | NestedTagPosition[] | No |  |
-| `node_topoes` | [NodeTopoWhereInput](NodeTopoWhereInput.md) | No |  |
-| `capacity` | [NestedCapacity](NestedCapacity.md) | No |  |
+| `tag_position_in_brick` | Array of [NestedTagPosition](../Nested/NestedTagPosition.md) | No |  |
+| `node_topoes` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `capacity` | [NestedCapacity](../Nested/NestedCapacity.md) | No |  |
 | `height` | integer (int32) | No |  |
 | `name` | string | No |  |
 | `position` | integer (int32) | No |  |

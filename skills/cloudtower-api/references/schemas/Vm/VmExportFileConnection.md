@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateVmExportFile](NestedAggregateVmExportFile.md) | Yes |  |
+| `aggregate` | [NestedAggregateVmExportFile](../Nested/NestedAggregateVmExportFile.md) | Yes |  |
 

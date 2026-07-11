@@ -4,7 +4,9 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `aggregate` | [NestedAggregateSnapshotGroup](NestedAggregateSnapshotGroup.md) | Yes |  |
+| `aggregate` | [NestedAggregateSnapshotGroup](../Nested/NestedAggregateSnapshotGroup.md) | Yes |  |
 

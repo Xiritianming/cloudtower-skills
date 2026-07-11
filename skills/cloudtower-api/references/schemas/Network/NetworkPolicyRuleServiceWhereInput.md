@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NetworkPolicyRuleServiceWhereInput[] | No |  |
-| `NOT` | NetworkPolicyRuleServiceWhereInput[] | No |  |
-| `OR` | NetworkPolicyRuleServiceWhereInput[] | No |  |
+| `AND` | Array of [NetworkPolicyRuleServiceWhereInput](../Network/NetworkPolicyRuleServiceWhereInput.md) | No |  |
+| `NOT` | Array of [NetworkPolicyRuleServiceWhereInput](../Network/NetworkPolicyRuleServiceWhereInput.md) | No |  |
+| `OR` | Array of [NetworkPolicyRuleServiceWhereInput](../Network/NetworkPolicyRuleServiceWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |

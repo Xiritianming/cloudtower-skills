@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
+| `data` | [DeleteVirtualPrivateCloud](../Delete/DeleteVirtualPrivateCloud.md) | Yes |  |
 | `task_id` | string | No |  |
-| `data` | [DeleteVirtualPrivateCloud](DeleteVirtualPrivateCloud.md) | Yes |  |
 

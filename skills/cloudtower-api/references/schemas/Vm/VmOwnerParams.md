@@ -4,8 +4,10 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `search_for` | enum: username, id | No |  |
 | `value` | string | Yes |  |
+| `search_for` | enum: username, id | No |  |
 

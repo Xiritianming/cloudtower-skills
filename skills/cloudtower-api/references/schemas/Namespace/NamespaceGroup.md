@@ -4,14 +4,16 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `entityAsyncStatus` | any | No |  |
 | `id` | string | Yes |  |
-| `labels` | NestedLabel[] | No |  |
 | `local_create_time` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `namespaces` | NestedNvmfNamespace[] | No |  |
-| `nvmf_subsystem` | [NestedNvmfSubsystem](NestedNvmfSubsystem.md) | Yes |  |
+| `nvmf_subsystem` | [NestedNvmfSubsystem](../Nested/NestedNvmfSubsystem.md) | Yes |  |
+| `entityAsyncStatus` | any | No |  |
+| `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
+| `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
 

@@ -4,11 +4,13 @@
 
 ## Fields
 
+Required fields are listed first.
+
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `AND` | NicWhereInput[] | No |  |
-| `NOT` | NicWhereInput[] | No |  |
-| `OR` | NicWhereInput[] | No |  |
+| `AND` | Array of [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `NOT` | Array of [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `OR` | Array of [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
 | `driver` | string | No |  |
 | `driver_contains` | string | No |  |
 | `driver_ends_with` | string | No |  |
@@ -24,13 +26,13 @@
 | `driver_not_starts_with` | string | No |  |
 | `driver_starts_with` | string | No |  |
 | `driver_state` | any | No |  |
-| `driver_state_in` | NicDriverState[] | No |  |
+| `driver_state_in` | Array of [NicDriverState](../Nic/NicDriverState.md) | No |  |
 | `driver_state_not` | any | No |  |
-| `driver_state_not_in` | NicDriverState[] | No |  |
+| `driver_state_not_in` | Array of [NicDriverState](../Nic/NicDriverState.md) | No |  |
 | `entityAsyncStatus` | any | No |  |
-| `entityAsyncStatus_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not` | any | No |  |
-| `entityAsyncStatus_not_in` | EntityAsyncStatus[] | No |  |
+| `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway_ip` | string | No |  |
 | `gateway_ip_contains` | string | No |  |
 | `gateway_ip_ends_with` | string | No |  |
@@ -75,9 +77,9 @@
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
 | `iommu_status` | any | No |  |
-| `iommu_status_in` | IommuStatus[] | No |  |
+| `iommu_status_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_status_not` | any | No |  |
-| `iommu_status_not_in` | IommuStatus[] | No |  |
+| `iommu_status_not_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `ip_address` | string | No |  |
 | `ip_address_contains` | string | No |  |
 | `ip_address_ends_with` | string | No |  |
@@ -220,9 +222,9 @@
 | `total_vf_num_not` | integer (int32) | No |  |
 | `total_vf_num_not_in` | integer[] | No |  |
 | `type` | any | No |  |
-| `type_in` | NetworkType[] | No |  |
+| `type_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_not` | any | No |  |
-| `type_not_in` | NetworkType[] | No |  |
+| `type_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `up` | boolean | No |  |
 | `up_not` | boolean | No |  |
 | `used_vf_num` | integer (int32) | No |  |
@@ -234,9 +236,9 @@
 | `used_vf_num_not` | integer (int32) | No |  |
 | `used_vf_num_not_in` | integer[] | No |  |
 | `user_usage` | any | No |  |
-| `user_usage_in` | NicUserUsage[] | No |  |
+| `user_usage_in` | Array of [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
 | `user_usage_not` | any | No |  |
-| `user_usage_not_in` | NicUserUsage[] | No |  |
+| `user_usage_not_in` | Array of [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
 | `vds` | any | No |  |
 | `vms_every` | any | No |  |
 | `vms_none` | any | No |  |
