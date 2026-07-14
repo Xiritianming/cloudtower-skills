@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
 | `NOT` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
 | `OR` | Array of [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

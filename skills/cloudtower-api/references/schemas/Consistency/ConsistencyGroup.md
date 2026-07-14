@@ -16,7 +16,7 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `unique_size` | integer (int64) | Yes |  |
 | `consistency_group_snapshots` | Array of [NestedConsistencyGroupSnapshot](../Nested/NestedConsistencyGroupSnapshot.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |

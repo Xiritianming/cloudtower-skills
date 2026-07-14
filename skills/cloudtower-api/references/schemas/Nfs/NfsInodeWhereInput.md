@@ -43,13 +43,13 @@ Required fields are listed first.
 | `ec_m_lte` | integer (int32) | No |  |
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
-| `encrypt_method` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `encrypt_method_not` | any | No |  |
+| `encrypt_method_not` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `file` | boolean | No |  |
 | `file_not` | boolean | No |  |
@@ -67,9 +67,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -106,7 +106,7 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nfs_export` | any | No |  |
+| `nfs_export` | [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
 | `parent_id` | string | No |  |
 | `parent_id_contains` | string | No |  |
 | `parent_id_ends_with` | string | No |  |
@@ -123,9 +123,9 @@ Required fields are listed first.
 | `parent_id_starts_with` | string | No |  |
 | `prioritized` | boolean | No |  |
 | `prioritized_not` | boolean | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `resiliency_type_not` | any | No |  |
+| `resiliency_type_not` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `shared_size` | integer (int64) | No |  |
 | `shared_size_gt` | integer (int64) | No |  |

@@ -11,11 +11,11 @@ Required fields are listed first.
 | `AND` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
 | `NOT` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
 | `OR` | Array of [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
-| `backup_plan` | any | No |  |
-| `backup_restore_executions_every` | any | No |  |
-| `backup_restore_executions_none` | any | No |  |
-| `backup_restore_executions_some` | any | No |  |
-| `backup_target_execution` | any | No |  |
+| `backup_plan` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_restore_executions_every` | [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
+| `backup_restore_executions_none` | [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
+| `backup_restore_executions_some` | [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
+| `backup_target_execution` | [BackupTargetExecutionWhereInput](../Backup/BackupTargetExecutionWhereInput.md) | No |  |
 | `cluster_local_id` | string | No |  |
 | `cluster_local_id_contains` | string | No |  |
 | `cluster_local_id_ends_with` | string | No |  |
@@ -40,13 +40,13 @@ Required fields are listed first.
 | `compression_ratio_lte` | number (double) | No |  |
 | `compression_ratio_not` | number (double) | No |  |
 | `compression_ratio_not_in` | number[] | No |  |
-| `creation` | any | No |  |
+| `creation` | [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
-| `creation_not` | any | No |  |
+| `creation_not` | [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_not_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -136,13 +136,13 @@ Required fields are listed first.
 | `slice_not_in` | string[] | No |  |
 | `slice_not_starts_with` | string | No |  |
 | `slice_starts_with` | string | No |  |
-| `snapshot_consistent_type` | any | No |  |
+| `snapshot_consistent_type` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
-| `snapshot_consistent_type_not` | any | No |  |
+| `snapshot_consistent_type_not` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_not_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
-| `type` | any | No |  |
+| `type` | [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_not_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `valid_capacity` | integer (int64) | No |  |
 | `valid_capacity_gt` | integer (int64) | No |  |
@@ -160,7 +160,7 @@ Required fields are listed first.
 | `valid_size_lte` | integer (int64) | No |  |
 | `valid_size_not` | integer (int64) | No |  |
 | `valid_size_not_in` | integer[] | No |  |
-| `vm` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `vm_local_id` | string | No |  |
 | `vm_local_id_contains` | string | No |  |
 | `vm_local_id_ends_with` | string | No |  |

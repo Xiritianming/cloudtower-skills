@@ -19,11 +19,11 @@ Required fields are listed first.
 | `createdAt_lte` | string | No |  |
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `external_cloudtower` | any | No |  |
+| `external_cloudtower` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `failover_test_replica_group` | string | No |  |
 | `failover_test_replica_group_contains` | string | No |  |
 | `failover_test_replica_group_ends_with` | string | No |  |
@@ -38,7 +38,7 @@ Required fields are listed first.
 | `failover_test_replica_group_not_in` | string[] | No |  |
 | `failover_test_replica_group_not_starts_with` | string | No |  |
 | `failover_test_replica_group_starts_with` | string | No |  |
-| `failover_test_vm` | any | No |  |
+| `failover_test_vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -55,9 +55,9 @@ Required fields are listed first.
 | `id_starts_with` | string | No |  |
 | `inbound` | boolean | No |  |
 | `inbound_not` | boolean | No |  |
-| `iscsi_lun` | any | No |  |
-| `origin_iscsi_lun` | any | No |  |
-| `origin_vm` | any | No |  |
+| `iscsi_lun` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `origin_iscsi_lun` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `origin_vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `origin_vm_cluster_local_id` | string | No |  |
 | `origin_vm_cluster_local_id_contains` | string | No |  |
 | `origin_vm_cluster_local_id_ends_with` | string | No |  |
@@ -142,23 +142,23 @@ Required fields are listed first.
 | `replication_group_not_in` | string[] | No |  |
 | `replication_group_not_starts_with` | string | No |  |
 | `replication_group_starts_with` | string | No |  |
-| `replication_plan` | any | No |  |
-| `replication_service` | any | No |  |
-| `replication_target_executions_every` | any | No |  |
-| `replication_target_executions_none` | any | No |  |
-| `replication_target_executions_some` | any | No |  |
-| `restore_points_every` | any | No |  |
-| `restore_points_none` | any | No |  |
-| `restore_points_some` | any | No |  |
-| `state` | any | No |  |
+| `replication_plan` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_service` | [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
+| `replication_target_executions_every` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `replication_target_executions_none` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `replication_target_executions_some` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `restore_points_every` | [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
+| `restore_points_none` | [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
+| `restore_points_some` | [ReplicationRestorePointWhereInput](../Replication/ReplicationRestorePointWhereInput.md) | No |  |
+| `state` | [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
 | `state_in` | Array of [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
 | `state_not_in` | Array of [ReplicaVmState](../Replica/ReplicaVmState.md) | No |  |
 | `targets_deletable` | boolean | No |  |
 | `targets_deletable_not` | boolean | No |  |
-| `type` | any | No |  |
+| `type` | [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
 | `type_in` | Array of [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
 | `type_not_in` | Array of [ReplicationObjectType](../Replication/ReplicationObjectType.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |
@@ -168,5 +168,5 @@ Required fields are listed first.
 | `updatedAt_lte` | string | No |  |
 | `updatedAt_not` | string | No |  |
 | `updatedAt_not_in` | string[] | No |  |
-| `vm` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

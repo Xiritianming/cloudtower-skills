@@ -27,11 +27,11 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -104,9 +104,9 @@ Required fields are listed first.
 | `size_lte` | integer (int64) | No |  |
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
-| `status` | any | No |  |
+| `status` | [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
 | `status_in` | Array of [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
 | `status_not_in` | Array of [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | No |  |
 | `usb_type` | string | No |  |
 | `usb_type_contains` | string | No |  |
@@ -122,7 +122,7 @@ Required fields are listed first.
 | `usb_type_not_in` | string[] | No |  |
 | `usb_type_not_starts_with` | string | No |  |
 | `usb_type_starts_with` | string | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

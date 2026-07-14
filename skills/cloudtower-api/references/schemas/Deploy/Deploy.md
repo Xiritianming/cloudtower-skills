@@ -10,5 +10,5 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `id` | string | Yes |  |
 | `version` | string | Yes |  |
-| `license` | any | No |  |
+| `license` | [NestedLicense](../Nested/NestedLicense.md) | No |  |
 

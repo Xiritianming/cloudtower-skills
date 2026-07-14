@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
 | `NOT` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
 | `OR` | Array of [AlertWhereInput](../Alert/AlertWhereInput.md) | No |  |
-| `alert_rule` | any | No |  |
+| `alert_rule` | [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
 | `cause` | string | No |  |
 | `cause_contains` | string | No |  |
 | `cause_ends_with` | string | No |  |
@@ -26,7 +26,7 @@ Required fields are listed first.
 | `cause_not_in` | string[] | No |  |
 | `cause_not_starts_with` | string | No |  |
 | `cause_starts_with` | string | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `create_time` | string | No |  |
 | `create_time_gt` | string | No |  |
 | `create_time_gte` | string | No |  |
@@ -35,10 +35,10 @@ Required fields are listed first.
 | `create_time_lte` | string | No |  |
 | `create_time_not` | string | No |  |
 | `create_time_not_in` | string[] | No |  |
-| `disk` | any | No |  |
+| `disk` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `ended` | boolean | No |  |
 | `ended_not` | boolean | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -189,7 +189,7 @@ Required fields are listed first.
 | `value_lte` | number (double) | No |  |
 | `value_not` | number (double) | No |  |
 | `value_not_in` | number[] | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

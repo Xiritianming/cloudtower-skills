@@ -30,7 +30,7 @@ Required fields are listed first.
 | `start_time` | string | Yes |  |
 | `status` | [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | Yes |  |
 | `end_time` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `exec_h_m` | object | No |  |
 | `execution_tasks` | Array of [NestedSnapshotPlanTask](../Nested/NestedSnapshotPlanTask.md) | No |  |
 | `last_execute_end_time` | string | No |  |

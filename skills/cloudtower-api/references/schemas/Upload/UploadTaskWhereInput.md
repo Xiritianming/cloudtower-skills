@@ -49,9 +49,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `resource_type` | any | No |  |
+| `resource_type` | [UploadResourceType](../Upload/UploadResourceType.md) | No |  |
 | `resource_type_in` | Array of [UploadResourceType](../Upload/UploadResourceType.md) | No |  |
-| `resource_type_not` | any | No |  |
+| `resource_type_not` | [UploadResourceType](../Upload/UploadResourceType.md) | No |  |
 | `resource_type_not_in` | Array of [UploadResourceType](../Upload/UploadResourceType.md) | No |  |
 | `size` | integer (int64) | No |  |
 | `size_gt` | integer (int64) | No |  |
@@ -69,9 +69,9 @@ Required fields are listed first.
 | `started_at_lte` | string | No |  |
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [UploadTaskStatus](../Upload/UploadTaskStatus.md) | No |  |
 | `status_in` | Array of [UploadTaskStatus](../Upload/UploadTaskStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [UploadTaskStatus](../Upload/UploadTaskStatus.md) | No |  |
 | `status_not_in` | Array of [UploadTaskStatus](../Upload/UploadTaskStatus.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |

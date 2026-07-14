@@ -39,15 +39,15 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `platform` | any | No |  |
+| `platform` | [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
 | `platform_in` | Array of [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
-| `platform_not` | any | No |  |
+| `platform_not` | [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
 | `platform_not_in` | Array of [UserRolePlatform](../User/UserRolePlatform.md) | No |  |
-| `preset` | any | No |  |
+| `preset` | [UserRolePreset](../User/UserRolePreset.md) | No |  |
 | `preset_in` | Array of [UserRolePreset](../User/UserRolePreset.md) | No |  |
-| `preset_not` | any | No |  |
+| `preset_not` | [UserRolePreset](../User/UserRolePreset.md) | No |  |
 | `preset_not_in` | Array of [UserRolePreset](../User/UserRolePreset.md) | No |  |
-| `users_every` | any | No |  |
-| `users_none` | any | No |  |
-| `users_some` | any | No |  |
+| `users_every` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
+| `users_none` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
+| `users_some` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
 

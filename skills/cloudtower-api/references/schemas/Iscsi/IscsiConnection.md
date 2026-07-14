@@ -14,7 +14,7 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `initiator_ip` | string | Yes |  |
 | `type` | [StoreConnectionType](../Store/StoreConnectionType.md) | Yes |  |
-| `iscsi_target` | any | No |  |
-| `nvmf_subsystem` | any | No |  |
-| `tr_type` | any | No |  |
+| `iscsi_target` | [NestedIscsiTarget](../Nested/NestedIscsiTarget.md) | No |  |
+| `nvmf_subsystem` | [NestedNvmfSubsystem](../Nested/NestedNvmfSubsystem.md) | No |  |
+| `tr_type` | [StoreTransportType](../Store/StoreTransportType.md) | No |  |
 

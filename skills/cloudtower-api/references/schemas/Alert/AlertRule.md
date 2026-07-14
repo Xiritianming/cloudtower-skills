@@ -14,5 +14,5 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `thresholds` | Array of [NestedThresholds](../Nested/NestedThresholds.md) | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 

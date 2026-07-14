@@ -22,8 +22,8 @@ Required fields are listed first.
 | `vm_host_prefer_policy` | boolean | Yes |  |
 | `vm_vm_policy` | [VmVmPolicy](../Vm/VmVmPolicy.md) | Yes |  |
 | `vm_vm_policy_enabled` | boolean | Yes |  |
-| `entityAsyncStatus` | any | No |  |
-| `usage` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `usage` | [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `vm_host_must_host_uuids` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `vm_host_prefer_host_uuids` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |

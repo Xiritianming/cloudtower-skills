@@ -51,9 +51,9 @@ Required fields are listed first.
 | `dirty_cache_usage_lte` | number (double) | No |  |
 | `dirty_cache_usage_not` | number (double) | No |  |
 | `dirty_cache_usage_not_in` | number[] | No |  |
-| `disks_every` | any | No |  |
-| `disks_none` | any | No |  |
-| `disks_some` | any | No |  |
+| `disks_every` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_none` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_some` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_cache_space_gt` | integer (int64) | No |  |
 | `failure_cache_space_gte` | integer (int64) | No |  |
@@ -78,7 +78,7 @@ Required fields are listed first.
 | `hdd_disk_count_lte` | integer (int32) | No |  |
 | `hdd_disk_count_not` | integer (int32) | No |  |
 | `hdd_disk_count_not_in` | integer[] | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -93,9 +93,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -196,9 +196,9 @@ Required fields are listed first.
 | `sata_or_sas_ssd_disk_count_lte` | integer (int32) | No |  |
 | `sata_or_sas_ssd_disk_count_not` | integer (int32) | No |  |
 | `sata_or_sas_ssd_disk_count_not_in` | integer[] | No |  |
-| `status` | any | No |  |
+| `status` | [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
 | `status_in` | Array of [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
 | `status_not_in` | Array of [DiskPoolStatus](../Disk/DiskPoolStatus.md) | No |  |
 | `total_cache_capacity` | integer (int64) | No |  |
 | `total_cache_capacity_gt` | integer (int64) | No |  |
@@ -216,9 +216,9 @@ Required fields are listed first.
 | `total_data_capacity_lte` | integer (int64) | No |  |
 | `total_data_capacity_not` | integer (int64) | No |  |
 | `total_data_capacity_not_in` | integer[] | No |  |
-| `use_state` | any | No |  |
+| `use_state` | [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
 | `use_state_in` | Array of [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
-| `use_state_not` | any | No |  |
+| `use_state_not` | [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
 | `use_state_not_in` | Array of [DiskPoolUseState](../Disk/DiskPoolUseState.md) | No |  |
 | `used_cache_space` | integer (int64) | No |  |
 | `used_cache_space_gt` | integer (int64) | No |  |

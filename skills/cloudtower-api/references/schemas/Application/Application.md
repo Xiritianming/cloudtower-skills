@@ -21,5 +21,5 @@ Required fields are listed first.
 | `error_message` | string | No |  |
 | `image_name` | string | No |  |
 | `update_time` | string | No |  |
-| `vm` | any | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
 

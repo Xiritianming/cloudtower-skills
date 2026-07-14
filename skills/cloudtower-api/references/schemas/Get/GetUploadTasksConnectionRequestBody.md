@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [UploadTaskOrderByInput](../Upload/UploadTaskOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [UploadTaskWhereInput](../Upload/UploadTaskWhereInput.md) | No |  |
 

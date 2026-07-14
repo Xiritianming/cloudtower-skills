@@ -16,6 +16,6 @@ Required fields are listed first.
 | `path` | string | Yes |  |
 | `size` | integer (int64) | Yes |  |
 | `version` | integer (int32) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `vm_disks` | Array of [NestedVmDisk](../Nested/NestedVmDisk.md) | No |  |
 

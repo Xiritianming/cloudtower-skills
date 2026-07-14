@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
 | `NOT` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
 | `OR` | Array of [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `cpu_hz_per_core` | integer (int64) | No |  |
 | `cpu_hz_per_core_gt` | integer (int64) | No |  |
 | `cpu_hz_per_core_gte` | integer (int64) | No |  |

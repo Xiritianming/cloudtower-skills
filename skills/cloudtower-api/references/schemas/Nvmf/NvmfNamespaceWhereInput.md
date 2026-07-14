@@ -91,19 +91,19 @@ Required fields are listed first.
 | `bps_wr_max_not_in` | integer[] | No |  |
 | `bps_wr_not` | integer (int64) | No |  |
 | `bps_wr_not_in` | integer[] | No |  |
-| `business_host_groups_every` | any | No |  |
-| `business_host_groups_none` | any | No |  |
-| `business_host_groups_some` | any | No |  |
+| `business_host_groups_every` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `business_host_groups_none` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `business_host_groups_some` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
 | `business_host_is_same_with_parent` | boolean | No |  |
 | `business_host_is_same_with_parent_not` | boolean | No |  |
-| `business_hosts_every` | any | No |  |
-| `business_hosts_none` | any | No |  |
-| `business_hosts_some` | any | No |  |
-| `configuration_method` | any | No |  |
+| `business_hosts_every` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
+| `business_hosts_none` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
+| `business_hosts_some` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
+| `configuration_method` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
-| `configuration_method_not` | any | No |  |
+| `configuration_method_not` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_not_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
-| `consistency_group` | any | No |  |
+| `consistency_group` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gt` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gte` | integer (int64) | No |  |
@@ -128,13 +128,13 @@ Required fields are listed first.
 | `ec_m_lte` | integer (int32) | No |  |
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
-| `encrypt_method` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `encrypt_method_not` | any | No |  |
+| `encrypt_method_not` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -232,9 +232,9 @@ Required fields are listed first.
 | `iops_wr_not_in` | integer[] | No |  |
 | `is_shared` | boolean | No |  |
 | `is_shared_not` | boolean | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -271,7 +271,7 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `namespace_group` | any | No |  |
+| `namespace_group` | [NamespaceGroupWhereInput](../Namespace/NamespaceGroupWhereInput.md) | No |  |
 | `namespace_id` | integer (int32) | No |  |
 | `namespace_id_gt` | integer (int32) | No |  |
 | `namespace_id_gte` | integer (int32) | No |  |
@@ -294,7 +294,7 @@ Required fields are listed first.
 | `nqn_whitelist_not_in` | string[] | No |  |
 | `nqn_whitelist_not_starts_with` | string | No |  |
 | `nqn_whitelist_starts_with` | string | No |  |
-| `nvmf_subsystem` | any | No |  |
+| `nvmf_subsystem` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
 | `prioritized` | boolean | No |  |
 | `prioritized_not` | boolean | No |  |
 | `replica_num` | integer (int32) | No |  |
@@ -305,9 +305,9 @@ Required fields are listed first.
 | `replica_num_lte` | integer (int32) | No |  |
 | `replica_num_not` | integer (int32) | No |  |
 | `replica_num_not_in` | integer[] | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `resiliency_type_not` | any | No |  |
+| `resiliency_type_not` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `shared_size` | integer (int64) | No |  |
 | `shared_size_gt` | integer (int64) | No |  |
@@ -325,9 +325,9 @@ Required fields are listed first.
 | `snapshot_num_lte` | integer (int32) | No |  |
 | `snapshot_num_not` | integer (int32) | No |  |
 | `snapshot_num_not_in` | integer[] | No |  |
-| `snapshot_plans_every` | any | No |  |
-| `snapshot_plans_none` | any | No |  |
-| `snapshot_plans_some` | any | No |  |
+| `snapshot_plans_every` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
+| `snapshot_plans_none` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
+| `snapshot_plans_some` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
 | `stripe_num` | integer (int32) | No |  |
 | `stripe_num_gt` | integer (int32) | No |  |
 | `stripe_num_gte` | integer (int32) | No |  |

@@ -39,9 +39,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway` | string | No |  |
 | `gateway_contains` | string | No |  |
@@ -99,7 +99,7 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `route_table` | any | No |  |
+| `route_table` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
 | `total_ip_count` | integer (int32) | No |  |
 | `total_ip_count_gt` | integer (int32) | No |  |
 | `total_ip_count_gte` | integer (int32) | No |  |
@@ -116,5 +116,5 @@ Required fields are listed first.
 | `unused_ip_count_lte` | integer (int32) | No |  |
 | `unused_ip_count_not` | integer (int32) | No |  |
 | `unused_ip_count_not_in` | integer[] | No |  |
-| `vpc` | any | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

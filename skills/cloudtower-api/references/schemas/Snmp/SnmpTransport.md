@@ -17,10 +17,10 @@ Required fields are listed first.
 | `protocol` | [SnmpProtocol](../Snmp/SnmpProtocol.md) | Yes |  |
 | `version` | [SnmpVersion](../Snmp/SnmpVersion.md) | Yes |  |
 | `auth_pass_phrase` | string | No |  |
-| `auth_protocol` | any | No |  |
+| `auth_protocol` | [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
 | `community` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `privacy_pass_phrase` | string | No |  |
-| `privacy_protocol` | any | No |  |
+| `privacy_protocol` | [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
 | `username` | string | No |  |
 

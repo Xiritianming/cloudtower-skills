@@ -13,5 +13,5 @@ Required fields are listed first.
 | `key` | string | No |  |
 | `per_second` | number (double) | No |  |
 | `total` | number (double) | No |  |
-| `unit` | any | No |  |
+| `unit` | [StepUnit](../Step/StepUnit.md) | No |  |
 

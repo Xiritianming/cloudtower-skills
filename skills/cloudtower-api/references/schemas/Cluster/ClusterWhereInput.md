@@ -43,12 +43,12 @@ Required fields are listed first.
 | `application_highest_version_not_in` | string[] | No |  |
 | `application_highest_version_not_starts_with` | string | No |  |
 | `application_highest_version_starts_with` | string | No |  |
-| `applications_every` | any | No |  |
-| `applications_none` | any | No |  |
-| `applications_some` | any | No |  |
-| `architecture` | any | No |  |
+| `applications_every` | [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
+| `applications_none` | [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
+| `applications_some` | [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
+| `architecture` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
-| `architecture_not` | any | No |  |
+| `architecture_not` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_not_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `auto_converge` | boolean | No |  |
 | `auto_converge_not` | boolean | No |  |
@@ -60,13 +60,13 @@ Required fields are listed first.
 | `commited_memory_bytes_lte` | integer (int64) | No |  |
 | `commited_memory_bytes_not` | integer (int64) | No |  |
 | `commited_memory_bytes_not_in` | integer[] | No |  |
-| `connect_state` | any | No |  |
+| `connect_state` | [ConnectState](../Connect/ConnectState.md) | No |  |
 | `connect_state_in` | Array of [ConnectState](../Connect/ConnectState.md) | No |  |
-| `connect_state_not` | any | No |  |
+| `connect_state_not` | [ConnectState](../Connect/ConnectState.md) | No |  |
 | `connect_state_not_in` | Array of [ConnectState](../Connect/ConnectState.md) | No |  |
-| `consistency_groups_every` | any | No |  |
-| `consistency_groups_none` | any | No |  |
-| `consistency_groups_some` | any | No |  |
+| `consistency_groups_every` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
+| `consistency_groups_none` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
+| `consistency_groups_some` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
 | `current_cpu_model` | string | No |  |
 | `current_cpu_model_contains` | string | No |  |
 | `current_cpu_model_ends_with` | string | No |  |
@@ -97,9 +97,9 @@ Required fields are listed first.
 | `data_reduction_saving_lte` | number (double) | No |  |
 | `data_reduction_saving_not` | number (double) | No |  |
 | `data_reduction_saving_not_in` | number[] | No |  |
-| `datacenters_every` | any | No |  |
-| `datacenters_none` | any | No |  |
-| `datacenters_some` | any | No |  |
+| `datacenters_every` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `datacenters_none` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `datacenters_some` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
 | `dirty_cache_space` | integer (int64) | No |  |
 | `dirty_cache_space_gt` | integer (int64) | No |  |
 | `dirty_cache_space_gte` | integer (int64) | No |  |
@@ -124,9 +124,9 @@ Required fields are listed first.
 | `disconnected_date_lte` | string | No |  |
 | `disconnected_date_not` | string | No |  |
 | `disconnected_date_not_in` | string[] | No |  |
-| `disconnected_reason` | any | No |  |
+| `disconnected_reason` | [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `disconnected_reason_in` | Array of [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
-| `disconnected_reason_not` | any | No |  |
+| `disconnected_reason_not` | [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `disconnected_reason_not_in` | Array of [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gt` | integer (int64) | No |  |
@@ -136,14 +136,14 @@ Required fields are listed first.
 | `downgraded_prioritized_space_lte` | integer (int64) | No |  |
 | `downgraded_prioritized_space_not` | integer (int64) | No |  |
 | `downgraded_prioritized_space_not_in` | integer[] | No |  |
-| `ecp_license` | any | No |  |
+| `ecp_license` | [EcpLicenseWhereInput](../Ecp/EcpLicenseWhereInput.md) | No |  |
 | `enable_tiering` | boolean | No |  |
 | `enable_tiering_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `everoute_cluster` | any | No |  |
+| `everoute_cluster` | [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_cache_space_gt` | integer (int64) | No |  |
 | `failure_cache_space_gte` | integer (int64) | No |  |
@@ -170,12 +170,12 @@ Required fields are listed first.
 | `host_num_lte` | integer (int32) | No |  |
 | `host_num_not` | integer (int32) | No |  |
 | `host_num_not_in` | integer[] | No |  |
-| `hosts_every` | any | No |  |
-| `hosts_none` | any | No |  |
-| `hosts_some` | any | No |  |
-| `hypervisor` | any | No |  |
+| `hosts_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hypervisor` | [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `hypervisor_in` | Array of [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
-| `hypervisor_not` | any | No |  |
+| `hypervisor_not` | [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `hypervisor_not_in` | Array of [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -221,9 +221,9 @@ Required fields are listed first.
 | `iscsi_vip_not_in` | string[] | No |  |
 | `iscsi_vip_not_starts_with` | string | No |  |
 | `iscsi_vip_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `license_expire_date` | string | No |  |
 | `license_expire_date_gt` | string | No |  |
 | `license_expire_date_gte` | string | No |  |
@@ -254,9 +254,9 @@ Required fields are listed first.
 | `license_sign_date_lte` | string | No |  |
 | `license_sign_date_not` | string | No |  |
 | `license_sign_date_not_in` | string[] | No |  |
-| `license_type` | any | No |  |
+| `license_type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `license_type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
-| `license_type_not` | any | No |  |
+| `license_type_not` | [LicenseType](../License/LicenseType.md) | No |  |
 | `license_type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
@@ -394,9 +394,9 @@ Required fields are listed first.
 | `name_starts_with` | string | No |  |
 | `no_performance_layer` | boolean | No |  |
 | `no_performance_layer_not` | boolean | No |  |
-| `ntp_mode` | any | No |  |
+| `ntp_mode` | [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `ntp_mode_in` | Array of [NtpMode](../Ntp/NtpMode.md) | No |  |
-| `ntp_mode_not` | any | No |  |
+| `ntp_mode_not` | [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `ntp_mode_not_in` | Array of [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `nvme_over_rdma_enabled` | boolean | No |  |
 | `nvme_over_rdma_enabled_not` | boolean | No |  |
@@ -546,10 +546,10 @@ Required fields are listed first.
 | `running_vm_num_lte` | integer (int32) | No |  |
 | `running_vm_num_not` | integer (int32) | No |  |
 | `running_vm_num_not_in` | integer[] | No |  |
-| `settings` | any | No |  |
-| `software_edition` | any | No |  |
+| `settings` | [ClusterSettingsWhereInput](../Cluster/ClusterSettingsWhereInput.md) | No |  |
+| `software_edition` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
-| `software_edition_not` | any | No |  |
+| `software_edition_not` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `stopped_vm_num` | integer (int32) | No |  |
 | `stopped_vm_num_gt` | integer (int32) | No |  |
@@ -633,9 +633,9 @@ Required fields are listed first.
 | `total_prio_volume_size_usage_lte` | number (double) | No |  |
 | `total_prio_volume_size_usage_not` | number (double) | No |  |
 | `total_prio_volume_size_usage_not_in` | number[] | No |  |
-| `type` | any | No |  |
+| `type` | [ClusterType](../Cluster/ClusterType.md) | No |  |
 | `type_in` | Array of [ClusterType](../Cluster/ClusterType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [ClusterType](../Cluster/ClusterType.md) | No |  |
 | `type_not_in` | Array of [ClusterType](../Cluster/ClusterType.md) | No |  |
 | `upgrade_for_tiering` | boolean | No |  |
 | `upgrade_for_tiering_not` | boolean | No |  |
@@ -701,10 +701,10 @@ Required fields are listed first.
 | `valid_data_space_lte` | integer (int64) | No |  |
 | `valid_data_space_not` | integer (int64) | No |  |
 | `valid_data_space_not_in` | integer[] | No |  |
-| `vcenterAccount` | any | No |  |
-| `vdses_every` | any | No |  |
-| `vdses_none` | any | No |  |
-| `vdses_some` | any | No |  |
+| `vcenterAccount` | [VcenterAccountWhereInput](../Vcenter/VcenterAccountWhereInput.md) | No |  |
+| `vdses_every` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vdses_none` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vdses_some` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
 | `version` | string | No |  |
 | `version_contains` | string | No |  |
 | `version_ends_with` | string | No |  |
@@ -721,9 +721,9 @@ Required fields are listed first.
 | `version_starts_with` | string | No |  |
 | `vhost_enabled` | boolean | No |  |
 | `vhost_enabled_not` | boolean | No |  |
-| `vm_folders_every` | any | No |  |
-| `vm_folders_none` | any | No |  |
-| `vm_folders_some` | any | No |  |
+| `vm_folders_every` | [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
+| `vm_folders_none` | [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
+| `vm_folders_some` | [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
 | `vm_num` | integer (int32) | No |  |
 | `vm_num_gt` | integer (int32) | No |  |
 | `vm_num_gte` | integer (int32) | No |  |
@@ -732,14 +732,14 @@ Required fields are listed first.
 | `vm_num_lte` | integer (int32) | No |  |
 | `vm_num_not` | integer (int32) | No |  |
 | `vm_num_not_in` | integer[] | No |  |
-| `vm_templates_every` | any | No |  |
-| `vm_templates_none` | any | No |  |
-| `vm_templates_some` | any | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
-| `witness` | any | No |  |
-| `zones_every` | any | No |  |
-| `zones_none` | any | No |  |
-| `zones_some` | any | No |  |
+| `vm_templates_every` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_none` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_some` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `witness` | [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `zones_every` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `zones_none` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `zones_some` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 

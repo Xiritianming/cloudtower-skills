@@ -14,6 +14,6 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `position` | [NestedPosition](../Nested/NestedPosition.md) | Yes |  |
-| `brick_topo` | any | No |  |
-| `cluster_topo` | any | No |  |
+| `brick_topo` | [NestedBrickTopo](../Nested/NestedBrickTopo.md) | No |  |
+| `cluster_topo` | [NestedClusterTopo](../Nested/NestedClusterTopo.md) | No |  |
 

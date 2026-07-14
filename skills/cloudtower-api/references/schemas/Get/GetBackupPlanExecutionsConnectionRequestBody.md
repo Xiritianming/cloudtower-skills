@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [BackupPlanExecutionOrderByInput](../Backup/BackupPlanExecutionOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [BackupPlanExecutionWhereInput](../Backup/BackupPlanExecutionWhereInput.md) | No |  |
 

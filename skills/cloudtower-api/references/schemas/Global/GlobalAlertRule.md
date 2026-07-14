@@ -21,5 +21,5 @@ Required fields are listed first.
 | `thresholds` | Array of [NestedThresholds](../Nested/NestedThresholds.md) | Yes |  |
 | `unit` | [AlertRuleUnit](../Alert/AlertRuleUnit.md) | Yes |  |
 | `alert_rules` | Array of [NestedAlertRule](../Nested/NestedAlertRule.md) | No |  |
-| `object` | any | No |  |
+| `object` | [AlertRuleObject](../Alert/AlertRuleObject.md) | No |  |
 

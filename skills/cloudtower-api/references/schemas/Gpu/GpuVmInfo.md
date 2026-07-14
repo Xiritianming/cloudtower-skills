@@ -22,14 +22,14 @@ Required fields are listed first.
 | `vgpu_instance_num` | integer (int32) | No |  |
 | `user_vgpu_type_name` | string | No |  |
 | `user_vgpu_type_id` | string | No |  |
-| `user_usage` | any | No |  |
+| `user_usage` | [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `mdev_supported_types` | Array of [NestedVgpuType](../Nested/NestedVgpuType.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `is_nvidia_vfs_supported` | boolean | No |  |
 | `is_nvidia_vfs_enabled` | boolean | No |  |
 | `is_nvidia_tools_ready` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `driver_info` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `driver_info` | [NestedGpuDriverInfo](../Nested/NestedGpuDriverInfo.md) | No |  |
 | `available_vgpus_num` | integer (int32) | No |  |
 | `assigned_vgpus_num` | integer (int32) | No |  |
 

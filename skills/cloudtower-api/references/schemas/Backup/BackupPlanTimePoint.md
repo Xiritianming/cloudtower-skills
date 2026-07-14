@@ -10,7 +10,7 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `minute` | integer (int32) | Yes |  |
 | `hour` | integer (int32) | Yes |  |
-| `weekday` | any | No |  |
+| `weekday` | [WeekdayTypeEnum](../Weekday/WeekdayTypeEnum.md) | No |  |
 | `date_position` | integer[] | No |  |
 | `date` | integer (int32) | No |  |
 

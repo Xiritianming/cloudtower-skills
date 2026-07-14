@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [SvtImageWhereInput](../Svt/SvtImageWhereInput.md) | No |  |
 | `NOT` | Array of [SvtImageWhereInput](../Svt/SvtImageWhereInput.md) | No |  |
 | `OR` | Array of [SvtImageWhereInput](../Svt/SvtImageWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -96,7 +96,7 @@ Required fields are listed first.
 | `version_lte` | integer (int32) | No |  |
 | `version_not` | integer (int32) | No |  |
 | `version_not_in` | integer[] | No |  |
-| `vm_disks_every` | any | No |  |
-| `vm_disks_none` | any | No |  |
-| `vm_disks_some` | any | No |  |
+| `vm_disks_every` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_none` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_some` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
 

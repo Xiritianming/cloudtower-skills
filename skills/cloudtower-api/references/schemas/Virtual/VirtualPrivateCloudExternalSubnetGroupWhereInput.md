@@ -25,16 +25,16 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `edge_gateway_group` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateway_group` | [VirtualPrivateCloudEdgeGatewayGroupWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayGroupWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `exclusive` | boolean | No |  |
 | `exclusive_not` | boolean | No |  |
-| `floating_ips_every` | any | No |  |
-| `floating_ips_none` | any | No |  |
-| `floating_ips_some` | any | No |  |
+| `floating_ips_every` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `floating_ips_none` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `floating_ips_some` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -77,13 +77,13 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nat_gateways_every` | any | No |  |
-| `nat_gateways_none` | any | No |  |
-| `nat_gateways_some` | any | No |  |
-| `router_gateways_every` | any | No |  |
-| `router_gateways_none` | any | No |  |
-| `router_gateways_some` | any | No |  |
+| `nat_gateways_every` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `nat_gateways_none` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `nat_gateways_some` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `router_gateways_every` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `router_gateways_none` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `router_gateways_some` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
 | `shared_in_edge_gateway_group` | boolean | No |  |
 | `shared_in_edge_gateway_group_not` | boolean | No |  |
-| `vpc` | any | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

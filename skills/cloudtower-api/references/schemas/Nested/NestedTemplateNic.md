@@ -14,7 +14,7 @@ Required fields are listed first.
 | `ip_address` | string | No |  |
 | `mac_address` | string | No |  |
 | `mirror` | boolean | No |  |
-| `model` | any | No |  |
-| `type` | any | No |  |
-| `vpc_nic` | any | No |  |
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
+| `type` | [VmNicType](../Vm/VmNicType.md) | No |  |
+| `vpc_nic` | [NestedTemplateVpcNic](../Nested/NestedTemplateVpcNic.md) | No |  |
 

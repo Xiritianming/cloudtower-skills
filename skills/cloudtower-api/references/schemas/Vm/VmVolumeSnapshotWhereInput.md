@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmVolumeSnapshotWhereInput](../Vm/VmVolumeSnapshotWhereInput.md) | No |  |
 | `NOT` | Array of [VmVolumeSnapshotWhereInput](../Vm/VmVolumeSnapshotWhereInput.md) | No |  |
 | `OR` | Array of [VmVolumeSnapshotWhereInput](../Vm/VmVolumeSnapshotWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `createAt` | string | No |  |
 | `createAt_gt` | string | No |  |
 | `createAt_gte` | string | No |  |
@@ -34,7 +34,7 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `elf_storage_policy` | any | No |  |
+| `elf_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_ec_k` | integer (int32) | No |  |
 | `elf_storage_policy_ec_k_gt` | integer (int32) | No |  |
 | `elf_storage_policy_ec_k_gte` | integer (int32) | No |  |
@@ -52,7 +52,7 @@ Required fields are listed first.
 | `elf_storage_policy_ec_m_not` | integer (int32) | No |  |
 | `elf_storage_policy_ec_m_not_in` | integer[] | No |  |
 | `elf_storage_policy_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
-| `elf_storage_policy_not` | any | No |  |
+| `elf_storage_policy_not` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_not_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_replica_num_gt` | integer (int32) | No |  |
@@ -72,9 +72,9 @@ Required fields are listed first.
 | `elf_storage_policy_stripe_num_not_in` | integer[] | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
 | `elf_storage_policy_thin_provision_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -90,9 +90,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -147,9 +147,9 @@ Required fields are listed first.
 | `size_lte` | number (double) | No |  |
 | `size_not` | number (double) | No |  |
 | `size_not_in` | number[] | No |  |
-| `type` | any | No |  |
+| `type` | [VmVolumeSnapshotType](../Vm/VmVolumeSnapshotType.md) | No |  |
 | `type_in` | Array of [VmVolumeSnapshotType](../Vm/VmVolumeSnapshotType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [VmVolumeSnapshotType](../Vm/VmVolumeSnapshotType.md) | No |  |
 | `type_not_in` | Array of [VmVolumeSnapshotType](../Vm/VmVolumeSnapshotType.md) | No |  |
 | `unique_size` | number (double) | No |  |
 | `unique_size_gt` | number (double) | No |  |
@@ -159,7 +159,7 @@ Required fields are listed first.
 | `unique_size_lte` | number (double) | No |  |
 | `unique_size_not` | number (double) | No |  |
 | `unique_size_not_in` | number[] | No |  |
-| `vm_volume` | any | No |  |
+| `vm_volume` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 | `volume_sharing` | boolean | No |  |
 | `volume_sharing_not` | boolean | No |  |
 | `volume_size` | number (double) | No |  |

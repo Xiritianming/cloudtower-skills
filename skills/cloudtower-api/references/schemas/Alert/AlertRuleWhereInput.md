@@ -11,12 +11,12 @@ Required fields are listed first.
 | `AND` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
 | `NOT` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
 | `OR` | Array of [AlertRuleWhereInput](../Alert/AlertRuleWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `customized` | boolean | No |  |
 | `customized_not` | boolean | No |  |
 | `disabled` | boolean | No |  |
 | `disabled_not` | boolean | No |  |
-| `global_alert_rule` | any | No |  |
+| `global_alert_rule` | [GlobalAlertRuleWhereInput](../Global/GlobalAlertRuleWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
 | `NOT` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
 | `OR` | Array of [ElfDataStoreWhereInput](../Elf/ElfDataStoreWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -58,7 +58,7 @@ Required fields are listed first.
 | `ip_whitelist_not_in` | string[] | No |  |
 | `ip_whitelist_not_starts_with` | string | No |  |
 | `ip_whitelist_starts_with` | string | No |  |
-| `iscsi_target` | any | No |  |
+| `iscsi_target` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -87,8 +87,8 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nfs_export` | any | No |  |
-| `nvmf_subsystem` | any | No |  |
+| `nfs_export` | [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
+| `nvmf_subsystem` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
 | `replica_num` | integer (int32) | No |  |
 | `replica_num_gt` | integer (int32) | No |  |
 | `replica_num_gte` | integer (int32) | No |  |
@@ -99,8 +99,8 @@ Required fields are listed first.
 | `replica_num_not_in` | integer[] | No |  |
 | `thin_provision` | boolean | No |  |
 | `thin_provision_not` | boolean | No |  |
-| `type` | any | No |  |
+| `type` | [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
 | `type_in` | Array of [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
 | `type_not_in` | Array of [ElfDataStoreType](../Elf/ElfDataStoreType.md) | No |  |
 

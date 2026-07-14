@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
 | `NOT` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
 | `OR` | Array of [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `end_time` | string | No |  |
 | `end_time_gt` | string | No |  |
 | `end_time_gte` | string | No |  |
@@ -20,9 +20,9 @@ Required fields are listed first.
 | `end_time_lte` | string | No |  |
 | `end_time_not` | string | No |  |
 | `end_time_not_in` | string[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -54,8 +54,8 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `snapshotGroup` | any | No |  |
-| `snapshotPlan` | any | No |  |
+| `snapshotGroup` | [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
+| `snapshotPlan` | [SnapshotPlanWhereInput](../Snapshot/SnapshotPlanWhereInput.md) | No |  |
 | `start_time` | string | No |  |
 | `start_time_gt` | string | No |  |
 | `start_time_gte` | string | No |  |
@@ -64,12 +64,12 @@ Required fields are listed first.
 | `start_time_lte` | string | No |  |
 | `start_time_not` | string | No |  |
 | `start_time_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `status_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `status_not_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
-| `type` | any | No |  |
+| `type` | [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
 | `type_in` | Array of [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
 | `type_not_in` | Array of [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | No |  |
 

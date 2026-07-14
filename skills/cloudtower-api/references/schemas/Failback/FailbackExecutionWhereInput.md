@@ -19,11 +19,11 @@ Required fields are listed first.
 | `createdAt_lte` | string | No |  |
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `external_cloudtower` | any | No |  |
+| `external_cloudtower` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
 | `finished_at_gte` | string | No |  |
@@ -48,10 +48,10 @@ Required fields are listed first.
 | `id_starts_with` | string | No |  |
 | `is_sync_replication` | boolean | No |  |
 | `is_sync_replication_not` | boolean | No |  |
-| `replication_failback_target_executions_every` | any | No |  |
-| `replication_failback_target_executions_none` | any | No |  |
-| `replication_failback_target_executions_some` | any | No |  |
-| `replication_service` | any | No |  |
+| `replication_failback_target_executions_every` | [ReplicationFailbackTargetExecutionWhereInput](../Replication/ReplicationFailbackTargetExecutionWhereInput.md) | No |  |
+| `replication_failback_target_executions_none` | [ReplicationFailbackTargetExecutionWhereInput](../Replication/ReplicationFailbackTargetExecutionWhereInput.md) | No |  |
+| `replication_failback_target_executions_some` | [ReplicationFailbackTargetExecutionWhereInput](../Replication/ReplicationFailbackTargetExecutionWhereInput.md) | No |  |
+| `replication_service` | [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |
 | `resource_version_gte` | integer (int32) | No |  |
@@ -60,9 +60,9 @@ Required fields are listed first.
 | `resource_version_lte` | integer (int32) | No |  |
 | `resource_version_not` | integer (int32) | No |  |
 | `resource_version_not_in` | integer[] | No |  |
-| `state` | any | No |  |
+| `state` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_not_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `success_job_count` | integer (int32) | No |  |
 | `success_job_count_gt` | integer (int32) | No |  |

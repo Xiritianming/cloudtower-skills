@@ -19,9 +19,9 @@ Required fields are listed first.
 | `cluster_num_lte` | integer (int32) | No |  |
 | `cluster_num_not` | integer (int32) | No |  |
 | `cluster_num_not_in` | integer[] | No |  |
-| `clusters_every` | any | No |  |
-| `clusters_none` | any | No |  |
-| `clusters_some` | any | No |  |
+| `clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `failure_data_space` | integer (int64) | No |  |
 | `failure_data_space_gt` | integer (int64) | No |  |
 | `failure_data_space_gte` | integer (int64) | No |  |
@@ -52,9 +52,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
 | `name_ends_with` | string | No |  |
@@ -69,7 +69,7 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `organization` | any | No |  |
+| `organization` | [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
 | `total_cpu_hz` | integer (int64) | No |  |
 | `total_cpu_hz_gt` | integer (int64) | No |  |
 | `total_cpu_hz_gte` | integer (int64) | No |  |

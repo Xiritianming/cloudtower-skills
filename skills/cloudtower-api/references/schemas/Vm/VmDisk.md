@@ -17,16 +17,16 @@ Required fields are listed first.
 | `cloud_init_image_path` | string | No |  |
 | `device` | string | No |  |
 | `disabled` | boolean | No |  |
-| `elf_image` | any | No |  |
+| `elf_image` | [NestedElfImage](../Nested/NestedElfImage.md) | No |  |
 | `key` | integer (int32) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `serial` | string | No |  |
-| `svt_image` | any | No |  |
+| `svt_image` | [NestedSvtImage](../Nested/NestedSvtImage.md) | No |  |
 | `unsafe_image_path` | string | No |  |
 | `unsafe_image_uuid` | string | No |  |
 | `unsafe_provision` | string | No |  |
-| `vm_volume` | any | No |  |
+| `vm_volume` | [NestedVmVolume](../Nested/NestedVmVolume.md) | No |  |
 

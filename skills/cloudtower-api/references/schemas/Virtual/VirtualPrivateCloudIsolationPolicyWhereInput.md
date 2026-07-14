@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
 | `NOT` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
 | `OR` | Array of [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -29,9 +29,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -46,13 +46,13 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `mode` | any | No |  |
+| `mode` | [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
 | `mode_in` | Array of [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
-| `mode_not` | any | No |  |
+| `mode_not` | [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
 | `mode_not_in` | Array of [VirtualPrivateCloudIsolationPolicyMode](../Virtual/VirtualPrivateCloudIsolationPolicyMode.md) | No |  |
-| `security_groups_every` | any | No |  |
-| `security_groups_none` | any | No |  |
-| `security_groups_some` | any | No |  |
-| `vm` | any | No |  |
-| `vpc` | any | No |  |
+| `security_groups_every` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `security_groups_none` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `security_groups_some` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

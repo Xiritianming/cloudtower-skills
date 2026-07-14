@@ -13,9 +13,9 @@ Required fields are listed first.
 | `initiators` | Array of [NestedInitiator](../Nested/NestedInitiator.md) | Yes |  |
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `business_host_group` | any | No |  |
+| `business_host_group` | [NestedBusinessHostGroup](../Nested/NestedBusinessHostGroup.md) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `iscsi_targets` | Array of [NestedIscsiTarget](../Nested/NestedIscsiTarget.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |

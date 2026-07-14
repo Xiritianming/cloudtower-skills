@@ -75,9 +75,9 @@ Required fields are listed first.
 | `port_lte` | integer (int32) | No |  |
 | `port_not` | integer (int32) | No |  |
 | `port_not_in` | integer[] | No |  |
-| `secure_mode` | any | No |  |
+| `secure_mode` | [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `secure_mode_in` | Array of [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
-| `secure_mode_not` | any | No |  |
+| `secure_mode_not` | [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `secure_mode_not_in` | Array of [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |

@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
 | `NOT` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
 | `OR` | Array of [VmPlacementGroupWhereInput](../Vm/VmPlacementGroupWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -28,9 +28,9 @@ Required fields are listed first.
 | `description_starts_with` | string | No |  |
 | `enabled` | boolean | No |  |
 | `enabled_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -90,31 +90,31 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `usage` | any | No |  |
+| `usage` | [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `usage_in` | Array of [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
-| `usage_not` | any | No |  |
+| `usage_not` | [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `usage_not_in` | Array of [VmPlacementGroupUsage](../Vm/VmPlacementGroupUsage.md) | No |  |
 | `vm_host_must_enabled` | boolean | No |  |
 | `vm_host_must_enabled_not` | boolean | No |  |
-| `vm_host_must_host_uuids_every` | any | No |  |
-| `vm_host_must_host_uuids_none` | any | No |  |
-| `vm_host_must_host_uuids_some` | any | No |  |
+| `vm_host_must_host_uuids_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `vm_host_must_host_uuids_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `vm_host_must_host_uuids_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `vm_host_must_policy` | boolean | No |  |
 | `vm_host_must_policy_not` | boolean | No |  |
 | `vm_host_prefer_enabled` | boolean | No |  |
 | `vm_host_prefer_enabled_not` | boolean | No |  |
-| `vm_host_prefer_host_uuids_every` | any | No |  |
-| `vm_host_prefer_host_uuids_none` | any | No |  |
-| `vm_host_prefer_host_uuids_some` | any | No |  |
+| `vm_host_prefer_host_uuids_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `vm_host_prefer_host_uuids_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `vm_host_prefer_host_uuids_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `vm_host_prefer_policy` | boolean | No |  |
 | `vm_host_prefer_policy_not` | boolean | No |  |
-| `vm_vm_policy` | any | No |  |
+| `vm_vm_policy` | [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
 | `vm_vm_policy_enabled` | boolean | No |  |
 | `vm_vm_policy_enabled_not` | boolean | No |  |
 | `vm_vm_policy_in` | Array of [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
-| `vm_vm_policy_not` | any | No |  |
+| `vm_vm_policy_not` | [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
 | `vm_vm_policy_not_in` | Array of [VmVmPolicy](../Vm/VmVmPolicy.md) | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

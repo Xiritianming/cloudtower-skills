@@ -14,6 +14,6 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `time_span` | integer (int32) | Yes |  |
 | `time_unit` | [TimeUnit](../Time/TimeUnit.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `graphs` | Array of [NestedGraph](../Nested/NestedGraph.md) | No |  |
 

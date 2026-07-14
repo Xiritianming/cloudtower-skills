@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
 | `NOT` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
 | `OR` | Array of [VmFolderWhereInput](../Vm/VmFolderWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -62,7 +62,7 @@ Required fields are listed first.
 | `vm_num_lte` | integer (int32) | No |  |
 | `vm_num_not` | integer (int32) | No |  |
 | `vm_num_not_in` | integer[] | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

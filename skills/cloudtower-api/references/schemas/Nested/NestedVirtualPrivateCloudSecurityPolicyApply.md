@@ -10,5 +10,5 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `communicable` | boolean | Yes |  |
 | `security_group_id` | string | Yes |  |
-| `security_group` | any | No |  |
+| `security_group` | [NestedVirtualPrivateCloudSecurityGroup](../Nested/NestedVirtualPrivateCloudSecurityGroup.md) | No |  |
 

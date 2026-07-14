@@ -19,8 +19,8 @@ Required fields are listed first.
 | `client_port_lte` | integer (int32) | No |  |
 | `client_port_not` | integer (int32) | No |  |
 | `client_port_not_in` | integer[] | No |  |
-| `cluster` | any | No |  |
-| `host` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -49,14 +49,14 @@ Required fields are listed first.
 | `initiator_ip_not_in` | string[] | No |  |
 | `initiator_ip_not_starts_with` | string | No |  |
 | `initiator_ip_starts_with` | string | No |  |
-| `iscsi_target` | any | No |  |
-| `nvmf_subsystem` | any | No |  |
-| `tr_type` | any | No |  |
+| `iscsi_target` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | No |  |
+| `nvmf_subsystem` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `tr_type` | [StoreTransportType](../Store/StoreTransportType.md) | No |  |
 | `tr_type_in` | Array of [StoreTransportType](../Store/StoreTransportType.md) | No |  |
-| `tr_type_not` | any | No |  |
+| `tr_type_not` | [StoreTransportType](../Store/StoreTransportType.md) | No |  |
 | `tr_type_not_in` | Array of [StoreTransportType](../Store/StoreTransportType.md) | No |  |
-| `type` | any | No |  |
+| `type` | [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
 | `type_in` | Array of [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
 | `type_not_in` | Array of [StoreConnectionType](../Store/StoreConnectionType.md) | No |  |
 

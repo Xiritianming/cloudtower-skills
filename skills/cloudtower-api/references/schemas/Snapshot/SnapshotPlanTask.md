@@ -16,7 +16,7 @@ Required fields are listed first.
 | `status` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | Yes |  |
 | `type` | [SnapshotPlanTaskType](../Snapshot/SnapshotPlanTaskType.md) | Yes |  |
 | `end_time` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `internal` | boolean | No |  |
-| `snapshotGroup` | any | No |  |
+| `snapshotGroup` | [NestedSnapshotGroup](../Nested/NestedSnapshotGroup.md) | No |  |
 

@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
 | `NOT` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
 | `OR` | Array of [TaskWhereInput](../Task/TaskWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -196,13 +196,13 @@ Required fields are listed first.
 | `started_at_lte` | string | No |  |
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_not_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
-| `type` | any | No |  |
+| `type` | [TaskType](../Task/TaskType.md) | No |  |
 | `type_in` | Array of [TaskType](../Task/TaskType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [TaskType](../Task/TaskType.md) | No |  |
 | `type_not_in` | Array of [TaskType](../Task/TaskType.md) | No |  |
-| `user` | any | No |  |
+| `user` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
 

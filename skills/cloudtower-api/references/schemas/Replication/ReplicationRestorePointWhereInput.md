@@ -25,21 +25,21 @@ Required fields are listed first.
 | `cluster_local_id_not_in` | string[] | No |  |
 | `cluster_local_id_not_starts_with` | string | No |  |
 | `cluster_local_id_starts_with` | string | No |  |
-| `creation` | any | No |  |
+| `creation` | [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
-| `creation_not` | any | No |  |
+| `creation_not` | [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
 | `creation_not_in` | Array of [BackupRestorePointCreation](../Backup/BackupRestorePointCreation.md) | No |  |
-| `dedup` | any | No |  |
+| `dedup` | [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
 | `dedup_in` | Array of [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
-| `dedup_not` | any | No |  |
+| `dedup_not` | [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
 | `dedup_not_in` | Array of [BackupDedupMode](../Backup/BackupDedupMode.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `failover_executions_every` | any | No |  |
-| `failover_executions_none` | any | No |  |
-| `failover_executions_some` | any | No |  |
+| `failover_executions_every` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_none` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_some` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -54,7 +54,7 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `iscsi_lun` | any | No |  |
+| `iscsi_lun` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -91,10 +91,10 @@ Required fields are listed first.
 | `parent_restore_point_not_in` | string[] | No |  |
 | `parent_restore_point_not_starts_with` | string | No |  |
 | `parent_restore_point_starts_with` | string | No |  |
-| `replica_vm` | any | No |  |
-| `replication_plan` | any | No |  |
-| `replication_service` | any | No |  |
-| `replication_target_execution` | any | No |  |
+| `replica_vm` | [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `replication_plan` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_service` | [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
+| `replication_target_execution` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |
 | `resource_version_gte` | integer (int32) | No |  |
@@ -117,11 +117,11 @@ Required fields are listed first.
 | `slice_not_in` | string[] | No |  |
 | `slice_not_starts_with` | string | No |  |
 | `slice_starts_with` | string | No |  |
-| `snapshot_consistent_type` | any | No |  |
+| `snapshot_consistent_type` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
-| `snapshot_consistent_type_not` | any | No |  |
+| `snapshot_consistent_type_not` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `snapshot_consistent_type_not_in` | Array of [ConsistentType](../Consistent/ConsistentType.md) | No |  |
-| `sync_replication_plan` | any | No |  |
+| `sync_replication_plan` | [SyncReplicationPlanWhereInput](../Sync/SyncReplicationPlanWhereInput.md) | No |  |
 | `tower_deploy_id` | string | No |  |
 | `tower_deploy_id_contains` | string | No |  |
 | `tower_deploy_id_ends_with` | string | No |  |
@@ -136,11 +136,11 @@ Required fields are listed first.
 | `tower_deploy_id_not_in` | string[] | No |  |
 | `tower_deploy_id_not_starts_with` | string | No |  |
 | `tower_deploy_id_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
 | `type_not_in` | Array of [BackupRestorePointType](../Backup/BackupRestorePointType.md) | No |  |
-| `vm` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `vm_local_id` | string | No |  |
 | `vm_local_id_contains` | string | No |  |
 | `vm_local_id_ends_with` | string | No |  |

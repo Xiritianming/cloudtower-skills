@@ -13,6 +13,6 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `port` | integer (int32) | Yes |  |
 | `description` | string | No |  |
-| `secure_mode` | any | No |  |
+| `secure_mode` | [SmtpSecureMode](../Smtp/SmtpSecureMode.md) | No |  |
 | `username` | string | No |  |
 

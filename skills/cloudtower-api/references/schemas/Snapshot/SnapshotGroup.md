@@ -19,7 +19,7 @@ Required fields are listed first.
 | `object_num` | integer (int32) | Yes |  |
 | `snapshotPlanTask` | [NestedSnapshotPlanTask](../Nested/NestedSnapshotPlanTask.md) | Yes |  |
 | `vm_info` | Array of [NestedSnapshotGroupVmInfo](../Nested/NestedSnapshotGroupVmInfo.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `estimated_recycling_time` | string | No |  |
 | `internal` | boolean | No |  |
 | `vm_snapshots` | Array of [NestedVmSnapshot](../Nested/NestedVmSnapshot.md) | No |  |

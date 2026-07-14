@@ -16,8 +16,8 @@ Required fields are listed first.
 | `numa_node` | integer (int32) | Yes |  |
 | `part_number` | string | Yes |  |
 | `version` | string | Yes |  |
-| `disk` | any | No |  |
-| `health_status` | any | No |  |
+| `disk` | [NestedDisk](../Nested/NestedDisk.md) | No |  |
+| `health_status` | [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `local_id` | string | No |  |
 | `remaining_life_percent` | integer (int32) | No |  |
 

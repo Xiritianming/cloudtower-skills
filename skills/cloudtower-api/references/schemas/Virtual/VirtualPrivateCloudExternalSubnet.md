@@ -16,13 +16,13 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `vlan` | [NestedVlan](../Nested/NestedVlan.md) | Yes |  |
 | `description` | string | No |  |
-| `edge_gateway` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateway` | [NestedVirtualPrivateCloudEdgeGateway](../Nested/NestedVirtualPrivateCloudEdgeGateway.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `floating_ip_cidr` | string | No |  |
 | `floating_ips` | Array of [NestedVirtualPrivateCloudFloatingIp](../Nested/NestedVirtualPrivateCloudFloatingIp.md) | No |  |
 | `nat_gateway_cidr` | string | No |  |
 | `nat_gateways` | Array of [NestedVirtualPrivateCloudNatGateway](../Nested/NestedVirtualPrivateCloudNatGateway.md) | No |  |
 | `router_gateway_cidr` | string | No |  |
 | `router_gateways` | Array of [NestedVirtualPrivateCloudRouterGateway](../Nested/NestedVirtualPrivateCloudRouterGateway.md) | No |  |
-| `vpc` | any | No |  |
+| `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | No |  |
 

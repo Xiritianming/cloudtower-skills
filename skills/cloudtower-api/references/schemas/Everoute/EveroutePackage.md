@@ -16,7 +16,7 @@ Required fields are listed first.
 | `package_info` | object | Yes |  |
 | `size` | integer (int64) | Yes |  |
 | `version` | string | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 
 ## Nested Fields
 

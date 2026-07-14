@@ -26,11 +26,11 @@ Required fields are listed first.
 | `ip_address` | string | No |  |
 | `mac_address` | string | No |  |
 | `mirror` | boolean | No |  |
-| `model` | any | No |  |
-| `nic` | any | No |  |
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
+| `nic` | [NestedNic](../Nested/NestedNic.md) | No |  |
 | `order` | integer (int32) | No |  |
 | `subnet_mask` | string | No |  |
-| `type` | any | No |  |
-| `vlan` | any | No |  |
-| `vpc_nic` | any | No |  |
+| `type` | [VmNicType](../Vm/VmNicType.md) | No |  |
+| `vlan` | [NestedVlan](../Nested/NestedVlan.md) | No |  |
+| `vpc_nic` | [NestedVirtualPrivateCloudNic](../Nested/NestedVirtualPrivateCloudNic.md) | No |  |
 

@@ -83,12 +83,12 @@ Required fields are listed first.
 | `bps_wr_max_not_in` | integer[] | No |  |
 | `bps_wr_not` | integer (int64) | No |  |
 | `bps_wr_not_in` | integer[] | No |  |
-| `business_host_groups_every` | any | No |  |
-| `business_host_groups_none` | any | No |  |
-| `business_host_groups_some` | any | No |  |
-| `business_hosts_every` | any | No |  |
-| `business_hosts_none` | any | No |  |
-| `business_hosts_some` | any | No |  |
+| `business_host_groups_every` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `business_host_groups_none` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `business_host_groups_some` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `business_hosts_every` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
+| `business_hosts_none` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
+| `business_hosts_some` | [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
 | `chap_enabled` | boolean | No |  |
 | `chap_enabled_not` | boolean | No |  |
 | `chap_name` | string | No |  |
@@ -119,12 +119,12 @@ Required fields are listed first.
 | `chap_secret_not_in` | string[] | No |  |
 | `chap_secret_not_starts_with` | string | No |  |
 | `chap_secret_starts_with` | string | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `configuration_adaptive` | boolean | No |  |
 | `configuration_adaptive_not` | boolean | No |  |
-| `configuration_method` | any | No |  |
+| `configuration_method` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
-| `configuration_method_not` | any | No |  |
+| `configuration_method_not` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `configuration_method_not_in` | Array of [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
@@ -156,13 +156,13 @@ Required fields are listed first.
 | `ec_m_lte` | integer (int32) | No |  |
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
-| `encrypt_method` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `encrypt_method_not` | any | No |  |
+| `encrypt_method_not` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_use` | boolean | No |  |
 | `external_use_not` | boolean | No |  |
@@ -304,9 +304,9 @@ Required fields are listed first.
 | `iqn_whitelist_not_in` | string[] | No |  |
 | `iqn_whitelist_not_starts_with` | string | No |  |
 | `iqn_whitelist_starts_with` | string | No |  |
-| `iscsi_connections_every` | any | No |  |
-| `iscsi_connections_none` | any | No |  |
-| `iscsi_connections_some` | any | No |  |
+| `iscsi_connections_every` | [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
+| `iscsi_connections_none` | [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
+| `iscsi_connections_some` | [IscsiConnectionWhereInput](../Iscsi/IscsiConnectionWhereInput.md) | No |  |
 | `iscsi_luns_num` | integer (int32) | No |  |
 | `iscsi_luns_num_gt` | integer (int32) | No |  |
 | `iscsi_luns_num_gte` | integer (int32) | No |  |
@@ -315,9 +315,9 @@ Required fields are listed first.
 | `iscsi_luns_num_lte` | integer (int32) | No |  |
 | `iscsi_luns_num_not` | integer (int32) | No |  |
 | `iscsi_luns_num_not_in` | integer[] | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -332,9 +332,9 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `luns_every` | any | No |  |
-| `luns_none` | any | No |  |
-| `luns_some` | any | No |  |
+| `luns_every` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `luns_none` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `luns_some` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
 | `name_ends_with` | string | No |  |
@@ -359,9 +359,9 @@ Required fields are listed first.
 | `replica_num_lte` | integer (int32) | No |  |
 | `replica_num_not` | integer (int32) | No |  |
 | `replica_num_not_in` | integer[] | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `resiliency_type_not` | any | No |  |
+| `resiliency_type_not` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `stripe_num` | integer (int32) | No |  |
 | `stripe_num_gt` | integer (int32) | No |  |

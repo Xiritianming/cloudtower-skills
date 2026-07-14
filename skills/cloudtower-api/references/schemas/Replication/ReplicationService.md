@@ -17,9 +17,9 @@ Required fields are listed first.
 | `replication_network` | [NestedReplicationServiceNetwork](../Nested/NestedReplicationServiceNetwork.md) | Yes |  |
 | `storage_network` | [NestedReplicationServiceNetwork](../Nested/NestedReplicationServiceNetwork.md) | Yes |  |
 | `updatedAt` | string | Yes |  |
-| `application` | any | No |  |
+| `application` | [NestedCloudTowerApplication](../Nested/NestedCloudTowerApplication.md) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failover_executions` | Array of [NestedFailoverExecution](../Nested/NestedFailoverExecution.md) | No |  |
 | `max_failback_jobs` | integer (int32) | No |  |
 | `max_failback_speed_limit` | number (double) | No |  |

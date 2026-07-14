@@ -15,11 +15,11 @@ Required fields are listed first.
 | `type` | [NetworkType](../Network/NetworkType.md) | Yes |  |
 | `vds` | [NestedVds](../Nested/NestedVds.md) | Yes |  |
 | `vlan_id` | integer (int32) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway_ip` | string | No |  |
 | `gateway_subnetmask` | string | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
-| `mode_type` | any | No |  |
+| `mode_type` | [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `qos_burst` | number (double) | No |  |
 | `qos_max_bandwidth` | number (double) | No |  |
 | `qos_min_bandwidth` | number (double) | No |  |

@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [ClusterSettingsWhereInput](../Cluster/ClusterSettingsWhereInput.md) | No |  |
 | `NOT` | Array of [ClusterSettingsWhereInput](../Cluster/ClusterSettingsWhereInput.md) | No |  |
 | `OR` | Array of [ClusterSettingsWhereInput](../Cluster/ClusterSettingsWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `default_ha` | boolean | No |  |
 | `default_ha_not` | boolean | No |  |
-| `default_storage_policy` | any | No |  |
+| `default_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `default_storage_policy_ec_k` | integer (int32) | No |  |
 | `default_storage_policy_ec_k_gt` | integer (int32) | No |  |
 | `default_storage_policy_ec_k_gte` | integer (int32) | No |  |
@@ -32,7 +32,7 @@ Required fields are listed first.
 | `default_storage_policy_ec_m_not` | integer (int32) | No |  |
 | `default_storage_policy_ec_m_not_in` | integer[] | No |  |
 | `default_storage_policy_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
-| `default_storage_policy_not` | any | No |  |
+| `default_storage_policy_not` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `default_storage_policy_not_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `default_storage_policy_replica_num` | integer (int32) | No |  |
 | `default_storage_policy_replica_num_gt` | integer (int32) | No |  |

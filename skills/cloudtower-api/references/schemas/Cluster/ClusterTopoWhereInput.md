@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
 | `NOT` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
 | `OR` | Array of [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
-| `brick_topoes_every` | any | No |  |
-| `brick_topoes_none` | any | No |  |
-| `brick_topoes_some` | any | No |  |
-| `cluster` | any | No |  |
+| `brick_topoes_every` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `brick_topoes_none` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `brick_topoes_some` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -57,10 +57,10 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `node_topoes_every` | any | No |  |
-| `node_topoes_none` | any | No |  |
-| `node_topoes_some` | any | No |  |
-| `zone_topoes_every` | any | No |  |
-| `zone_topoes_none` | any | No |  |
-| `zone_topoes_some` | any | No |  |
+| `node_topoes_every` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `node_topoes_none` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `node_topoes_some` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `zone_topoes_every` | [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
+| `zone_topoes_none` | [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
+| `zone_topoes_some` | [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
 

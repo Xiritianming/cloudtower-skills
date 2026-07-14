@@ -11,19 +11,19 @@ Required fields are listed first.
 | `AND` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `NOT` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `OR` | Array of [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
-| `agent_elf_clusters_every` | any | No |  |
-| `agent_elf_clusters_none` | any | No |  |
-| `agent_elf_clusters_some` | any | No |  |
-| `agent_elf_vdses_every` | any | No |  |
-| `agent_elf_vdses_none` | any | No |  |
-| `agent_elf_vdses_some` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `agent_elf_clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `agent_elf_clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `agent_elf_clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `agent_elf_vdses_every` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `agent_elf_vdses_none` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `agent_elf_vdses_some` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `global_default_action` | any | No |  |
+| `global_default_action` | [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
 | `global_default_action_in` | Array of [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
-| `global_default_action_not` | any | No |  |
+| `global_default_action_not` | [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
 | `global_default_action_not_in` | Array of [GlobalPolicyAction](../Global/GlobalPolicyAction.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -41,7 +41,7 @@ Required fields are listed first.
 | `id_starts_with` | string | No |  |
 | `installed` | boolean | No |  |
 | `installed_not` | boolean | No |  |
-| `load_balancer_service` | any | No |  |
+| `load_balancer_service` | [LoadBalancerServiceWhereInput](../Load/LoadBalancerServiceWhereInput.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
 | `name_ends_with` | string | No |  |
@@ -56,9 +56,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
-| `phase_not` | any | No |  |
+| `phase_not` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_not_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `version` | string | No |  |
 | `version_contains` | string | No |  |
@@ -74,5 +74,5 @@ Required fields are listed first.
 | `version_not_in` | string[] | No |  |
 | `version_not_starts_with` | string | No |  |
 | `version_starts_with` | string | No |  |
-| `vpc_service` | any | No |  |
+| `vpc_service` | [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 

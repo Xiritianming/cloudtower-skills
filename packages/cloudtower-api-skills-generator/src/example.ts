@@ -127,3 +127,49 @@ export function requestUsesMetricNames(spec: Spec, operationId: string): boolean
   const metrics = deref(spec, schema?.properties?.metrics).schema;
   return metrics?.type === "array";
 }
+
+/**
+ * True when the operation's request body carries a `where` filter — those
+ * operations get a pointer to the hand-authored query guide.
+ */
+export function requestUsesWhere(spec: Spec, operationId: string): boolean {
+  let { schema } = deref(spec, requestBodySchema(spec, operationId));
+  if (schema?.type === "array") {
+    ({ schema } = deref(spec, (schema as OpenAPIV3.ArraySchemaObject).items));
+  }
+  return Boolean(schema?.properties?.where);
+}
+
+/**
+ * Resolve the schema name a property points at, seeing through the
+ * `allOf: [$ref]` (+ nullable) idiom the upstream parser renders as a bare,
+ * linkless `any`. Returns `Name`, `Name[]`, or null.
+ */
+export function fieldRefName(spec: Spec, prop: SchemaOrRef | undefined): string | null {
+  const directRef = (node: SchemaOrRef | undefined): string | null => {
+    if (!node) return null;
+    if ("$ref" in node) return refName(node.$ref);
+    const only = (node as OpenAPIV3.SchemaObject).allOf?.length === 1
+      ? (node as OpenAPIV3.SchemaObject).allOf?.[0]
+      : undefined;
+    if (only && "$ref" in only) return refName(only.$ref);
+    return null;
+  };
+  const direct = directRef(prop);
+  if (direct) return direct;
+  const schema = prop && !("$ref" in prop) ? prop : undefined;
+  if (schema?.type === "array") {
+    const inner = directRef((schema as OpenAPIV3.ArraySchemaObject).items);
+    if (inner) return `${inner}[]`;
+  }
+  return null;
+}
+
+/** Look up a component schema's raw properties, following $ref chains. */
+export function rawProperties(
+  spec: Spec,
+  schemaName: string,
+): Record<string, SchemaOrRef> | undefined {
+  const { schema } = deref(spec, { $ref: `#/components/schemas/${schemaName}` });
+  return schema?.properties as Record<string, SchemaOrRef> | undefined;
+}

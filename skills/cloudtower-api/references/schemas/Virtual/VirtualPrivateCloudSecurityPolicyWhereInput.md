@@ -25,9 +25,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -71,9 +71,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `policy_mode` | any | No |  |
+| `policy_mode` | [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
 | `policy_mode_in` | Array of [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
-| `policy_mode_not` | any | No |  |
+| `policy_mode_not` | [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
 | `policy_mode_not_in` | Array of [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
-| `vpc` | any | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

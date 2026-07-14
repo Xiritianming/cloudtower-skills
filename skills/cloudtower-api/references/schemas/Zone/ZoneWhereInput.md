@@ -11,8 +11,8 @@ Required fields are listed first.
 | `AND` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 | `NOT` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 | `OR` | Array of [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `datacenter` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `datacenter` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
 | `failure_data_space` | integer (int64) | No |  |
 | `failure_data_space_gt` | integer (int64) | No |  |
 | `failure_data_space_gte` | integer (int64) | No |  |
@@ -29,9 +29,9 @@ Required fields are listed first.
 | `host_num_lte` | integer (int32) | No |  |
 | `host_num_not` | integer (int32) | No |  |
 | `host_num_not_in` | integer[] | No |  |
-| `hosts_every` | any | No |  |
-| `hosts_none` | any | No |  |
-| `hosts_some` | any | No |  |
+| `hosts_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

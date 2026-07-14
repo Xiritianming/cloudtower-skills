@@ -25,12 +25,12 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `edge_gateways_every` | any | No |  |
-| `edge_gateways_none` | any | No |  |
-| `edge_gateways_some` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateways_every` | [VirtualPrivateCloudEdgeGatewayWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayWhereInput.md) | No |  |
+| `edge_gateways_none` | [VirtualPrivateCloudEdgeGatewayWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayWhereInput.md) | No |  |
+| `edge_gateways_some` | [VirtualPrivateCloudEdgeGatewayWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -74,5 +74,5 @@ Required fields are listed first.
 | `primary_edge_gateway_id_not_in` | string[] | No |  |
 | `primary_edge_gateway_id_not_starts_with` | string | No |  |
 | `primary_edge_gateway_id_starts_with` | string | No |  |
-| `vpc_service` | any | No |  |
+| `vpc_service` | [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 

@@ -11,8 +11,8 @@ Required fields are listed first.
 | `AND` | Array of [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
 | `NOT` | Array of [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
 | `OR` | Array of [BusinessHostWhereInput](../Business/BusinessHostWhereInput.md) | No |  |
-| `business_host_group` | any | No |  |
-| `cluster` | any | No |  |
+| `business_host_group` | [BusinessHostGroupWhereInput](../Business/BusinessHostGroupWhereInput.md) | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -27,9 +27,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -45,15 +45,15 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `iscsi_luns_every` | any | No |  |
-| `iscsi_luns_none` | any | No |  |
-| `iscsi_luns_some` | any | No |  |
-| `iscsi_targets_every` | any | No |  |
-| `iscsi_targets_none` | any | No |  |
-| `iscsi_targets_some` | any | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `iscsi_luns_every` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `iscsi_luns_none` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `iscsi_luns_some` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `iscsi_targets_every` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | No |  |
+| `iscsi_targets_none` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | No |  |
+| `iscsi_targets_some` | [IscsiTargetWhereInput](../Iscsi/IscsiTargetWhereInput.md) | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -82,10 +82,10 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nvmf_namespaces_every` | any | No |  |
-| `nvmf_namespaces_none` | any | No |  |
-| `nvmf_namespaces_some` | any | No |  |
-| `nvmf_subsystems_every` | any | No |  |
-| `nvmf_subsystems_none` | any | No |  |
-| `nvmf_subsystems_some` | any | No |  |
+| `nvmf_namespaces_every` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `nvmf_namespaces_none` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `nvmf_namespaces_some` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `nvmf_subsystems_every` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `nvmf_subsystems_none` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `nvmf_subsystems_some` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
 

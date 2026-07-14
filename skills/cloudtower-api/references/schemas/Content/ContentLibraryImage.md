@@ -17,7 +17,7 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `elf_images` | Array of [NestedElfImage](../Nested/NestedElfImage.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `vm_disks` | Array of [NestedVmDisk](../Nested/NestedVmDisk.md) | No |  |

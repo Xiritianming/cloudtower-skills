@@ -11,12 +11,12 @@ Required fields are listed first.
 | `AND` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
 | `NOT` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
 | `OR` | Array of [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `deleted` | boolean | No |  |
 | `deleted_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `estimated_recycling_time` | string | No |  |
 | `estimated_recycling_time_gt` | string | No |  |
@@ -96,8 +96,8 @@ Required fields are listed first.
 | `object_num_lte` | integer (int32) | No |  |
 | `object_num_not` | integer (int32) | No |  |
 | `object_num_not_in` | integer[] | No |  |
-| `snapshotPlanTask` | any | No |  |
-| `vm_snapshots_every` | any | No |  |
-| `vm_snapshots_none` | any | No |  |
-| `vm_snapshots_some` | any | No |  |
+| `snapshotPlanTask` | [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
+| `vm_snapshots_every` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
+| `vm_snapshots_none` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
+| `vm_snapshots_some` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
 

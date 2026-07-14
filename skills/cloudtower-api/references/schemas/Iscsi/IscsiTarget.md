@@ -37,11 +37,11 @@ Required fields are listed first.
 | `chap_name` | string | No |  |
 | `chap_secret` | string | No |  |
 | `configuration_adaptive` | boolean | No |  |
-| `configuration_method` | any | No |  |
+| `configuration_method` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
-| `encrypt_method` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `initiator_chaps` | Array of [NestedInitiatorChap](../Nested/NestedInitiatorChap.md) | No |  |
 | `io_size` | integer (int64) | No |  |
 | `iops` | integer (int64) | No |  |
@@ -58,5 +58,5 @@ Required fields are listed first.
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `prioritized` | boolean | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 

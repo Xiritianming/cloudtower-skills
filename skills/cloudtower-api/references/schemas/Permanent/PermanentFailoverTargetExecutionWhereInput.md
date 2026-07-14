@@ -19,7 +19,7 @@ Required fields are listed first.
 | `createdAt_lte` | string | No |  |
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
-| `external_cloudtower` | any | No |  |
+| `external_cloudtower` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
 | `finished_at_gte` | string | No |  |
@@ -48,12 +48,12 @@ Required fields are listed first.
 | `keep_snapshot_not` | boolean | No |  |
 | `keep_test_vm` | boolean | No |  |
 | `keep_test_vm_not` | boolean | No |  |
-| `permanent_failover_execution` | any | No |  |
-| `phase` | any | No |  |
+| `permanent_failover_execution` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `phase` | [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `phase_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
-| `phase_not` | any | No |  |
+| `phase_not` | [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
 | `phase_not_in` | Array of [BackupJobPhase](../Backup/BackupJobPhase.md) | No |  |
-| `replica_vm` | any | No |  |
+| `replica_vm` | [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |
 | `resource_version_gte` | integer (int32) | No |  |

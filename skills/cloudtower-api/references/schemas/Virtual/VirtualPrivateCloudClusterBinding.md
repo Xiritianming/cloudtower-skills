@@ -13,6 +13,6 @@ Required fields are listed first.
 | `vds` | [NestedVds](../Nested/NestedVds.md) | Yes |  |
 | `vlan_id` | integer (int32) | Yes |  |
 | `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `mtu` | integer (int32) | No |  |
 

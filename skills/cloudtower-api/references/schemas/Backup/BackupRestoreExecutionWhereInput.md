@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
 | `NOT` | Array of [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
 | `OR` | Array of [BackupRestoreExecutionWhereInput](../Backup/BackupRestoreExecutionWhereInput.md) | No |  |
-| `backup_restore_point` | any | No |  |
+| `backup_restore_point` | [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
 | `duration` | integer (int32) | No |  |
 | `duration_gt` | integer (int32) | No |  |
 | `duration_gte` | integer (int32) | No |  |
@@ -20,9 +20,9 @@ Required fields are listed first.
 | `duration_lte` | integer (int32) | No |  |
 | `duration_not` | integer (int32) | No |  |
 | `duration_not_in` | integer[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `executed_at` | string | No |  |
 | `executed_at_gt` | string | No |  |
@@ -46,9 +46,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `mode` | any | No |  |
+| `mode` | [BackupRestoreExecutionMode](../Backup/BackupRestoreExecutionMode.md) | No |  |
 | `mode_in` | Array of [BackupRestoreExecutionMode](../Backup/BackupRestoreExecutionMode.md) | No |  |
-| `mode_not` | any | No |  |
+| `mode_not` | [BackupRestoreExecutionMode](../Backup/BackupRestoreExecutionMode.md) | No |  |
 | `mode_not_in` | Array of [BackupRestoreExecutionMode](../Backup/BackupRestoreExecutionMode.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
@@ -110,9 +110,9 @@ Required fields are listed first.
 | `retry_times_not_in` | integer[] | No |  |
 | `startup_after_restore` | boolean | No |  |
 | `startup_after_restore_not` | boolean | No |  |
-| `status` | any | No |  |
+| `status` | [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `status_in` | Array of [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `status_not_in` | Array of [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `total_bytes` | integer (int64) | No |  |
 | `total_bytes_gt` | integer (int64) | No |  |

@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
 | `NOT` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
 | `OR` | Array of [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway_ip` | string | No |  |
 | `gateway_ip_contains` | string | No |  |
@@ -57,9 +57,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -74,9 +74,9 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `mode_type` | any | No |  |
+| `mode_type` | [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `mode_type_in` | Array of [VlanModeType](../Vlan/VlanModeType.md) | No |  |
-| `mode_type_not` | any | No |  |
+| `mode_type_not` | [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `mode_type_not_in` | Array of [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
@@ -138,11 +138,11 @@ Required fields are listed first.
 | `subnetmask_not_in` | string[] | No |  |
 | `subnetmask_not_starts_with` | string | No |  |
 | `subnetmask_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
-| `vds` | any | No |  |
+| `vds` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
 | `vlan_id` | integer (int32) | No |  |
 | `vlan_id_gt` | integer (int32) | No |  |
 | `vlan_id_gte` | integer (int32) | No |  |
@@ -151,7 +151,7 @@ Required fields are listed first.
 | `vlan_id_lte` | integer (int32) | No |  |
 | `vlan_id_not` | integer (int32) | No |  |
 | `vlan_id_not_in` | integer[] | No |  |
-| `vm_nics_every` | any | No |  |
-| `vm_nics_none` | any | No |  |
-| `vm_nics_some` | any | No |  |
+| `vm_nics_every` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vm_nics_none` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vm_nics_some` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
 

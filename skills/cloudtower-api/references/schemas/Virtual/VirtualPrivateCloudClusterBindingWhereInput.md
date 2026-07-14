@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
 | `NOT` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
 | `OR` | Array of [VirtualPrivateCloudClusterBindingWhereInput](../Virtual/VirtualPrivateCloudClusterBindingWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -38,7 +38,7 @@ Required fields are listed first.
 | `mtu_lte` | integer (int32) | No |  |
 | `mtu_not` | integer (int32) | No |  |
 | `mtu_not_in` | integer[] | No |  |
-| `vds` | any | No |  |
+| `vds` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
 | `vlan_id` | integer (int32) | No |  |
 | `vlan_id_gt` | integer (int32) | No |  |
 | `vlan_id_gte` | integer (int32) | No |  |
@@ -47,5 +47,5 @@ Required fields are listed first.
 | `vlan_id_lte` | integer (int32) | No |  |
 | `vlan_id_not` | integer (int32) | No |  |
 | `vlan_id_not_in` | integer[] | No |  |
-| `vpc_service` | any | No |  |
+| `vpc_service` | [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 

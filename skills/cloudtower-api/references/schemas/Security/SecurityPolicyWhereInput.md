@@ -25,7 +25,7 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `everoute_cluster` | any | No |  |
+| `everoute_cluster` | [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -56,9 +56,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `policy_mode` | any | No |  |
+| `policy_mode` | [PolicyMode](../Policy/PolicyMode.md) | No |  |
 | `policy_mode_in` | Array of [PolicyMode](../Policy/PolicyMode.md) | No |  |
-| `policy_mode_not` | any | No |  |
+| `policy_mode_not` | [PolicyMode](../Policy/PolicyMode.md) | No |  |
 | `policy_mode_not_in` | Array of [PolicyMode](../Policy/PolicyMode.md) | No |  |
-| `statistics` | any | No |  |
+| `statistics` | [SecurityPolicyStatisticsWhereInput](../Security/SecurityPolicyStatisticsWhereInput.md) | No |  |
 

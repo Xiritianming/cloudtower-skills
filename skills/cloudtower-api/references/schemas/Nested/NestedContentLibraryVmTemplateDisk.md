@@ -20,12 +20,12 @@ Required fields are listed first.
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `path` | string | No |  |
 | `resident_in_cache` | boolean | No |  |
 | `size` | integer (int64) | No |  |
 | `storage_encrypted` | boolean | No |  |
-| `storage_policy` | any | No |  |
+| `storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 

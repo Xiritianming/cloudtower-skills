@@ -19,8 +19,8 @@ Required fields are listed first.
 | `ldap_dn` | string | No |  |
 | `mobile_phone` | string | No |  |
 | `password_expired` | boolean | No |  |
-| `password_recover_qa` | any | No |  |
+| `password_recover_qa` | [NestedPasswordRecoverQa](../Nested/NestedPasswordRecoverQa.md) | No |  |
 | `password_updated_at` | string | No |  |
-| `role` | any | No |  |
+| `role` | [UserRole](../User/UserRole.md) | No |  |
 | `roles` | Array of [NestedUserRoleNext](../Nested/NestedUserRoleNext.md) | No |  |
 

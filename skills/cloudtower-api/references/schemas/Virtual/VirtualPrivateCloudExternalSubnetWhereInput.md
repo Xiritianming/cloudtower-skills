@@ -39,10 +39,10 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `edge_gateway` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateway` | [VirtualPrivateCloudEdgeGatewayWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `exclusive` | boolean | No |  |
 | `exclusive_not` | boolean | No |  |
@@ -60,9 +60,9 @@ Required fields are listed first.
 | `floating_ip_cidr_not_in` | string[] | No |  |
 | `floating_ip_cidr_not_starts_with` | string | No |  |
 | `floating_ip_cidr_starts_with` | string | No |  |
-| `floating_ips_every` | any | No |  |
-| `floating_ips_none` | any | No |  |
-| `floating_ips_some` | any | No |  |
+| `floating_ips_every` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `floating_ips_none` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
+| `floating_ips_some` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
 | `gateway` | string | No |  |
 | `gateway_contains` | string | No |  |
 | `gateway_ends_with` | string | No |  |
@@ -133,9 +133,9 @@ Required fields are listed first.
 | `nat_gateway_cidr_not_in` | string[] | No |  |
 | `nat_gateway_cidr_not_starts_with` | string | No |  |
 | `nat_gateway_cidr_starts_with` | string | No |  |
-| `nat_gateways_every` | any | No |  |
-| `nat_gateways_none` | any | No |  |
-| `nat_gateways_some` | any | No |  |
+| `nat_gateways_every` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `nat_gateways_none` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
+| `nat_gateways_some` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
 | `router_gateway_cidr` | string | No |  |
 | `router_gateway_cidr_contains` | string | No |  |
 | `router_gateway_cidr_ends_with` | string | No |  |
@@ -150,9 +150,9 @@ Required fields are listed first.
 | `router_gateway_cidr_not_in` | string[] | No |  |
 | `router_gateway_cidr_not_starts_with` | string | No |  |
 | `router_gateway_cidr_starts_with` | string | No |  |
-| `router_gateways_every` | any | No |  |
-| `router_gateways_none` | any | No |  |
-| `router_gateways_some` | any | No |  |
-| `vlan` | any | No |  |
-| `vpc` | any | No |  |
+| `router_gateways_every` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `router_gateways_none` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `router_gateways_some` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `vlan` | [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

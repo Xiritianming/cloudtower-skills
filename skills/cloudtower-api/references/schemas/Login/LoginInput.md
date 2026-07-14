@@ -10,7 +10,7 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `username` | string | Yes |  |
 | `password` | string | Yes |  |
-| `source` | any | No |  |
-| `mfa_type` | any | No |  |
+| `source` | [UserSource](../User/UserSource.md) | No |  |
+| `mfa_type` | [MfaType](../Mfa/MfaType.md) | No |  |
 | `auth_config_id` | string | No |  |
 

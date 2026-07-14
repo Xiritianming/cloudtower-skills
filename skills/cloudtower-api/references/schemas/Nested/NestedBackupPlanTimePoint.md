@@ -12,5 +12,5 @@ Required fields are listed first.
 | `minute` | integer (int32) | Yes |  |
 | `date` | integer (int32) | No |  |
 | `date_position` | integer[] | No |  |
-| `weekday` | any | No |  |
+| `weekday` | [WeekdayTypeEnum](../Weekday/WeekdayTypeEnum.md) | No |  |
 

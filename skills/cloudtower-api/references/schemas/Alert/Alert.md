@@ -23,11 +23,11 @@ Required fields are listed first.
 | `solution` | string | Yes |  |
 | `threshold` | number (double) | Yes |  |
 | `value` | number (double) | Yes |  |
-| `alert_rule` | any | No |  |
-| `cluster` | any | No |  |
+| `alert_rule` | [NestedAlertRule](../Nested/NestedAlertRule.md) | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `create_time` | string | No |  |
-| `disk` | any | No |  |
-| `host` | any | No |  |
+| `disk` | [NestedDisk](../Nested/NestedDisk.md) | No |  |
+| `host` | [NestedHost](../Nested/NestedHost.md) | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
 
 ## Nested Fields

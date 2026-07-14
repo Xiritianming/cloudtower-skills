@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
 | `NOT` | Array of [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
 | `OR` | Array of [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -43,7 +43,7 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `package` | any | No |  |
+| `package` | [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
 | `placementSituation` | string | No |  |
 | `placementSituation_contains` | string | No |  |
 | `placementSituation_ends_with` | string | No |  |
@@ -80,9 +80,9 @@ Required fields are listed first.
 | `resourceVersion_lte` | integer (int32) | No |  |
 | `resourceVersion_not` | integer (int32) | No |  |
 | `resourceVersion_not_in` | integer[] | No |  |
-| `state` | any | No |  |
+| `state` | [CloudTowerApplicationState](../Cloud/CloudTowerApplicationState.md) | No |  |
 | `state_in` | Array of [CloudTowerApplicationState](../Cloud/CloudTowerApplicationState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [CloudTowerApplicationState](../Cloud/CloudTowerApplicationState.md) | No |  |
 | `state_not_in` | Array of [CloudTowerApplicationState](../Cloud/CloudTowerApplicationState.md) | No |  |
 | `targetPackage` | string | No |  |
 | `targetPackage_contains` | string | No |  |
@@ -98,5 +98,5 @@ Required fields are listed first.
 | `targetPackage_not_in` | string[] | No |  |
 | `targetPackage_not_starts_with` | string | No |  |
 | `targetPackage_starts_with` | string | No |  |
-| `user` | any | No |  |
+| `user` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
 

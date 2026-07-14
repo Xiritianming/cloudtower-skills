@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [ClusterImageWhereInput](../Cluster/ClusterImageWhereInput.md) | No |  |
 | `NOT` | Array of [ClusterImageWhereInput](../Cluster/ClusterImageWhereInput.md) | No |  |
 | `OR` | Array of [ClusterImageWhereInput](../Cluster/ClusterImageWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

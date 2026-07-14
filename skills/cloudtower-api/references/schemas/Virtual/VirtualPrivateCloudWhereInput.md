@@ -33,9 +33,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -51,9 +51,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `isolation_policies_every` | any | No |  |
-| `isolation_policies_none` | any | No |  |
-| `isolation_policies_some` | any | No |  |
+| `isolation_policies_every` | [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
+| `isolation_policies_none` | [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
+| `isolation_policies_some` | [VirtualPrivateCloudIsolationPolicyWhereInput](../Virtual/VirtualPrivateCloudIsolationPolicyWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -90,17 +90,17 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `route_tables_every` | any | No |  |
-| `route_tables_none` | any | No |  |
-| `route_tables_some` | any | No |  |
-| `security_groups_every` | any | No |  |
-| `security_groups_none` | any | No |  |
-| `security_groups_some` | any | No |  |
-| `security_policies_every` | any | No |  |
-| `security_policies_none` | any | No |  |
-| `security_policies_some` | any | No |  |
-| `subnets_every` | any | No |  |
-| `subnets_none` | any | No |  |
-| `subnets_some` | any | No |  |
-| `vpc_service` | any | No |  |
+| `route_tables_every` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `route_tables_none` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `route_tables_some` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `security_groups_every` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `security_groups_none` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `security_groups_some` | [VirtualPrivateCloudSecurityGroupWhereInput](../Virtual/VirtualPrivateCloudSecurityGroupWhereInput.md) | No |  |
+| `security_policies_every` | [VirtualPrivateCloudSecurityPolicyWhereInput](../Virtual/VirtualPrivateCloudSecurityPolicyWhereInput.md) | No |  |
+| `security_policies_none` | [VirtualPrivateCloudSecurityPolicyWhereInput](../Virtual/VirtualPrivateCloudSecurityPolicyWhereInput.md) | No |  |
+| `security_policies_some` | [VirtualPrivateCloudSecurityPolicyWhereInput](../Virtual/VirtualPrivateCloudSecurityPolicyWhereInput.md) | No |  |
+| `subnets_every` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `subnets_none` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `subnets_some` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `vpc_service` | [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 

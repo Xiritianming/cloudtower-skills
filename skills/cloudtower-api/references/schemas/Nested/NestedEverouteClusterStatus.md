@@ -8,11 +8,11 @@ Required fields are listed first.
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `agents` | any | No |  |
+| `agents` | [NestedEverouteClusterAgentStatus](../Nested/NestedEverouteClusterAgentStatus.md) | No |  |
 | `conditions` | Array of [NestedEverouteClusterCondition](../Nested/NestedEverouteClusterCondition.md) | No |  |
-| `controllers` | any | No |  |
+| `controllers` | [NestedEverouteClusterControllerStatus](../Nested/NestedEverouteClusterControllerStatus.md) | No |  |
 | `message` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `reason` | string | No |  |
 | `retryCount` | integer (int32) | No |  |
 | `version` | string | No |  |

@@ -14,12 +14,12 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `unique_size` | integer (int64) | Yes |  |
-| `consistency_group_snapshot` | any | No |  |
+| `consistency_group_snapshot` | [NestedConsistencyGroupSnapshot](../Nested/NestedConsistencyGroupSnapshot.md) | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `iscsi_lun` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `iscsi_lun` | [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
-| `resiliency_type` | any | No |  |
-| `snapshot_group` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
+| `snapshot_group` | [NestedSnapshotGroup](../Nested/NestedSnapshotGroup.md) | No |  |
 

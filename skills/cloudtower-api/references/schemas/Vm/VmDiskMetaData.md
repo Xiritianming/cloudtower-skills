@@ -14,13 +14,13 @@ Required fields are listed first.
 | `vm_volume_name` | string | No |  |
 | `vm_volume_mounting` | boolean | No |  |
 | `vm_volume_lun_zbs_volume_id` | string | No |  |
-| `vm_volume_elf_storage_policy` | any | No |  |
-| `type` | any | No |  |
-| `max_iops_policy` | any | No |  |
+| `vm_volume_elf_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
+| `type` | [VmDiskType](../Vm/VmDiskType.md) | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth` | number (double) | No |  |
 | `disabled` | boolean | No |  |
-| `bus` | any | No |  |
+| `bus` | [Bus](../Bus/Bus.md) | No |  |
 | `boot` | integer (int32) | No |  |
 

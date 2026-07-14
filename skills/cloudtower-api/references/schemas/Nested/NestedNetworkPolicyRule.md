@@ -12,7 +12,7 @@ Required fields are listed first.
 | `except_ip_block` | string[] | No |  |
 | `ip_block` | string | No |  |
 | `ports` | Array of [NestedNetworkPolicyRulePort](../Nested/NestedNetworkPolicyRulePort.md) | No |  |
-| `security_group` | any | No |  |
+| `security_group` | [NestedSecurityGroup](../Nested/NestedSecurityGroup.md) | No |  |
 | `security_group_id` | string | No |  |
 | `selector` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `selector_ids` | string[] | No |  |

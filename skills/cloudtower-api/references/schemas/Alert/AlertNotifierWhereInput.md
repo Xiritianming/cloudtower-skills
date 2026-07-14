@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
 | `NOT` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
 | `OR` | Array of [AlertNotifierWhereInput](../Alert/AlertNotifierWhereInput.md) | No |  |
-| `clusters_every` | any | No |  |
-| `clusters_none` | any | No |  |
-| `clusters_some` | any | No |  |
+| `clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `disabled` | boolean | No |  |
 | `disabled_not` | boolean | No |  |
 | `email_from` | string | No |  |
@@ -30,9 +30,9 @@ Required fields are listed first.
 | `email_from_not_in` | string[] | No |  |
 | `email_from_not_starts_with` | string | No |  |
 | `email_from_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -48,9 +48,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `language_code` | any | No |  |
+| `language_code` | [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
 | `language_code_in` | Array of [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
-| `language_code_not` | any | No |  |
+| `language_code_not` | [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
 | `language_code_not_in` | Array of [NotifierLanguageCode](../Notifier/NotifierLanguageCode.md) | No |  |
 | `name` | string | No |  |
 | `name_contains` | string | No |  |
@@ -66,11 +66,11 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `security_mode` | any | No |  |
+| `security_mode` | [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
 | `security_mode_in` | Array of [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
-| `security_mode_not` | any | No |  |
+| `security_mode_not` | [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
 | `security_mode_not_in` | Array of [NotifierSecurityMode](../Notifier/NotifierSecurityMode.md) | No |  |
-| `smtp_server_config` | any | No |  |
+| `smtp_server_config` | [SmtpServerWhereInput](../Smtp/SmtpServerWhereInput.md) | No |  |
 | `smtp_server_host` | string | No |  |
 | `smtp_server_host_contains` | string | No |  |
 | `smtp_server_host_ends_with` | string | No |  |

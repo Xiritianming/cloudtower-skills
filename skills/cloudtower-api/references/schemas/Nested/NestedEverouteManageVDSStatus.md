@@ -10,8 +10,8 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `vdsID` | string | Yes |  |
 | `message` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `reason` | string | No |  |
 | `retryCount` | integer (int32) | No |  |
-| `vds` | any | No |  |
+| `vds` | [NestedVds](../Nested/NestedVds.md) | No |  |
 

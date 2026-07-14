@@ -11,8 +11,8 @@ Required fields are listed first.
 | `AND` | Array of [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | No |  |
 | `NOT` | Array of [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | No |  |
 | `OR` | Array of [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `content_library_image` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `content_library_image` | [ContentLibraryImageWhereInput](../Content/ContentLibraryImageWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -27,9 +27,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -45,9 +45,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -106,13 +106,13 @@ Required fields are listed first.
 | `size_lte` | integer (int64) | No |  |
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
-| `vm_disks_every` | any | No |  |
-| `vm_disks_none` | any | No |  |
-| `vm_disks_some` | any | No |  |
-| `vm_snapshots_every` | any | No |  |
-| `vm_snapshots_none` | any | No |  |
-| `vm_snapshots_some` | any | No |  |
-| `vm_templates_every` | any | No |  |
-| `vm_templates_none` | any | No |  |
-| `vm_templates_some` | any | No |  |
+| `vm_disks_every` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_none` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_some` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_snapshots_every` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
+| `vm_snapshots_none` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
+| `vm_snapshots_some` | [VmSnapshotWhereInput](../Vm/VmSnapshotWhereInput.md) | No |  |
+| `vm_templates_every` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_none` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_some` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
 

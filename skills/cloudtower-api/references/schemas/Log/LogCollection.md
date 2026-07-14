@@ -23,7 +23,7 @@ Required fields are listed first.
 | `status` | [LogCollectionStatus](../Log/LogCollectionStatus.md) | Yes |  |
 | `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `service_groups` | object | No |  |
-| `witness` | any | No |  |
+| `witness` | [NestedWitness](../Nested/NestedWitness.md) | No |  |
 
 ## Nested Fields
 

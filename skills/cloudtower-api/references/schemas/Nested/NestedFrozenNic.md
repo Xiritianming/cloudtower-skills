@@ -16,5 +16,5 @@ Required fields are listed first.
 | `vlan` | [NestedFrozenVlan](../Nested/NestedFrozenVlan.md) | Yes |  |
 | `enabled` | boolean | No |  |
 | `mirror` | boolean | No |  |
-| `model` | any | No |  |
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
 

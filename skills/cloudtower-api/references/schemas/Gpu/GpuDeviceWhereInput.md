@@ -69,11 +69,11 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -94,9 +94,9 @@ Required fields are listed first.
 | `is_nvidia_vfs_enabled_not` | boolean | No |  |
 | `is_nvidia_vfs_supported` | boolean | No |  |
 | `is_nvidia_vfs_supported_not` | boolean | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -147,13 +147,13 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `status` | any | No |  |
+| `status` | [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
 | `status_in` | Array of [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
 | `status_not_in` | Array of [GpuDeviceStatus](../Gpu/GpuDeviceStatus.md) | No |  |
-| `user_usage` | any | No |  |
+| `user_usage` | [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `user_usage_in` | Array of [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
-| `user_usage_not` | any | No |  |
+| `user_usage_not` | [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `user_usage_not_in` | Array of [GpuDeviceUsage](../Gpu/GpuDeviceUsage.md) | No |  |
 | `user_vgpu_type_id` | string | No |  |
 | `user_vgpu_type_id_contains` | string | No |  |
@@ -191,7 +191,7 @@ Required fields are listed first.
 | `vgpu_instance_num_lte` | integer (int32) | No |  |
 | `vgpu_instance_num_not` | integer (int32) | No |  |
 | `vgpu_instance_num_not_in` | integer[] | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

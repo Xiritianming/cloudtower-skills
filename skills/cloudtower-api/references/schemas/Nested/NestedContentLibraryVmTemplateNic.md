@@ -17,8 +17,8 @@ Required fields are listed first.
 | `ingress_rate_limit_enabled` | boolean | No |  |
 | `ingress_rate_limit_max_rate_in_bitps` | number (double) | No |  |
 | `mirror` | boolean | No |  |
-| `model` | any | No |  |
-| `type` | any | No |  |
-| `vlan` | any | No |  |
-| `vpc_nic` | any | No |  |
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
+| `type` | [VmNicType](../Vm/VmNicType.md) | No |  |
+| `vlan` | [NestedFrozenVlan](../Nested/NestedFrozenVlan.md) | No |  |
+| `vpc_nic` | [NestedTemplateVpcNic](../Nested/NestedTemplateVpcNic.md) | No |  |
 

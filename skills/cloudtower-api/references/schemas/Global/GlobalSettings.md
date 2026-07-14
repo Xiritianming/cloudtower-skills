@@ -10,5 +10,5 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `id` | string | Yes |  |
 | `vm_recycle_bin` | [NestedVmRecycleBin](../Nested/NestedVmRecycleBin.md) | Yes |  |
-| `auth` | any | No |  |
+| `auth` | [NestedAuthSettings](../Nested/NestedAuthSettings.md) | No |  |
 

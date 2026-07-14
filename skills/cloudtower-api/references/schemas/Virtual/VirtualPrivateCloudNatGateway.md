@@ -15,9 +15,9 @@ Required fields are listed first.
 | `dnat_rules` | Array of [NestedVpcDnatRuleType](../Nested/NestedVpcDnatRuleType.md) | No |  |
 | `enable_dnat` | boolean | No |  |
 | `enable_snat` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_ip` | string | No |  |
 | `external_ips` | Array of [NestedVpcGatewaysCommonExternalIpsType](../Nested/NestedVpcGatewaysCommonExternalIpsType.md) | No |  |
-| `external_subnet` | any | No |  |
-| `external_subnet_group` | any | No |  |
+| `external_subnet` | [NestedVirtualPrivateCloudExternalSubnet](../Nested/NestedVirtualPrivateCloudExternalSubnet.md) | No |  |
+| `external_subnet_group` | [NestedVirtualPrivateCloudExternalSubnetGroup](../Nested/NestedVirtualPrivateCloudExternalSubnetGroup.md) | No |  |
 

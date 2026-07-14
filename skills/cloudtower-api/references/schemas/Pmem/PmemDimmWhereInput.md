@@ -33,12 +33,12 @@ Required fields are listed first.
 | `device_locator_not_in` | string[] | No |  |
 | `device_locator_not_starts_with` | string | No |  |
 | `device_locator_starts_with` | string | No |  |
-| `disk` | any | No |  |
-| `health_status` | any | No |  |
+| `disk` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `health_status` | [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
-| `health_status_not` | any | No |  |
+| `health_status_not` | [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_not_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

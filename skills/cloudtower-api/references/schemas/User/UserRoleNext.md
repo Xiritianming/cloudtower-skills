@@ -12,6 +12,6 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `platform` | [UserRolePlatform](../User/UserRolePlatform.md) | Yes |  |
-| `preset` | any | No |  |
+| `preset` | [UserRolePreset](../User/UserRolePreset.md) | No |  |
 | `users` | Array of [NestedUser](../Nested/NestedUser.md) | No |  |
 

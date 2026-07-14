@@ -11,9 +11,9 @@ Required fields are listed first.
 | `isHealth` | boolean | Yes |  |
 | `ipAddr` | string | No |  |
 | `message` | string | No |  |
-| `metrics` | any | No |  |
-| `phase` | any | No |  |
+| `metrics` | [NestedEverouteClusterVMMetrics](../Nested/NestedEverouteClusterVMMetrics.md) | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `reason` | string | No |  |
-| `vm` | any | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
 | `vmID` | string | No |  |
 

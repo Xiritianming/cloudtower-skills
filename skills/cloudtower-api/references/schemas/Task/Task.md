@@ -17,7 +17,7 @@ Required fields are listed first.
 | `snapshot` | string | Yes |  |
 | `status` | [TaskStatus](../Task/TaskStatus.md) | Yes |  |
 | `steps` | Array of [NestedStep](../Nested/NestedStep.md) | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `error_code` | string | No |  |
 | `error_message` | string | No |  |
 | `finished_at` | string | No |  |
@@ -29,8 +29,8 @@ Required fields are listed first.
 | `resource_rollbacked` | boolean | No |  |
 | `resource_type` | string | No |  |
 | `started_at` | string | No |  |
-| `type` | any | No |  |
-| `user` | any | No |  |
+| `type` | [TaskType](../Task/TaskType.md) | No |  |
+| `user` | [NestedUser](../Nested/NestedUser.md) | No |  |
 
 ## Nested Fields
 

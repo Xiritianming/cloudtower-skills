@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [SystemAuditLogOrderByInput](../System/SystemAuditLogOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [SystemAuditLogWhereInput](../System/SystemAuditLogWhereInput.md) | No |  |
 

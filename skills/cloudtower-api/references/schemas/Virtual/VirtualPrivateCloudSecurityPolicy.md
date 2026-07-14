@@ -15,7 +15,7 @@ Required fields are listed first.
 | `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | Yes |  |
 | `description` | string | No |  |
 | `egress` | Array of [NestedVirtualPrivateCloudNetworkPolicyRule](../Nested/NestedVirtualPrivateCloudNetworkPolicyRule.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `ingress` | Array of [NestedVirtualPrivateCloudNetworkPolicyRule](../Nested/NestedVirtualPrivateCloudNetworkPolicyRule.md) | No |  |
-| `policy_mode` | any | No |  |
+| `policy_mode` | [VirtualPrivateCloudSecurityPolicyMode](../Virtual/VirtualPrivateCloudSecurityPolicyMode.md) | No |  |
 

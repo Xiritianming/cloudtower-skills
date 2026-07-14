@@ -30,6 +30,8 @@ as a library with local extensions:
   skill; `validate.py` reads the spec bundled at `references/openapi.json`
 - `assets/references/metrics-guide.md` — hand-authored guide for the free-form
   metric names the schema cannot validate
+- `assets/references/querying.md` — hand-authored guide for where-filter,
+  counting, and pagination syntax
 
 After regenerating, always run the regression gate:
 

@@ -27,9 +27,9 @@ Required fields are listed first.
 | `description_starts_with` | string | No |  |
 | `editable` | boolean | No |  |
 | `editable_not` | boolean | No |  |
-| `external_cloudtowers_every` | any | No |  |
-| `external_cloudtowers_none` | any | No |  |
-| `external_cloudtowers_some` | any | No |  |
+| `external_cloudtowers_every` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
+| `external_cloudtowers_none` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
+| `external_cloudtowers_some` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -72,10 +72,10 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `roles_every` | any | No |  |
-| `roles_none` | any | No |  |
-| `roles_some` | any | No |  |
-| `user` | any | No |  |
+| `roles_every` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `roles_none` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `roles_some` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `user` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
 | `username_ends_with` | string | No |  |

@@ -27,7 +27,7 @@ Required fields are listed first.
 | `auto_execute_num_lte` | integer (int32) | No |  |
 | `auto_execute_num_not` | integer (int32) | No |  |
 | `auto_execute_num_not_in` | integer[] | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -50,17 +50,17 @@ Required fields are listed first.
 | `end_time_lte` | string | No |  |
 | `end_time_not` | string | No |  |
 | `end_time_not_in` | string[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `execute_plan_type` | any | No |  |
+| `execute_plan_type` | [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
 | `execute_plan_type_in` | Array of [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
-| `execute_plan_type_not` | any | No |  |
+| `execute_plan_type_not` | [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
 | `execute_plan_type_not_in` | Array of [SnapshotPlanExecuteType](../Snapshot/SnapshotPlanExecuteType.md) | No |  |
-| `execution_tasks_every` | any | No |  |
-| `execution_tasks_none` | any | No |  |
-| `execution_tasks_some` | any | No |  |
+| `execution_tasks_every` | [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
+| `execution_tasks_none` | [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
+| `execution_tasks_some` | [SnapshotPlanTaskWhereInput](../Snapshot/SnapshotPlanTaskWhereInput.md) | No |  |
 | `healthy` | boolean | No |  |
 | `healthy_not` | boolean | No |  |
 | `id` | string | No |  |
@@ -85,9 +85,9 @@ Required fields are listed first.
 | `last_execute_end_time_lte` | string | No |  |
 | `last_execute_end_time_not` | string | No |  |
 | `last_execute_end_time_not_in` | string[] | No |  |
-| `last_execute_status` | any | No |  |
+| `last_execute_status` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `last_execute_status_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
-| `last_execute_status_not` | any | No |  |
+| `last_execute_status_not` | [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `last_execute_status_not_in` | Array of [SnapshotPlanExecuteStatus](../Snapshot/SnapshotPlanExecuteStatus.md) | No |  |
 | `last_execute_time` | string | No |  |
 | `last_execute_time_gt` | string | No |  |
@@ -199,11 +199,11 @@ Required fields are listed first.
 | `start_time_lte` | string | No |  |
 | `start_time_not` | string | No |  |
 | `start_time_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
 | `status_in` | Array of [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
 | `status_not_in` | Array of [SnapshotPlanStatus](../Snapshot/SnapshotPlanStatus.md) | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

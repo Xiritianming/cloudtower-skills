@@ -11,6 +11,6 @@ Required fields are listed first.
 | `communicable` | boolean | Yes |  |
 | `selector` | Array of [NestedLabel](../Nested/NestedLabel.md) | Yes |  |
 | `selector_ids` | string[] | Yes |  |
-| `security_group` | any | No |  |
+| `security_group` | [NestedSecurityGroup](../Nested/NestedSecurityGroup.md) | No |  |
 | `security_group_id` | string | No |  |
 

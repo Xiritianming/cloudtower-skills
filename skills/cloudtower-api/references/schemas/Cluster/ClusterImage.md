@@ -16,7 +16,7 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `upgrade_from` | string[] | Yes |  |
 | `version` | string | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `local_id` | string | No |  |
 | `upgrade_tool_version` | string | No |  |
 | `zbs_version` | string | No |  |

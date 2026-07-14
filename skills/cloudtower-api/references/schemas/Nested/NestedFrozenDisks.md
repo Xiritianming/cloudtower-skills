@@ -23,9 +23,9 @@ Required fields are listed first.
 | `image_name` | string | No |  |
 | `key` | integer (int32) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `resident_in_cache` | boolean | No |  |
 | `snapshot_local_id` | string | No |  |
 | `vm_volume_snapshot_uuid` | string | No |  |

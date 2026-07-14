@@ -16,11 +16,11 @@ Required fields are listed first.
 | `serial` | string | Yes |  |
 | `sign_date` | string | Yes |  |
 | `version` | integer (int32) | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `expire_date` | string | No |  |
 | `has_metrox` | boolean | No |  |
 | `has_remote_backup` | boolean | No |  |
-| `license_type` | any | No |  |
+| `license_type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `max_physical_data_capacity` | number (double) | No |  |
 | `original_code` | string | No |  |
 | `subscription_expire_date` | string | No |  |

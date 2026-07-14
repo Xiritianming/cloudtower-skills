@@ -22,13 +22,13 @@ Required fields are listed first.
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_stripe_num` | integer (int32) | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `resident_in_cache` | boolean | No |  |
 | `shared_size` | number (double) | No |  |
 | `size` | number (double) | No |  |
 | `unique_size` | number (double) | No |  |
-| `vm_volume` | any | No |  |
+| `vm_volume` | [NestedVmVolume](../Nested/NestedVmVolume.md) | No |  |
 | `volume_sharing` | boolean | No |  |
 | `volume_size` | number (double) | No |  |
 | `zbs_snapshot_uuid` | string | No |  |

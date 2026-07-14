@@ -23,15 +23,15 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `vcpu` | integer (int32) | Yes |  |
 | `win_opt` | boolean | Yes |  |
-| `content_library_vm_template` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `io_policy` | any | No |  |
+| `content_library_vm_template` | [NestedContentLibraryVmTemplate](../Nested/NestedContentLibraryVmTemplate.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `io_policy` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `local_created_at` | string | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `video_type` | string | No |  |
 | `vm_disks` | Array of [NestedFrozenDisks](../Nested/NestedFrozenDisks.md) | No |  |
 | `vm_nics` | Array of [NestedTemplateNic](../Nested/NestedTemplateNic.md) | No |  |

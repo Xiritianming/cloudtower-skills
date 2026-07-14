@@ -9,11 +9,11 @@ Required fields are listed first.
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `access_list` | string[] | No |  |
-| `access_mode` | any | No |  |
+| `access_mode` | [AccessMode](../Access/AccessMode.md) | No |  |
 | `enable_single_session_login` | boolean | No |  |
 | `login_miss_num_threshold` | integer (int32) | No |  |
 | `login_miss_time_threshold` | integer (int32) | No |  |
-| `password_complexity` | any | No |  |
+| `password_complexity` | [PasswordComplexity](../Password/PasswordComplexity.md) | No |  |
 | `password_expire_days` | integer (int32) | No |  |
 | `session_max_age` | integer (int32) | No |  |
 

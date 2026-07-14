@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
 | `NOT` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
 | `OR` | Array of [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
-| `application` | any | No |  |
+| `application` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -34,13 +34,13 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `failover_executions_every` | any | No |  |
-| `failover_executions_none` | any | No |  |
-| `failover_executions_some` | any | No |  |
+| `failover_executions_every` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_none` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_some` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -123,15 +123,15 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `permanent_failover_execution_every` | any | No |  |
-| `permanent_failover_execution_none` | any | No |  |
-| `permanent_failover_execution_some` | any | No |  |
-| `replication_clusters_every` | any | No |  |
-| `replication_clusters_none` | any | No |  |
-| `replication_clusters_some` | any | No |  |
-| `replication_plans_every` | any | No |  |
-| `replication_plans_none` | any | No |  |
-| `replication_plans_some` | any | No |  |
+| `permanent_failover_execution_every` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `permanent_failover_execution_none` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `permanent_failover_execution_some` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `replication_clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `replication_clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `replication_clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `replication_plans_every` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_plans_none` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_plans_some` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
 | `retry_interval` | integer (int32) | No |  |
 | `retry_interval_gt` | integer (int32) | No |  |
 | `retry_interval_gte` | integer (int32) | No |  |

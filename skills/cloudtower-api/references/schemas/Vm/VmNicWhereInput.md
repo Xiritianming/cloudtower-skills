@@ -137,11 +137,11 @@ Required fields are listed first.
 | `mac_address_starts_with` | string | No |  |
 | `mirror` | boolean | No |  |
 | `mirror_not` | boolean | No |  |
-| `model` | any | No |  |
+| `model` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
 | `model_in` | Array of [VmNicModel](../Vm/VmNicModel.md) | No |  |
-| `model_not` | any | No |  |
+| `model_not` | [VmNicModel](../Vm/VmNicModel.md) | No |  |
 | `model_not_in` | Array of [VmNicModel](../Vm/VmNicModel.md) | No |  |
-| `nic` | any | No |  |
+| `nic` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
 | `order` | integer (int32) | No |  |
 | `order_gt` | integer (int32) | No |  |
 | `order_gte` | integer (int32) | No |  |
@@ -164,11 +164,11 @@ Required fields are listed first.
 | `subnet_mask_not_in` | string[] | No |  |
 | `subnet_mask_not_starts_with` | string | No |  |
 | `subnet_mask_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [VmNicType](../Vm/VmNicType.md) | No |  |
 | `type_in` | Array of [VmNicType](../Vm/VmNicType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [VmNicType](../Vm/VmNicType.md) | No |  |
 | `type_not_in` | Array of [VmNicType](../Vm/VmNicType.md) | No |  |
-| `vlan` | any | No |  |
-| `vm` | any | No |  |
-| `vpc_nic` | any | No |  |
+| `vlan` | [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vpc_nic` | [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
 

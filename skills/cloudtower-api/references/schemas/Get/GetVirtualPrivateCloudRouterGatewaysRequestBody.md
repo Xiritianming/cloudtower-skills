@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [VirtualPrivateCloudRouterGatewayOrderByInput](../Virtual/VirtualPrivateCloudRouterGatewayOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
 

@@ -18,22 +18,22 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `vcpu` | integer (int32) | Yes |  |
 | `vm_template_uuids` | string[] | Yes |  |
-| `clock_offset` | any | No |  |
+| `clock_offset` | [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
-| `cpu` | any | No |  |
+| `cpu` | [NestedCpu](../Nested/NestedCpu.md) | No |  |
 | `cpu_model` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `firmware` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `firmware` | [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `ha` | boolean | No |  |
-| `io_policy` | any | No |  |
+| `io_policy` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `os` | string | No |  |
-| `template_config` | any | No |  |
-| `usage` | any | No |  |
+| `template_config` | [NestedTemplateConfig](../Nested/NestedTemplateConfig.md) | No |  |
+| `usage` | [ContentLibraryVmTemplateUsage](../Content/ContentLibraryVmTemplateUsage.md) | No |  |
 | `video_type` | string | No |  |
 | `vm_disks` | Array of [NestedContentLibraryVmTemplateDisk](../Nested/NestedContentLibraryVmTemplateDisk.md) | No |  |
 | `vm_nics` | Array of [NestedContentLibraryVmTemplateNic](../Nested/NestedContentLibraryVmTemplateNic.md) | No |  |

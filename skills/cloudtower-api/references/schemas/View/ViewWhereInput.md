@@ -11,14 +11,14 @@ Required fields are listed first.
 | `AND` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
 | `NOT` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
 | `OR` | Array of [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `graphs_every` | any | No |  |
-| `graphs_none` | any | No |  |
-| `graphs_some` | any | No |  |
+| `graphs_every` | [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
+| `graphs_none` | [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
+| `graphs_some` | [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -69,8 +69,8 @@ Required fields are listed first.
 | `time_span_lte` | integer (int32) | No |  |
 | `time_span_not` | integer (int32) | No |  |
 | `time_span_not_in` | integer[] | No |  |
-| `time_unit` | any | No |  |
+| `time_unit` | [TimeUnit](../Time/TimeUnit.md) | No |  |
 | `time_unit_in` | Array of [TimeUnit](../Time/TimeUnit.md) | No |  |
-| `time_unit_not` | any | No |  |
+| `time_unit_not` | [TimeUnit](../Time/TimeUnit.md) | No |  |
 | `time_unit_not_in` | Array of [TimeUnit](../Time/TimeUnit.md) | No |  |
 

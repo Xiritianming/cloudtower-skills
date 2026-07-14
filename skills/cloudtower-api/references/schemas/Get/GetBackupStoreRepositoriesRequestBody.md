@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [BackupStoreRepositoryOrderByInput](../Backup/BackupStoreRepositoryOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
 

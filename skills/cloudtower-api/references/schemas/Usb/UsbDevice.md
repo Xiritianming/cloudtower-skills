@@ -19,7 +19,7 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `status` | [UsbDeviceStatus](../Usb/UsbDeviceStatus.md) | Yes |  |
 | `usb_type` | string | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
-| `vm` | any | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
 

@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
 | `NOT` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
 | `OR` | Array of [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
-| `dst_vpc` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `dst_vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -58,5 +58,5 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `src_vpc` | any | No |  |
+| `src_vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

@@ -33,9 +33,9 @@ Required fields are listed first.
 | `expire_date_lte` | string | No |  |
 | `expire_date_not` | string | No |  |
 | `expire_date_not_in` | string[] | No |  |
-| `feature_type` | any | No |  |
+| `feature_type` | [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
 | `feature_type_in` | Array of [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
-| `feature_type_not` | any | No |  |
+| `feature_type_not` | [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
 | `feature_type_not_in` | Array of [EverouteFeatureType](../Everoute/EverouteFeatureType.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -83,9 +83,9 @@ Required fields are listed first.
 | `max_vpc_socket_num_lte` | integer (int32) | No |  |
 | `max_vpc_socket_num_not` | integer (int32) | No |  |
 | `max_vpc_socket_num_not_in` | integer[] | No |  |
-| `pricing_type` | any | No |  |
+| `pricing_type` | [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 | `pricing_type_in` | Array of [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
-| `pricing_type_not` | any | No |  |
+| `pricing_type_not` | [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 | `pricing_type_not_in` | Array of [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 | `serial` | string | No |  |
 | `serial_contains` | string | No |  |
@@ -109,13 +109,13 @@ Required fields are listed first.
 | `sign_date_lte` | string | No |  |
 | `sign_date_not` | string | No |  |
 | `sign_date_not_in` | string[] | No |  |
-| `software_edition` | any | No |  |
+| `software_edition` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
-| `software_edition_not` | any | No |  |
+| `software_edition_not` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
-| `type` | any | No |  |
+| `type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [LicenseType](../License/LicenseType.md) | No |  |
 | `type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `uid` | string | No |  |
 | `uid_contains` | string | No |  |

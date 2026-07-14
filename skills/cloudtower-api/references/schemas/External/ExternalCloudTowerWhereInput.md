@@ -75,16 +75,16 @@ Required fields are listed first.
 | `endpoint_not_in` | string[] | No |  |
 | `endpoint_not_starts_with` | string | No |  |
 | `endpoint_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `failback_executions_every` | any | No |  |
-| `failback_executions_none` | any | No |  |
-| `failback_executions_some` | any | No |  |
-| `failover_executions_every` | any | No |  |
-| `failover_executions_none` | any | No |  |
-| `failover_executions_some` | any | No |  |
+| `failback_executions_every` | [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
+| `failback_executions_none` | [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
+| `failback_executions_some` | [FailbackExecutionWhereInput](../Failback/FailbackExecutionWhereInput.md) | No |  |
+| `failover_executions_every` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_none` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
+| `failover_executions_some` | [FailoverExecutionWhereInput](../Failover/FailoverExecutionWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -113,22 +113,22 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `permanent_failover_executions_every` | any | No |  |
-| `permanent_failover_executions_none` | any | No |  |
-| `permanent_failover_executions_some` | any | No |  |
-| `replica_vms_every` | any | No |  |
-| `replica_vms_none` | any | No |  |
-| `replica_vms_some` | any | No |  |
-| `replication_plans_every` | any | No |  |
-| `replication_plans_none` | any | No |  |
-| `replication_plans_some` | any | No |  |
-| `status` | any | No |  |
+| `permanent_failover_executions_every` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `permanent_failover_executions_none` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `permanent_failover_executions_some` | [PermanentFailoverExecutionWhereInput](../Permanent/PermanentFailoverExecutionWhereInput.md) | No |  |
+| `replica_vms_every` | [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `replica_vms_none` | [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `replica_vms_some` | [ReplicaVmWhereInput](../Replica/ReplicaVmWhereInput.md) | No |  |
+| `replication_plans_every` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_plans_none` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_plans_some` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `status` | [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
 | `status_in` | Array of [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
 | `status_not_in` | Array of [ExternalCloudTowerStatus](../External/ExternalCloudTowerStatus.md) | No |  |
-| `sync_replication_plans_every` | any | No |  |
-| `sync_replication_plans_none` | any | No |  |
-| `sync_replication_plans_some` | any | No |  |
+| `sync_replication_plans_every` | [SyncReplicationPlanWhereInput](../Sync/SyncReplicationPlanWhereInput.md) | No |  |
+| `sync_replication_plans_none` | [SyncReplicationPlanWhereInput](../Sync/SyncReplicationPlanWhereInput.md) | No |  |
+| `sync_replication_plans_some` | [SyncReplicationPlanWhereInput](../Sync/SyncReplicationPlanWhereInput.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |
 | `updatedAt_gte` | string | No |  |
@@ -137,5 +137,5 @@ Required fields are listed first.
 | `updatedAt_lte` | string | No |  |
 | `updatedAt_not` | string | No |  |
 | `updatedAt_not_in` | string[] | No |  |
-| `use_api_key` | any | No |  |
+| `use_api_key` | [ApiKeyWhereInput](../Api/ApiKeyWhereInput.md) | No |  |
 

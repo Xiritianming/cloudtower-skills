@@ -19,13 +19,13 @@ Required fields are listed first.
 | `title` | string | Yes |  |
 | `type` | [GraphType](../Graph/GraphType.md) | Yes |  |
 | `view` | [NestedView](../Nested/NestedView.md) | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `disks` | Array of [NestedDisk](../Nested/NestedDisk.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
 | `luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
-| `network` | any | No |  |
+| `network` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `nics` | Array of [NestedNic](../Nested/NestedNic.md) | No |  |
 | `service` | string | No |  |
 | `vmNics` | Array of [NestedVmNic](../Nested/NestedVmNic.md) | No |  |

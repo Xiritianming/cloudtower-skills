@@ -14,12 +14,12 @@ Required fields are listed first.
 | `method` | [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | Yes |  |
 | `status` | [BackupPlanExecutionStatus](../Backup/BackupPlanExecutionStatus.md) | Yes |  |
 | `type` | [BackupExecutionType](../Backup/BackupExecutionType.md) | Yes |  |
-| `backup_plan` | any | No |  |
+| `backup_plan` | [NestedBackupPlan](../Nested/NestedBackupPlan.md) | No |  |
 | `deletable_flag_marked` | boolean | No |  |
 | `duration` | integer (int32) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `executed_at` | string | No |  |
-| `state` | any | No |  |
+| `state` | [BackupPlanExecutionState](../Backup/BackupPlanExecutionState.md) | No |  |
 | `success_job_count` | integer (int32) | No |  |
 | `total_job_count` | integer (int32) | No |  |
 

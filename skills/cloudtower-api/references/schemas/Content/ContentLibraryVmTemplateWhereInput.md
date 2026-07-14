@@ -11,19 +11,19 @@ Required fields are listed first.
 | `AND` | Array of [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | No |  |
 | `NOT` | Array of [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | No |  |
 | `OR` | Array of [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | No |  |
-| `architecture` | any | No |  |
+| `architecture` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
-| `architecture_not` | any | No |  |
+| `architecture_not` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_not_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
-| `clock_offset` | any | No |  |
+| `clock_offset` | [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `clock_offset_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
-| `clock_offset_not` | any | No |  |
+| `clock_offset_not` | [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `clock_offset_not_in` | Array of [VmClockOffset](../Vm/VmClockOffset.md) | No |  |
 | `cloud_init_supported` | boolean | No |  |
 | `cloud_init_supported_not` | boolean | No |  |
-| `clusters_every` | any | No |  |
-| `clusters_none` | any | No |  |
-| `clusters_some` | any | No |  |
+| `clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `cpu_model` | string | No |  |
 | `cpu_model_contains` | string | No |  |
 | `cpu_model_ends_with` | string | No |  |
@@ -60,13 +60,13 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `firmware` | any | No |  |
+| `firmware` | [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `firmware_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
-| `firmware_not` | any | No |  |
+| `firmware_not` | [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `firmware_not_in` | Array of [VmFirmware](../Vm/VmFirmware.md) | No |  |
 | `ha` | boolean | No |  |
 | `ha_not` | boolean | No |  |
@@ -84,13 +84,13 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `io_policy` | any | No |  |
+| `io_policy` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `io_policy_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
-| `io_policy_not` | any | No |  |
+| `io_policy_not` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `io_policy_not_in` | Array of [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
 | `max_bandwidth_gt` | integer (int64) | No |  |
 | `max_bandwidth_gte` | integer (int64) | No |  |
@@ -99,9 +99,9 @@ Required fields are listed first.
 | `max_bandwidth_lte` | integer (int64) | No |  |
 | `max_bandwidth_not` | integer (int64) | No |  |
 | `max_bandwidth_not_in` | integer[] | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
-| `max_bandwidth_policy_not` | any | No |  |
+| `max_bandwidth_policy_not` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
 | `max_iops_gt` | integer (int32) | No |  |
@@ -111,9 +111,9 @@ Required fields are listed first.
 | `max_iops_lte` | integer (int32) | No |  |
 | `max_iops_not` | integer (int32) | No |  |
 | `max_iops_not_in` | integer[] | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
-| `max_iops_policy_not` | any | No |  |
+| `max_iops_policy_not` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `memory` | integer (int64) | No |  |
 | `memory_gt` | integer (int64) | No |  |
@@ -159,9 +159,9 @@ Required fields are listed first.
 | `size_lte` | integer (int64) | No |  |
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
-| `usage` | any | No |  |
+| `usage` | [ContentLibraryVmTemplateUsage](../Content/ContentLibraryVmTemplateUsage.md) | No |  |
 | `usage_in` | Array of [ContentLibraryVmTemplateUsage](../Content/ContentLibraryVmTemplateUsage.md) | No |  |
-| `usage_not` | any | No |  |
+| `usage_not` | [ContentLibraryVmTemplateUsage](../Content/ContentLibraryVmTemplateUsage.md) | No |  |
 | `usage_not_in` | Array of [ContentLibraryVmTemplateUsage](../Content/ContentLibraryVmTemplateUsage.md) | No |  |
 | `vcpu` | integer (int32) | No |  |
 | `vcpu_gt` | integer (int32) | No |  |
@@ -185,9 +185,9 @@ Required fields are listed first.
 | `video_type_not_in` | string[] | No |  |
 | `video_type_not_starts_with` | string | No |  |
 | `video_type_starts_with` | string | No |  |
-| `vm_templates_every` | any | No |  |
-| `vm_templates_none` | any | No |  |
-| `vm_templates_some` | any | No |  |
+| `vm_templates_every` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_none` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
+| `vm_templates_some` | [VmTemplateWhereInput](../Vm/VmTemplateWhereInput.md) | No |  |
 | `win_opt` | boolean | No |  |
 | `win_opt_not` | boolean | No |  |
 

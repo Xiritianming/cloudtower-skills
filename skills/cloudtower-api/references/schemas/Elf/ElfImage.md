@@ -15,9 +15,9 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `path` | string | Yes |  |
 | `size` | integer (int64) | Yes |  |
-| `cluster` | any | No |  |
-| `content_library_image` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
+| `content_library_image` | [NestedContentLibraryImage](../Nested/NestedContentLibraryImage.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `vm_disks` | Array of [NestedVmDisk](../Nested/NestedVmDisk.md) | No |  |
 | `vm_snapshots` | Array of [NestedVmSnapshot](../Nested/NestedVmSnapshot.md) | No |  |

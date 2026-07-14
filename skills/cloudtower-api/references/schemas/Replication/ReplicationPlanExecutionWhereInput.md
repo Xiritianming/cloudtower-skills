@@ -21,9 +21,9 @@ Required fields are listed first.
 | `createdAt_not_in` | string[] | No |  |
 | `deletable_flag_marked` | boolean | No |  |
 | `deletable_flag_marked_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `executed_at` | string | No |  |
 | `executed_at_gt` | string | No |  |
@@ -69,16 +69,16 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `method` | any | No |  |
+| `method` | [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | No |  |
 | `method_in` | Array of [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | No |  |
-| `method_not` | any | No |  |
+| `method_not` | [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | No |  |
 | `method_not_in` | Array of [BackupExecutionMethod](../Backup/BackupExecutionMethod.md) | No |  |
 | `pause` | boolean | No |  |
 | `pause_not` | boolean | No |  |
-| `replication_plan` | any | No |  |
-| `replication_target_executions_every` | any | No |  |
-| `replication_target_executions_none` | any | No |  |
-| `replication_target_executions_some` | any | No |  |
+| `replication_plan` | [ReplicationPlanWhereInput](../Replication/ReplicationPlanWhereInput.md) | No |  |
+| `replication_target_executions_every` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `replication_target_executions_none` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
+| `replication_target_executions_some` | [ReplicationTargetExecutionWhereInput](../Replication/ReplicationTargetExecutionWhereInput.md) | No |  |
 | `resource_version` | integer (int32) | No |  |
 | `resource_version_gt` | integer (int32) | No |  |
 | `resource_version_gte` | integer (int32) | No |  |
@@ -87,9 +87,9 @@ Required fields are listed first.
 | `resource_version_lte` | integer (int32) | No |  |
 | `resource_version_not` | integer (int32) | No |  |
 | `resource_version_not_in` | integer[] | No |  |
-| `state` | any | No |  |
+| `state` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_not_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `success_job_count` | integer (int32) | No |  |
 | `success_job_count_gt` | integer (int32) | No |  |
@@ -107,9 +107,9 @@ Required fields are listed first.
 | `total_job_count_lte` | integer (int32) | No |  |
 | `total_job_count_not` | integer (int32) | No |  |
 | `total_job_count_not_in` | integer[] | No |  |
-| `type` | any | No |  |
+| `type` | [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `type_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `type_not_in` | Array of [BackupExecutionType](../Backup/BackupExecutionType.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |

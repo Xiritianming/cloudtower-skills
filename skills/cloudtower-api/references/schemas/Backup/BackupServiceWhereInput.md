@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
 | `NOT` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
 | `OR` | Array of [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
-| `application` | any | No |  |
-| `backup_clusters_every` | any | No |  |
-| `backup_clusters_none` | any | No |  |
-| `backup_clusters_some` | any | No |  |
+| `application` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
+| `backup_clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `backup_clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `backup_clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `backup_network_gateway` | string | No |  |
 | `backup_network_gateway_contains` | string | No |  |
 | `backup_network_gateway_ends_with` | string | No |  |
@@ -57,9 +57,9 @@ Required fields are listed first.
 | `backup_network_subnet_mask_not_in` | string[] | No |  |
 | `backup_network_subnet_mask_not_starts_with` | string | No |  |
 | `backup_network_subnet_mask_starts_with` | string | No |  |
-| `backup_network_type` | any | No |  |
+| `backup_network_type` | [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `backup_network_type_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
-| `backup_network_type_not` | any | No |  |
+| `backup_network_type_not` | [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `backup_network_type_not_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `backup_network_vlan` | string | No |  |
 | `backup_network_vlan_contains` | string | No |  |
@@ -75,9 +75,9 @@ Required fields are listed first.
 | `backup_network_vlan_not_in` | string[] | No |  |
 | `backup_network_vlan_not_starts_with` | string | No |  |
 | `backup_network_vlan_starts_with` | string | No |  |
-| `backup_plans_every` | any | No |  |
-| `backup_plans_none` | any | No |  |
-| `backup_plans_some` | any | No |  |
+| `backup_plans_every` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_plans_none` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_plans_some` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
 | `backup_rd_iops_max` | integer (int64) | No |  |
 | `backup_rd_iops_max_gt` | integer (int64) | No |  |
 | `backup_rd_iops_max_gte` | integer (int64) | No |  |
@@ -86,9 +86,9 @@ Required fields are listed first.
 | `backup_rd_iops_max_lte` | integer (int64) | No |  |
 | `backup_rd_iops_max_not` | integer (int64) | No |  |
 | `backup_rd_iops_max_not_in` | integer[] | No |  |
-| `backup_store_repositories_every` | any | No |  |
-| `backup_store_repositories_none` | any | No |  |
-| `backup_store_repositories_some` | any | No |  |
+| `backup_store_repositories_every` | [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
+| `backup_store_repositories_none` | [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
+| `backup_store_repositories_some` | [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
 | `backup_wr_iops_max` | integer (int64) | No |  |
 | `backup_wr_iops_max_gt` | integer (int64) | No |  |
 | `backup_wr_iops_max_gte` | integer (int64) | No |  |
@@ -111,9 +111,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -261,10 +261,10 @@ Required fields are listed first.
 | `retry_interval_lte` | integer (int32) | No |  |
 | `retry_interval_not` | integer (int32) | No |  |
 | `retry_interval_not_in` | integer[] | No |  |
-| `running_vm` | any | No |  |
-| `status` | any | No |  |
+| `running_vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `status` | [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
 | `status_in` | Array of [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
 | `status_not_in` | Array of [BackupServiceStatus](../Backup/BackupServiceStatus.md) | No |  |
 | `storage_network_gateway` | string | No |  |
 | `storage_network_gateway_contains` | string | No |  |
@@ -308,9 +308,9 @@ Required fields are listed first.
 | `storage_network_subnet_mask_not_in` | string[] | No |  |
 | `storage_network_subnet_mask_not_starts_with` | string | No |  |
 | `storage_network_subnet_mask_starts_with` | string | No |  |
-| `storage_network_type` | any | No |  |
+| `storage_network_type` | [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `storage_network_type_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
-| `storage_network_type_not` | any | No |  |
+| `storage_network_type_not` | [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `storage_network_type_not_in` | Array of [BackupServiceNetworkType](../Backup/BackupServiceNetworkType.md) | No |  |
 | `storage_network_vlan` | string | No |  |
 | `storage_network_vlan_contains` | string | No |  |

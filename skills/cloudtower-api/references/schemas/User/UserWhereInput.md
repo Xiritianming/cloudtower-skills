@@ -121,16 +121,16 @@ Required fields are listed first.
 | `password_updated_at_lte` | string | No |  |
 | `password_updated_at_not` | string | No |  |
 | `password_updated_at_not_in` | string[] | No |  |
-| `role` | any | No |  |
+| `role` | [UserRole](../User/UserRole.md) | No |  |
 | `role_in` | Array of [UserRole](../User/UserRole.md) | No |  |
-| `role_not` | any | No |  |
+| `role_not` | [UserRole](../User/UserRole.md) | No |  |
 | `role_not_in` | Array of [UserRole](../User/UserRole.md) | No |  |
-| `roles_every` | any | No |  |
-| `roles_none` | any | No |  |
-| `roles_some` | any | No |  |
-| `source` | any | No |  |
+| `roles_every` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `roles_none` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `roles_some` | [UserRoleNextWhereInput](../User/UserRoleNextWhereInput.md) | No |  |
+| `source` | [UserSource](../User/UserSource.md) | No |  |
 | `source_in` | Array of [UserSource](../User/UserSource.md) | No |  |
-| `source_not` | any | No |  |
+| `source_not` | [UserSource](../User/UserSource.md) | No |  |
 | `source_not_in` | Array of [UserSource](../User/UserSource.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |

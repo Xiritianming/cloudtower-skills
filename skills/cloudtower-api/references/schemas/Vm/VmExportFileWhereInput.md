@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
 | `NOT` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
 | `OR` | Array of [VmExportFileWhereInput](../Vm/VmExportFileWhereInput.md) | No |  |
-| `content_library_vm_template` | any | No |  |
+| `content_library_vm_template` | [ContentLibraryVmTemplateWhereInput](../Content/ContentLibraryVmTemplateWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -36,9 +36,9 @@ Required fields are listed first.
 | `data_port_id_not_in` | string[] | No |  |
 | `data_port_id_not_starts_with` | string | No |  |
 | `data_port_id_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -68,10 +68,10 @@ Required fields are listed first.
 | `storage_cluster_id_not_in` | string[] | No |  |
 | `storage_cluster_id_not_starts_with` | string | No |  |
 | `storage_cluster_id_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
 | `type_in` | Array of [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
 | `type_not_in` | Array of [VmExportFileType](../Vm/VmExportFileType.md) | No |  |
-| `vm` | any | No |  |
-| `vm_volume` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vm_volume` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 

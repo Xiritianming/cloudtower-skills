@@ -15,13 +15,13 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `position` | integer (int32) | Yes |  |
-| `cluster_topo` | any | No |  |
-| `disk_layout` | any | No |  |
+| `cluster_topo` | [NestedClusterTopo](../Nested/NestedClusterTopo.md) | No |  |
+| `disk_layout` | [NestedBrickDiskLayout](../Nested/NestedBrickDiskLayout.md) | No |  |
 | `model` | string | No |  |
 | `node_topoes` | Array of [NestedNodeTopo](../Nested/NestedNodeTopo.md) | No |  |
-| `power_layout` | any | No |  |
-| `power_position` | any | No |  |
+| `power_layout` | [Direction](../Direction/Direction.md) | No |  |
+| `power_position` | [PowerPosition](../Power/PowerPosition.md) | No |  |
 | `powers` | Array of [NestedBrickPower](../Nested/NestedBrickPower.md) | No |  |
-| `rack_topo` | any | No |  |
+| `rack_topo` | [NestedRackTopo](../Nested/NestedRackTopo.md) | No |  |
 | `tag_position_in_brick` | Array of [NestedTagPosition](../Nested/NestedTagPosition.md) | No |  |
 

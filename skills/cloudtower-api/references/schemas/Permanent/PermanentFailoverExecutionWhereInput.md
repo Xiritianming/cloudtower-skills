@@ -19,7 +19,7 @@ Required fields are listed first.
 | `createdAt_lte` | string | No |  |
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
-| `external_cloudtower` | any | No |  |
+| `external_cloudtower` | [ExternalCloudTowerWhereInput](../External/ExternalCloudTowerWhereInput.md) | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
 | `finished_at_gte` | string | No |  |
@@ -44,10 +44,10 @@ Required fields are listed first.
 | `id_starts_with` | string | No |  |
 | `is_sync_replication` | boolean | No |  |
 | `is_sync_replication_not` | boolean | No |  |
-| `permanent_failover_target_executions_every` | any | No |  |
-| `permanent_failover_target_executions_none` | any | No |  |
-| `permanent_failover_target_executions_some` | any | No |  |
-| `replication_service` | any | No |  |
+| `permanent_failover_target_executions_every` | [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
+| `permanent_failover_target_executions_none` | [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
+| `permanent_failover_target_executions_some` | [PermanentFailoverTargetExecutionWhereInput](../Permanent/PermanentFailoverTargetExecutionWhereInput.md) | No |  |
+| `replication_service` | [ReplicationServiceWhereInput](../Replication/ReplicationServiceWhereInput.md) | No |  |
 | `started_at` | string | No |  |
 | `started_at_gt` | string | No |  |
 | `started_at_gte` | string | No |  |
@@ -56,9 +56,9 @@ Required fields are listed first.
 | `started_at_lte` | string | No |  |
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
-| `state` | any | No |  |
+| `state` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `state_not_in` | Array of [BackupExecutionState](../Backup/BackupExecutionState.md) | No |  |
 | `updatedAt` | string | No |  |
 | `updatedAt_gt` | string | No |  |

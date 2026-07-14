@@ -35,11 +35,11 @@ Required fields are listed first.
 | `business_host_groups` | Array of [NestedBusinessHostGroup](../Nested/NestedBusinessHostGroup.md) | No |  |
 | `business_hosts` | Array of [NestedBusinessHost](../Nested/NestedBusinessHost.md) | No |  |
 | `configuration_adaptive` | boolean | No |  |
-| `configuration_method` | any | No |  |
+| `configuration_method` | [ConfigurationMethod](../Configuration/ConfigurationMethod.md) | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
-| `encrypt_method` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `io_size` | integer (int64) | No |  |
 | `iops` | integer (int64) | No |  |
 | `iops_max` | integer (int64) | No |  |
@@ -56,5 +56,5 @@ Required fields are listed first.
 | `namespaces` | Array of [NestedNvmfNamespace](../Nested/NestedNvmfNamespace.md) | No |  |
 | `nvmf_namespaces_num` | integer (int32) | No |  |
 | `prioritized` | boolean | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 

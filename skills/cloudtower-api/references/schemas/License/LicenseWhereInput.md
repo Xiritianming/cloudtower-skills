@@ -87,12 +87,12 @@ Required fields are listed first.
 | `sign_date_lte` | string | No |  |
 | `sign_date_not` | string | No |  |
 | `sign_date_not_in` | string[] | No |  |
-| `software_edition` | any | No |  |
+| `software_edition` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
-| `software_edition_not` | any | No |  |
+| `software_edition_not` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `software_edition_not_in` | Array of [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
-| `type` | any | No |  |
+| `type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [LicenseType](../License/LicenseType.md) | No |  |
 | `type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 

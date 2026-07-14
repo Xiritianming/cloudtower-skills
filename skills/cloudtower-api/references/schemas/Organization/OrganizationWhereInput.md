@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
 | `NOT` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
 | `OR` | Array of [OrganizationWhereInput](../Organization/OrganizationWhereInput.md) | No |  |
-| `datacenters_every` | any | No |  |
-| `datacenters_none` | any | No |  |
-| `datacenters_some` | any | No |  |
+| `datacenters_every` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `datacenters_none` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
+| `datacenters_some` | [DatacenterWhereInput](../Datacenter/DatacenterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

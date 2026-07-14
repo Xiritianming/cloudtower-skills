@@ -14,7 +14,7 @@ Required fields are listed first.
 | `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | Yes |  |
 | `associate_external_subnet_num` | integer (int32) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `isolation_policies` | Array of [NestedVirtualPrivateCloudIsolationPolicy](../Nested/NestedVirtualPrivateCloudIsolationPolicy.md) | No |  |
 | `mtu` | integer (int32) | No |  |
 | `route_tables` | Array of [NestedVirtualPrivateCloudRouteTable](../Nested/NestedVirtualPrivateCloudRouteTable.md) | No |  |

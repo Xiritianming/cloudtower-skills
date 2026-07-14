@@ -14,7 +14,7 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `type` | [DiskType](../Disk/DiskType.md) | Yes |  |
 | `dimm_ids` | string[] | No |  |
-| `function` | any | No |  |
+| `function` | [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `numa_node` | integer (int32) | No |  |
 | `persistent_memory_type` | string | No |  |
 

@@ -13,5 +13,5 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | Yes |  |
 | `vpc_subnet` | [NestedVirtualPrivateCloudSubnet](../Nested/NestedVirtualPrivateCloudSubnet.md) | Yes |  |
-| `floating_ip` | any | No |  |
+| `floating_ip` | [NestedVirtualPrivateCloudFloatingIp](../Nested/NestedVirtualPrivateCloudFloatingIp.md) | No |  |
 

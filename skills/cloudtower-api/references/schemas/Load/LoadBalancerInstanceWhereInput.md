@@ -33,9 +33,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -51,7 +51,7 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `load_balancer_service` | any | No |  |
+| `load_balancer_service` | [LoadBalancerServiceWhereInput](../Load/LoadBalancerServiceWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -80,16 +80,16 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
-| `phase_not` | any | No |  |
+| `phase_not` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `phase_not_in` | Array of [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
-| `primary_in_load_balancer_group` | any | No |  |
-| `secondary_in_load_balancer_group` | any | No |  |
-| `vm_instances_every` | any | No |  |
-| `vm_instances_none` | any | No |  |
-| `vm_instances_some` | any | No |  |
-| `vnet_bonds_every` | any | No |  |
-| `vnet_bonds_none` | any | No |  |
-| `vnet_bonds_some` | any | No |  |
+| `primary_in_load_balancer_group` | [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
+| `secondary_in_load_balancer_group` | [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
+| `vm_instances_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vm_instances_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vm_instances_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vnet_bonds_every` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `vnet_bonds_none` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `vnet_bonds_some` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
 

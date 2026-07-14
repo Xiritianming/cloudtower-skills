@@ -63,9 +63,9 @@ Required fields are listed first.
 | `plan_id_not_in` | string[] | No |  |
 | `plan_id_not_starts_with` | string | No |  |
 | `plan_id_starts_with` | string | No |  |
-| `status` | any | No |  |
+| `status` | [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [TaskStatus](../Task/TaskStatus.md) | No |  |
 | `status_not_in` | Array of [TaskStatus](../Task/TaskStatus.md) | No |  |
-| `template` | any | No |  |
+| `template` | [ReportTemplateWhereInput](../Report/ReportTemplateWhereInput.md) | No |  |
 

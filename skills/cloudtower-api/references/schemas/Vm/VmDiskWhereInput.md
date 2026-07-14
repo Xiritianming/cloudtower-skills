@@ -19,9 +19,9 @@ Required fields are listed first.
 | `boot_lte` | integer (int32) | No |  |
 | `boot_not` | integer (int32) | No |  |
 | `boot_not_in` | integer[] | No |  |
-| `bus` | any | No |  |
+| `bus` | [Bus](../Bus/Bus.md) | No |  |
 | `bus_in` | Array of [Bus](../Bus/Bus.md) | No |  |
-| `bus_not` | any | No |  |
+| `bus_not` | [Bus](../Bus/Bus.md) | No |  |
 | `bus_not_in` | Array of [Bus](../Bus/Bus.md) | No |  |
 | `cloud_init_image_name` | string | No |  |
 | `cloud_init_image_name_contains` | string | No |  |
@@ -67,7 +67,7 @@ Required fields are listed first.
 | `device_starts_with` | string | No |  |
 | `disabled` | boolean | No |  |
 | `disabled_not` | boolean | No |  |
-| `elf_image` | any | No |  |
+| `elf_image` | [ElfImageWhereInput](../Elf/ElfImageWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -98,9 +98,9 @@ Required fields are listed first.
 | `max_bandwidth_lte` | integer (int64) | No |  |
 | `max_bandwidth_not` | integer (int64) | No |  |
 | `max_bandwidth_not_in` | integer[] | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
-| `max_bandwidth_policy_not` | any | No |  |
+| `max_bandwidth_policy_not` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_bandwidth_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
 | `max_iops_gt` | integer (int32) | No |  |
@@ -110,9 +110,9 @@ Required fields are listed first.
 | `max_iops_lte` | integer (int32) | No |  |
 | `max_iops_not` | integer (int32) | No |  |
 | `max_iops_not_in` | integer[] | No |  |
-| `max_iops_policy` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
-| `max_iops_policy_not` | any | No |  |
+| `max_iops_policy_not` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops_policy_not_in` | Array of [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `serial` | string | No |  |
 | `serial_contains` | string | No |  |
@@ -128,10 +128,10 @@ Required fields are listed first.
 | `serial_not_in` | string[] | No |  |
 | `serial_not_starts_with` | string | No |  |
 | `serial_starts_with` | string | No |  |
-| `svt_image` | any | No |  |
-| `type` | any | No |  |
+| `svt_image` | [SvtImageWhereInput](../Svt/SvtImageWhereInput.md) | No |  |
+| `type` | [VmDiskType](../Vm/VmDiskType.md) | No |  |
 | `type_in` | Array of [VmDiskType](../Vm/VmDiskType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [VmDiskType](../Vm/VmDiskType.md) | No |  |
 | `type_not_in` | Array of [VmDiskType](../Vm/VmDiskType.md) | No |  |
 | `unsafe_image_path` | string | No |  |
 | `unsafe_image_path_contains` | string | No |  |
@@ -175,6 +175,6 @@ Required fields are listed first.
 | `unsafe_provision_not_in` | string[] | No |  |
 | `unsafe_provision_not_starts_with` | string | No |  |
 | `unsafe_provision_starts_with` | string | No |  |
-| `vm` | any | No |  |
-| `vm_volume` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vm_volume` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 

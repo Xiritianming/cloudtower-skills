@@ -25,13 +25,13 @@ Required fields are listed first.
 | `driver_not_in` | string[] | No |  |
 | `driver_not_starts_with` | string | No |  |
 | `driver_starts_with` | string | No |  |
-| `driver_state` | any | No |  |
+| `driver_state` | [NicDriverState](../Nic/NicDriverState.md) | No |  |
 | `driver_state_in` | Array of [NicDriverState](../Nic/NicDriverState.md) | No |  |
-| `driver_state_not` | any | No |  |
+| `driver_state_not` | [NicDriverState](../Nic/NicDriverState.md) | No |  |
 | `driver_state_not_in` | Array of [NicDriverState](../Nic/NicDriverState.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway_ip` | string | No |  |
 | `gateway_ip_contains` | string | No |  |
@@ -47,7 +47,7 @@ Required fields are listed first.
 | `gateway_ip_not_in` | string[] | No |  |
 | `gateway_ip_not_starts_with` | string | No |  |
 | `gateway_ip_starts_with` | string | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `ibdev` | string | No |  |
 | `ibdev_contains` | string | No |  |
 | `ibdev_ends_with` | string | No |  |
@@ -76,9 +76,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `iommu_status` | any | No |  |
+| `iommu_status` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_status_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
-| `iommu_status_not` | any | No |  |
+| `iommu_status_not` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_status_not_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `ip_address` | string | No |  |
 | `ip_address_contains` | string | No |  |
@@ -96,9 +96,9 @@ Required fields are listed first.
 | `ip_address_starts_with` | string | No |  |
 | `is_sriov` | boolean | No |  |
 | `is_sriov_not` | boolean | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -221,9 +221,9 @@ Required fields are listed first.
 | `total_vf_num_lte` | integer (int32) | No |  |
 | `total_vf_num_not` | integer (int32) | No |  |
 | `total_vf_num_not_in` | integer[] | No |  |
-| `type` | any | No |  |
+| `type` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `type_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
 | `up` | boolean | No |  |
 | `up_not` | boolean | No |  |
@@ -235,12 +235,12 @@ Required fields are listed first.
 | `used_vf_num_lte` | integer (int32) | No |  |
 | `used_vf_num_not` | integer (int32) | No |  |
 | `used_vf_num_not_in` | integer[] | No |  |
-| `user_usage` | any | No |  |
+| `user_usage` | [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
 | `user_usage_in` | Array of [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
-| `user_usage_not` | any | No |  |
+| `user_usage_not` | [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
 | `user_usage_not_in` | Array of [NicUserUsage](../Nic/NicUserUsage.md) | No |  |
-| `vds` | any | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
+| `vds` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

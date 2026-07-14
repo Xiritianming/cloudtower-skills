@@ -11,17 +11,17 @@ Required fields are listed first.
 | `AND` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
 | `NOT` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
 | `OR` | Array of [GraphWhereInput](../Graph/GraphWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `disks_every` | any | No |  |
-| `disks_none` | any | No |  |
-| `disks_some` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `disks_every` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_none` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_some` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `hosts_every` | any | No |  |
-| `hosts_none` | any | No |  |
-| `hosts_some` | any | No |  |
+| `hosts_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -50,9 +50,9 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `luns_every` | any | No |  |
-| `luns_none` | any | No |  |
-| `luns_some` | any | No |  |
+| `luns_every` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `luns_none` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
+| `luns_some` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
 | `metric_count` | integer (int32) | No |  |
 | `metric_count_gt` | integer (int32) | No |  |
 | `metric_count_gte` | integer (int32) | No |  |
@@ -75,20 +75,20 @@ Required fields are listed first.
 | `metric_name_not_in` | string[] | No |  |
 | `metric_name_not_starts_with` | string | No |  |
 | `metric_name_starts_with` | string | No |  |
-| `metric_type` | any | No |  |
+| `metric_type` | [MetricType](../Metric/MetricType.md) | No |  |
 | `metric_type_in` | Array of [MetricType](../Metric/MetricType.md) | No |  |
-| `metric_type_not` | any | No |  |
+| `metric_type_not` | [MetricType](../Metric/MetricType.md) | No |  |
 | `metric_type_not_in` | Array of [MetricType](../Metric/MetricType.md) | No |  |
-| `namespaces_every` | any | No |  |
-| `namespaces_none` | any | No |  |
-| `namespaces_some` | any | No |  |
-| `network` | any | No |  |
+| `namespaces_every` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `namespaces_none` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `namespaces_some` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `network` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `network_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
-| `network_not` | any | No |  |
+| `network_not` | [NetworkType](../Network/NetworkType.md) | No |  |
 | `network_not_in` | Array of [NetworkType](../Network/NetworkType.md) | No |  |
-| `nics_every` | any | No |  |
-| `nics_none` | any | No |  |
-| `nics_some` | any | No |  |
+| `nics_every` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `nics_none` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `nics_some` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
 | `resource_type` | string | No |  |
 | `resource_type_contains` | string | No |  |
 | `resource_type_ends_with` | string | No |  |
@@ -131,24 +131,24 @@ Required fields are listed first.
 | `title_not_in` | string[] | No |  |
 | `title_not_starts_with` | string | No |  |
 | `title_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [GraphType](../Graph/GraphType.md) | No |  |
 | `type_in` | Array of [GraphType](../Graph/GraphType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [GraphType](../Graph/GraphType.md) | No |  |
 | `type_not_in` | Array of [GraphType](../Graph/GraphType.md) | No |  |
-| `view` | any | No |  |
-| `vmNics_every` | any | No |  |
-| `vmNics_none` | any | No |  |
-| `vmNics_some` | any | No |  |
-| `vmVolumes_every` | any | No |  |
-| `vmVolumes_none` | any | No |  |
-| `vmVolumes_some` | any | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
-| `witnesses_every` | any | No |  |
-| `witnesses_none` | any | No |  |
-| `witnesses_some` | any | No |  |
-| `zones_every` | any | No |  |
-| `zones_none` | any | No |  |
-| `zones_some` | any | No |  |
+| `view` | [ViewWhereInput](../View/ViewWhereInput.md) | No |  |
+| `vmNics_every` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vmNics_none` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vmNics_some` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vmVolumes_every` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `vmVolumes_none` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `vmVolumes_some` | [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `witnesses_every` | [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `witnesses_none` | [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `witnesses_some` | [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
+| `zones_every` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `zones_none` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
+| `zones_some` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 

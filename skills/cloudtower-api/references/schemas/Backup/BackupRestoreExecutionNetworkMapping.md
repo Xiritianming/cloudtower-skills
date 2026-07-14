@@ -10,7 +10,7 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `src_vlan_id` | string | Yes |  |
 | `dst_vlan_id` | string | Yes |  |
-| `target` | any | No |  |
-| `source` | any | No |  |
+| `target` | [BackupRestoreExecutionNetworkInformation](../Backup/BackupRestoreExecutionNetworkInformation.md) | No |  |
+| `source` | [BackupRestoreExecutionNetworkInformation](../Backup/BackupRestoreExecutionNetworkInformation.md) | No |  |
 | `__typename` | enum: BackupRestoreExecutionNetworkMapping | No |  |
 

@@ -12,7 +12,7 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `name` | string | Yes |  |
 | `usage` | [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | Yes |  |
-| `application` | any | No |  |
+| `application` | [NestedCloudTowerApplication](../Nested/NestedCloudTowerApplication.md) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 

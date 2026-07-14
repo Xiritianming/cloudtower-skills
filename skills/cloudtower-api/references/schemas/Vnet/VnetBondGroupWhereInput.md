@@ -33,9 +33,9 @@ Required fields are listed first.
 | `display_name_not_in` | string[] | No |  |
 | `display_name_not_starts_with` | string | No |  |
 | `display_name_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -51,7 +51,7 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `load_balancer_instance_group` | any | No |  |
+| `load_balancer_instance_group` | [LoadBalancerInstanceGroupWhereInput](../Load/LoadBalancerInstanceGroupWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -80,11 +80,11 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `network_type` | any | No |  |
+| `network_type` | [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `network_type_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
-| `network_type_not` | any | No |  |
+| `network_type_not` | [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `network_type_not_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
-| `vnet_bonds_every` | any | No |  |
-| `vnet_bonds_none` | any | No |  |
-| `vnet_bonds_some` | any | No |  |
+| `vnet_bonds_every` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `vnet_bonds_none` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
+| `vnet_bonds_some` | [VnetBondWhereInput](../Vnet/VnetBondWhereInput.md) | No |  |
 

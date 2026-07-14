@@ -10,7 +10,13 @@ import type {
 } from "openapi-to-skills";
 
 type AuthSchemes = Parameters<Renderer["renderAuthentication"]>[0];
-import { buildRequestExample, requestUsesMetricNames } from "./example.ts";
+import {
+  buildRequestExample,
+  fieldRefName,
+  rawProperties,
+  requestUsesMetricNames,
+  requestUsesWhere,
+} from "./example.ts";
 
 // Mirrors of openapi-to-skills' helpers — the package's exports map does not
 // expose them, and file names/link paths must match its output exactly.
@@ -123,11 +129,21 @@ export class CloudTowerRenderer implements Renderer {
       ...this.helpers(),
       exampleJson: buildRequestExample(this.spec, doc.operationId),
       metricsNote: requestUsesMetricNames(this.spec, doc.operationId),
+      whereNote: requestUsesWhere(this.spec, doc.operationId),
     });
   }
 
   renderSchema(doc: SchemaDocument): string {
-    return this.eta.render("schema.md.eta", { ...doc, ...this.helpers() });
+    // The upstream parser renders `allOf: [$ref]` (+ nullable) properties as a
+    // linkless `any` — recover the ref from the raw spec so fields like
+    // `where`/`orderBy` link to their schema files.
+    const props = rawProperties(this.spec, doc.name);
+    const fields = doc.fields?.map((field) => {
+      if (field.schema?.ref || !props) return field;
+      const ref = fieldRefName(this.spec, props[field.name]);
+      return ref ? { ...field, schema: { ...field.schema, ref } } : field;
+    });
+    return this.eta.render("schema.md.eta", { ...doc, fields, ...this.helpers() });
   }
 
   renderSchemaIndex(group: SchemaGroupDocument): string {

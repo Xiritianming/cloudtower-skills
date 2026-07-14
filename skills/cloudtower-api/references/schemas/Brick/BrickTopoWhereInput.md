@@ -11,8 +11,8 @@ Required fields are listed first.
 | `AND` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
 | `NOT` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
 | `OR` | Array of [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `cluster_topo` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `cluster_topo` | [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
 | `height` | integer (int32) | No |  |
 | `height_gt` | integer (int32) | No |  |
 | `height_gte` | integer (int32) | No |  |
@@ -77,9 +77,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `node_topoes_every` | any | No |  |
-| `node_topoes_none` | any | No |  |
-| `node_topoes_some` | any | No |  |
+| `node_topoes_every` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `node_topoes_none` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
+| `node_topoes_some` | [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
 | `position` | integer (int32) | No |  |
 | `position_gt` | integer (int32) | No |  |
 | `position_gte` | integer (int32) | No |  |
@@ -88,13 +88,13 @@ Required fields are listed first.
 | `position_lte` | integer (int32) | No |  |
 | `position_not` | integer (int32) | No |  |
 | `position_not_in` | integer[] | No |  |
-| `power_layout` | any | No |  |
+| `power_layout` | [Direction](../Direction/Direction.md) | No |  |
 | `power_layout_in` | Array of [Direction](../Direction/Direction.md) | No |  |
-| `power_layout_not` | any | No |  |
+| `power_layout_not` | [Direction](../Direction/Direction.md) | No |  |
 | `power_layout_not_in` | Array of [Direction](../Direction/Direction.md) | No |  |
-| `power_position` | any | No |  |
+| `power_position` | [PowerPosition](../Power/PowerPosition.md) | No |  |
 | `power_position_in` | Array of [PowerPosition](../Power/PowerPosition.md) | No |  |
-| `power_position_not` | any | No |  |
+| `power_position_not` | [PowerPosition](../Power/PowerPosition.md) | No |  |
 | `power_position_not_in` | Array of [PowerPosition](../Power/PowerPosition.md) | No |  |
-| `rack_topo` | any | No |  |
+| `rack_topo` | [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
 

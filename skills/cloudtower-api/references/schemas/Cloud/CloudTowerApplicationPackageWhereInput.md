@@ -11,12 +11,12 @@ Required fields are listed first.
 | `AND` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
 | `NOT` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
 | `OR` | Array of [CloudTowerApplicationPackageWhereInput](../Cloud/CloudTowerApplicationPackageWhereInput.md) | No |  |
-| `applications_every` | any | No |  |
-| `applications_none` | any | No |  |
-| `applications_some` | any | No |  |
-| `architecture` | any | No |  |
+| `applications_every` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
+| `applications_none` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
+| `applications_some` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
+| `architecture` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
-| `architecture_not` | any | No |  |
+| `architecture_not` | [Architecture](../Architecture/Architecture.md) | No |  |
 | `architecture_not_in` | Array of [Architecture](../Architecture/Architecture.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

@@ -12,9 +12,9 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `local_id` | string | Yes |  |
 | `message` | string | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `finished_at` | string | No |  |
 | `local_created_at` | string | No |  |
 | `resource_id` | string | No |  |
-| `status` | any | No |  |
+| `status` | [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 

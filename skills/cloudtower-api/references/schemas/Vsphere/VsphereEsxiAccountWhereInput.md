@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
 | `NOT` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
 | `OR` | Array of [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

@@ -25,7 +25,7 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `license` | any | No |  |
+| `license` | [LicenseWhereInput](../License/LicenseWhereInput.md) | No |  |
 | `version` | string | No |  |
 | `version_contains` | string | No |  |
 | `version_ends_with` | string | No |  |

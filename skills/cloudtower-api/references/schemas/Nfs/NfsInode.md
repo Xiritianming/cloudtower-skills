@@ -22,10 +22,10 @@ Required fields are listed first.
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
-| `encrypt_method` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `prioritized` | boolean | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `unique_logical_size` | number (double) | No |  |
 

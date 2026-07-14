@@ -39,9 +39,9 @@ Required fields are listed first.
 | `destination_not_in` | string[] | No |  |
 | `destination_not_starts_with` | string | No |  |
 | `destination_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -71,7 +71,7 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `nat_gateway` | any | No |  |
+| `nat_gateway` | [VirtualPrivateCloudNatGatewayWhereInput](../Virtual/VirtualPrivateCloudNatGatewayWhereInput.md) | No |  |
 | `next_hop_local_id` | string | No |  |
 | `next_hop_local_id_contains` | string | No |  |
 | `next_hop_local_id_ends_with` | string | No |  |
@@ -86,11 +86,11 @@ Required fields are listed first.
 | `next_hop_local_id_not_in` | string[] | No |  |
 | `next_hop_local_id_not_starts_with` | string | No |  |
 | `next_hop_local_id_starts_with` | string | No |  |
-| `next_hop_type` | any | No |  |
+| `next_hop_type` | [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
 | `next_hop_type_in` | Array of [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
-| `next_hop_type_not` | any | No |  |
+| `next_hop_type_not` | [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
 | `next_hop_type_not_in` | Array of [VirtualPrivateCloudRouteNextHopType](../Virtual/VirtualPrivateCloudRouteNextHopType.md) | No |  |
-| `route_table` | any | No |  |
-| `router_gateway` | any | No |  |
-| `vpc_peering` | any | No |  |
+| `route_table` | [VirtualPrivateCloudRouteTableWhereInput](../Virtual/VirtualPrivateCloudRouteTableWhereInput.md) | No |  |
+| `router_gateway` | [VirtualPrivateCloudRouterGatewayWhereInput](../Virtual/VirtualPrivateCloudRouterGatewayWhereInput.md) | No |  |
+| `vpc_peering` | [VirtualPrivateCloudPeeringWhereInput](../Virtual/VirtualPrivateCloudPeeringWhereInput.md) | No |  |
 

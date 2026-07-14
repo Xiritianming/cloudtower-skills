@@ -25,10 +25,10 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `edge_gateway_group` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `edge_gateway_group` | [VirtualPrivateCloudEdgeGatewayGroupWhereInput](../Virtual/VirtualPrivateCloudEdgeGatewayGroupWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -58,8 +58,8 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `vdses_every` | any | No |  |
-| `vdses_none` | any | No |  |
-| `vdses_some` | any | No |  |
-| `vpc_service` | any | No |  |
+| `vdses_every` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vdses_none` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vdses_some` | [VdsWhereInput](../Vds/VdsWhereInput.md) | No |  |
+| `vpc_service` | [VirtualPrivateCloudServiceWhereInput](../Virtual/VirtualPrivateCloudServiceWhereInput.md) | No |  |
 

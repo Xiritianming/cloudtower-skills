@@ -12,7 +12,7 @@ Required fields are listed first.
 | `before` | string | No |  |
 | `first` | integer (int32) | No |  |
 | `last` | integer (int32) | No |  |
-| `orderBy` | any | No |  |
+| `orderBy` | [VirtualPrivateCloudExternalSubnetGroupOrderByInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupOrderByInput.md) | No |  |
 | `skip` | integer (int32) | No |  |
-| `where` | any | No |  |
+| `where` | [VirtualPrivateCloudExternalSubnetGroupWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupWhereInput.md) | No |  |
 

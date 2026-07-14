@@ -9,15 +9,15 @@ Required fields are listed first.
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `AND` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
-| `Iscsi_lun_snapshots_every` | any | No |  |
-| `Iscsi_lun_snapshots_none` | any | No |  |
-| `Iscsi_lun_snapshots_some` | any | No |  |
+| `Iscsi_lun_snapshots_every` | [IscsiLunSnapshotWhereInput](../Iscsi/IscsiLunSnapshotWhereInput.md) | No |  |
+| `Iscsi_lun_snapshots_none` | [IscsiLunSnapshotWhereInput](../Iscsi/IscsiLunSnapshotWhereInput.md) | No |  |
+| `Iscsi_lun_snapshots_some` | [IscsiLunSnapshotWhereInput](../Iscsi/IscsiLunSnapshotWhereInput.md) | No |  |
 | `NOT` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
 | `OR` | Array of [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
-| `consistency_group` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `consistency_group` | [ConsistencyGroupWhereInput](../Consistency/ConsistencyGroupWhereInput.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -33,9 +33,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -72,9 +72,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nvmf_namespace_snapshots_every` | any | No |  |
-| `nvmf_namespace_snapshots_none` | any | No |  |
-| `nvmf_namespace_snapshots_some` | any | No |  |
+| `nvmf_namespace_snapshots_every` | [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
+| `nvmf_namespace_snapshots_none` | [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
+| `nvmf_namespace_snapshots_some` | [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
 | `unique_size` | integer (int64) | No |  |
 | `unique_size_gt` | integer (int64) | No |  |
 | `unique_size_gte` | integer (int64) | No |  |

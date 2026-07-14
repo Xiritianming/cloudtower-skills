@@ -15,8 +15,8 @@ Required fields are listed first.
 | `id` | string | Yes |  |
 | `storage_cluster_id` | string | Yes |  |
 | `type` | [VmExportFileType](../Vm/VmExportFileType.md) | Yes |  |
-| `content_library_vm_template` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `vm` | any | No |  |
-| `vm_volume` | any | No |  |
+| `content_library_vm_template` | [NestedContentLibraryVmTemplate](../Nested/NestedContentLibraryVmTemplate.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
+| `vm_volume` | [NestedVmVolume](../Nested/NestedVmVolume.md) | No |  |
 

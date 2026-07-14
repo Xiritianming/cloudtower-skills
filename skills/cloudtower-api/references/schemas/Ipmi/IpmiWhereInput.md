@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
 | `NOT` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
 | `OR` | Array of [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

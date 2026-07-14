@@ -15,9 +15,9 @@ Required fields are listed first.
 | `enable_dnat_not` | boolean | No |  |
 | `enable_snat` | boolean | No |  |
 | `enable_snat_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `external_ip` | string | No |  |
 | `external_ip_contains` | string | No |  |
@@ -33,8 +33,8 @@ Required fields are listed first.
 | `external_ip_not_in` | string[] | No |  |
 | `external_ip_not_starts_with` | string | No |  |
 | `external_ip_starts_with` | string | No |  |
-| `external_subnet` | any | No |  |
-| `external_subnet_group` | any | No |  |
+| `external_subnet` | [VirtualPrivateCloudExternalSubnetWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetWhereInput.md) | No |  |
+| `external_subnet_group` | [VirtualPrivateCloudExternalSubnetGroupWhereInput](../Virtual/VirtualPrivateCloudExternalSubnetGroupWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -77,5 +77,5 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `vpc` | any | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

@@ -14,5 +14,5 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `port` | integer (int32) | Yes |  |
 | `username` | string | Yes |  |
-| `cluster` | any | No |  |
+| `cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 

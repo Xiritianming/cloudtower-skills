@@ -83,7 +83,7 @@ Required fields are listed first.
 | `task_num_lte` | integer (int32) | No |  |
 | `task_num_not` | integer (int32) | No |  |
 | `task_num_not_in` | integer[] | No |  |
-| `tasks_every` | any | No |  |
-| `tasks_none` | any | No |  |
-| `tasks_some` | any | No |  |
+| `tasks_every` | [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
+| `tasks_none` | [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
+| `tasks_some` | [ReportTaskWhereInput](../Report/ReportTaskWhereInput.md) | No |  |
 

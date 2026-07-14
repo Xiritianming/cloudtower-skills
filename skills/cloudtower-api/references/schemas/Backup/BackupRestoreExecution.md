@@ -14,9 +14,9 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `startup_after_restore` | boolean | Yes |  |
 | `status` | [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | Yes |  |
-| `backup_restore_point` | any | No |  |
+| `backup_restore_point` | [NestedBackupRestorePoint](../Nested/NestedBackupRestorePoint.md) | No |  |
 | `duration` | integer (int32) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `read_bytes` | integer (int64) | No |  |
 | `rebuild_name` | string | No |  |
 | `rebuild_network_mapping` | Array of [NestedBackupRestoreExecutionNetworkMapping](../Nested/NestedBackupRestoreExecutionNetworkMapping.md) | No |  |

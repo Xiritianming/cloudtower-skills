@@ -25,11 +25,11 @@ Required fields are listed first.
 | `auth_pass_phrase_not_in` | string[] | No |  |
 | `auth_pass_phrase_not_starts_with` | string | No |  |
 | `auth_pass_phrase_starts_with` | string | No |  |
-| `auth_protocol` | any | No |  |
+| `auth_protocol` | [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
 | `auth_protocol_in` | Array of [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
-| `auth_protocol_not` | any | No |  |
+| `auth_protocol_not` | [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
 | `auth_protocol_not_in` | Array of [SnmpAuthProtocol](../Snmp/SnmpAuthProtocol.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `community` | string | No |  |
 | `community_contains` | string | No |  |
 | `community_ends_with` | string | No |  |
@@ -60,9 +60,9 @@ Required fields are listed first.
 | `engine_id_not_in` | string[] | No |  |
 | `engine_id_not_starts_with` | string | No |  |
 | `engine_id_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `host` | string | No |  |
 | `host_contains` | string | No |  |
@@ -94,9 +94,9 @@ Required fields are listed first.
 | `id_starts_with` | string | No |  |
 | `inform` | boolean | No |  |
 | `inform_not` | boolean | No |  |
-| `language_code` | any | No |  |
+| `language_code` | [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
 | `language_code_in` | Array of [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
-| `language_code_not` | any | No |  |
+| `language_code_not` | [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
 | `language_code_not_in` | Array of [SnmpLanguageCode](../Snmp/SnmpLanguageCode.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
@@ -148,13 +148,13 @@ Required fields are listed first.
 | `privacy_pass_phrase_not_in` | string[] | No |  |
 | `privacy_pass_phrase_not_starts_with` | string | No |  |
 | `privacy_pass_phrase_starts_with` | string | No |  |
-| `privacy_protocol` | any | No |  |
+| `privacy_protocol` | [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
 | `privacy_protocol_in` | Array of [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
-| `privacy_protocol_not` | any | No |  |
+| `privacy_protocol_not` | [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
 | `privacy_protocol_not_in` | Array of [SnmpPrivacyProtocol](../Snmp/SnmpPrivacyProtocol.md) | No |  |
-| `protocol` | any | No |  |
+| `protocol` | [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
 | `protocol_in` | Array of [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
-| `protocol_not` | any | No |  |
+| `protocol_not` | [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
 | `protocol_not_in` | Array of [SnmpProtocol](../Snmp/SnmpProtocol.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
@@ -170,8 +170,8 @@ Required fields are listed first.
 | `username_not_in` | string[] | No |  |
 | `username_not_starts_with` | string | No |  |
 | `username_starts_with` | string | No |  |
-| `version` | any | No |  |
+| `version` | [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
 | `version_in` | Array of [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
-| `version_not` | any | No |  |
+| `version_not` | [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
 | `version_not_in` | Array of [SnmpVersion](../Snmp/SnmpVersion.md) | No |  |
 

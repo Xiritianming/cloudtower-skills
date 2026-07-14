@@ -17,5 +17,5 @@ Required fields are listed first.
 | `stripe_num` | integer (int32) | Yes |  |
 | `stripe_size` | integer (int64) | Yes |  |
 | `thin_provision` | boolean | Yes |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 

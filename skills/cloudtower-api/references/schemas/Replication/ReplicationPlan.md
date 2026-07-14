@@ -30,16 +30,16 @@ Required fields are listed first.
 | `updatedAt` | string | Yes |  |
 | `abort_window_unfinished` | boolean | No |  |
 | `activation_timestamp` | string | No |  |
-| `delete_strategy` | any | No |  |
+| `delete_strategy` | [BackupPlanDeleteStrategy](../Backup/BackupPlanDeleteStrategy.md) | No |  |
 | `description` | string | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_m` | integer (int32) | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `external_cloudtower` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `external_cloudtower` | [NestedExternalCloudTower](../Nested/NestedExternalCloudTower.md) | No |  |
 | `inbound` | boolean | No |  |
 | `iscsi_luns` | Array of [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `keep_mac_address` | boolean | No |  |
-| `keep_policy` | any | No |  |
+| `keep_policy` | [BackupPlanKeepPolicy](../Backup/BackupPlanKeepPolicy.md) | No |  |
 | `keep_policy_value` | integer (int32) | No |  |
 | `last_execute_status_message` | string | No |  |
 | `last_execute_success_job_count` | integer (int32) | No |  |
@@ -50,16 +50,16 @@ Required fields are listed first.
 | `last_manual_execute_total_job_count` | integer (int32) | No |  |
 | `last_manual_executed_at` | string | No |  |
 | `next_execution_time` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [BackupPlanPhase](../Backup/BackupPlanPhase.md) | No |  |
 | `replica_name_setting` | string | No |  |
 | `replica_num` | integer (int32) | No |  |
 | `replica_vms` | Array of [NestedReplicaVm](../Nested/NestedReplicaVm.md) | No |  |
 | `replication_plan_executions` | Array of [NestedReplicationPlanExecution](../Nested/NestedReplicationPlanExecution.md) | No |  |
 | `replication_restore_points` | Array of [NestedReplicationRestorePoint](../Nested/NestedReplicationRestorePoint.md) | No |  |
 | `replication_target_executions` | Array of [NestedReplicationTargetExecution](../Nested/NestedReplicationTargetExecution.md) | No |  |
-| `resiliency_type` | any | No |  |
-| `snapshot_consistent_type` | any | No |  |
-| `target_cluster` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
+| `snapshot_consistent_type` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
+| `target_cluster` | [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `thin_provision` | boolean | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
 | `weekdays` | Array of [WeekdayTypeEnum](../Weekday/WeekdayTypeEnum.md) | No |  |

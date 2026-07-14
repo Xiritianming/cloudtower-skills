@@ -10,7 +10,7 @@ Required fields are listed first.
 |-------|------|----------|-------------|
 | `id` | string | Yes |  |
 | `name` | string | Yes |  |
-| `edge_gateway` | any | No |  |
+| `edge_gateway` | [NestedVirtualPrivateCloudEdgeGateway](../Nested/NestedVirtualPrivateCloudEdgeGateway.md) | No |  |
 | `floating_ip_cidr` | string | No |  |
 | `nat_gateway_cidr` | string | No |  |
 | `router_gateway_cidr` | string | No |  |

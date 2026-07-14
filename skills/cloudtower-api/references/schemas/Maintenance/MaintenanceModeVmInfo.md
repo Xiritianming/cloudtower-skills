@@ -12,7 +12,7 @@ Required fields are listed first.
 | `vm_state` | string | No |  |
 | `vm_name` | string | No |  |
 | `vm_ha` | boolean | No |  |
-| `verify` | any | No |  |
+| `verify` | [MaintenanceModeVerify](../Maintenance/MaintenanceModeVerify.md) | No |  |
 | `target_host_name` | string | No |  |
 | `state` | string | No |  |
 

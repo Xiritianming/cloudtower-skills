@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [EcpLicenseWhereInput](../Ecp/EcpLicenseWhereInput.md) | No |  |
 | `NOT` | Array of [EcpLicenseWhereInput](../Ecp/EcpLicenseWhereInput.md) | No |  |
 | `OR` | Array of [EcpLicenseWhereInput](../Ecp/EcpLicenseWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `cluster_local_id` | string | No |  |
 | `cluster_local_id_contains` | string | No |  |
 | `cluster_local_id_ends_with` | string | No |  |
@@ -26,9 +26,9 @@ Required fields are listed first.
 | `cluster_local_id_not_in` | string[] | No |  |
 | `cluster_local_id_not_starts_with` | string | No |  |
 | `cluster_local_id_starts_with` | string | No |  |
-| `ecp_edition` | any | No |  |
+| `ecp_edition` | [EcpEdition](../Ecp/EcpEdition.md) | No |  |
 | `ecp_edition_in` | Array of [EcpEdition](../Ecp/EcpEdition.md) | No |  |
-| `ecp_edition_not` | any | No |  |
+| `ecp_edition_not` | [EcpEdition](../Ecp/EcpEdition.md) | No |  |
 | `ecp_edition_not_in` | Array of [EcpEdition](../Ecp/EcpEdition.md) | No |  |
 | `expire_date` | string | No |  |
 | `expire_date_gt` | string | No |  |
@@ -56,9 +56,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `license_type` | any | No |  |
+| `license_type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `license_type_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
-| `license_type_not` | any | No |  |
+| `license_type_not` | [LicenseType](../License/LicenseType.md) | No |  |
 | `license_type_not_in` | Array of [LicenseType](../License/LicenseType.md) | No |  |
 | `max_core_num` | integer (int32) | No |  |
 | `max_core_num_gt` | integer (int32) | No |  |

@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
 | `NOT` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
 | `OR` | Array of [RegistryServiceWhereInput](../Registry/RegistryServiceWhereInput.md) | No |  |
-| `application` | any | No |  |
+| `application` | [CloudTowerApplicationWhereInput](../Cloud/CloudTowerApplicationWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -26,9 +26,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `hostname` | string | No |  |
 | `hostname_contains` | string | No |  |
@@ -72,8 +72,8 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `usage` | any | No |  |
+| `usage` | [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
 | `usage_in` | Array of [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
-| `usage_not` | any | No |  |
+| `usage_not` | [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
 | `usage_not_in` | Array of [RegistryServiceUsage](../Registry/RegistryServiceUsage.md) | No |  |
 

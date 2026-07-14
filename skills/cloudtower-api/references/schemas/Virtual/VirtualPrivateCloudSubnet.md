@@ -15,7 +15,7 @@ Required fields are listed first.
 | `route_table` | [NestedVirtualPrivateCloudRouteTable](../Nested/NestedVirtualPrivateCloudRouteTable.md) | Yes |  |
 | `vpc` | [NestedVirtualPrivateCloud](../Nested/NestedVirtualPrivateCloud.md) | Yes |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `gateway` | string | No |  |
 | `ip_pools` | Array of [NestedVpcSubnetIpPooType](../Nested/NestedVpcSubnetIpPooType.md) | No |  |
 | `total_ip_count` | integer (int32) | No |  |

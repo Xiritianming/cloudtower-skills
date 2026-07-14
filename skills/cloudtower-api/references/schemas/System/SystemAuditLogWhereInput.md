@@ -25,7 +25,7 @@ Required fields are listed first.
 | `action_not_in` | string[] | No |  |
 | `action_not_starts_with` | string | No |  |
 | `action_starts_with` | string | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `finished_at` | string | No |  |
 | `finished_at_gt` | string | No |  |
 | `finished_at_gte` | string | No |  |
@@ -98,8 +98,8 @@ Required fields are listed first.
 | `resource_id_not_in` | string[] | No |  |
 | `resource_id_not_starts_with` | string | No |  |
 | `resource_id_starts_with` | string | No |  |
-| `status` | any | No |  |
+| `status` | [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `status_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `status_not_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 

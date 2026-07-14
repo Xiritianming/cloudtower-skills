@@ -39,7 +39,7 @@ Required fields are listed first.
 | `auth_type_not_in` | string[] | No |  |
 | `auth_type_not_starts_with` | string | No |  |
 | `auth_type_starts_with` | string | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -134,11 +134,11 @@ Required fields are listed first.
 | `started_at_lte` | string | No |  |
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `status_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
 | `status_not_in` | Array of [UserAuditLogStatus](../User/UserAuditLogStatus.md) | No |  |
-| `user` | any | No |  |
+| `user` | [UserWhereInput](../User/UserWhereInput.md) | No |  |
 | `username` | string | No |  |
 | `username_contains` | string | No |  |
 | `username_ends_with` | string | No |  |

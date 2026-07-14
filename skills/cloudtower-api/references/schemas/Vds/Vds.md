@@ -17,8 +17,8 @@ Required fields are listed first.
 | `ovsbr_name` | string | Yes |  |
 | `type` | [NetworkType](../Network/NetworkType.md) | Yes |  |
 | `vlans_num` | integer (int32) | Yes |  |
-| `entityAsyncStatus` | any | No |  |
-| `everoute_cluster` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `everoute_cluster` | [NestedEverouteCluster](../Nested/NestedEverouteCluster.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `nics` | Array of [NestedNic](../Nested/NestedNic.md) | No |  |
 | `vlans` | Array of [NestedVlan](../Nested/NestedVlan.md) | No |  |

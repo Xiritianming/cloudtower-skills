@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
 | `NOT` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
 | `OR` | Array of [NfsExportWhereInput](../Nfs/NfsExportWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -42,13 +42,13 @@ Required fields are listed first.
 | `ec_m_lte` | integer (int32) | No |  |
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
-| `encrypt_method` | any | No |  |
+| `encrypt_method` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `encrypt_method_not` | any | No |  |
+| `encrypt_method_not` | [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
 | `encrypt_method_not_in` | Array of [EncryptMethod](../Encrypt/EncryptMethod.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `export_inode_id` | string | No |  |
 | `export_inode_id_contains` | string | No |  |
@@ -78,9 +78,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `inodes_every` | any | No |  |
-| `inodes_none` | any | No |  |
-| `inodes_some` | any | No |  |
+| `inodes_every` | [NfsInodeWhereInput](../Nfs/NfsInodeWhereInput.md) | No |  |
+| `inodes_none` | [NfsInodeWhereInput](../Nfs/NfsInodeWhereInput.md) | No |  |
+| `inodes_some` | [NfsInodeWhereInput](../Nfs/NfsInodeWhereInput.md) | No |  |
 | `internal` | boolean | No |  |
 | `internal_not` | boolean | No |  |
 | `ip_whitelist` | string | No |  |
@@ -97,9 +97,9 @@ Required fields are listed first.
 | `ip_whitelist_not_in` | string[] | No |  |
 | `ip_whitelist_not_starts_with` | string | No |  |
 | `ip_whitelist_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -138,9 +138,9 @@ Required fields are listed first.
 | `replica_num_lte` | integer (int32) | No |  |
 | `replica_num_not` | integer (int32) | No |  |
 | `replica_num_not_in` | integer[] | No |  |
-| `resiliency_type` | any | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `resiliency_type_not` | any | No |  |
+| `resiliency_type_not` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `thin_provision` | boolean | No |  |
 | `thin_provision_not` | boolean | No |  |

@@ -15,5 +15,5 @@ Required fields are listed first.
 | `egress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
 | `ingress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
-| `statistics` | any | No |  |
+| `statistics` | [NestedSecurityPolicyStatistics](../Nested/NestedSecurityPolicyStatistics.md) | No |  |
 

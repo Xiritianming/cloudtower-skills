@@ -9,7 +9,7 @@ Required fields are listed first.
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `vlan_name` | string | No |  |
-| `vlan_mode_type` | any | No |  |
+| `vlan_mode_type` | [VlanModeType](../Vlan/VlanModeType.md) | No |  |
 | `vlan_local_id` | string | No |  |
 | `model` | string | No |  |
 | `mirror` | boolean | No |  |

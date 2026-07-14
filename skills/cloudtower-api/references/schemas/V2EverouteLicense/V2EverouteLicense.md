@@ -22,5 +22,5 @@ Required fields are listed first.
 | `max_vcpu_num` | integer (int32) | No |  |
 | `max_vm_num` | integer (int32) | No |  |
 | `max_vpc_socket_num` | integer (int32) | No |  |
-| `pricing_type` | any | No |  |
+| `pricing_type` | [EverouteLicensePricingType](../Everoute/EverouteLicensePricingType.md) | No |  |
 

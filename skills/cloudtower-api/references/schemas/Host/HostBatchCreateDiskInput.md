@@ -9,8 +9,8 @@ Required fields are listed first.
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `drive` | string | Yes |  |
-| `type` | any | No |  |
+| `type` | [DiskType](../Disk/DiskType.md) | No |  |
 | `size` | number (double) | No |  |
-| `function` | any | No |  |
+| `function` | [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `chunk_ins_id` | integer (int32) | No |  |
 

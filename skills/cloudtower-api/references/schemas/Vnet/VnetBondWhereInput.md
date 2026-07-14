@@ -23,9 +23,9 @@ Required fields are listed first.
 | `createdAt_lte` | string | No |  |
 | `createdAt_not` | string | No |  |
 | `createdAt_not_in` | string[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -41,8 +41,8 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `load_balancer_instance` | any | No |  |
-| `load_balancer_service` | any | No |  |
+| `load_balancer_instance` | [LoadBalancerInstanceWhereInput](../Load/LoadBalancerInstanceWhereInput.md) | No |  |
+| `load_balancer_service` | [LoadBalancerServiceWhereInput](../Load/LoadBalancerServiceWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -85,12 +85,12 @@ Required fields are listed first.
 | `namespace_not_in` | string[] | No |  |
 | `namespace_not_starts_with` | string | No |  |
 | `namespace_starts_with` | string | No |  |
-| `network_type` | any | No |  |
+| `network_type` | [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `network_type_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
-| `network_type_not` | any | No |  |
+| `network_type_not` | [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
 | `network_type_not_in` | Array of [VnetBondNetworkType](../Vnet/VnetBondNetworkType.md) | No |  |
-| `vlan` | any | No |  |
-| `vnet_bond_group` | any | No |  |
-| `vpc` | any | No |  |
-| `vpc_subnet` | any | No |  |
+| `vlan` | [VlanWhereInput](../Vlan/VlanWhereInput.md) | No |  |
+| `vnet_bond_group` | [VnetBondGroupWhereInput](../Vnet/VnetBondGroupWhereInput.md) | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
+| `vpc_subnet` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
 

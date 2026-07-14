@@ -34,25 +34,25 @@ Required fields are listed first.
 | `dirty_cache_space` | integer (int64) | No |  |
 | `dirty_cache_usage` | number (double) | No |  |
 | `disconnected_date` | string | No |  |
-| `disconnected_reason` | any | No |  |
+| `disconnected_reason` | [ClusterConnectorErrorCode](../Cluster/ClusterConnectorErrorCode.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
-| `ecp_license` | any | No |  |
+| `ecp_license` | [NestedEcpLicense](../Nested/NestedEcpLicense.md) | No |  |
 | `enable_tiering` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `everoute_cluster` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `everoute_cluster` | [NestedEverouteCluster](../Nested/NestedEverouteCluster.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_data_space` | integer (int64) | No |  |
 | `has_metrox` | boolean | No |  |
 | `host_num` | integer (int32) | No |  |
 | `hosts` | Array of [NestedHost](../Nested/NestedHost.md) | No |  |
-| `hypervisor` | any | No |  |
+| `hypervisor` | [Hypervisor](../Hypervisor/Hypervisor.md) | No |  |
 | `is_all_flash` | boolean | No |  |
 | `iscsi_vip` | string | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `license_expire_date` | string | No |  |
 | `license_serial` | string | No |  |
 | `license_sign_date` | string | No |  |
-| `license_type` | any | No |  |
+| `license_type` | [LicenseType](../License/LicenseType.md) | No |  |
 | `local_id` | string | No |  |
 | `logical_used_data_space` | integer (int64) | No |  |
 | `maintenance_end_date` | string | No |  |
@@ -61,13 +61,13 @@ Required fields are listed first.
 | `max_chunk_num` | integer (int32) | No |  |
 | `max_physical_data_capacity` | integer (int64) | No |  |
 | `max_physical_data_capacity_per_node` | integer (int64) | No |  |
-| `metro_availability_checklist` | any | No |  |
+| `metro_availability_checklist` | [NestedMetroAvailabilityChecklist](../Nested/NestedMetroAvailabilityChecklist.md) | No |  |
 | `mgt_gateway` | string | No |  |
 | `mgt_netmask` | string | No |  |
 | `migration_data_size` | integer (int64) | No |  |
 | `migration_speed` | integer (int64) | No |  |
 | `no_performance_layer` | boolean | No |  |
-| `ntp_mode` | any | No |  |
+| `ntp_mode` | [NtpMode](../Ntp/NtpMode.md) | No |  |
 | `nvme_over_rdma_enabled` | boolean | No |  |
 | `nvme_over_tcp_enabled` | boolean | No |  |
 | `nvmf_enabled` | boolean | No |  |
@@ -91,8 +91,8 @@ Required fields are listed first.
 | `replica_capacity_only` | boolean | No |  |
 | `reserved_cpu_cores_for_system_service` | integer (int32) | No |  |
 | `running_vm_num` | integer (int32) | No |  |
-| `settings` | any | No |  |
-| `software_edition` | any | No |  |
+| `settings` | [NestedClusterSettings](../Nested/NestedClusterSettings.md) | No |  |
+| `software_edition` | [SoftwareEdition](../Software/SoftwareEdition.md) | No |  |
 | `stopped_vm_num` | integer (int32) | No |  |
 | `stretch` | boolean | No |  |
 | `suspended_vm_num` | integer (int32) | No |  |
@@ -112,13 +112,13 @@ Required fields are listed first.
 | `used_memory_bytes` | number (double) | No |  |
 | `valid_cache_space` | integer (int64) | No |  |
 | `valid_data_space` | integer (int64) | No |  |
-| `vcenterAccount` | any | No |  |
+| `vcenterAccount` | [NestedVcenterAccount](../Nested/NestedVcenterAccount.md) | No |  |
 | `vdses` | Array of [NestedVds](../Nested/NestedVds.md) | No |  |
 | `vhost_enabled` | boolean | No |  |
 | `vm_folders` | Array of [NestedVmFolder](../Nested/NestedVmFolder.md) | No |  |
 | `vm_num` | integer (int32) | No |  |
 | `vm_templates` | Array of [NestedVmTemplate](../Nested/NestedVmTemplate.md) | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
-| `witness` | any | No |  |
+| `witness` | [NestedWitness](../Nested/NestedWitness.md) | No |  |
 | `zones` | Array of [NestedZone](../Nested/NestedZone.md) | No |  |
 

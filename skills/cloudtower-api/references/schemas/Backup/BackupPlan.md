@@ -26,19 +26,19 @@ Required fields are listed first.
 | `status` | [BackupPlanStatus](../Backup/BackupPlanStatus.md) | Yes |  |
 | `valid_size_of_backup_object` | integer (int64) | Yes |  |
 | `valid_size_of_restore_point` | integer (int64) | Yes |  |
-| `backup_delay_option` | any | No |  |
+| `backup_delay_option` | [BackupPlanDelayOption](../Backup/BackupPlanDelayOption.md) | No |  |
 | `backup_plan_executions` | Array of [NestedBackupPlanExecution](../Nested/NestedBackupPlanExecution.md) | No |  |
 | `backup_restore_point_count` | integer (int32) | No |  |
 | `backup_restore_points` | Array of [NestedBackupRestorePoint](../Nested/NestedBackupRestorePoint.md) | No |  |
 | `backup_total_size` | integer (int64) | No |  |
 | `compression` | boolean | No |  |
 | `compression_ratio` | number (double) | No |  |
-| `delete_strategy` | any | No |  |
+| `delete_strategy` | [BackupPlanDeleteStrategy](../Backup/BackupPlanDeleteStrategy.md) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `incremental_interval` | integer (int32) | No |  |
 | `incremental_weekdays` | Array of [WeekdayTypeEnum](../Weekday/WeekdayTypeEnum.md) | No |  |
-| `keep_policy` | any | No |  |
+| `keep_policy` | [BackupPlanKeepPolicy](../Backup/BackupPlanKeepPolicy.md) | No |  |
 | `keep_policy_value` | integer (int32) | No |  |
 | `last_execute_status_message` | string | No |  |
 | `last_execute_success_job_count` | integer (int32) | No |  |
@@ -49,8 +49,8 @@ Required fields are listed first.
 | `last_manual_execute_total_job_count` | integer (int32) | No |  |
 | `last_manual_executed_at` | string | No |  |
 | `next_execute_time` | string | No |  |
-| `phase` | any | No |  |
-| `snapshot_consistent_type` | any | No |  |
+| `phase` | [BackupPlanPhase](../Backup/BackupPlanPhase.md) | No |  |
+| `snapshot_consistent_type` | [ConsistentType](../Consistent/ConsistentType.md) | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
 | `window_end` | string | No |  |
 | `window_start` | string | No |  |

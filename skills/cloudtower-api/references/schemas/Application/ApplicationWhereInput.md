@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
 | `NOT` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
 | `OR` | Array of [ApplicationWhereInput](../Application/ApplicationWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `error_message` | string | No |  |
 | `error_message_contains` | string | No |  |
 | `error_message_ends_with` | string | No |  |
@@ -76,9 +76,9 @@ Required fields are listed first.
 | `memory_lte` | integer (int64) | No |  |
 | `memory_not` | integer (int64) | No |  |
 | `memory_not_in` | integer[] | No |  |
-| `state` | any | No |  |
+| `state` | [ApplicationState](../Application/ApplicationState.md) | No |  |
 | `state_in` | Array of [ApplicationState](../Application/ApplicationState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [ApplicationState](../Application/ApplicationState.md) | No |  |
 | `state_not_in` | Array of [ApplicationState](../Application/ApplicationState.md) | No |  |
 | `storage_ip` | string | No |  |
 | `storage_ip_contains` | string | No |  |
@@ -94,9 +94,9 @@ Required fields are listed first.
 | `storage_ip_not_in` | string[] | No |  |
 | `storage_ip_not_starts_with` | string | No |  |
 | `storage_ip_starts_with` | string | No |  |
-| `type` | any | No |  |
+| `type` | [ApplicationType](../Application/ApplicationType.md) | No |  |
 | `type_in` | Array of [ApplicationType](../Application/ApplicationType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [ApplicationType](../Application/ApplicationType.md) | No |  |
 | `type_not_in` | Array of [ApplicationType](../Application/ApplicationType.md) | No |  |
 | `update_time` | string | No |  |
 | `update_time_gt` | string | No |  |
@@ -128,7 +128,7 @@ Required fields are listed first.
 | `version_not_in` | string[] | No |  |
 | `version_not_starts_with` | string | No |  |
 | `version_starts_with` | string | No |  |
-| `vm` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 | `volume_size` | integer (int64) | No |  |
 | `volume_size_gt` | integer (int64) | No |  |
 | `volume_size_gte` | integer (int64) | No |  |

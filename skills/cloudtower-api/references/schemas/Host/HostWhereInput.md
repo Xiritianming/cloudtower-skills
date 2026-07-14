@@ -71,7 +71,7 @@ Required fields are listed first.
 | `chunk_id_not_in` | string[] | No |  |
 | `chunk_id_not_starts_with` | string | No |  |
 | `chunk_id_starts_with` | string | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `commited_memory_bytes` | integer (int64) | No |  |
 | `commited_memory_bytes_gt` | integer (int64) | No |  |
 | `commited_memory_bytes_gte` | integer (int64) | No |  |
@@ -80,9 +80,9 @@ Required fields are listed first.
 | `commited_memory_bytes_lte` | integer (int64) | No |  |
 | `commited_memory_bytes_not` | integer (int64) | No |  |
 | `commited_memory_bytes_not_in` | integer[] | No |  |
-| `connect_status` | any | No |  |
+| `connect_status` | [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
 | `connect_status_in` | Array of [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
-| `connect_status_not` | any | No |  |
+| `connect_status_not` | [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
 | `connect_status_not_in` | Array of [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
 | `cpu_brand` | string | No |  |
 | `cpu_brand_contains` | string | No |  |
@@ -98,9 +98,9 @@ Required fields are listed first.
 | `cpu_brand_not_in` | string[] | No |  |
 | `cpu_brand_not_starts_with` | string | No |  |
 | `cpu_brand_starts_with` | string | No |  |
-| `cpu_fan_speed_unit` | any | No |  |
+| `cpu_fan_speed_unit` | [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_fan_speed_unit_in` | Array of [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
-| `cpu_fan_speed_unit_not` | any | No |  |
+| `cpu_fan_speed_unit_not` | [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_fan_speed_unit_not_in` | Array of [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_hz_per_core` | integer (int64) | No |  |
 | `cpu_hz_per_core_gt` | integer (int64) | No |  |
@@ -168,12 +168,12 @@ Required fields are listed first.
 | `dirty_cache_usage_lte` | number (double) | No |  |
 | `dirty_cache_usage_not` | number (double) | No |  |
 | `dirty_cache_usage_not_in` | number[] | No |  |
-| `disk_pools_every` | any | No |  |
-| `disk_pools_none` | any | No |  |
-| `disk_pools_some` | any | No |  |
-| `disks_every` | any | No |  |
-| `disks_none` | any | No |  |
-| `disks_some` | any | No |  |
+| `disk_pools_every` | [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
+| `disk_pools_none` | [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
+| `disk_pools_some` | [DiskPoolWhereInput](../Disk/DiskPoolWhereInput.md) | No |  |
+| `disks_every` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_none` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
+| `disks_some` | [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gt` | integer (int64) | No |  |
 | `downgraded_prioritized_space_gte` | integer (int64) | No |  |
@@ -182,9 +182,9 @@ Required fields are listed first.
 | `downgraded_prioritized_space_lte` | integer (int64) | No |  |
 | `downgraded_prioritized_space_not` | integer (int64) | No |  |
 | `downgraded_prioritized_space_not_in` | integer[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `failure_cache_space_gt` | integer (int64) | No |  |
@@ -202,9 +202,9 @@ Required fields are listed first.
 | `failure_data_space_lte` | integer (int64) | No |  |
 | `failure_data_space_not` | integer (int64) | No |  |
 | `failure_data_space_not_in` | integer[] | No |  |
-| `gpu_devices_every` | any | No |  |
-| `gpu_devices_none` | any | No |  |
-| `gpu_devices_some` | any | No |  |
+| `gpu_devices_every` | [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
+| `gpu_devices_none` | [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
+| `gpu_devices_some` | [GpuDeviceWhereInput](../Gpu/GpuDeviceWhereInput.md) | No |  |
 | `hdd_data_capacity` | integer (int64) | No |  |
 | `hdd_data_capacity_gt` | integer (int64) | No |  |
 | `hdd_data_capacity_gte` | integer (int64) | No |  |
@@ -249,16 +249,16 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `iommu` | any | No |  |
+| `iommu` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
-| `iommu_not` | any | No |  |
+| `iommu_not` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_not_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
-| `ipmi` | any | No |  |
+| `ipmi` | [IpmiWhereInput](../Ipmi/IpmiWhereInput.md) | No |  |
 | `is_os_in_raid1` | boolean | No |  |
 | `is_os_in_raid1_not` | boolean | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -289,9 +289,9 @@ Required fields are listed first.
 | `management_ip_not_in` | string[] | No |  |
 | `management_ip_not_starts_with` | string | No |  |
 | `management_ip_starts_with` | string | No |  |
-| `merged_status` | any | No |  |
+| `merged_status` | [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `merged_status_in` | Array of [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
-| `merged_status_not` | any | No |  |
+| `merged_status_not` | [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `merged_status_not_in` | Array of [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `model` | string | No |  |
 | `model_contains` | string | No |  |
@@ -331,9 +331,9 @@ Required fields are listed first.
 | `nic_count_lte` | integer (int32) | No |  |
 | `nic_count_not` | integer (int32) | No |  |
 | `nic_count_not_in` | integer[] | No |  |
-| `nics_every` | any | No |  |
-| `nics_none` | any | No |  |
-| `nics_some` | any | No |  |
+| `nics_every` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `nics_none` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
+| `nics_some` | [NicWhereInput](../Nic/NicWhereInput.md) | No |  |
 | `node_topo_local_id` | string | No |  |
 | `node_topo_local_id_contains` | string | No |  |
 | `node_topo_local_id_ends_with` | string | No |  |
@@ -434,9 +434,9 @@ Required fields are listed first.
 | `pmem_dimm_count_lte` | integer (int32) | No |  |
 | `pmem_dimm_count_not` | integer (int32) | No |  |
 | `pmem_dimm_count_not_in` | integer[] | No |  |
-| `pmem_dimms_every` | any | No |  |
-| `pmem_dimms_none` | any | No |  |
-| `pmem_dimms_some` | any | No |  |
+| `pmem_dimms_every` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `pmem_dimms_none` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `pmem_dimms_some` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
 | `pmem_disk_count` | integer (int32) | No |  |
 | `pmem_disk_count_gt` | integer (int32) | No |  |
 | `pmem_disk_count_gte` | integer (int32) | No |  |
@@ -545,13 +545,13 @@ Required fields are listed first.
 | `ssd_disk_count_lte` | integer (int32) | No |  |
 | `ssd_disk_count_not` | integer (int32) | No |  |
 | `ssd_disk_count_not_in` | integer[] | No |  |
-| `state` | any | No |  |
+| `state` | [HostState](../Host/HostState.md) | No |  |
 | `state_in` | Array of [HostState](../Host/HostState.md) | No |  |
-| `state_not` | any | No |  |
+| `state_not` | [HostState](../Host/HostState.md) | No |  |
 | `state_not_in` | Array of [HostState](../Host/HostState.md) | No |  |
-| `status` | any | No |  |
+| `status` | [HostStatus](../Host/HostStatus.md) | No |  |
 | `status_in` | Array of [HostStatus](../Host/HostStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [HostStatus](../Host/HostStatus.md) | No |  |
 | `status_not_in` | Array of [HostStatus](../Host/HostStatus.md) | No |  |
 | `stopped_vm_num` | integer (int32) | No |  |
 | `stopped_vm_num_gt` | integer (int32) | No |  |
@@ -617,9 +617,9 @@ Required fields are listed first.
 | `total_memory_bytes_lte` | integer (int64) | No |  |
 | `total_memory_bytes_not` | integer (int64) | No |  |
 | `total_memory_bytes_not_in` | integer[] | No |  |
-| `usb_devices_every` | any | No |  |
-| `usb_devices_none` | any | No |  |
-| `usb_devices_some` | any | No |  |
+| `usb_devices_every` | [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
+| `usb_devices_none` | [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
+| `usb_devices_some` | [UsbDeviceWhereInput](../Usb/UsbDeviceWhereInput.md) | No |  |
 | `used_cache_space` | integer (int64) | No |  |
 | `used_cache_space_gt` | integer (int64) | No |  |
 | `used_cache_space_gte` | integer (int64) | No |  |
@@ -690,11 +690,11 @@ Required fields are listed first.
 | `vmotion_ip_not_in` | string[] | No |  |
 | `vmotion_ip_not_starts_with` | string | No |  |
 | `vmotion_ip_starts_with` | string | No |  |
-| `vms_every` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_some` | any | No |  |
-| `vsphereEsxiAccount` | any | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vsphereEsxiAccount` | [VsphereEsxiAccountWhereInput](../Vsphere/VsphereEsxiAccountWhereInput.md) | No |  |
 | `with_faster_ssd_as_cache` | boolean | No |  |
 | `with_faster_ssd_as_cache_not` | boolean | No |  |
-| `zone` | any | No |  |
+| `zone` | [ZoneWhereInput](../Zone/ZoneWhereInput.md) | No |  |
 

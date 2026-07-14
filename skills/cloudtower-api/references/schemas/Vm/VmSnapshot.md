@@ -23,17 +23,17 @@ Required fields are listed first.
 | `size` | integer (int64) | Yes |  |
 | `vcpu` | integer (int32) | Yes |  |
 | `win_opt` | boolean | Yes |  |
-| `entityAsyncStatus` | any | No |  |
-| `ha_priority` | any | No |  |
-| `io_policy` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `ha_priority` | [VmHaPriority](../Vm/VmHaPriority.md) | No |  |
+| `io_policy` | [VmDiskIoPolicy](../Vm/VmDiskIoPolicy.md) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
 | `local_created_at` | string | No |  |
 | `max_bandwidth` | integer (int64) | No |  |
-| `max_bandwidth_policy` | any | No |  |
+| `max_bandwidth_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
 | `max_iops` | integer (int32) | No |  |
-| `max_iops_policy` | any | No |  |
-| `snapshot_group` | any | No |  |
-| `vm` | any | No |  |
+| `max_iops_policy` | [VmDiskIoRestrictType](../Vm/VmDiskIoRestrictType.md) | No |  |
+| `snapshot_group` | [NestedSnapshotGroup](../Nested/NestedSnapshotGroup.md) | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
 | `vm_disks` | Array of [NestedFrozenDisks](../Nested/NestedFrozenDisks.md) | No |  |
 | `vm_nics` | Array of [NestedFrozenNic](../Nested/NestedFrozenNic.md) | No |  |
 

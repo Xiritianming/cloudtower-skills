@@ -14,6 +14,6 @@ Required fields are listed first.
 | `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | Yes |  |
 | `description` | string | No |  |
 | `edge_gateways` | Array of [NestedVirtualPrivateCloudEdgeGateway](../Nested/NestedVirtualPrivateCloudEdgeGateway.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `primary_edge_gateway_id` | string | No |  |
 

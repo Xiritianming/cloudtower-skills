@@ -14,12 +14,12 @@ Required fields are listed first.
 | `resourceVersion` | integer (int32) | Yes |  |
 | `targetPackage` | string | Yes |  |
 | `vmSpec` | object | Yes |  |
-| `entityAsyncStatus` | any | No |  |
-| `package` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `package` | [NestedCloudTowerApplicationPackage](../Nested/NestedCloudTowerApplicationPackage.md) | No |  |
 | `placementSituation` | string | No |  |
 | `placementVerb` | string | No |  |
-| `state` | any | No |  |
-| `user` | any | No |  |
+| `state` | [CloudTowerApplicationState](../Cloud/CloudTowerApplicationState.md) | No |  |
+| `user` | [NestedUser](../Nested/NestedUser.md) | No |  |
 
 ## Nested Fields
 

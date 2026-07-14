@@ -13,19 +13,19 @@ Required fields are listed first.
 | `OR` | Array of [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | No |  |
 | `apply_to_all_clusters` | boolean | No |  |
 | `apply_to_all_clusters_not` | boolean | No |  |
-| `clusters_every` | any | No |  |
-| `clusters_none` | any | No |  |
-| `clusters_some` | any | No |  |
-| `entity_type` | any | No |  |
+| `clusters_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `clusters_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `entity_type` | [EntityType](../Entity/EntityType.md) | No |  |
 | `entity_type_in` | Array of [EntityType](../Entity/EntityType.md) | No |  |
-| `entity_type_not` | any | No |  |
+| `entity_type_not` | [EntityType](../Entity/EntityType.md) | No |  |
 | `entity_type_not_in` | Array of [EntityType](../Entity/EntityType.md) | No |  |
-| `exec_failed_cluster_every` | any | No |  |
-| `exec_failed_cluster_none` | any | No |  |
-| `exec_failed_cluster_some` | any | No |  |
-| `filter_status` | any | No |  |
+| `exec_failed_cluster_every` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `exec_failed_cluster_none` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `exec_failed_cluster_some` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `filter_status` | [FilterStatus](../Filter/FilterStatus.md) | No |  |
 | `filter_status_in` | Array of [FilterStatus](../Filter/FilterStatus.md) | No |  |
-| `filter_status_not` | any | No |  |
+| `filter_status_not` | [FilterStatus](../Filter/FilterStatus.md) | No |  |
 | `filter_status_not_in` | Array of [FilterStatus](../Filter/FilterStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |

@@ -11,8 +11,8 @@ Required fields are listed first.
 | `AND` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
 | `NOT` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
 | `OR` | Array of [ZoneTopoWhereInput](../Zone/ZoneTopoWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `cluster_topo` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `cluster_topo` | [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -41,7 +41,7 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `rack_topoes_every` | any | No |  |
-| `rack_topoes_none` | any | No |  |
-| `rack_topoes_some` | any | No |  |
+| `rack_topoes_every` | [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
+| `rack_topoes_none` | [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
+| `rack_topoes_some` | [RackTopoWhereInput](../Rack/RackTopoWhereInput.md) | No |  |
 

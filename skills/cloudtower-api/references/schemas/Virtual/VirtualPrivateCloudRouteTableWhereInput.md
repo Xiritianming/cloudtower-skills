@@ -27,9 +27,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -73,11 +73,11 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `routes_every` | any | No |  |
-| `routes_none` | any | No |  |
-| `routes_some` | any | No |  |
-| `subnets_every` | any | No |  |
-| `subnets_none` | any | No |  |
-| `subnets_some` | any | No |  |
-| `vpc` | any | No |  |
+| `routes_every` | [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
+| `routes_none` | [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
+| `routes_some` | [VirtualPrivateCloudRouteWhereInput](../Virtual/VirtualPrivateCloudRouteWhereInput.md) | No |  |
+| `subnets_every` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `subnets_none` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `subnets_some` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
 

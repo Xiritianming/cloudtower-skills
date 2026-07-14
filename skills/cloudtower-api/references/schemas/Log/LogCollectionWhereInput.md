@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
 | `NOT` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
 | `OR` | Array of [LogCollectionWhereInput](../Log/LogCollectionWhereInput.md) | No |  |
-| `cluster` | any | No |  |
-| `hosts_every` | any | No |  |
-| `hosts_none` | any | No |  |
-| `hosts_some` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `hosts_every` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_none` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
+| `hosts_some` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -111,9 +111,9 @@ Required fields are listed first.
 | `started_at_lte` | string | No |  |
 | `started_at_not` | string | No |  |
 | `started_at_not_in` | string[] | No |  |
-| `status` | any | No |  |
+| `status` | [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
 | `status_in` | Array of [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
 | `status_not_in` | Array of [LogCollectionStatus](../Log/LogCollectionStatus.md) | No |  |
-| `witness` | any | No |  |
+| `witness` | [WitnessWhereInput](../Witness/WitnessWhereInput.md) | No |  |
 

@@ -49,8 +49,8 @@ Required fields are listed first.
 | `allocated_prioritized_space` | integer (int64) | No |  |
 | `allocated_prioritized_space_usage` | number (double) | No |  |
 | `commited_memory_bytes` | integer (int64) | No |  |
-| `connect_status` | any | No |  |
-| `cpu_fan_speed_unit` | any | No |  |
+| `connect_status` | [HostConnectStatus](../Host/HostConnectStatus.md) | No |  |
+| `cpu_fan_speed_unit` | [CpuFanSpeedUnit](../Cpu/CpuFanSpeedUnit.md) | No |  |
 | `cpu_vendor` | string | No |  |
 | `data_ip` | string | No |  |
 | `dirty_cache_space` | integer (int64) | No |  |
@@ -58,16 +58,16 @@ Required fields are listed first.
 | `disk_pools` | Array of [NestedDiskPool](../Nested/NestedDiskPool.md) | No |  |
 | `disks` | Array of [NestedDisk](../Nested/NestedDisk.md) | No |  |
 | `downgraded_prioritized_space` | integer (int64) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `failure_cache_space` | integer (int64) | No |  |
 | `gpu_devices` | Array of [NestedGpuDevice](../Nested/NestedGpuDevice.md) | No |  |
-| `host_state` | any | No |  |
+| `host_state` | [NestedMaintenanceHostState](../Nested/NestedMaintenanceHostState.md) | No |  |
 | `hypervisor_ip` | string | No |  |
-| `iommu` | any | No |  |
-| `ipmi` | any | No |  |
+| `iommu` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
+| `ipmi` | [NestedIpmi](../Nested/NestedIpmi.md) | No |  |
 | `is_os_in_raid1` | boolean | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
-| `merged_status` | any | No |  |
+| `merged_status` | [HostMergedStatus](../Host/HostMergedStatus.md) | No |  |
 | `nics` | Array of [NestedNic](../Nested/NestedNic.md) | No |  |
 | `node_topo_local_id` | string | No |  |
 | `os_version` | string | No |  |
@@ -97,7 +97,7 @@ Required fields are listed first.
 | `vm_num` | integer (int32) | No |  |
 | `vmotion_ip` | string | No |  |
 | `vms` | Array of [NestedVm](../Nested/NestedVm.md) | No |  |
-| `vsphereEsxiAccount` | any | No |  |
+| `vsphereEsxiAccount` | [NestedVsphereEsxiAccount](../Nested/NestedVsphereEsxiAccount.md) | No |  |
 | `with_faster_ssd_as_cache` | boolean | No |  |
-| `zone` | any | No |  |
+| `zone` | [NestedZone](../Nested/NestedZone.md) | No |  |
 

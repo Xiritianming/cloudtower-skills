@@ -9,10 +9,10 @@ Required fields are listed first.
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `isHealth` | boolean | Yes |  |
-| `host` | any | No |  |
+| `host` | [NestedHost](../Nested/NestedHost.md) | No |  |
 | `hostID` | string | No |  |
 | `ipAddr` | string | No |  |
 | `message` | string | No |  |
-| `phase` | any | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
 | `reason` | string | No |  |
 

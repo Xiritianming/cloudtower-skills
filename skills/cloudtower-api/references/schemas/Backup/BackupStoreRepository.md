@@ -17,9 +17,9 @@ Required fields are listed first.
 | `used_data_space` | integer (int64) | Yes |  |
 | `backup_plans` | Array of [NestedBackupPlan](../Nested/NestedBackupPlan.md) | No |  |
 | `backup_restore_points` | Array of [NestedBackupRestorePoint](../Nested/NestedBackupRestorePoint.md) | No |  |
-| `backup_service` | any | No |  |
+| `backup_service` | [NestedBackupService](../Nested/NestedBackupService.md) | No |  |
 | `description` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `error_code` | string | No |  |
 | `iscsi_chap_name` | string | No |  |
 | `iscsi_chap_secret` | string | No |  |

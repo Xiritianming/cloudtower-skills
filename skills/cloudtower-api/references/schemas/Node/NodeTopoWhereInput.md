@@ -11,10 +11,10 @@ Required fields are listed first.
 | `AND` | Array of [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
 | `NOT` | Array of [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
 | `OR` | Array of [NodeTopoWhereInput](../Node/NodeTopoWhereInput.md) | No |  |
-| `brick_topo` | any | No |  |
-| `cluster` | any | No |  |
-| `cluster_topo` | any | No |  |
-| `host` | any | No |  |
+| `brick_topo` | [BrickTopoWhereInput](../Brick/BrickTopoWhereInput.md) | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
+| `cluster_topo` | [ClusterTopoWhereInput](../Cluster/ClusterTopoWhereInput.md) | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |

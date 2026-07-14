@@ -93,6 +93,10 @@ function renderInlineSchema(s) {
 > **`metrics` values are free strings the schema cannot validate** — see the [Metric Names Guide](../metrics-guide.md) for known names and a discovery recipe. A `200` response with empty `samples` almost always means a wrong metric name.
 
 <% } -%>
+<% if (it.whereNote) { -%>
+> `where` filters use flat suffix syntax (`id_in`, `name_contains`, …) — see the [Query Guide](../querying.md) for filter, counting, and pagination syntax.
+
+<% } -%>
 <% if (it.exampleJson) { -%>
 ## Example
 

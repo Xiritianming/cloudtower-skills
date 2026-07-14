@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
 | `NOT` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
 | `OR` | Array of [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
-| `floating_ip` | any | No |  |
+| `floating_ip` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -54,7 +54,7 @@ Required fields are listed first.
 | `mac_address_not_in` | string[] | No |  |
 | `mac_address_not_starts_with` | string | No |  |
 | `mac_address_starts_with` | string | No |  |
-| `vpc` | any | No |  |
-| `vpc_nic` | any | No |  |
-| `vpc_subnet` | any | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
+| `vpc_nic` | [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
+| `vpc_subnet` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
 

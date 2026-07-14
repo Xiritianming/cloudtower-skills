@@ -14,16 +14,16 @@ Required fields are listed first.
 | `local_id` | string | Yes |  |
 | `parent_backup` | string | Yes |  |
 | `type` | [BackupExecutionType](../Backup/BackupExecutionType.md) | Yes |  |
-| `backup_plan_execution` | any | No |  |
-| `backup_restore_point` | any | No |  |
+| `backup_plan_execution` | [NestedBackupPlanExecution](../Nested/NestedBackupPlanExecution.md) | No |  |
+| `backup_restore_point` | [NestedBackupRestorePoint](../Nested/NestedBackupRestorePoint.md) | No |  |
 | `cluster_local_id` | string | No |  |
 | `duration` | integer (int32) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `read_bytes` | integer (int64) | No |  |
 | `retry_times` | integer (int32) | No |  |
-| `status` | any | No |  |
+| `status` | [BackupExecutionStatus](../Backup/BackupExecutionStatus.md) | No |  |
 | `total_bytes` | integer (int64) | No |  |
-| `vm` | any | No |  |
+| `vm` | [NestedVm](../Nested/NestedVm.md) | No |  |
 | `vm_local_id` | string | No |  |
 | `vm_name` | string | No |  |
 

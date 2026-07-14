@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
 | `NOT` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
 | `OR` | Array of [NvmfNamespaceSnapshotWhereInput](../Nvmf/NvmfNamespaceSnapshotWhereInput.md) | No |  |
-| `consistency_group_snapshot` | any | No |  |
+| `consistency_group_snapshot` | [ConsistencyGroupSnapshotWhereInput](../Consistency/ConsistencyGroupSnapshotWhereInput.md) | No |  |
 | `ec_k` | integer (int32) | No |  |
 | `ec_k_gt` | integer (int32) | No |  |
 | `ec_k_gte` | integer (int32) | No |  |
@@ -28,9 +28,9 @@ Required fields are listed first.
 | `ec_m_lte` | integer (int32) | No |  |
 | `ec_m_not` | integer (int32) | No |  |
 | `ec_m_not_in` | integer[] | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
@@ -46,9 +46,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -85,13 +85,13 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `nvmf_namespace` | any | No |  |
-| `nvmf_subsystem` | any | No |  |
-| `resiliency_type` | any | No |  |
+| `nvmf_namespace` | [NvmfNamespaceWhereInput](../Nvmf/NvmfNamespaceWhereInput.md) | No |  |
+| `nvmf_subsystem` | [NvmfSubsystemWhereInput](../Nvmf/NvmfSubsystemWhereInput.md) | No |  |
+| `resiliency_type` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `resiliency_type_not` | any | No |  |
+| `resiliency_type_not` | [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
 | `resiliency_type_not_in` | Array of [ResiliencyType](../Resiliency/ResiliencyType.md) | No |  |
-| `snapshot_group` | any | No |  |
+| `snapshot_group` | [SnapshotGroupWhereInput](../Snapshot/SnapshotGroupWhereInput.md) | No |  |
 | `unique_size` | integer (int64) | No |  |
 | `unique_size_gt` | integer (int64) | No |  |
 | `unique_size_gte` | integer (int64) | No |  |

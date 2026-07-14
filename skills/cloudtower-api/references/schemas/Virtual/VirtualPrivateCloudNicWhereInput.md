@@ -11,11 +11,11 @@ Required fields are listed first.
 | `AND` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
 | `NOT` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
 | `OR` | Array of [VirtualPrivateCloudNicWhereInput](../Virtual/VirtualPrivateCloudNicWhereInput.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `floating_ip` | any | No |  |
+| `floating_ip` | [VirtualPrivateCloudFloatingIpWhereInput](../Virtual/VirtualPrivateCloudFloatingIpWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -44,10 +44,10 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `snapshots_every` | any | No |  |
-| `snapshots_none` | any | No |  |
-| `snapshots_some` | any | No |  |
-| `vm_nic` | any | No |  |
-| `vpc` | any | No |  |
-| `vpc_subnet` | any | No |  |
+| `snapshots_every` | [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
+| `snapshots_none` | [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
+| `snapshots_some` | [VirtualPrivateCloudNicSnapshotWhereInput](../Virtual/VirtualPrivateCloudNicSnapshotWhereInput.md) | No |  |
+| `vm_nic` | [VmNicWhereInput](../Vm/VmNicWhereInput.md) | No |  |
+| `vpc` | [VirtualPrivateCloudWhereInput](../Virtual/VirtualPrivateCloudWhereInput.md) | No |  |
+| `vpc_subnet` | [VirtualPrivateCloudSubnetWhereInput](../Virtual/VirtualPrivateCloudSubnetWhereInput.md) | No |  |
 

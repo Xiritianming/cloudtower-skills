@@ -67,9 +67,9 @@ Required fields are listed first.
 | `device_type_not_in` | string[] | No |  |
 | `device_type_not_starts_with` | string | No |  |
 | `device_type_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `function_num` | string | No |  |
 | `function_num_contains` | string | No |  |
@@ -85,7 +85,7 @@ Required fields are listed first.
 | `function_num_not_in` | string[] | No |  |
 | `function_num_not_starts_with` | string | No |  |
 | `function_num_starts_with` | string | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -100,9 +100,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `iommu_status` | any | No |  |
+| `iommu_status` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_status_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
-| `iommu_status_not` | any | No |  |
+| `iommu_status_not` | [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `iommu_status_not_in` | Array of [IommuStatus](../Iommu/IommuStatus.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
@@ -118,9 +118,9 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `mdev_state` | any | No |  |
+| `mdev_state` | [PciDeviceMdevState](../Pci/PciDeviceMdevState.md) | No |  |
 | `mdev_state_in` | Array of [PciDeviceMdevState](../Pci/PciDeviceMdevState.md) | No |  |
-| `mdev_state_not` | any | No |  |
+| `mdev_state_not` | [PciDeviceMdevState](../Pci/PciDeviceMdevState.md) | No |  |
 | `mdev_state_not_in` | Array of [PciDeviceMdevState](../Pci/PciDeviceMdevState.md) | No |  |
 | `mdev_type_id` | string | No |  |
 | `mdev_type_id_contains` | string | No |  |
@@ -150,9 +150,9 @@ Required fields are listed first.
 | `name_not_in` | string[] | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_starts_with` | string | No |  |
-| `partitioning_state` | any | No |  |
+| `partitioning_state` | [PciDevicePartitionState](../Pci/PciDevicePartitionState.md) | No |  |
 | `partitioning_state_in` | Array of [PciDevicePartitionState](../Pci/PciDevicePartitionState.md) | No |  |
-| `partitioning_state_not` | any | No |  |
+| `partitioning_state_not` | [PciDevicePartitionState](../Pci/PciDevicePartitionState.md) | No |  |
 | `partitioning_state_not_in` | Array of [PciDevicePartitionState](../Pci/PciDevicePartitionState.md) | No |  |
 | `product_id` | string | No |  |
 | `product_id_contains` | string | No |  |
@@ -182,9 +182,9 @@ Required fields are listed first.
 | `slot_not_in` | string[] | No |  |
 | `slot_not_starts_with` | string | No |  |
 | `slot_starts_with` | string | No |  |
-| `sriov_state` | any | No |  |
+| `sriov_state` | [PciDeviceSriovState](../Pci/PciDeviceSriovState.md) | No |  |
 | `sriov_state_in` | Array of [PciDeviceSriovState](../Pci/PciDeviceSriovState.md) | No |  |
-| `sriov_state_not` | any | No |  |
+| `sriov_state_not` | [PciDeviceSriovState](../Pci/PciDeviceSriovState.md) | No |  |
 | `sriov_state_not_in` | Array of [PciDeviceSriovState](../Pci/PciDeviceSriovState.md) | No |  |
 | `subsystem_product_id` | string | No |  |
 | `subsystem_product_id_contains` | string | No |  |
@@ -238,9 +238,9 @@ Required fields are listed first.
 | `total_vf_num_lte` | integer (int32) | No |  |
 | `total_vf_num_not` | integer (int32) | No |  |
 | `total_vf_num_not_in` | integer[] | No |  |
-| `usage_type` | any | No |  |
+| `usage_type` | [PciDeviceType](../Pci/PciDeviceType.md) | No |  |
 | `usage_type_in` | Array of [PciDeviceType](../Pci/PciDeviceType.md) | No |  |
-| `usage_type_not` | any | No |  |
+| `usage_type_not` | [PciDeviceType](../Pci/PciDeviceType.md) | No |  |
 | `usage_type_not_in` | Array of [PciDeviceType](../Pci/PciDeviceType.md) | No |  |
 | `used_mdev_num` | integer (int32) | No |  |
 | `used_mdev_num_gt` | integer (int32) | No |  |
@@ -266,9 +266,9 @@ Required fields are listed first.
 | `used_vf_num_lte` | integer (int32) | No |  |
 | `used_vf_num_not` | integer (int32) | No |  |
 | `used_vf_num_not_in` | integer[] | No |  |
-| `user_usage` | any | No |  |
+| `user_usage` | [PciDeviceUsage](../Pci/PciDeviceUsage.md) | No |  |
 | `user_usage_in` | Array of [PciDeviceUsage](../Pci/PciDeviceUsage.md) | No |  |
-| `user_usage_not` | any | No |  |
+| `user_usage_not` | [PciDeviceUsage](../Pci/PciDeviceUsage.md) | No |  |
 | `user_usage_not_in` | Array of [PciDeviceUsage](../Pci/PciDeviceUsage.md) | No |  |
 | `vendor_id` | string | No |  |
 | `vendor_id_contains` | string | No |  |

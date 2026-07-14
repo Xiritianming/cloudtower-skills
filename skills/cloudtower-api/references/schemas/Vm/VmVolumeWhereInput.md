@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 | `NOT` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
 | `OR` | Array of [VmVolumeWhereInput](../Vm/VmVolumeWhereInput.md) | No |  |
-| `cluster` | any | No |  |
+| `cluster` | [ClusterWhereInput](../Cluster/ClusterWhereInput.md) | No |  |
 | `description` | string | No |  |
 | `description_contains` | string | No |  |
 | `description_ends_with` | string | No |  |
@@ -26,7 +26,7 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `elf_storage_policy` | any | No |  |
+| `elf_storage_policy` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_ec_k` | integer (int32) | No |  |
 | `elf_storage_policy_ec_k_gt` | integer (int32) | No |  |
 | `elf_storage_policy_ec_k_gte` | integer (int32) | No |  |
@@ -44,7 +44,7 @@ Required fields are listed first.
 | `elf_storage_policy_ec_m_not` | integer (int32) | No |  |
 | `elf_storage_policy_ec_m_not_in` | integer[] | No |  |
 | `elf_storage_policy_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
-| `elf_storage_policy_not` | any | No |  |
+| `elf_storage_policy_not` | [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_not_in` | Array of [VmVolumeElfStoragePolicyType](../Vm/VmVolumeElfStoragePolicyType.md) | No |  |
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_replica_num_gt` | integer (int32) | No |  |
@@ -64,9 +64,9 @@ Required fields are listed first.
 | `elf_storage_policy_stripe_num_not_in` | integer[] | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
 | `elf_storage_policy_thin_provision_not` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `guest_size_usage` | number (double) | No |  |
 | `guest_size_usage_gt` | number (double) | No |  |
@@ -98,9 +98,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_created_at` | string | No |  |
 | `local_created_at_gt` | string | No |  |
 | `local_created_at_gte` | string | No |  |
@@ -123,7 +123,7 @@ Required fields are listed first.
 | `local_id_not_in` | string[] | No |  |
 | `local_id_not_starts_with` | string | No |  |
 | `local_id_starts_with` | string | No |  |
-| `lun` | any | No |  |
+| `lun` | [IscsiLunWhereInput](../Iscsi/IscsiLunWhereInput.md) | No |  |
 | `mounting` | boolean | No |  |
 | `mounting_not` | boolean | No |  |
 | `name` | string | No |  |
@@ -166,9 +166,9 @@ Required fields are listed first.
 | `size_lte` | integer (int64) | No |  |
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
-| `type` | any | No |  |
+| `type` | [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `type_in` | Array of [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `type_not_in` | Array of [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `unique_logical_size` | number (double) | No |  |
 | `unique_logical_size_gt` | number (double) | No |  |
@@ -202,7 +202,7 @@ Required fields are listed first.
 | `used_size_usage_lte` | number (double) | No |  |
 | `used_size_usage_not` | number (double) | No |  |
 | `used_size_usage_not_in` | number[] | No |  |
-| `vm_disks_every` | any | No |  |
-| `vm_disks_none` | any | No |  |
-| `vm_disks_some` | any | No |  |
+| `vm_disks_every` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_none` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
+| `vm_disks_some` | [VmDiskWhereInput](../Vm/VmDiskWhereInput.md) | No |  |
 

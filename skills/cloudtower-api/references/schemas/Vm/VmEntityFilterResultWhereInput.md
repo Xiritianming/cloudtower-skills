@@ -11,7 +11,7 @@ Required fields are listed first.
 | `AND` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
 | `NOT` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
 | `OR` | Array of [VmEntityFilterResultWhereInput](../Vm/VmEntityFilterResultWhereInput.md) | No |  |
-| `entityFilter` | any | No |  |
+| `entityFilter` | [EntityFilterWhereInput](../Entity/EntityFilterWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -26,5 +26,5 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `vm` | any | No |  |
+| `vm` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
 

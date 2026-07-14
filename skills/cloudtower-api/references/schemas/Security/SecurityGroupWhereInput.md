@@ -8,12 +8,12 @@ Required fields are listed first.
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
-| `vms_some` | any | No |  |
-| `vms_none` | any | No |  |
-| `vms_every` | any | No |  |
-| `security_policies_some` | any | No |  |
-| `security_policies_none` | any | No |  |
-| `security_policies_every` | any | No |  |
+| `vms_some` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_none` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `vms_every` | [VmWhereInput](../Vm/VmWhereInput.md) | No |  |
+| `security_policies_some` | [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
+| `security_policies_none` | [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
+| `security_policies_every` | [SecurityPolicyWhereInput](../Security/SecurityPolicyWhereInput.md) | No |  |
 | `name_starts_with` | string | No |  |
 | `name_not_starts_with` | string | No |  |
 | `name_not_in` | string[] | No |  |
@@ -29,12 +29,12 @@ Required fields are listed first.
 | `name_contains` | string | No |  |
 | `name` | string | No |  |
 | `member_type_not_in` | Array of [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
-| `member_type_not` | any | No |  |
+| `member_type_not` | [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
 | `member_type_in` | Array of [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
-| `member_type` | any | No |  |
-| `isolation_policies_some` | any | No |  |
-| `isolation_policies_none` | any | No |  |
-| `isolation_policies_every` | any | No |  |
+| `member_type` | [SecurityGroupMemberType](../Security/SecurityGroupMemberType.md) | No |  |
+| `isolation_policies_some` | [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
+| `isolation_policies_none` | [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
+| `isolation_policies_every` | [IsolationPolicyWhereInput](../Isolation/IsolationPolicyWhereInput.md) | No |  |
 | `ips_starts_with` | string | No |  |
 | `ips_not_starts_with` | string | No |  |
 | `ips_not_in` | string[] | No |  |
@@ -77,7 +77,7 @@ Required fields are listed first.
 | `exclude_ips_ends_with` | string | No |  |
 | `exclude_ips_contains` | string | No |  |
 | `exclude_ips` | string | No |  |
-| `everoute_cluster` | any | No |  |
+| `everoute_cluster` | [EverouteClusterWhereInput](../Everoute/EverouteClusterWhereInput.md) | No |  |
 | `description_starts_with` | string | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_not_in` | string[] | No |  |

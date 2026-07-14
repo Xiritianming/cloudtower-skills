@@ -11,9 +11,9 @@ Required fields are listed first.
 | `AND` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `NOT` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
 | `OR` | Array of [DiskWhereInput](../Disk/DiskWhereInput.md) | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `firmware` | string | No |  |
 | `firmware_contains` | string | No |  |
@@ -29,17 +29,17 @@ Required fields are listed first.
 | `firmware_not_in` | string[] | No |  |
 | `firmware_not_starts_with` | string | No |  |
 | `firmware_starts_with` | string | No |  |
-| `function` | any | No |  |
+| `function` | [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `function_in` | Array of [DiskFunction](../Disk/DiskFunction.md) | No |  |
-| `function_not` | any | No |  |
+| `function_not` | [DiskFunction](../Disk/DiskFunction.md) | No |  |
 | `function_not_in` | Array of [DiskFunction](../Disk/DiskFunction.md) | No |  |
-| `health_status` | any | No |  |
+| `health_status` | [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
-| `health_status_not` | any | No |  |
+| `health_status_not` | [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `health_status_not_in` | Array of [DiskHealthStatus](../Disk/DiskHealthStatus.md) | No |  |
 | `healthy` | boolean | No |  |
 | `healthy_not` | boolean | No |  |
-| `host` | any | No |  |
+| `host` | [HostWhereInput](../Host/HostWhereInput.md) | No |  |
 | `id` | string | No |  |
 | `id_contains` | string | No |  |
 | `id_ends_with` | string | No |  |
@@ -54,9 +54,9 @@ Required fields are listed first.
 | `id_not_in` | string[] | No |  |
 | `id_not_starts_with` | string | No |  |
 | `id_starts_with` | string | No |  |
-| `labels_every` | any | No |  |
-| `labels_none` | any | No |  |
-| `labels_some` | any | No |  |
+| `labels_every` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_none` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
+| `labels_some` | [LabelWhereInput](../Label/LabelWhereInput.md) | No |  |
 | `local_id` | string | No |  |
 | `local_id_contains` | string | No |  |
 | `local_id_ends_with` | string | No |  |
@@ -147,12 +147,12 @@ Required fields are listed first.
 | `physical_slot_on_brick_lte` | integer (int32) | No |  |
 | `physical_slot_on_brick_not` | integer (int32) | No |  |
 | `physical_slot_on_brick_not_in` | integer[] | No |  |
-| `pmem_dimms_every` | any | No |  |
-| `pmem_dimms_none` | any | No |  |
-| `pmem_dimms_some` | any | No |  |
-| `recommended_usage` | any | No |  |
+| `pmem_dimms_every` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `pmem_dimms_none` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `pmem_dimms_some` | [PmemDimmWhereInput](../Pmem/PmemDimmWhereInput.md) | No |  |
+| `recommended_usage` | [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `recommended_usage_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
-| `recommended_usage_not` | any | No |  |
+| `recommended_usage_not` | [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `recommended_usage_not_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `remaining_life_percent` | integer (int32) | No |  |
 | `remaining_life_percent_gt` | integer (int32) | No |  |
@@ -184,16 +184,16 @@ Required fields are listed first.
 | `size_lte` | integer (int64) | No |  |
 | `size_not` | integer (int64) | No |  |
 | `size_not_in` | integer[] | No |  |
-| `type` | any | No |  |
+| `type` | [DiskType](../Disk/DiskType.md) | No |  |
 | `type_in` | Array of [DiskType](../Disk/DiskType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [DiskType](../Disk/DiskType.md) | No |  |
 | `type_not_in` | Array of [DiskType](../Disk/DiskType.md) | No |  |
-| `usage` | any | No |  |
+| `usage` | [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `usage_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
-| `usage_not` | any | No |  |
+| `usage_not` | [DiskUsage](../Disk/DiskUsage.md) | No |  |
 | `usage_not_in` | Array of [DiskUsage](../Disk/DiskUsage.md) | No |  |
-| `usage_status` | any | No |  |
+| `usage_status` | [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
 | `usage_status_in` | Array of [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
-| `usage_status_not` | any | No |  |
+| `usage_status_not` | [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
 | `usage_status_not_in` | Array of [DiskUsageStatus](../Disk/DiskUsageStatus.md) | No |  |
 

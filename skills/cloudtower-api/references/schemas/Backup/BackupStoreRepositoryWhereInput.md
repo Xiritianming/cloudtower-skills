@@ -11,13 +11,13 @@ Required fields are listed first.
 | `AND` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
 | `NOT` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
 | `OR` | Array of [BackupStoreRepositoryWhereInput](../Backup/BackupStoreRepositoryWhereInput.md) | No |  |
-| `backup_plans_every` | any | No |  |
-| `backup_plans_none` | any | No |  |
-| `backup_plans_some` | any | No |  |
-| `backup_restore_points_every` | any | No |  |
-| `backup_restore_points_none` | any | No |  |
-| `backup_restore_points_some` | any | No |  |
-| `backup_service` | any | No |  |
+| `backup_plans_every` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_plans_none` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_plans_some` | [BackupPlanWhereInput](../Backup/BackupPlanWhereInput.md) | No |  |
+| `backup_restore_points_every` | [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
+| `backup_restore_points_none` | [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
+| `backup_restore_points_some` | [BackupRestorePointWhereInput](../Backup/BackupRestorePointWhereInput.md) | No |  |
+| `backup_service` | [BackupServiceWhereInput](../Backup/BackupServiceWhereInput.md) | No |  |
 | `createdAt` | string | No |  |
 | `createdAt_gt` | string | No |  |
 | `createdAt_gte` | string | No |  |
@@ -40,9 +40,9 @@ Required fields are listed first.
 | `description_not_in` | string[] | No |  |
 | `description_not_starts_with` | string | No |  |
 | `description_starts_with` | string | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
-| `entityAsyncStatus_not` | any | No |  |
+| `entityAsyncStatus_not` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `entityAsyncStatus_not_in` | Array of [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `error_code` | string | No |  |
 | `error_code_contains` | string | No |  |
@@ -192,9 +192,9 @@ Required fields are listed first.
 | `nfs_server_not_in` | string[] | No |  |
 | `nfs_server_not_starts_with` | string | No |  |
 | `nfs_server_starts_with` | string | No |  |
-| `status` | any | No |  |
+| `status` | [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
 | `status_in` | Array of [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
-| `status_not` | any | No |  |
+| `status_not` | [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
 | `status_not_in` | Array of [BackupStoreStatus](../Backup/BackupStoreStatus.md) | No |  |
 | `total_capacity` | integer (int64) | No |  |
 | `total_capacity_gt` | integer (int64) | No |  |
@@ -204,9 +204,9 @@ Required fields are listed first.
 | `total_capacity_lte` | integer (int64) | No |  |
 | `total_capacity_not` | integer (int64) | No |  |
 | `total_capacity_not_in` | integer[] | No |  |
-| `type` | any | No |  |
+| `type` | [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
 | `type_in` | Array of [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
-| `type_not` | any | No |  |
+| `type_not` | [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
 | `type_not_in` | Array of [BackupStoreType](../Backup/BackupStoreType.md) | No |  |
 | `update_timestamp` | string | No |  |
 | `update_timestamp_contains` | string | No |  |

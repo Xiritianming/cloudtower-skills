@@ -19,7 +19,7 @@ Required fields are listed first.
 | `replica_num` | integer (int32) | Yes |  |
 | `thin_provision` | boolean | Yes |  |
 | `type` | [ElfDataStoreType](../Elf/ElfDataStoreType.md) | Yes |  |
-| `iscsi_target` | any | No |  |
-| `nfs_export` | any | No |  |
-| `nvmf_subsystem` | any | No |  |
+| `iscsi_target` | [NestedIscsiTarget](../Nested/NestedIscsiTarget.md) | No |  |
+| `nfs_export` | [NestedNfsExport](../Nested/NestedNfsExport.md) | No |  |
+| `nvmf_subsystem` | [NestedNvmfSubsystem](../Nested/NestedNvmfSubsystem.md) | No |  |
 

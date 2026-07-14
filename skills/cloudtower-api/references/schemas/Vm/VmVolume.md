@@ -24,13 +24,13 @@ Required fields are listed first.
 | `elf_storage_policy_replica_num` | integer (int32) | No |  |
 | `elf_storage_policy_stripe_num` | integer (int32) | No |  |
 | `elf_storage_policy_thin_provision` | boolean | No |  |
-| `entityAsyncStatus` | any | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
 | `guest_size_usage` | number (double) | No |  |
 | `guest_used_size` | integer (int64) | No |  |
 | `labels` | Array of [NestedLabel](../Nested/NestedLabel.md) | No |  |
-| `lun` | any | No |  |
+| `lun` | [NestedIscsiLun](../Nested/NestedIscsiLun.md) | No |  |
 | `resident_in_cache` | boolean | No |  |
-| `type` | any | No |  |
+| `type` | [VmVolumeType](../Vm/VmVolumeType.md) | No |  |
 | `unique_logical_size` | number (double) | No |  |
 | `unique_size` | integer (int64) | No |  |
 | `used_size` | integer (int64) | No |  |

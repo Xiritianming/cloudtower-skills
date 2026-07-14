@@ -16,6 +16,6 @@ Required fields are listed first.
 | `name` | string | Yes |  |
 | `egress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
 | `ingress` | Array of [NestedNetworkPolicyRule](../Nested/NestedNetworkPolicyRule.md) | No |  |
-| `policy_mode` | any | No |  |
-| `statistics` | any | No |  |
+| `policy_mode` | [PolicyMode](../Policy/PolicyMode.md) | No |  |
+| `statistics` | [NestedSecurityPolicyStatistics](../Nested/NestedSecurityPolicyStatistics.md) | No |  |
 

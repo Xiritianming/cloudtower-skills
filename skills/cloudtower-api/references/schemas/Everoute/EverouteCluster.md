@@ -15,12 +15,12 @@ Required fields are listed first.
 | `version` | string | Yes |  |
 | `agent_elf_clusters` | Array of [NestedCluster](../Nested/NestedCluster.md) | No |  |
 | `agent_elf_vdses` | Array of [NestedVds](../Nested/NestedVds.md) | No |  |
-| `controller_template` | any | No |  |
-| `entityAsyncStatus` | any | No |  |
-| `global_whitelist` | any | No |  |
+| `controller_template` | [NestedEverouteControllerTemplate](../Nested/NestedEverouteControllerTemplate.md) | No |  |
+| `entityAsyncStatus` | [EntityAsyncStatus](../Entity/EntityAsyncStatus.md) | No |  |
+| `global_whitelist` | [NestedEverouteClusterWhitelist](../Nested/NestedEverouteClusterWhitelist.md) | No |  |
 | `installed` | boolean | No |  |
-| `load_balancer_service` | any | No |  |
-| `phase` | any | No |  |
-| `status` | any | No |  |
-| `vpc_service` | any | No |  |
+| `load_balancer_service` | [NestedLoadBalancerService](../Nested/NestedLoadBalancerService.md) | No |  |
+| `phase` | [EverouteClusterPhase](../Everoute/EverouteClusterPhase.md) | No |  |
+| `status` | [NestedEverouteClusterStatus](../Nested/NestedEverouteClusterStatus.md) | No |  |
+| `vpc_service` | [NestedVirtualPrivateCloudService](../Nested/NestedVirtualPrivateCloudService.md) | No |  |
 
