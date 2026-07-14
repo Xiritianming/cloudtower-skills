@@ -36,9 +36,10 @@ Minimal request body — every required field, optional fields omitted. Copy it,
 }
 ```
 
-Validate the body, then send (paths relative to the skill root):
+Validate the body, then send:
 
 ```bash
+cd <skill-root>   # the directory containing SKILL.md
 python3 scripts/validate.py GetHostServicekMetrics /tmp/body.json
 bash scripts/call.sh /v2/api/get-host-service-metrics /tmp/body.json
 ```

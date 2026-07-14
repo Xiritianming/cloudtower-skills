@@ -1,6 +1,6 @@
 ---
 name: observability-insight
-description: Base skill for CloudTower observability. Use when 1) Querying metrics for cluster/host/disk/vm etc. through the VictoriaMetrics API. 2) Discovering which observability service (OVM) a cluster is bound to. 3) Performing generic broad-to-narrow metric drill-down. 4) Delegates metric-name discovery to the `metrics-lookup` skill and CloudTower resource inventory to the `cloudtower-api` skill.
+description: Base skill for CloudTower observability. Requires OBS_USER/OBS_PASSWORD (HTTP Basic; CloudTower credentials and tokens do NOT work here) — without them, use the cloudtower-api skill's Metrics operations instead. Use when 1) Querying metrics for cluster/host/disk/vm etc. through the VictoriaMetrics API. 2) Discovering which observability service (OVM) a cluster is bound to. 3) Performing generic broad-to-narrow metric drill-down. 4) Delegates metric-name discovery to the `metrics-lookup` skill and CloudTower resource inventory to the `cloudtower-api` skill.
 ---
 
 # Observability Insight

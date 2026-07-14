@@ -33,7 +33,7 @@ scripts/
 1. Find the resource in the list below and read `references/resources/<resource>.md` to pick the operation
 2. Read `references/operations/<operation>.md` — it has the full request path, parameters, and an `## Example` request body
 3. Write the example body to a file (e.g. `/tmp/body.json`) and edit it. **Copy, don't compose**: every field name must come from the example or from a schema file you have read this session. To add an optional field, read its schema link first; for `where` filters, counting, and pagination see `references/querying.md`
-4. Validate: `python3 scripts/validate.py <OperationId> /tmp/body.json` — it checks required fields, types, enums, and unknown fields. Fix every reported error and re-run until it prints `OK`
+4. Validate (from the skill root — `cd` there first): `python3 scripts/validate.py <OperationId> /tmp/body.json` — it checks required fields, types, enums, and unknown fields. Fix every reported error and re-run until it prints `OK`
 5. Send: `bash scripts/call.sh <path> /tmp/body.json` — the path comes from the operation file title
 
 ## Endpoint and Authentication
