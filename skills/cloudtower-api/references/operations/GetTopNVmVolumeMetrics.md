@@ -17,6 +17,8 @@
 
 **Schema:** [GetTopNMetricInput](../schemas/Get/GetTopNMetricInput.md)
 
+> **`metrics` values are free strings the schema cannot validate** — see the [Metric Names Guide](../metrics-guide.md) for known names and a discovery recipe. A `200` response with empty `samples` almost always means a wrong metric name.
+
 ## Example
 
 Minimal request body — every required field, optional fields omitted. Copy it, then replace every placeholder with a real value: `<...>` strings, the numbers (`1`) and booleans, and each enum value (one allowed value is shown; the linked schemas list the alternatives). To add an optional field, read its schema link above first.

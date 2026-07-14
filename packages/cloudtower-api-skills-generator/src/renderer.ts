@@ -10,7 +10,7 @@ import type {
 } from "openapi-to-skills";
 
 type AuthSchemes = Parameters<Renderer["renderAuthentication"]>[0];
-import { buildRequestExample } from "./example.ts";
+import { buildRequestExample, requestUsesMetricNames } from "./example.ts";
 
 // Mirrors of openapi-to-skills' helpers — the package's exports map does not
 // expose them, and file names/link paths must match its output exactly.
@@ -122,6 +122,7 @@ export class CloudTowerRenderer implements Renderer {
       ...doc,
       ...this.helpers(),
       exampleJson: buildRequestExample(this.spec, doc.operationId),
+      metricsNote: requestUsesMetricNames(this.spec, doc.operationId),
     });
   }
 

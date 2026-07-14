@@ -25,13 +25,14 @@ This API documentation is split into multiple files for on-demand loading.
 **Directory structure:**
 ```
 references/
-├── resources/      # <%= it.resources.length %> resource index files
-├── operations/     # <%= it.totalOps %> operation detail files
-├── schemas/        # <%= it.schemaGroups.length %> schema groups, <%= it.totalSchemas %> schema files
-└── openapi.json    # full spec, used by scripts/validate.py
+├── resources/        # <%= it.resources.length %> resource index files
+├── operations/       # <%= it.totalOps %> operation detail files
+├── schemas/          # <%= it.schemaGroups.length %> schema groups, <%= it.totalSchemas %> schema files
+├── metrics-guide.md  # metric names for the Metrics operations
+└── openapi.json      # full spec, used by scripts/validate.py (large — grep with -o and head, never cat)
 scripts/
-├── call.sh         # sends requests (auth, endpoint, response-to-file)
-└── validate.py     # validates a request body against the API schema
+├── call.sh           # sends requests (auth, endpoint, response-to-file); `call.sh login` caches a token
+└── validate.py       # validates a request body against the API schema
 ```
 
 **Calling flow — follow all five steps for every API call:**
@@ -44,12 +45,12 @@ scripts/
 
 ## Endpoint and Authentication
 
-`scripts/call.sh` reads two environment variables:
+`scripts/call.sh` needs `CLOUDTOWER_ENDPOINT` (base URL, e.g. `https://tower.example.com`; paths in operation files already include the `/v2/api` prefix) plus a token:
 
-- `CLOUDTOWER_ENDPOINT` — base URL, e.g. `https://tower.example.com` (paths in operation files already include the `/v2/api` prefix)
-- `CLOUDTOWER_TOKEN` — API token, sent as the `Authorization` header
+- Token known: `export CLOUDTOWER_TOKEN=<token>`
+- Username/password: export `CLOUDTOWER_ENDPOINT`, `CLOUDTOWER_USERNAME`, `CLOUDTOWER_PASSWORD`, then run `bash scripts/call.sh login` **once** — the token is cached in `/tmp/cloudtower.env` and every later `call.sh` reads it automatically, so it survives shells that reset environment variables between commands
 
-To obtain a token from username/password, see [Authentication](./references/authentication.md).
+See [Authentication](./references/authentication.md) for details.
 
 ## Async Operations and Tasks
 
@@ -70,8 +71,10 @@ Poll until `status` is `SUCCESSED` or `FAILED`, then fetch the latest resource s
 
 `scripts/call.sh` writes every response to a file under `/tmp/` and prints the HTTP status, the file path, and a short preview — responses can be large, so this keeps them out of context. Read small portions of the file with `jq`, `grep`, or `head`, and load only the fields you need.
 
+The same rule applies to derived data: keep intermediate results (ID→name maps, per-batch samples, merged lists) in files, aggregate them with a script, and print only the final, small answer.
+
 ## Resources
 
-<% it.resources.forEach(resource => { -%>
-- **<%= resource.tag %>** → `references/resources/<%= it.toFileName(resource.tag) %>.md` (<%= resource.operations.length %> ops)<%= resource.description ? ` - ${resource.description.substring(0, 50)}` : "" %>
-<% }) -%>
+Each resource's operation index is at `references/resources/<Name>.md`. Operation count in parentheses:
+
+<%= it.resources.map(r => `\`${r.tag}\` (${r.operations.length})`).join(" · ") %>

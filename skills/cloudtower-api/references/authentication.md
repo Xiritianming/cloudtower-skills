@@ -1,8 +1,8 @@
 # Authentication
 
-CloudTower uses a token as the API credential, sent as the `Authorization` header. `scripts/call.sh` adds the header automatically from `$CLOUDTOWER_TOKEN`.
+CloudTower uses a token as the API credential, sent as the `Authorization` header. `scripts/call.sh` adds the header automatically from `$CLOUDTOWER_TOKEN` or from its cached env file.
 
-Ask the user for a token directly, or for the names of environment variables / config files that already hold their username and password. The user MUST NOT paste a password into the conversation — always work through environment variables they name.
+Ask the user for a token directly, or for the names of environment variables / config files that already hold their username and password. The user MUST NOT paste a password into the conversation — always work through environment variables they name. Equally, never print credentials yourself: don't `cat` or `echo` a file or variable containing a password or token.
 
 ## Token workflow
 
@@ -15,17 +15,17 @@ export CLOUDTOWER_TOKEN="<token>"
 
 ## Username and password workflow
 
-Call [Login](operations/Login.md) to obtain a token (`/v2/api/login` needs no `Authorization` header, so `call.sh` works before `CLOUDTOWER_TOKEN` is set). With credentials in env vars the user named (here `$TOWER_USER` / `$TOWER_PASS`):
+`scripts/call.sh login` exchanges credentials for a token and caches it in `/tmp/cloudtower.env` — nothing sensitive is printed, and later `call.sh` invocations read the cached token automatically even when each shell starts with a fresh environment:
 
 ```bash
-jq -n --arg u "$TOWER_USER" --arg p "$TOWER_PASS" \
-  '{username: $u, password: $p, source: "LOCAL"}' > /tmp/login.json
-bash scripts/call.sh /v2/api/login /tmp/login.json
-export CLOUDTOWER_TOKEN=$(jq -r '.data.token' /tmp/tower_*.json | tail -1)
+export CLOUDTOWER_ENDPOINT="https://tower.example.com"
+export CLOUDTOWER_USERNAME="$TOWER_USER"    # from the env vars the user named
+export CLOUDTOWER_PASSWORD="$TOWER_PASS"
+bash scripts/call.sh login
 ```
 
-- `source` uses enum [UserSource](schemas/User/UserSource.md): `AUTHN`, `LDAP`, `LOCAL`, `SSO`. Use `LOCAL` unless the user explicitly requests another source.
-- The exact response file path is printed by `call.sh`; prefer it over the glob above when extracting the token.
+- `CLOUDTOWER_USER` is accepted as an alias for `CLOUDTOWER_USERNAME`; if the platform already sets these variables, just run `bash scripts/call.sh login`.
+- Login `source` defaults to `LOCAL`; set `CLOUDTOWER_SOURCE` to another [UserSource](schemas/User/UserSource.md) value (`AUTHN`, `LDAP`, `SSO`) only when the user asks for it.
 
 **References:**
 

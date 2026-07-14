@@ -86,12 +86,7 @@ function buildValue(spec: Spec, node: SchemaOrRef | undefined, hint: string, see
   }
 }
 
-/**
- * Locate the raw spec operation by operationId and build a minimal JSON
- * request-body example. Returns null when the operation has no
- * `application/json` request body (e.g. multipart uploads).
- */
-export function buildRequestExample(spec: Spec, operationId: string): string | null {
+function requestBodySchema(spec: Spec, operationId: string): SchemaOrRef | undefined {
   for (const pathItem of Object.values(spec.paths ?? {})) {
     if (!pathItem) continue;
     for (const method of ["get", "post", "put", "patch", "delete"] as const) {
@@ -102,10 +97,33 @@ export function buildRequestExample(spec: Spec, operationId: string): string | n
         const name = refName(body.$ref);
         body = spec.components?.requestBodies?.[name] as OpenAPIV3.RequestBodyObject | undefined;
       }
-      const schema = body?.content?.["application/json"]?.schema;
-      if (!schema) return null;
-      return JSON.stringify(buildValue(spec, schema, "value", [], 0), null, 2);
+      return body?.content?.["application/json"]?.schema;
     }
   }
-  return null;
+  return undefined;
+}
+
+/**
+ * Build a minimal JSON request-body example for an operation. Returns null
+ * when the operation has no `application/json` request body (e.g. multipart
+ * uploads).
+ */
+export function buildRequestExample(spec: Spec, operationId: string): string | null {
+  const schema = requestBodySchema(spec, operationId);
+  if (!schema) return null;
+  return JSON.stringify(buildValue(spec, schema, "value", [], 0), null, 2);
+}
+
+/**
+ * True when the operation's request body carries a `metrics: string[]` field —
+ * metric names are free strings the schema cannot validate, so these
+ * operations get a pointer to the hand-authored metrics guide.
+ */
+export function requestUsesMetricNames(spec: Spec, operationId: string): boolean {
+  let { schema } = deref(spec, requestBodySchema(spec, operationId));
+  if (schema?.type === "array") {
+    ({ schema } = deref(spec, (schema as OpenAPIV3.ArraySchemaObject).items));
+  }
+  const metrics = deref(spec, schema?.properties?.metrics).schema;
+  return metrics?.type === "array";
 }

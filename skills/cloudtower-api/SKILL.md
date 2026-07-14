@@ -17,13 +17,14 @@ This API documentation is split into multiple files for on-demand loading.
 **Directory structure:**
 ```
 references/
-├── resources/      # 130 resource index files
-├── operations/     # 575 operation detail files
-├── schemas/        # 163 schema groups, 1894 schema files
-└── openapi.json    # full spec, used by scripts/validate.py
+├── resources/        # 130 resource index files
+├── operations/       # 575 operation detail files
+├── schemas/          # 163 schema groups, 1894 schema files
+├── metrics-guide.md  # metric names for the Metrics operations
+└── openapi.json      # full spec, used by scripts/validate.py (large — grep with -o and head, never cat)
 scripts/
-├── call.sh         # sends requests (auth, endpoint, response-to-file)
-└── validate.py     # validates a request body against the API schema
+├── call.sh           # sends requests (auth, endpoint, response-to-file); `call.sh login` caches a token
+└── validate.py       # validates a request body against the API schema
 ```
 
 **Calling flow — follow all five steps for every API call:**
@@ -36,12 +37,12 @@ scripts/
 
 ## Endpoint and Authentication
 
-`scripts/call.sh` reads two environment variables:
+`scripts/call.sh` needs `CLOUDTOWER_ENDPOINT` (base URL, e.g. `https://tower.example.com`; paths in operation files already include the `/v2/api` prefix) plus a token:
 
-- `CLOUDTOWER_ENDPOINT` — base URL, e.g. `https://tower.example.com` (paths in operation files already include the `/v2/api` prefix)
-- `CLOUDTOWER_TOKEN` — API token, sent as the `Authorization` header
+- Token known: `export CLOUDTOWER_TOKEN=<token>`
+- Username/password: export `CLOUDTOWER_ENDPOINT`, `CLOUDTOWER_USERNAME`, `CLOUDTOWER_PASSWORD`, then run `bash scripts/call.sh login` **once** — the token is cached in `/tmp/cloudtower.env` and every later `call.sh` reads it automatically, so it survives shells that reset environment variables between commands
 
-To obtain a token from username/password, see [Authentication](./references/authentication.md).
+See [Authentication](./references/authentication.md) for details.
 
 ## Async Operations and Tasks
 
@@ -62,135 +63,10 @@ Poll until `status` is `SUCCESSED` or `FAILED`, then fetch the latest resource s
 
 `scripts/call.sh` writes every response to a file under `/tmp/` and prints the HTTP status, the file path, and a short preview — responses can be large, so this keeps them out of context. Read small portions of the file with `jq`, `grep`, or `head`, and load only the fields you need.
 
+The same rule applies to derived data: keep intermediate results (ID→name maps, per-batch samples, merged lists) in files, aggregate them with a script, and print only the final, small answer.
+
 ## Resources
 
-- **Vm** → `references/resources/Vm.md` (58 ops)
-- **Metrics** → `references/resources/Metrics.md` (17 ops)
-- **Cluster** → `references/resources/Cluster.md` (15 ops)
-- **BackupPlan** → `references/resources/BackupPlan.md` (13 ops)
-- **Host** → `references/resources/Host.md` (11 ops)
-- **ContentLibraryVmTemplate** → `references/resources/ContentLibraryVmTemplate.md` (10 ops)
-- **VmVolume** → `references/resources/VmVolume.md` (10 ops)
-- **GlobalSettings** → `references/resources/GlobalSettings.md` (9 ops)
-- **ContentLibraryImage** → `references/resources/ContentLibraryImage.md` (8 ops)
-- **IscsiLun** → `references/resources/IscsiLun.md` (8 ops)
-- **SnapshotPlan** → `references/resources/SnapshotPlan.md` (8 ops)
-- **User** → `references/resources/User.md` (8 ops)
-- **CloudTowerApplication** → `references/resources/CloudTowerApplication.md` (7 ops)
-- **Datacenter** → `references/resources/Datacenter.md` (7 ops)
-- **Label** → `references/resources/Label.md` (7 ops)
-- **NvmfNamespace** → `references/resources/NvmfNamespace.md` (7 ops)
-- **Vds** → `references/resources/Vds.md` (7 ops)
-- **Vlan** → `references/resources/Vlan.md` (7 ops)
-- **BrickTopo** → `references/resources/BrickTopo.md` (6 ops)
-- **GpuDevice** → `references/resources/GpuDevice.md` (6 ops)
-- **ReportTemplate** → `references/resources/ReportTemplate.md` (6 ops)
-- **SnapshotGroup** → `references/resources/SnapshotGroup.md` (6 ops)
-- **VmTemplate** → `references/resources/VmTemplate.md` (6 ops)
-- **AlertNotifier** → `references/resources/AlertNotifier.md` (6 ops)
-- **ConsistencyGroupSnapshot** → `references/resources/ConsistencyGroupSnapshot.md` (5 ops)
-- **ConsistencyGroup** → `references/resources/ConsistencyGroup.md` (5 ops)
-- **EntityFilter** → `references/resources/EntityFilter.md` (5 ops)
-- **Graph** → `references/resources/Graph.md` (5 ops)
-- **IscsiTarget** → `references/resources/IscsiTarget.md` (5 ops)
-- **ElfImage** → `references/resources/ElfImage.md` (5 ops)
-- **IsolationPolicy** → `references/resources/IsolationPolicy.md` (5 ops)
-- **LogCollection** → `references/resources/LogCollection.md` (5 ops)
-- **NamespaceGroup** → `references/resources/NamespaceGroup.md` (5 ops)
-- **NetworkPolicyRuleService** → `references/resources/NetworkPolicyRuleService.md` (5 ops)
-- **NfsExport** → `references/resources/NfsExport.md` (5 ops)
-- **NvmfSubsystem** → `references/resources/NvmfSubsystem.md` (5 ops)
-- **Organization** → `references/resources/Organization.md` (5 ops)
-- **RackTopo** → `references/resources/RackTopo.md` (5 ops)
-- **UserRoleNext** → `references/resources/UserRoleNext.md` (5 ops)
-- **SecurityGroup** → `references/resources/SecurityGroup.md` (5 ops)
-- **SecurityPolicy** → `references/resources/SecurityPolicy.md` (5 ops)
-- **SnmpTransport** → `references/resources/SnmpTransport.md` (5 ops)
-- **SnmpTrapReceiver** → `references/resources/SnmpTrapReceiver.md` (5 ops)
-- **UsbDevice** → `references/resources/UsbDevice.md` (5 ops)
-- **View** → `references/resources/View.md` (5 ops)
-- **VirtualPrivateCloudFloatingIp** → `references/resources/VirtualPrivateCloudFloatingIp.md` (5 ops)
-- **VirtualPrivateCloudNatGateway** → `references/resources/VirtualPrivateCloudNatGateway.md` (5 ops)
-- **VirtualPrivateCloudRouteTable** → `references/resources/VirtualPrivateCloudRouteTable.md` (5 ops)
-- **VirtualPrivateCloudRouterGateway** → `references/resources/VirtualPrivateCloudRouterGateway.md` (5 ops)
-- **VirtualPrivateCloudSecurityGroup** → `references/resources/VirtualPrivateCloudSecurityGroup.md` (5 ops)
-- **VirtualPrivateCloudSecurityPolicy** → `references/resources/VirtualPrivateCloudSecurityPolicy.md` (5 ops)
-- **VirtualPrivateCloudSubnet** → `references/resources/VirtualPrivateCloudSubnet.md` (5 ops)
-- **VirtualPrivateCloud** → `references/resources/VirtualPrivateCloud.md` (5 ops)
-- **VmFolder** → `references/resources/VmFolder.md` (5 ops)
-- **VmPlacementGroup** → `references/resources/VmPlacementGroup.md` (5 ops)
-- **GlobalAlertRule** → `references/resources/GlobalAlertRule.md` (4 ops)
-- **Disk** → `references/resources/Disk.md` (4 ops)
-- **IscsiLunSnapshot** → `references/resources/IscsiLunSnapshot.md` (4 ops)
-- **NvmfNamespaceSnapshot** → `references/resources/NvmfNamespaceSnapshot.md` (4 ops)
-- **Task** → `references/resources/Task.md` (4 ops)
-- **VcenterAccount** → `references/resources/VcenterAccount.md` (4 ops)
-- **VmSnapshot** → `references/resources/VmSnapshot.md` (4 ops)
-- **VmVolumeSnapshot** → `references/resources/VmVolumeSnapshot.md` (4 ops)
-- **Alert** → `references/resources/Alert.md` (3 ops)
-- **UserAuditLog** → `references/resources/UserAuditLog.md` (3 ops)
-- **Ovf** → `references/resources/Ovf.md` (3 ops)
-- **License** → `references/resources/License.md` (3 ops)
-- **NfsInode** → `references/resources/NfsInode.md` (3 ops)
-- **Nic** → `references/resources/Nic.md` (3 ops)
-- **NodeTopo** → `references/resources/NodeTopo.md` (3 ops)
-- **ReplicationPlan** → `references/resources/ReplicationPlan.md` (3 ops)
-- **SvtImage** → `references/resources/SvtImage.md` (3 ops)
-- **UploadTask** → `references/resources/UploadTask.md` (3 ops)
-- **VsphereEsxiAccount** → `references/resources/VsphereEsxiAccount.md` (3 ops)
-- **Observability** → `references/resources/Observability.md` (2 ops)
-- **AlertRule** → `references/resources/AlertRule.md` (2 ops)
-- **Application** → `references/resources/Application.md` (2 ops)
-- **BackupPlanExecution** → `references/resources/BackupPlanExecution.md` (2 ops)
-- **BackupRestoreExecution** → `references/resources/BackupRestoreExecution.md` (2 ops)
-- **BackupRestorePoint** → `references/resources/BackupRestorePoint.md` (2 ops)
-- **BackupService** → `references/resources/BackupService.md` (2 ops)
-- **BackupStoreRepository** → `references/resources/BackupStoreRepository.md` (2 ops)
-- **BackupTargetExecution** → `references/resources/BackupTargetExecution.md` (2 ops)
-- **BusinessHostGroup** → `references/resources/BusinessHostGroup.md` (2 ops)
-- **BusinessHost** → `references/resources/BusinessHost.md` (2 ops)
-- **CloudTowerApplicationPackage** → `references/resources/CloudTowerApplicationPackage.md` (2 ops)
-- **ClusterImage** → `references/resources/ClusterImage.md` (2 ops)
-- **ClusterSettings** → `references/resources/ClusterSettings.md` (2 ops)
-- **ClusterTopo** → `references/resources/ClusterTopo.md` (2 ops)
-- **ClusterUpgradeHistory** → `references/resources/ClusterUpgradeHistory.md` (2 ops)
-- **Deploy** → `references/resources/Deploy.md` (2 ops)
-- **DiskPool** → `references/resources/DiskPool.md` (2 ops)
-- **EcpLicense** → `references/resources/EcpLicense.md` (2 ops)
-- **ElfDataStore** → `references/resources/ElfDataStore.md` (2 ops)
-- **ElfStoragePolicy** → `references/resources/ElfStoragePolicy.md` (2 ops)
-- **EverouteCluster** → `references/resources/EverouteCluster.md` (2 ops)
-- **EverouteLicense** → `references/resources/EverouteLicense.md` (2 ops)
-- **EveroutePackage** → `references/resources/EveroutePackage.md` (2 ops)
-- **IscsiConnection** → `references/resources/IscsiConnection.md` (2 ops)
-- **PmemDimm** → `references/resources/PmemDimm.md` (2 ops)
-- **RegistryService** → `references/resources/RegistryService.md` (2 ops)
-- **ReplicaVm** → `references/resources/ReplicaVm.md` (2 ops)
-- **ReplicationService** → `references/resources/ReplicationService.md` (2 ops)
-- **ReportTask** → `references/resources/ReportTask.md` (2 ops)
-- **SmtpServer** → `references/resources/SmtpServer.md` (2 ops)
-- **SnapshotPlanTask** → `references/resources/SnapshotPlanTask.md` (2 ops)
-- **SystemAuditLog** → `references/resources/SystemAuditLog.md` (2 ops)
-- **V2EverouteLicense** → `references/resources/V2EverouteLicense.md` (2 ops)
-- **VirtualPrivateCloudClusterBinding** → `references/resources/VirtualPrivateCloudClusterBinding.md` (2 ops)
-- **VirtualPrivateCloudEdgeGatewayGroup** → `references/resources/VirtualPrivateCloudEdgeGatewayGroup.md` (2 ops)
-- **VirtualPrivateCloudEdgeGateway** → `references/resources/VirtualPrivateCloudEdgeGateway.md` (2 ops)
-- **VirtualPrivateCloudExternalSubnetGroup** → `references/resources/VirtualPrivateCloudExternalSubnetGroup.md` (2 ops)
-- **VirtualPrivateCloudExternalSubnet** → `references/resources/VirtualPrivateCloudExternalSubnet.md` (2 ops)
-- **VmDisk** → `references/resources/VmDisk.md` (2 ops)
-- **VmEntityFilterResult** → `references/resources/VmEntityFilterResult.md` (2 ops)
-- **VmExportFile** → `references/resources/VmExportFile.md` (2 ops)
-- **VmNic** → `references/resources/VmNic.md` (2 ops)
-- **Witness** → `references/resources/Witness.md` (2 ops)
-- **ZoneTopo** → `references/resources/ZoneTopo.md` (2 ops)
-- **Zone** → `references/resources/Zone.md` (2 ops)
-- **Ntp** → `references/resources/Ntp.md` (1 ops)
-- **ResourceChange** → `references/resources/ResourceChange.md` (1 ops)
-- **Internal** → `references/resources/Internal.md` (1 ops)
-- **TableReporter** → `references/resources/TableReporter.md` (1 ops)
-- **ApiInfo** → `references/resources/ApiInfo.md` (1 ops)
-- **DiscoveredHost** → `references/resources/DiscoveredHost.md` (1 ops)
-- **Ipmi** → `references/resources/Ipmi.md` (1 ops)
-- **LogServiceConfig** → `references/resources/LogServiceConfig.md` (1 ops)
-- **PciDevice** → `references/resources/PciDevice.md` (1 ops)
-- **WitnessService** → `references/resources/WitnessService.md` (1 ops)
+Each resource's operation index is at `references/resources/<Name>.md`. Operation count in parentheses:
+
+`Vm` (58) · `Metrics` (17) · `Cluster` (15) · `BackupPlan` (13) · `Host` (11) · `ContentLibraryVmTemplate` (10) · `VmVolume` (10) · `GlobalSettings` (9) · `ContentLibraryImage` (8) · `IscsiLun` (8) · `SnapshotPlan` (8) · `User` (8) · `CloudTowerApplication` (7) · `Datacenter` (7) · `Label` (7) · `NvmfNamespace` (7) · `Vds` (7) · `Vlan` (7) · `BrickTopo` (6) · `GpuDevice` (6) · `ReportTemplate` (6) · `SnapshotGroup` (6) · `VmTemplate` (6) · `AlertNotifier` (6) · `ConsistencyGroupSnapshot` (5) · `ConsistencyGroup` (5) · `EntityFilter` (5) · `Graph` (5) · `IscsiTarget` (5) · `ElfImage` (5) · `IsolationPolicy` (5) · `LogCollection` (5) · `NamespaceGroup` (5) · `NetworkPolicyRuleService` (5) · `NfsExport` (5) · `NvmfSubsystem` (5) · `Organization` (5) · `RackTopo` (5) · `UserRoleNext` (5) · `SecurityGroup` (5) · `SecurityPolicy` (5) · `SnmpTransport` (5) · `SnmpTrapReceiver` (5) · `UsbDevice` (5) · `View` (5) · `VirtualPrivateCloudFloatingIp` (5) · `VirtualPrivateCloudNatGateway` (5) · `VirtualPrivateCloudRouteTable` (5) · `VirtualPrivateCloudRouterGateway` (5) · `VirtualPrivateCloudSecurityGroup` (5) · `VirtualPrivateCloudSecurityPolicy` (5) · `VirtualPrivateCloudSubnet` (5) · `VirtualPrivateCloud` (5) · `VmFolder` (5) · `VmPlacementGroup` (5) · `GlobalAlertRule` (4) · `Disk` (4) · `IscsiLunSnapshot` (4) · `NvmfNamespaceSnapshot` (4) · `Task` (4) · `VcenterAccount` (4) · `VmSnapshot` (4) · `VmVolumeSnapshot` (4) · `Alert` (3) · `UserAuditLog` (3) · `Ovf` (3) · `License` (3) · `NfsInode` (3) · `Nic` (3) · `NodeTopo` (3) · `ReplicationPlan` (3) · `SvtImage` (3) · `UploadTask` (3) · `VsphereEsxiAccount` (3) · `Observability` (2) · `AlertRule` (2) · `Application` (2) · `BackupPlanExecution` (2) · `BackupRestoreExecution` (2) · `BackupRestorePoint` (2) · `BackupService` (2) · `BackupStoreRepository` (2) · `BackupTargetExecution` (2) · `BusinessHostGroup` (2) · `BusinessHost` (2) · `CloudTowerApplicationPackage` (2) · `ClusterImage` (2) · `ClusterSettings` (2) · `ClusterTopo` (2) · `ClusterUpgradeHistory` (2) · `Deploy` (2) · `DiskPool` (2) · `EcpLicense` (2) · `ElfDataStore` (2) · `ElfStoragePolicy` (2) · `EverouteCluster` (2) · `EverouteLicense` (2) · `EveroutePackage` (2) · `IscsiConnection` (2) · `PmemDimm` (2) · `RegistryService` (2) · `ReplicaVm` (2) · `ReplicationService` (2) · `ReportTask` (2) · `SmtpServer` (2) · `SnapshotPlanTask` (2) · `SystemAuditLog` (2) · `V2EverouteLicense` (2) · `VirtualPrivateCloudClusterBinding` (2) · `VirtualPrivateCloudEdgeGatewayGroup` (2) · `VirtualPrivateCloudEdgeGateway` (2) · `VirtualPrivateCloudExternalSubnetGroup` (2) · `VirtualPrivateCloudExternalSubnet` (2) · `VmDisk` (2) · `VmEntityFilterResult` (2) · `VmExportFile` (2) · `VmNic` (2) · `Witness` (2) · `ZoneTopo` (2) · `Zone` (2) · `Ntp` (1) · `ResourceChange` (1) · `Internal` (1) · `TableReporter` (1) · `ApiInfo` (1) · `DiscoveredHost` (1) · `Ipmi` (1) · `LogServiceConfig` (1) · `PciDevice` (1) · `WitnessService` (1)

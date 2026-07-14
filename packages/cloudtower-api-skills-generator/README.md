@@ -25,6 +25,17 @@ as a library with local extensions:
 - `templates/` — all six output templates (operation files carry the full
   `/v2/api` path and an `## Example` section; schema files list required fields
   first)
-- `assets/scripts/` — `call.sh` (request wrapper) and `validate.py`
-  (request-body validator) copied into the skill; `validate.py` reads the spec
-  bundled at `references/openapi.json`
+- `assets/scripts/` — `call.sh` (request wrapper with `login` subcommand and a
+  cached env file) and `validate.py` (request-body validator) copied into the
+  skill; `validate.py` reads the spec bundled at `references/openapi.json`
+- `assets/references/metrics-guide.md` — hand-authored guide for the free-form
+  metric names the schema cannot validate
+
+After regenerating, always run the regression gate:
+
+```bash
+python3 verify.py
+```
+
+It round-trips every generated example through `validate.py` and
+case-sensitively checks every markdown link.
