@@ -26,8 +26,10 @@ as a library with local extensions:
   `/v2/api` path and an `## Example` section; schema files list required fields
   first)
 - `assets/scripts/` — `call.sh` (request wrapper with `login` subcommand and a
-  cached env file) and `validate.py` (request-body validator) copied into the
-  skill; `validate.py` reads the spec bundled at `references/openapi.json`
+  cached env file), `validate.py` (request-body validator), and
+  `catalog-grep.sh` (locates the metrics-lookup skill across install layouts
+  and greps its metric catalog) copied into the skill; `validate.py` reads the
+  spec bundled at `references/openapi.json`
 - `assets/references/metrics-guide.md` — hand-authored guide for the free-form
   metric names the schema cannot validate
 - `assets/references/querying.md` — hand-authored guide for where-filter,

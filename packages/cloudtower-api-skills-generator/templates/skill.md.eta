@@ -33,7 +33,8 @@ references/
 └── openapi.json      # full spec, used by scripts/validate.py (large — grep with -o and head, never cat)
 scripts/
 ├── call.sh           # sends requests (auth, endpoint, response-to-file); `call.sh login` caches a token
-└── validate.py       # validates a request body against the API schema
+├── validate.py       # validates a request body against the API schema
+└── catalog-grep.sh   # finds metric names in the metrics-lookup catalog (locates it across install layouts)
 ```
 
 **Calling flow — follow all five steps for every API call:**

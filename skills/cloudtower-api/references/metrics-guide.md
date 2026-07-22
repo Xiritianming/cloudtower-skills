@@ -10,22 +10,22 @@ Deployment note (CloudTower 4.8, live-verified): the `elf_*` family returns data
 
 ## Finding a metric name: grep the catalog, then probe once
 
-The **local catalog** is the single source of metric names — the metrics-lookup skill's reference tables (~1400 metrics with Chinese descriptions), installed beside this skill. One grep replaces a guess-against-the-live-API loop that costs minutes per wrong name:
+Metric names come from the **metrics-lookup catalog** (~1400 metrics), never from guessing against the live API. `scripts/catalog-grep.sh` locates the catalog across install layouts and greps it — pass symptom words in both languages (names are English, descriptions Chinese):
 
 ```bash
-grep -iE 'error|错误|丢包|drop' "<skill-root>/../metrics-lookup/references/metrics_host.md"
-# metrics_host.md = host level; that skill's references/index.md routes to the file per subsystem
+cd <skill-root>
+bash scripts/catalog-grep.sh error 错误 丢包
 ```
 
-Grep **symptom words in both languages** — names are English, descriptions are Chinese, and the exact term in your head may appear in neither (`crc` matches nothing; the CRC counters live under `*_errors`). A name absent from the catalog is not worth probing. The live API's only discovery job is the probe below: confirming that a cataloged name has data on this deployment.
+A name absent from the catalog is not worth probing; if the script reports the catalog missing, follow its error message rather than improvising names. The live API's only discovery job is the probe below: confirming that a cataloged name has data on this deployment. For what a metric *means*, invoke the metrics-lookup skill itself.
 
-## Mapping results back to VMs
+## Mapping results back to resources
 
-The `_vm` label carries a VM identity, but **which field it matches depends on the metric family** — for `elf_*` metrics it is the VM's `local_id` (verified live; it is NOT `bios_uuid`). Always build a multi-key lookup instead of betting on one field:
+The `_vm` / `_host` labels carry a resource identity, but **which field it matches depends on the metric family** — for `elf_*` and `host_*` metrics it is the resource's `local_id` (verified live for both VMs and hosts; it is NOT `bios_uuid`). Always build a multi-key lookup instead of betting on one field:
 
 ```python
 lookup = {}
-for v in vms:                       # from a get-vms response
+for v in resources:                 # from a get-vms / get-hosts response
     for k in ("local_id", "bios_uuid", "id"):
         if v.get(k):
             lookup[v[k]] = v
@@ -101,8 +101,9 @@ Inspect one element with `jq '.[0]'` before writing an aggregation script:
 
 - `get-*-metrics`: `[{task_id, data: {sample_streams: [{labels, points}], unit, step, dropped}}]` — `points` is a list of `{"t": <epoch_ms>, "v": <value>}` objects
 - `get-top-n-metrics-in-clusters`: `data.samples` is a list of `{labels, point}` with a single aggregated `{"t", "v"}` point per entry
-- streams present but points null/empty → the name resolved but this family has no data here (see `iostat_*` note above)
-- `sample_streams: null` and `samples: []` → the endpoint did not recognize the name at all
+- **a stream's presence proves nothing about the name** — endpoints echo one stream per device even for nonexistent metrics (verified on `get-host-network-metrics`). Only `points` with values validate a name; on empty points recheck the name against the catalog, then the range unit, then the family (`iostat_*` note above)
+- `sample_streams: null` and `samples: []` → the endpoint did not recognize the request at all
+- **range units**: `24h` and `7d` return data; `72h` and `168h` silently return empty (verified) — use day units for multi-day windows, and on empty results suspect the range unit before the metric name
 
 ## Routing between skills (metrics tasks)
 

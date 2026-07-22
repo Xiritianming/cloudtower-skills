@@ -48,6 +48,25 @@ for fname, err in fail[:10]:
     print(f"  FAIL {fname}: {err}")
 
 
+# Contract: catalog-grep.sh must exist, be executable, and — in this repo's
+# sibling layout — locate the metrics-lookup catalog and surface the
+# host_network error metrics with the guide's own example keywords.
+grep_script = os.path.join(SKILL, "scripts", "catalog-grep.sh")
+contract_fail = 0
+if not os.access(grep_script, os.X_OK):
+    print(f"  CONTRACT scripts/catalog-grep.sh missing or not executable")
+    contract_fail = 1
+else:
+    r = subprocess.run(
+        ["bash", grep_script, "error", "错误", "丢包"],
+        capture_output=True, text=True,
+    )
+    if r.returncode != 0 or "host_network_receive_errors" not in r.stdout:
+        print(f"  CONTRACT catalog-grep.sh failed to find host_network_receive_errors: {(r.stderr or r.stdout)[:200]}")
+        contract_fail = 1
+print(f"catalog-grep contract: {'FAIL' if contract_fail else 'ok'}")
+
+
 def real_case_exists(path):
     directory, name = os.path.split(path)
     if not os.path.isdir(directory):
@@ -70,4 +89,4 @@ for root, _dirs, files in os.walk(os.path.join(SKILL, "references")):
                 if broken <= 10:
                     print(f"  BROKEN {os.path.relpath(src, SKILL)} -> {m.group(1)}")
 print(f"links: {checked} checked, {broken} broken")
-sys.exit(1 if (fail or broken) else 0)
+sys.exit(1 if (fail or broken or contract_fail) else 0)
