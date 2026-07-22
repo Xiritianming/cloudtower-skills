@@ -21,15 +21,7 @@ A name absent from the catalog is not worth probing; if the script reports the c
 
 ## Mapping results back to resources
 
-The `_vm` / `_host` labels carry a resource identity, but **which field it matches depends on the metric family** — for `elf_*` and `host_*` metrics it is the resource's `local_id` (verified live for both VMs and hosts; it is NOT `bios_uuid`). Always build a multi-key lookup instead of betting on one field:
-
-```python
-lookup = {}
-for v in resources:                 # from a get-vms / get-hosts response
-    for k in ("local_id", "bios_uuid", "id"):
-        if v.get(k):
-            lookup[v[k]] = v
-```
+The `_vm` / `_host` labels carry a resource identity, but **which field it matches depends on the metric family** — for `elf_*` and `host_*` metrics it is the resource's `local_id` (verified live for both VMs and hosts; it is NOT `bios_uuid`). `scripts/metrics-flatten.py` implements the join as a multi-key lookup (`local_id`/`bios_uuid`/`id`) — pass your `get-vms` / `get-hosts` response files as extra arguments instead of writing a parser.
 
 ## Dead end — do not retry
 
@@ -53,25 +45,10 @@ EOF
 python3 scripts/validate.py GetTopNVmVolumeMetrics /tmp/topn.json
 bash scripts/call.sh /v2/api/get-top-n-metrics-in-clusters /tmp/topn.json
 
-# 3. Map identities and rank; print only the final table
-python3 - <<'PY'
-import json
-vms = json.load(open("<vms-response-file>"))
-lookup = {}
-for v in vms:
-    for k in ("local_id", "bios_uuid", "id"):
-        if v.get(k):
-            lookup[v[k]] = v
-rows = []
-for item in json.load(open("<topn-response-file>")):
-    d = item.get("data") or {}
-    for s in d.get("samples") or []:
-        vm = lookup.get(s["labels"].get("_vm"), {})
-        cluster = (vm.get("cluster") or {}).get("name", "?")
-        rows.append((s["point"]["v"], vm.get("name", s["labels"].get("_vm")), cluster, d.get("dropped")))
-for v, name, cluster, dropped in sorted(rows, reverse=True)[:3]:
-    print(f"{name}\t{cluster}\t{v/1e6:.2f} ms\tdropped={dropped}")
-PY
+# 3. Flatten and rank (flattener resolves _vm/_host to names via the inventory file)
+python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> \
+  | sort -t$'\t' -k6 -rn | head -4    # rank by max; for counters rank by growth:
+                                       #   awk -F'\t' '{print $9-$8, $0}' | sort -rn
 ```
 
 **Report the measurement basis with the answer**: metric name, time window, ranking criterion (here: the top-n endpoint's aggregated value — NOT the peak of the raw time series; peak ranking favors spiky VMs and produces a different list), and coverage limits. Without a declared basis, results from different runs cannot be compared.
@@ -97,7 +74,7 @@ CLOUDTOWER_TIMEOUT=120 bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.js
 
 ## Reading the response
 
-Inspect one element with `jq '.[0]'` before writing an aggregation script:
+`python3 scripts/metrics-flatten.py <response-file> [inventory-files...]` prints one summary row per stream (points count, min/max/avg/first/last, unit, dropped) — use it instead of writing a parser; rows with `points 0` mean no data. Envelope details, when you need them:
 
 - `get-*-metrics`: `[{task_id, data: {sample_streams: [{labels, points}], unit, step, dropped}}]` — `points` is a list of `{"t": <epoch_ms>, "v": <value>}` objects
 - `get-top-n-metrics-in-clusters`: `data.samples` is a list of `{labels, point}` with a single aggregated `{"t", "v"}` point per entry

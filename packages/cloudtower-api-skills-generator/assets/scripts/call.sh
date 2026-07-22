@@ -34,6 +34,11 @@ CLOUDTOWER_TOKEN=${_token:-${CLOUDTOWER_TOKEN:-}}
 
 : "${CLOUDTOWER_ENDPOINT:?set CLOUDTOWER_ENDPOINT, e.g. https://tower.example.com}"
 
+# Tolerate endpoints pasted with the API prefix or a trailing slash —
+# operation paths already carry /v2/api.
+CLOUDTOWER_ENDPOINT=${CLOUDTOWER_ENDPOINT%/}
+CLOUDTOWER_ENDPOINT=${CLOUDTOWER_ENDPOINT%/v2/api}
+
 # -k: CloudTower appliances commonly use self-signed certificates; pass a CA
 # via CLOUDTOWER_CURL_OPTS to verify instead.
 curl_base=(-sS -k --max-time "${CLOUDTOWER_TIMEOUT:-120}" -H 'content-type: application/json')

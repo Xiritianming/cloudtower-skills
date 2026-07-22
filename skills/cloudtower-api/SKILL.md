@@ -26,7 +26,8 @@ references/
 scripts/
 ├── call.sh           # sends requests (auth, endpoint, response-to-file); `call.sh login` caches a token
 ├── validate.py       # validates a request body against the API schema
-└── catalog-grep.sh   # finds metric names in the metrics-lookup catalog (locates it across install layouts)
+├── catalog-grep.sh   # finds metric names in the metrics-lookup catalog (locates it across install layouts)
+└── metrics-flatten.py # flattens a metrics response into a TSV summary (joins _vm/_host to names)
 ```
 
 **Calling flow — follow all five steps for every API call:**

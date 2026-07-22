@@ -66,6 +66,30 @@ else:
         contract_fail = 1
 print(f"catalog-grep contract: {'FAIL' if contract_fail else 'ok'}")
 
+# Contract: metrics-flatten.py must summarize both envelope shapes and join
+# identities via the multi-key lookup.
+flatten = os.path.join(SKILL, "scripts", "metrics-flatten.py")
+fixture = "/tmp/verify_flatten_resp.json"
+inventory = "/tmp/verify_flatten_inv.json"
+open(fixture, "w").write(json.dumps([
+    {"task_id": None, "data": {"dropped": False, "unit": "COUNT", "sample_streams": [
+        {"labels": {"_host": "uuid-1", "_device": "eth0", "metric_name": "m1"},
+         "points": [{"t": 1, "v": 5}, {"t": 2, "v": 7}]}]}},
+    {"task_id": None, "data": {"dropped": True, "unit": "TIME", "samples": [
+        {"labels": {"_vm": "uuid-2", "metric_name": "m2"}, "point": {"t": 3, "v": 9}}]}},
+]))
+open(inventory, "w").write(json.dumps([
+    {"name": "host-A", "local_id": "uuid-1", "id": "cm1"},
+    {"name": "vm-B", "local_id": "uuid-2", "id": "cm2"},
+]))
+r = subprocess.run([sys.executable, flatten, fixture, inventory], capture_output=True, text=True)
+flat_fail = 0
+if r.returncode != 0 or "host-A\teth0\tm1\t2\t5\t7\t6\t5\t7" not in r.stdout or "vm-B\t\tm2\t1\t9" not in r.stdout:
+    print(f"  CONTRACT metrics-flatten.py wrong output: {(r.stderr or r.stdout)[:300]}")
+    flat_fail = 1
+contract_fail = contract_fail or flat_fail
+print(f"metrics-flatten contract: {'FAIL' if flat_fail else 'ok'}")
+
 
 def real_case_exists(path):
     directory, name = os.path.split(path)
