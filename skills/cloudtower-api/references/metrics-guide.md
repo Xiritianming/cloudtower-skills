@@ -53,6 +53,40 @@ python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> \
 
 **Report the measurement basis with the answer**: metric name, time window, ranking criterion (here: the top-n endpoint's aggregated value — NOT the peak of the raw time series; peak ranking favors spiky VMs and produces a different list), and coverage limits. Without a declared basis, results from different runs cannot be compared.
 
+## Recipe: fleet inspection (scan every resource for anomalies)
+
+The other canonical shape: not "rank by one metric" but "summarize many metrics across a whole fleet and surface the outliers" (e.g. inspect all host NICs over 7 days). **The whole report assembles from the flattener's TSV with `awk`/`jq` — do not hand-write a JSON parser** (that path re-derives the envelope and loses time on the `metric_name`-is-in-labels trap the flattener already handles). Adapt the metric list and the anomaly test; keep the skeleton:
+
+```bash
+cd <skill-root>
+
+# 1. Inventory (identity -> name, and any grouping field like cluster)
+echo '{}' > /tmp/hosts.json
+bash scripts/call.sh /v2/api/get-hosts /tmp/hosts.json          # -> /tmp/tower_<ts>.json
+
+# 2. One query per batch if the fleet is large (dropped:true → shrink range or split hosts)
+cat > /tmp/net.json <<'EOF'
+{"hosts": {}, "range": "7d", "metrics": ["host_network_receive_errors", "host_network_transmit_errors", "host_network_receive_dropped_packets", "host_network_receive_speed_bitps"]}
+EOF
+python3 scripts/validate.py GetHostNetworkMetrics /tmp/net.json
+bash scripts/call.sh /v2/api/get-host-network-metrics /tmp/net.json  # -> a response file per batch
+
+# 3. Flatten every batch into one TSV (drop the repeated header), resolving names via inventory
+for f in <net-response-files>; do
+  python3 scripts/metrics-flatten.py "$f" <hosts-response-file>
+done | grep -v '^#' > /tmp/flat.tsv
+
+# 4. Report = filter/group the TSV. Anomaly scan for counters = growth over the window (last-first),
+#    since these are cumulative (max>0 only means "ever errored"):
+awk -F'\t' '$3 ~ /errors|dropped/ && ($9-$8) > 0 {print $9-$8"\t"$0}' /tmp/flat.tsv | sort -rn
+
+# 5. Group by cluster without touching the metrics JSON — join the small inventory file:
+jq -r '.[] | [.name, .cluster.name] | @tsv' <hosts-response-file> > /tmp/host_cluster.tsv
+awk -F'\t' 'NR==FNR{cl[$1]=$2; next} {print cl[$1]"\t"$0}' /tmp/host_cluster.tsv /tmp/flat.tsv
+```
+
+Report the basis (metrics, window, that errors are cumulative counters so growth is the signal) and the coverage (hosts/NICs with no data). Derived figures like bandwidth-utilization % are the caller's own analysis — the flattener gives throughput; a link-capacity reference is not part of it.
+
 ## Handling `dropped: true`
 
 - On `get-top-n-metrics-in-clusters` responses `dropped: true` is common and the returned samples are still ordered highest-first. Verify the top entries are stable by re-querying with a larger `n` (e.g. 10) and comparing — do not spiral into batch-splitting.
