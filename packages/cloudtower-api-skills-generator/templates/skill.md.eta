@@ -38,8 +38,9 @@ scripts/
 └── metrics-flatten.py # flattens a metrics response into a TSV summary (joins _vm/_host to names)
 ```
 
-**Calling flow — follow all five steps for every API call:**
+**Calling flow — follow all six steps for every API call:**
 
+0. Authenticate once per session: `export CLOUDTOWER_ENDPOINT=<base-url>` then `bash scripts/call.sh login`. **The login command IS the credential check** — it knows every credential variable and the cached token, so run it instead of inspecting `env` yourself, and ask the user only if it errors naming a missing variable
 1. Find the resource in the list below and read `references/resources/<resource>.md` to pick the operation
 2. Read `references/operations/<operation>.md` — it has the full request path, parameters, and an `## Example` request body
 3. Write the example body to a file (e.g. `/tmp/body.json`) and edit it. **Copy, don't compose**: every field name must come from the example or from a schema file you have read this session. To add an optional field, read its schema link first; for `where` filters, counting, and pagination see `references/querying.md`
@@ -48,12 +49,7 @@ scripts/
 
 ## Endpoint and Authentication
 
-`scripts/call.sh` needs `CLOUDTOWER_ENDPOINT` (base URL, e.g. `https://tower.example.com`; paths in operation files already include the `/v2/api` prefix) plus a token:
-
-- Token known: `export CLOUDTOWER_TOKEN=<token>`
-- Username/password: export `CLOUDTOWER_ENDPOINT`, `CLOUDTOWER_USERNAME`, `CLOUDTOWER_PASSWORD`, then run `bash scripts/call.sh login` **once** — the token is cached in `/tmp/cloudtower.env` and every later `call.sh` reads it automatically, so it survives shells that reset environment variables between commands
-
-See [Authentication](./references/authentication.md) for details.
+`scripts/call.sh` needs `CLOUDTOWER_ENDPOINT` (base URL, e.g. `https://tower.example.com`; paths in operation files already include the `/v2/api` prefix) plus a token. **Credentials are usually already present** — platforms inject `CLOUDTOWER_USERNAME`/`CLOUDTOWER_USER` and `CLOUDTOWER_PASSWORD`, and a token cached in `/tmp/cloudtower.env` is loaded automatically — so set the endpoint, run `bash scripts/call.sh login` once, and ask the user only if it reports a missing variable. Details: [Authentication](./references/authentication.md).
 
 ## Async Operations and Tasks
 
