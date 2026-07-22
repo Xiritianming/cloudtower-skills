@@ -16,9 +16,7 @@
 #   CLOUDTOWER_ENV_FILE   cached state file (default /tmp/cloudtower.env),
 #                         written by `call.sh login` and sourced on every call
 #                         so the token survives shells that reset environment
-#   CLOUDTOWER_TIMEOUT    request timeout in seconds (default 120); use a
-#                         short value (e.g. 20) for metric-name probes so a
-#                         wrong guess fails in seconds, not minutes
+#   CLOUDTOWER_TIMEOUT    request timeout in seconds (default 120)
 #   CLOUDTOWER_CURL_OPTS  extra curl options, e.g. "--cacert /path/ca.pem"
 set -euo pipefail
 

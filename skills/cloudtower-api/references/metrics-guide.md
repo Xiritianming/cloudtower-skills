@@ -84,7 +84,7 @@ PY
 
 ## Probing a cataloged metric name
 
-Probe one resource with a short range and a short timeout before building a large query — a probe should fail in seconds, not minutes:
+Probe one resource with a short range and a bounded timeout before building a large query — `CLOUDTOWER_TIMEOUT` caps a hung request instead of letting it stall for minutes:
 
 ```bash
 cd <skill-root>
@@ -92,7 +92,7 @@ cat > /tmp/probe.json <<'EOF'
 {"range": "1h", "metrics": ["<candidate_name>"], "vms": {"id": "<vm_id>"}}
 EOF
 python3 scripts/validate.py GetVmMetrics /tmp/probe.json
-CLOUDTOWER_TIMEOUT=20 bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.json
+CLOUDTOWER_TIMEOUT=120 bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.json
 ```
 
 ## Reading the response
