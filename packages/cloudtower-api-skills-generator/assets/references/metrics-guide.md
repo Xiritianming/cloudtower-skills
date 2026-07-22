@@ -72,9 +72,18 @@ python3 scripts/validate.py GetVmMetrics /tmp/probe.json
 CLOUDTOWER_TIMEOUT=120 bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.json
 ```
 
-## Reading the response
+## Processing any metrics response — use the flattener, don't hand-write a parser
 
-`python3 scripts/metrics-flatten.py <response-file> [inventory-files...]` prints one summary row per stream (points count, min/max/avg/first/last, unit, dropped) — use it instead of writing a parser; rows with `points 0` mean no data. Envelope details, when you need them:
+**`scripts/metrics-flatten.py` IS the parser for every Metrics response** (`get-*-metrics` and `get-top-n-metrics-in-clusters` alike). Run it before writing any Python of your own — it already handles the multi-task envelope (one task per metric), the `metric_name` labels, both point shapes, and the identity join; a hand-rolled parser re-derives all of that and is where time is lost.
+
+```bash
+cd <skill-root>
+python3 scripts/metrics-flatten.py <response-file> [get-hosts-or-get-vms-response...]
+```
+
+Output is one TSV row per stream: `resource  device  metric  points  min  max  avg  first  last  unit  dropped`. Pass the raw `get-hosts`/`get-vms` response file(s) as extra args to resolve `_host`/`_vm` to names. Then slice with `awk`/`sort` (e.g. per host, per metric, growth `last-first` for counters); `points 0` means no data. The flattener output is the input to a report — read it, don't re-parse the JSON.
+
+Envelope details, only if you need them beyond what the flattener gives:
 
 - `get-*-metrics`: `[{task_id, data: {sample_streams: [{labels, points}], unit, step, dropped}}]` — `points` is a list of `{"t": <epoch_ms>, "v": <value>}` objects
 - `get-top-n-metrics-in-clusters`: `data.samples` is a list of `{labels, point}` with a single aggregated `{"t", "v"}` point per entry

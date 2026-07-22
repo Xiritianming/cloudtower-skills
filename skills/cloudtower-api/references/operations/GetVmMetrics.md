@@ -18,6 +18,8 @@
 **Schema:** [GetVmMetricInput](../schemas/Get/GetVmMetricInput.md)
 
 > **`metrics` values are free strings the schema cannot validate** — see the [Metric Names Guide](../metrics-guide.md) for known names and a discovery recipe. A `200` response with empty `samples` almost always means a wrong metric name.
+>
+> **Process the response with `scripts/metrics-flatten.py`, not a hand-written parser** — it handles the multi-task envelope and identity join; see the guide's "Processing any metrics response" section.
 
 ## Example
 
