@@ -4,16 +4,28 @@ Operations under [Metrics](resources/Metrics.md) (`get-vm-metrics`, `get-vm-volu
 
 ## Which names work
 
-The `metrics` field accepts **underlying exporter metric names** (`elf_*`, `zbs_*`, …) — the same names the **metrics-lookup skill** documents (~1400 metrics; use it to find names beyond the table below). Tower proxies the query to the cluster's observability service; the normal CloudTower token is the only credential needed.
+The `metrics` field accepts **underlying exporter metric names** (`elf_*`, `zbs_*`, `host_*`, …). Tower proxies the query to the cluster's observability service; the normal CloudTower token is the only credential needed.
 
 Verified live on CloudTower 4.8:
 
 | Purpose | Metric | Notes |
 |---|---|---|
 | VM storage latency (read+write avg) | `elf_vm_disk_overall_avg_readwrite_latency_ns` | unit ns; `_read_`/`_write_` variants exist |
-| Other VM disk metrics (IOPS, bandwidth, …) | `elf_vm_disk_*` prefix family | look up exact names in metrics-lookup |
+| Host NIC error/dropped packets | `host_network_receive_errors`, `host_network_transmit_errors`, `host_network_receive_fifo_errors`, `host_network_transmit_fifo_errors`, `host_network_receive_dropped_packets`, `host_network_transmit_dropped_packets` | via [GetHostNetworkMetrics](operations/GetHostNetworkMetrics.md); **no `crc`-named metric exists** — CRC/frame/alignment errors are folded into `*_errors` |
+| Host NIC loss rate | `host_network_loss_rate`, `host_network_ping_packet_loss_percent` | |
 
 The `iostat_*` family (`iostat_latency`, `iostat_read_latency`, …) resolves into streams but returns **no data points** on some deployments — do not start there; if a probe returns streams whose points are null/empty, switch to the exporter names above instead of retrying variants.
+
+## Finding any other name: grep the catalog, then probe once
+
+Every queryable name is in the **local catalog** — the metrics-lookup skill's reference tables (~1400 metrics with Chinese descriptions), installed beside this skill. One grep replaces a guess-against-the-live-API loop that costs minutes per wrong name:
+
+```bash
+grep -iE 'error|错误|丢包|drop' "<skill-root>/../metrics-lookup/references/metrics_host.md"
+# metrics_host.md = host level; that skill's references/index.md routes to the file per subsystem
+```
+
+Grep **symptom words in both languages** — names are English, descriptions are Chinese, and the exact term in your head may appear in neither (`crc` matches nothing; the CRC counters live under `*_errors`). A name absent from the catalog is not worth probing. The live API's only discovery job is the probe below: confirming that a cataloged name has data on this deployment.
 
 ## Mapping results back to VMs
 
@@ -78,9 +90,9 @@ PY
 - On `get-vm-metrics`, a 24h range across many VMs always truncates: splitting to 20-VM and even 10-VM batches still returned `dropped: true` (verified). The working lever is a shorter `range`, or switching to the top-n endpoint.
 - **Never fall back to one-VM-per-request loops** — measured ~14s per call; a 129-VM fleet is half an hour of serial requests.
 
-## Probing an unknown metric name
+## Probing a cataloged metric name
 
-Probe one resource with a short range before building a large query:
+Probe one resource with a short range and a short timeout before building a large query — a probe should fail in seconds, not minutes:
 
 ```bash
 cd <skill-root>
@@ -88,7 +100,7 @@ cat > /tmp/probe.json <<'EOF'
 {"range": "1h", "metrics": ["<candidate_name>"], "vms": {"id": "<vm_id>"}}
 EOF
 python3 scripts/validate.py GetVmMetrics /tmp/probe.json
-bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.json
+CLOUDTOWER_TIMEOUT=20 bash scripts/call.sh /v2/api/get-vm-metrics /tmp/probe.json
 ```
 
 ## Reading the response

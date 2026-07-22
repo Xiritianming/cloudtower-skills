@@ -16,6 +16,9 @@
 #   CLOUDTOWER_ENV_FILE   cached state file (default /tmp/cloudtower.env),
 #                         written by `call.sh login` and sourced on every call
 #                         so the token survives shells that reset environment
+#   CLOUDTOWER_TIMEOUT    request timeout in seconds (default 120); use a
+#                         short value (e.g. 20) for metric-name probes so a
+#                         wrong guess fails in seconds, not minutes
 #   CLOUDTOWER_CURL_OPTS  extra curl options, e.g. "--cacert /path/ca.pem"
 set -euo pipefail
 
@@ -35,7 +38,7 @@ CLOUDTOWER_TOKEN=${_token:-${CLOUDTOWER_TOKEN:-}}
 
 # -k: CloudTower appliances commonly use self-signed certificates; pass a CA
 # via CLOUDTOWER_CURL_OPTS to verify instead.
-curl_base=(-sS -k -H 'content-type: application/json')
+curl_base=(-sS -k --max-time "${CLOUDTOWER_TIMEOUT:-120}" -H 'content-type: application/json')
 [ -n "${CLOUDTOWER_CURL_OPTS:-}" ] && curl_base+=(${CLOUDTOWER_CURL_OPTS})
 
 if [ "${1:-}" = "login" ]; then
