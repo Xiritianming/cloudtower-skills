@@ -40,12 +40,17 @@ def main():
             vals = [p["v"]] if p.get("v") is not None else []
             yield s.get("labels") or {}, vals, dropped, unit
 
+    idents, unresolved = set(), set()
     print("#resource\tdevice\tmetric\tpoints\tmin\tmax\tavg\tfirst\tlast\tunit\tdropped")
     for item in json.load(open(sys.argv[1])):
         data = (item or {}).get("data") or {}
         for labels, vals, dropped, unit in rows(data, data.get("dropped"), data.get("unit")):
             ident = labels.get("_vm") or labels.get("_host") or ""
             resource = lookup.get(ident, ident)
+            if ident:
+                idents.add(ident)
+                if ident not in lookup:
+                    unresolved.add(ident)
             device = labels.get("_device") or ""
             metric = labels.get("metric_name") or ""
             if vals:
@@ -54,6 +59,15 @@ def main():
             else:
                 cells = ["-"] * 5
             print("\t".join([resource, device, metric, str(len(vals)), *cells, str(unit), str(dropped)]))
+
+    if len(sys.argv) > 2 and unresolved:
+        print(
+            f"joined {len(idents) - len(unresolved)}/{len(idents)} identities; "
+            f"{len(unresolved)} unresolved (e.g. {sorted(unresolved)[0]}) — pass the RAW "
+            f"get-hosts/get-vms response file (projected/filtered files lose local_id); "
+            f"unresolved rows keep the raw UUID",
+            file=sys.stderr,
+        )
     return 0
 
 

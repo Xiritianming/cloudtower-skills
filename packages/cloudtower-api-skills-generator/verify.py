@@ -74,7 +74,9 @@ inventory = "/tmp/verify_flatten_inv.json"
 open(fixture, "w").write(json.dumps([
     {"task_id": None, "data": {"dropped": False, "unit": "COUNT", "sample_streams": [
         {"labels": {"_host": "uuid-1", "_device": "eth0", "metric_name": "m1"},
-         "points": [{"t": 1, "v": 5}, {"t": 2, "v": 7}]}]}},
+         "points": [{"t": 1, "v": 5}, {"t": 2, "v": 7}]},
+        {"labels": {"_host": "uuid-stranger", "_device": "eth1", "metric_name": "m1"},
+         "points": [{"t": 1, "v": 1}]}]}},
     {"task_id": None, "data": {"dropped": True, "unit": "TIME", "samples": [
         {"labels": {"_vm": "uuid-2", "metric_name": "m2"}, "point": {"t": 3, "v": 9}}]}},
 ]))
@@ -84,7 +86,13 @@ open(inventory, "w").write(json.dumps([
 ]))
 r = subprocess.run([sys.executable, flatten, fixture, inventory], capture_output=True, text=True)
 flat_fail = 0
-if r.returncode != 0 or "host-A\teth0\tm1\t2\t5\t7\t6\t5\t7" not in r.stdout or "vm-B\t\tm2\t1\t9" not in r.stdout:
+if (
+    r.returncode != 0
+    or "host-A\teth0\tm1\t2\t5\t7\t6\t5\t7" not in r.stdout
+    or "vm-B\t\tm2\t1\t9" not in r.stdout
+    or "uuid-stranger\teth1" not in r.stdout
+    or "1 unresolved (e.g. uuid-stranger)" not in r.stderr
+):
     print(f"  CONTRACT metrics-flatten.py wrong output: {(r.stderr or r.stdout)[:300]}")
     flat_fail = 1
 contract_fail = contract_fail or flat_fail
