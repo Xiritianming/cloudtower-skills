@@ -4,21 +4,13 @@ Operations under [Metrics](resources/Metrics.md) (`get-vm-metrics`, `get-vm-volu
 
 ## Which names work
 
-The `metrics` field accepts **underlying exporter metric names** (`elf_*`, `zbs_*`, `host_*`, …). Tower proxies the query to the cluster's observability service; the normal CloudTower token is the only credential needed.
+The `metrics` field accepts **underlying exporter metric names** (`elf_*`, `zbs_*`, `host_*`, …). Tower proxies the query to the cluster's observability service; the normal CloudTower token is the only credential needed. Pick the operation whose subject matches the metric's — VM disk metrics via [GetVmMetrics](operations/GetVmMetrics.md), host NIC metrics via [GetHostNetworkMetrics](operations/GetHostNetworkMetrics.md), the full list under [Metrics](resources/Metrics.md).
 
-Verified live on CloudTower 4.8:
+Deployment note (CloudTower 4.8, live-verified): the `elf_*` family returns data, while the `iostat_*` family (`iostat_latency`, …) resolves into streams but returns **no data points** — if a probe returns streams whose points are null/empty, switch families instead of retrying name variants.
 
-| Purpose | Metric | Notes |
-|---|---|---|
-| VM storage latency (read+write avg) | `elf_vm_disk_overall_avg_readwrite_latency_ns` | unit ns; `_read_`/`_write_` variants exist |
-| Host NIC error/dropped packets | `host_network_receive_errors`, `host_network_transmit_errors`, `host_network_receive_fifo_errors`, `host_network_transmit_fifo_errors`, `host_network_receive_dropped_packets`, `host_network_transmit_dropped_packets` | via [GetHostNetworkMetrics](operations/GetHostNetworkMetrics.md); **no `crc`-named metric exists** — CRC/frame/alignment errors are folded into `*_errors` |
-| Host NIC loss rate | `host_network_loss_rate`, `host_network_ping_packet_loss_percent` | |
+## Finding a metric name: grep the catalog, then probe once
 
-The `iostat_*` family (`iostat_latency`, `iostat_read_latency`, …) resolves into streams but returns **no data points** on some deployments — do not start there; if a probe returns streams whose points are null/empty, switch to the exporter names above instead of retrying variants.
-
-## Finding any other name: grep the catalog, then probe once
-
-Every queryable name is in the **local catalog** — the metrics-lookup skill's reference tables (~1400 metrics with Chinese descriptions), installed beside this skill. One grep replaces a guess-against-the-live-API loop that costs minutes per wrong name:
+The **local catalog** is the single source of metric names — the metrics-lookup skill's reference tables (~1400 metrics with Chinese descriptions), installed beside this skill. One grep replaces a guess-against-the-live-API loop that costs minutes per wrong name:
 
 ```bash
 grep -iE 'error|错误|丢包|drop' "<skill-root>/../metrics-lookup/references/metrics_host.md"
