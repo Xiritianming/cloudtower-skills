@@ -85,7 +85,8 @@ done > /tmp/flat.tsv
 #    window (last-first), since these are cumulative (max>0 only means "ever
 #    errored"). Filter to the error/drop metrics with awk, then let
 #    metrics-rank.sh compute growth and sort correctly (it excludes no-data and
-#    single-point rows; resets show as negative growth at the bottom):
+#    single-point rows; counter resets rank last as negative growth, so raise the
+#    N below their count if you need to see them):
 awk -F'\t' '$3 ~ /errors|dropped/' /tmp/flat.tsv | bash scripts/metrics-rank.sh - growth 20
 
 # 5. Group by cluster without touching the metrics JSON — join the small inventory file:
@@ -123,7 +124,7 @@ cd <skill-root>
 python3 scripts/metrics-flatten.py <response-file> [get-hosts-or-get-vms-response...]
 ```
 
-Output is a plain-header TSV, one row per stream: `resource  device  metric  points  min  max  avg  first  last  unit  dropped`. Pass the raw `get-hosts`/`get-vms` response file(s) as extra args to resolve `_host`/`_vm` to names. Then slice with `awk`/`sort` (e.g. per host, per metric, growth `last-first` for counters). The flattener output is the input to a report — read it, don't re-parse the JSON.
+Output is a plain-header TSV, one row per stream: `resource  device  metric  points  min  max  avg  first  last  unit  dropped`. Pass the raw `get-hosts`/`get-vms` response file(s) as extra args to resolve `_host`/`_vm` to names. Then filter/group with `awk`/`jq` (per host, per metric, per cluster) and rank with `scripts/metrics-rank.sh` (by `max` or by counter `growth`) — don't hand-write the sort, it has to be general-numeric and locale-pinned. The flattener output is the input to a report — read it, don't re-parse the JSON.
 
 **No-data rows**: when a metric has no values for a device, its `points` column is `0` and the five stat columns are **empty**. Handle them before doing math: `pandas.read_csv` reads them as `NaN`, `awk` sums add `0`, and `sort` sinks them — but raw `float("")` **raises**, on purpose: an unguarded consumer fails fast rather than reporting a silently wrong number. So **filter on `points > 0`** before treating the stat columns as numbers (`csv.DictReader` + `float`, `sorted(key=float)`, `max`/`min`, sums — all need the guard). `awk -F'\t'` positional (`$1` resource … `$11` dropped) needs no header.
 

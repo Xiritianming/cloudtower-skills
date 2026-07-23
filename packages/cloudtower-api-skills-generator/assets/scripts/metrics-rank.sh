@@ -11,8 +11,10 @@
 #           no-data rows cannot express growth)
 #   N      (default 20): how many rows to print
 #
-# Input is the flattener's TSV body; a header row, if present, sorts/excludes out
-# harmlessly. Read a file, or `-` for stdin (e.g. after an awk metric filter).
+# Input is the flattener's TSV body (the recipes strip the header with tail -n +2).
+# A stray header row is still handled: it sinks under max (its `max` cell is
+# non-numeric -> 0) and is excluded under growth (`$4+0 > 1`). Read a file, or `-`
+# for stdin (e.g. after an awk metric filter).
 set -euo pipefail
 
 src=${1:-}
@@ -24,12 +26,17 @@ if [ -z "$src" ]; then
 fi
 [ "$src" = "-" ] && src=/dev/stdin
 
+# Top-N is `awk 'NR<=n'`, not `head`: head closes the pipe after N lines, which
+# would SIGPIPE the still-writing sort and, under `pipefail`, fail the script
+# (exit 141) on any fleet large enough to overflow the pipe buffer. `$4+0 > 1`
+# forces a numeric compare so a stray header row ("points") is excluded, not
+# string-compared as > "1".
 case "$mode" in
   max)
-    LC_ALL=C sort -t$'\t' -k6 -rg "$src" | head -n "$n"
+    LC_ALL=C sort -t$'\t' -k6 -rg "$src" | awk -v n="$n" 'NR <= n'
     ;;
   growth)
-    awk -F'\t' '$4 > 1 { print ($9 - $8) "\t" $0 }' "$src" | LC_ALL=C sort -rg | head -n "$n"
+    awk -F'\t' '$4 + 0 > 1 { print ($9 - $8) "\t" $0 }' "$src" | LC_ALL=C sort -rg | awk -v n="$n" 'NR <= n'
     ;;
   *)
     echo "mode must be 'max' or 'growth', got '$mode'" >&2

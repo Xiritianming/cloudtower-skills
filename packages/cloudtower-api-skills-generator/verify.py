@@ -146,19 +146,34 @@ subprocess.run(["bash", "-c",
     f"{sys.executable} {flatten} {rank_fixture} /tmp/verify_rank_inv.json | tail -n +2 > {body}"], check=True)
 
 # max: by the aggregated value; single-point 999M ranks #1, no-data sinks last.
-max_order = subprocess.run(["bash", rank_script, body, "max"], capture_output=True, text=True).stdout.split("\n")
-max_names = [ln.split("\t")[0] for ln in max_order if ln.strip()]
+rmax = subprocess.run(["bash", rank_script, body, "max"], capture_output=True, text=True)
+max_names = [ln.split("\t")[0] for ln in rmax.stdout.split("\n") if ln.strip()]
 # growth: last-first; needs >=2 points, so single-point and no-data are EXCLUDED.
-grow_out = subprocess.run(["bash", rank_script, body, "growth"], capture_output=True, text=True).stdout
-grow_names = [ln.split("\t")[1] for ln in grow_out.splitlines() if ln.strip()]
+rgrow = subprocess.run(["bash", rank_script, body, "growth"], capture_output=True, text=True)
+grow_names = [ln.split("\t")[1] for ln in rgrow.stdout.splitlines() if ln.strip()]
 if (
-    max_names[0] != "sgl-1pt"                                # 999M single point is the largest max
+    rmax.returncode != 0 or rgrow.returncode != 0            # exit code must be clean (SIGPIPE/pipefail)
+    or max_names[0] != "sgl-1pt"                             # 999M single point is the largest max
     or [n for n in max_names if n in ("aaa-hi", "mmm-mid", "zzz-lo")] != ["aaa-hi", "mmm-mid", "zzz-lo"]
     or max_names[-1] != "nnn-nd"                             # no-data sinks last under -rg
-    or grow_names != ["aaa-hi", "mmm-mid", "zzz-lo"]         # growth order; sgl-1pt & nnn-nd excluded ($4>1)
+    or grow_names != ["aaa-hi", "mmm-mid", "zzz-lo"]         # growth order; sgl-1pt & nnn-nd excluded
 ):
-    print(f"  CONTRACT metrics-rank.sh wrong: max={max_names} growth={grow_names}")
+    print(f"  CONTRACT metrics-rank.sh wrong: rc=({rmax.returncode},{rgrow.returncode}) max={max_names} growth={grow_names}")
     flat_fail = 1
+
+# The interface the fleet recipe actually uses: the stdin `-` path, an N limit,
+# and a fleet large enough that `sort | head` would SIGPIPE under pipefail. Assert
+# a clean exit AND that N truly limits output — the file-path test above exercises
+# neither.
+big = "\n".join(f"h-{i}\teth0\thost_network_receive_errors\t3\t0\t{i}\t0\t0\t{i}\tCOUNT\tFalse"
+                for i in range(3000)) + "\n"
+for mode, want in (("max", 5), ("growth", 7)):
+    p = subprocess.run(["bash", "-c", f"bash {rank_script} - {mode} {want}"],
+                       input=big, capture_output=True, text=True)
+    lines = [ln for ln in p.stdout.splitlines() if ln.strip()]
+    if p.returncode != 0 or len(lines) != want:
+        print(f"  CONTRACT metrics-rank.sh {mode} via stdin on 3000 rows: rc={p.returncode} lines={len(lines)} (want {want}, rc 0)")
+        flat_fail = 1
 
 # Contract: the recipes must DELEGATE ranking to metrics-rank.sh — a robust,
 # spelling-independent check (unlike grepping sort flags). Reverting to an inline
