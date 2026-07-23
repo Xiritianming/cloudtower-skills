@@ -45,10 +45,16 @@ EOF
 python3 scripts/validate.py GetTopNVmVolumeMetrics /tmp/topn.json
 bash scripts/call.sh /v2/api/get-top-n-metrics-in-clusters /tmp/topn.json
 
-# 3. Flatten and rank (flattener resolves _vm/_host to names via the inventory file)
-python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> \
-  | sort -t$'\t' -k6 -rn | head -4    # rank by max; for counters rank by growth:
-                                       #   awk -F'\t' '{print $9-$8, $0}' | sort -rn
+# 3. Flatten and rank (flattener resolves _vm/_host to names via the inventory file).
+#    tail -n +2 drops the header row so it can't tie into the top-N when values are equal.
+python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> | tail -n +2 \
+  | LC_ALL=C sort -t$'\t' -k6 -rg | head -4    # rank by max; for counters rank by growth:
+                                                #   awk -F'\t' '$4>0{print $9-$8, $0}' | LC_ALL=C sort -rg
+# -rg (general-numeric), NOT -rn: ns/bit-per-s values >1e6 print in %.6g scientific
+# notation (8e+07) and sort -n misreads that as 8, silently misranking the top.
+# LC_ALL=C: a comma-decimal locale would misparse the mantissa. The `$4>0` in the
+# growth variant skips no-data rows, whose empty cells would otherwise rank as 0
+# above real negative growth (counter resets).
 ```
 
 **Report the measurement basis with the answer**: metric name, time window, ranking criterion (here: the top-n endpoint's aggregated value — NOT the peak of the raw time series; peak ranking favors spiky VMs and produces a different list), and coverage limits. Without a declared basis, results from different runs cannot be compared.
@@ -71,14 +77,15 @@ EOF
 python3 scripts/validate.py GetHostNetworkMetrics /tmp/net.json
 bash scripts/call.sh /v2/api/get-host-network-metrics /tmp/net.json  # -> a response file per batch
 
-# 3. Flatten every batch into one TSV (drop the repeated header), resolving names via inventory
+# 3. Flatten every batch into one TSV, resolving names via inventory. tail -n +2 drops each
+#    batch's header positionally (matching the header by content would erase a resource named "resource").
 for f in <net-response-files>; do
-  python3 scripts/metrics-flatten.py "$f" <hosts-response-file>
-done | grep -v '^#' > /tmp/flat.tsv
+  python3 scripts/metrics-flatten.py "$f" <hosts-response-file> | tail -n +2
+done > /tmp/flat.tsv
 
 # 4. Report = filter/group the TSV. Anomaly scan for counters = growth over the window (last-first),
 #    since these are cumulative (max>0 only means "ever errored"):
-awk -F'\t' '$3 ~ /errors|dropped/ && ($9-$8) > 0 {print $9-$8"\t"$0}' /tmp/flat.tsv | sort -rn
+awk -F'\t' '$4>0 && $3 ~ /errors|dropped/ && ($9-$8) > 0 {print $9-$8"\t"$0}' /tmp/flat.tsv | LC_ALL=C sort -rg
 
 # 5. Group by cluster without touching the metrics JSON — join the small inventory file:
 jq -r '.[] | [.name, .cluster.name] | @tsv' <hosts-response-file> > /tmp/host_cluster.tsv
@@ -115,7 +122,9 @@ cd <skill-root>
 python3 scripts/metrics-flatten.py <response-file> [get-hosts-or-get-vms-response...]
 ```
 
-Output is one TSV row per stream: `resource  device  metric  points  min  max  avg  first  last  unit  dropped`. Pass the raw `get-hosts`/`get-vms` response file(s) as extra args to resolve `_host`/`_vm` to names. Then slice with `awk`/`sort` (e.g. per host, per metric, growth `last-first` for counters); `points 0` means no data. The flattener output is the input to a report — read it, don't re-parse the JSON.
+Output is a plain-header TSV, one row per stream: `resource  device  metric  points  min  max  avg  first  last  unit  dropped`. Pass the raw `get-hosts`/`get-vms` response file(s) as extra args to resolve `_host`/`_vm` to names. Then slice with `awk`/`sort` (e.g. per host, per metric, growth `last-first` for counters). The flattener output is the input to a report — read it, don't re-parse the JSON.
+
+**No-data rows**: when a metric has no values for a device, its `points` column is `0` and the five stat columns are **empty**. Handle them before doing math: `pandas.read_csv` reads them as `NaN`, `awk` sums add `0`, and `sort` sinks them — but raw `float("")` **raises**, on purpose: an unguarded consumer fails fast rather than reporting a silently wrong number. So **filter on `points > 0`** before treating the stat columns as numbers (`csv.DictReader` + `float`, `sorted(key=float)`, `max`/`min`, sums — all need the guard). `awk -F'\t'` positional (`$1` resource … `$11` dropped) needs no header.
 
 Envelope details, only if you need them beyond what the flattener gives:
 

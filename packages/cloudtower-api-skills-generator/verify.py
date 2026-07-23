@@ -76,7 +76,9 @@ open(fixture, "w").write(json.dumps([
         {"labels": {"_host": "uuid-1", "_device": "eth0", "metric_name": "m1"},
          "points": [{"t": 1, "v": 5}, {"t": 2, "v": 7}]},
         {"labels": {"_host": "uuid-stranger", "_device": "eth1", "metric_name": "m1"},
-         "points": [{"t": 1, "v": 1}]}]}},
+         "points": [{"t": 1, "v": 1}]},
+        {"labels": {"_host": "uuid-1", "_device": "eth9", "metric_name": "m1"},
+         "points": [{"t": 1, "v": None}, {"t": 2, "v": float("inf")}]}]}},  # no-data + non-finite -> empty
     {"task_id": None, "data": {"dropped": True, "unit": "TIME", "samples": [
         {"labels": {"_vm": "uuid-2", "metric_name": "m2"}, "point": {"t": 3, "v": 9}}]}},
 ]))
@@ -86,15 +88,83 @@ open(inventory, "w").write(json.dumps([
 ]))
 r = subprocess.run([sys.executable, flatten, fixture, inventory], capture_output=True, text=True)
 flat_fail = 0
+HEADER = "resource\tdevice\tmetric\tpoints\tmin\tmax\tavg\tfirst\tlast\tunit\tdropped"
+import csv as _csv
+# Output parses via csv.DictReader with ALL fieldnames; no-data cells are EMPTY
+# (fail-fast — raw float() raises, only a points-guarded read succeeds); and no
+# stat cell is ever a live nan/inf even when the API sends one.
+dict_ok = False
+try:
+    rows = list(_csv.DictReader(r.stdout.splitlines(), delimiter="\t"))
+    nodata = [x for x in rows if x["points"] == "0"]
+    guarded = [float(x["max"]) for x in rows if int(x["points"]) > 0]
+    raw_raises = False
+    try:
+        [float(x["max"]) for x in rows]          # unguarded MUST raise on empty (fail-fast)
+    except ValueError:
+        raw_raises = True
+    dict_ok = (
+        len(nodata) == 1                         # empty-points + non-finite stream flattened
+        and nodata[0]["max"] == "" and nodata[0]["min"] == ""   # empty sentinel, not nan/-/0
+        and raw_raises                           # unguarded float() fails fast
+        and 7.0 in guarded and 9.0 in guarded    # points-guarded read works
+    )
+except Exception:
+    dict_ok = False
 if (
     r.returncode != 0
+    or r.stdout.splitlines()[0] != HEADER      # full plain header, every column named
+    or not dict_ok
     or "host-A\teth0\tm1\t2\t5\t7\t6\t5\t7" not in r.stdout
     or "vm-B\t\tm2\t1\t9" not in r.stdout
+    or "host-A\teth9\tm1\t0\t\t\t\t\t\tCOUNT" not in r.stdout   # empty stat cells, no nan/inf
     or "uuid-stranger\teth1" not in r.stdout
     or "1 unresolved (e.g. uuid-stranger)" not in r.stderr
 ):
     print(f"  CONTRACT metrics-flatten.py wrong output: {(r.stderr or r.stdout)[:300]}")
     flat_fail = 1
+
+# Contract: the ranking pipeline must order values correctly even at >1e6 (printed
+# %.6g -> scientific notation with a fractional mantissa) with a no-data row present.
+# Names ANTI-correlate with value (highest value = lexically-first "aaa") and the
+# mantissa is fractional, so a lexical sort, a wrong key column, `-rn` (misreads the
+# exponent), or a comma locale all produce a different order and fail the gate.
+rank_fixture = "/tmp/verify_rank_resp.json"
+open(rank_fixture, "w").write(json.dumps([
+    {"task_id": None, "data": {"dropped": False, "unit": "TIME", "sample_streams": [
+        {"labels": {"_vm": "aaa-hi", "metric_name": "lat"}, "points": [{"t": 1, "v": 1_000_000}, {"t": 2, "v": 81_234_567}]},
+        {"labels": {"_vm": "mmm-mid", "metric_name": "lat"}, "points": [{"t": 1, "v": 30_111_222}, {"t": 2, "v": 5_000_000}]},
+        {"labels": {"_vm": "zzz-lo", "metric_name": "lat"}, "points": [{"t": 1, "v": 955_000}, {"t": 2, "v": 940_000}]},
+        {"labels": {"_vm": "nnn-nd", "metric_name": "lat"}, "points": [{"t": 1, "v": None}]}]}},
+]))
+open("/tmp/verify_rank_inv.json", "w").write(json.dumps([
+    {"name": n, "local_id": n} for n in ("aaa-hi", "mmm-mid", "zzz-lo", "nnn-nd")]))
+# top-N recipe verbatim: flatten | tail -n +2 | LC_ALL=C sort -k6 -rg
+pipe = (
+    f"{sys.executable} {flatten} {rank_fixture} /tmp/verify_rank_inv.json "
+    "| tail -n +2 | LC_ALL=C sort -t$'\\t' -k6 -rg | cut -f1"
+)
+order = subprocess.run(["bash", "-c", pipe], capture_output=True, text=True).stdout.split()
+if order[:3] != ["aaa-hi", "mmm-mid", "zzz-lo"] or "nnn-nd" in order[:3]:
+    print(f"  CONTRACT recipe ranking order was {order}, expected [aaa-hi, mmm-mid, zzz-lo, nnn-nd]")
+    flat_fail = 1
+
+# Contract: the guide must actually USE the safe ranking form — grep it so a drift
+# back to `-rn` or a dropped `LC_ALL=C`/`tail -n +2` fails the gate (the pipeline
+# test above runs a hardcoded copy and can't catch guide drift on its own).
+guide = os.path.join(SKILL, "references", "metrics-guide.md")
+gtext = open(guide).read()
+import re as _re
+if (
+    _re.search(r"sort\b[^\n]*-rn", gtext)              # no numeric-sort ranking anywhere
+    or "-k6 -rg" not in gtext                          # top-N max-sort present and correct
+    or gtext.count("LC_ALL=C sort") < 3                # all three sort pipelines locale-pinned
+    or "tail -n +2" not in gtext                       # header stripped before ranking
+    or "$4>0{print $9-$8" not in gtext                 # growth variant guards no-data
+):
+    print("  CONTRACT metrics-guide.md ranking drifted (need -rg, LC_ALL=C, tail -n +2, $4>0 growth guard)")
+    flat_fail = 1
+
 contract_fail = contract_fail or flat_fail
 print(f"metrics-flatten contract: {'FAIL' if flat_fail else 'ok'}")
 
