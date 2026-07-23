@@ -85,8 +85,8 @@ done > /tmp/flat.tsv
 #    window (last-first), since these are cumulative (max>0 only means "ever
 #    errored"). Filter to the error/drop metrics with awk, then let
 #    metrics-rank.sh compute growth and sort correctly (it excludes no-data and
-#    single-point rows; counter resets rank last as negative growth, so raise the
-#    N below their count if you need to see them):
+#    single-point rows; counter resets sort to the bottom as negative growth — to
+#    see them, pass a large N or `tail` the output instead of taking the top):
 awk -F'\t' '$3 ~ /errors|dropped/' /tmp/flat.tsv | bash scripts/metrics-rank.sh - growth 20
 
 # 5. Group by cluster without touching the metrics JSON — join the small inventory file:

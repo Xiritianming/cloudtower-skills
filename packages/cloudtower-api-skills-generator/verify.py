@@ -125,17 +125,24 @@ if (
     flat_fail = 1
 
 # Contract: ranking is owned by scripts/metrics-rank.sh, RUN here (not grepped) so
-# a real break is caught by execution. The fixture anti-correlates name with value
-# (highest value = lexically-first "aaa"), uses a fractional %.6g mantissa, and
-# multi-point streams, so a lexical sort, wrong key column, `-rn`/`-nr` (misreads
-# the exponent), or a comma locale all produce a wrong order.
+# a real break is caught by execution. The fixture DE-correlates the stat columns
+# (max-order != min-order != avg-order) and anti-correlates name with value, uses a
+# fractional %.6g mantissa, and multi-point streams — so a lexical sort, a wrong -k
+# column, `-rn`/`-nr` (misreads the exponent), or a comma locale each produce a
+# wrong order; and it asserts the growth VALUE, so a wrong growth column ($9-$8)
+# is caught even if the order survives.
 rank_script = os.path.join(SKILL, "scripts", "metrics-rank.sh")
 rank_fixture = "/tmp/verify_rank_resp.json"
 open(rank_fixture, "w").write(json.dumps([
+    # points chosen so max, min, avg rank these three DIFFERENTLY:
+    #   aaa: min 5.0e6  max 9.0e7  avg 4.75e7  growth +85.0e6
+    #   mmm: min 6.0e7  max 7.0e7  avg 6.5e7   growth -10.0e6 (reset)
+    #   zzz: min 4.0e7  max 4.1e7  avg 4.05e7  growth +1.0e6
+    # max-order [aaa,mmm,zzz]; min-order [mmm,zzz,aaa]; avg-order [mmm,aaa,zzz].
     {"task_id": None, "data": {"dropped": False, "unit": "TIME", "sample_streams": [
-        {"labels": {"_vm": "aaa-hi", "metric_name": "lat"}, "points": [{"t": 1, "v": 20_000_000}, {"t": 2, "v": 81_234_567}]},
-        {"labels": {"_vm": "mmm-mid", "metric_name": "lat"}, "points": [{"t": 1, "v": 10_000_000}, {"t": 2, "v": 30_111_222}]},
-        {"labels": {"_vm": "zzz-lo", "metric_name": "lat"}, "points": [{"t": 1, "v": 940_000}, {"t": 2, "v": 955_000}]},
+        {"labels": {"_vm": "aaa-hi", "metric_name": "lat"}, "points": [{"t": 1, "v": 5_000_000}, {"t": 2, "v": 90_000_000}]},
+        {"labels": {"_vm": "mmm-mid", "metric_name": "lat"}, "points": [{"t": 1, "v": 70_000_000}, {"t": 2, "v": 60_000_000}]},
+        {"labels": {"_vm": "zzz-lo", "metric_name": "lat"}, "points": [{"t": 1, "v": 40_000_000}, {"t": 2, "v": 41_000_000}]},
         {"labels": {"_vm": "sgl-1pt", "metric_name": "lat"}, "points": [{"t": 1, "v": 999_000_000}]},  # single point: no growth
         {"labels": {"_vm": "nnn-nd", "metric_name": "lat"}, "points": [{"t": 1, "v": None}]}]}},         # no data
 ]))
@@ -146,19 +153,22 @@ subprocess.run(["bash", "-c",
     f"{sys.executable} {flatten} {rank_fixture} /tmp/verify_rank_inv.json | tail -n +2 > {body}"], check=True)
 
 # max: by the aggregated value; single-point 999M ranks #1, no-data sinks last.
+# Full order is asserted; only -k6 (max) yields it (min/avg reorder aaa/mmm/zzz).
 rmax = subprocess.run(["bash", rank_script, body, "max"], capture_output=True, text=True)
 max_names = [ln.split("\t")[0] for ln in rmax.stdout.split("\n") if ln.strip()]
 # growth: last-first; needs >=2 points, so single-point and no-data are EXCLUDED.
+# Assert the top growth VALUE (col 1), not just names, to pin the $9-$8 columns.
 rgrow = subprocess.run(["bash", rank_script, body, "growth"], capture_output=True, text=True)
-grow_names = [ln.split("\t")[1] for ln in rgrow.stdout.splitlines() if ln.strip()]
+grow_rows = [ln.split("\t") for ln in rgrow.stdout.splitlines() if ln.strip()]
+grow_names = [r[1] for r in grow_rows]
+grow_top = grow_rows[0] if grow_rows else ["", ""]
 if (
     rmax.returncode != 0 or rgrow.returncode != 0            # exit code must be clean (SIGPIPE/pipefail)
-    or max_names[0] != "sgl-1pt"                             # 999M single point is the largest max
-    or [n for n in max_names if n in ("aaa-hi", "mmm-mid", "zzz-lo")] != ["aaa-hi", "mmm-mid", "zzz-lo"]
-    or max_names[-1] != "nnn-nd"                             # no-data sinks last under -rg
-    or grow_names != ["aaa-hi", "mmm-mid", "zzz-lo"]         # growth order; sgl-1pt & nnn-nd excluded
+    or max_names != ["sgl-1pt", "aaa-hi", "mmm-mid", "zzz-lo", "nnn-nd"]  # only -k6 -rg gives this
+    or grow_names != ["aaa-hi", "zzz-lo", "mmm-mid"]         # growth order; sgl-1pt & nnn-nd excluded; reset last
+    or grow_top[:2] != ["85000000", "aaa-hi"]               # exact growth value pins the $9-$8 columns
 ):
-    print(f"  CONTRACT metrics-rank.sh wrong: rc=({rmax.returncode},{rgrow.returncode}) max={max_names} growth={grow_names}")
+    print(f"  CONTRACT metrics-rank.sh wrong: rc=({rmax.returncode},{rgrow.returncode}) max={max_names} growth={grow_names} top={grow_top[:2]}")
     flat_fail = 1
 
 # The interface the fleet recipe actually uses: the stdin `-` path, an N limit,

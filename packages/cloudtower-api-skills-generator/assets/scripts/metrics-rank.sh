@@ -24,6 +24,10 @@ if [ -z "$src" ]; then
   echo "usage: metrics-rank.sh <flat.tsv | -> [max|growth] [N]" >&2
   exit 2
 fi
+if ! [[ "$n" =~ ^[0-9]+$ ]]; then   # fail loud on a garbage N rather than emitting all/no rows
+  echo "N must be a non-negative integer, got '$n'" >&2
+  exit 2
+fi
 [ "$src" = "-" ] && src=/dev/stdin
 
 # Top-N is `awk 'NR<=n'`, not `head`: head closes the pipe after N lines, which
