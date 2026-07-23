@@ -20,14 +20,10 @@ unguarded consumer fails fast instead of reporting a silent wrong number
 Resource names are printed raw — a name containing a tab or newline would
 shift columns.
 
-Ranking and filtering are the caller's job — pick your own criterion.
-Rank with `LC_ALL=C sort -g` (general-numeric): counters in ns/bit-per-s
-exceed 1e6 and print in %.6g scientific notation, which sort -n misreads
-(8e+07 -> 8), and a comma-decimal locale would misparse the mantissa. In
-the growth variant keep `$4>0` so no-data rows (empty cells, growth 0)
-don't outrank real negative growth (counter resets):
-  LC_ALL=C sort -t$'\\t' -k6 -rg                       # by max (gauges, peaks)
-  awk -F'\\t' '$4>0{print $9-$8, $0}' | LC_ALL=C sort -rg   # by growth (counters)
+Filtering is the caller's job (awk on any column). For ranking, pipe to
+`scripts/metrics-rank.sh <flat.tsv|-> [max|growth]` — it owns the correct
+sort (general-numeric, locale-pinned; growth needs >=2 points), which a
+hand-written `sort -n` gets wrong on %.6g scientific notation.
 """
 import json
 import math
@@ -105,7 +101,8 @@ def main():
     if dropped_vals:
         print(
             f"dropped {dropped_vals} non-finite/non-numeric point value(s) (NaN/Infinity/"
-            f"overflow); affected rows show as no-data (points 0)",
+            f"overflow) from the stats; a row whose values were all dropped shows as "
+            f"no-data (points 0)",
             file=sys.stderr,
         )
     return 0

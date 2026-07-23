@@ -45,16 +45,14 @@ EOF
 python3 scripts/validate.py GetTopNVmVolumeMetrics /tmp/topn.json
 bash scripts/call.sh /v2/api/get-top-n-metrics-in-clusters /tmp/topn.json
 
-# 3. Flatten and rank (flattener resolves _vm/_host to names via the inventory file).
-#    tail -n +2 drops the header row so it can't tie into the top-N when values are equal.
-python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> | tail -n +2 \
-  | LC_ALL=C sort -t$'\t' -k6 -rg | head -4    # rank by max; for counters rank by growth:
-                                                #   awk -F'\t' '$4>0{print $9-$8, $0}' | LC_ALL=C sort -rg
-# -rg (general-numeric), NOT -rn: ns/bit-per-s values >1e6 print in %.6g scientific
-# notation (8e+07) and sort -n misreads that as 8, silently misranking the top.
-# LC_ALL=C: a comma-decimal locale would misparse the mantissa. The `$4>0` in the
-# growth variant skips no-data rows, whose empty cells would otherwise rank as 0
-# above real negative growth (counter resets).
+# 3. Flatten (resolves _vm/_host to names via the inventory) and rank by the
+#    aggregated value. metrics-rank.sh owns the correct sort (general-numeric +
+#    locale-pinned; a raw `sort -n` misreads the %.6g scientific notation of
+#    values >=1e6, e.g. 8e+07 -> 8). The top-n endpoint returns ONE point per
+#    entry, so rank it by `max`; growth ranking needs a time series (see the
+#    fleet recipe) and is a no-op here.
+python3 scripts/metrics-flatten.py <topn-response-file> <vms-response-file> | tail -n +2 > /tmp/flat.tsv
+bash scripts/metrics-rank.sh /tmp/flat.tsv max 4
 ```
 
 **Report the measurement basis with the answer**: metric name, time window, ranking criterion (here: the top-n endpoint's aggregated value — NOT the peak of the raw time series; peak ranking favors spiky VMs and produces a different list), and coverage limits. Without a declared basis, results from different runs cannot be compared.
@@ -83,9 +81,12 @@ for f in <net-response-files>; do
   python3 scripts/metrics-flatten.py "$f" <hosts-response-file> | tail -n +2
 done > /tmp/flat.tsv
 
-# 4. Report = filter/group the TSV. Anomaly scan for counters = growth over the window (last-first),
-#    since these are cumulative (max>0 only means "ever errored"):
-awk -F'\t' '$4>0 && $3 ~ /errors|dropped/ && ($9-$8) > 0 {print $9-$8"\t"$0}' /tmp/flat.tsv | LC_ALL=C sort -rg
+# 4. Report = filter/group the TSV. Anomaly scan for counters = growth over the
+#    window (last-first), since these are cumulative (max>0 only means "ever
+#    errored"). Filter to the error/drop metrics with awk, then let
+#    metrics-rank.sh compute growth and sort correctly (it excludes no-data and
+#    single-point rows; resets show as negative growth at the bottom):
+awk -F'\t' '$3 ~ /errors|dropped/' /tmp/flat.tsv | bash scripts/metrics-rank.sh - growth 20
 
 # 5. Group by cluster without touching the metrics JSON — join the small inventory file:
 jq -r '.[] | [.name, .cluster.name] | @tsv' <hosts-response-file> > /tmp/host_cluster.tsv

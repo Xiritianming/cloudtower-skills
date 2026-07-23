@@ -28,9 +28,11 @@ as a library with local extensions:
 - `assets/scripts/` — `call.sh` (request wrapper with `login` subcommand and a
   cached env file), `validate.py` (request-body validator), `catalog-grep.sh`
   (locates the metrics-lookup skill across install layouts and greps its
-  metric catalog), and `metrics-flatten.py` (flattens metrics responses into
-  a neutral TSV summary with identity joins) copied into the skill;
-  `validate.py` reads the spec bundled at `references/openapi.json`
+  metric catalog), `metrics-flatten.py` (flattens metrics responses into
+  a neutral TSV summary with identity joins), and `metrics-rank.sh` (ranks a
+  flattened TSV by max or growth with a correct numeric/locale-pinned sort)
+  copied into the skill; `validate.py` reads the spec bundled at
+  `references/openapi.json`
 - `assets/references/metrics-guide.md` — hand-authored guide for the free-form
   metric names the schema cannot validate
 - `assets/references/querying.md` — hand-authored guide for where-filter,

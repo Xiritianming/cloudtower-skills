@@ -124,45 +124,49 @@ if (
     print(f"  CONTRACT metrics-flatten.py wrong output: {(r.stderr or r.stdout)[:300]}")
     flat_fail = 1
 
-# Contract: the ranking pipeline must order values correctly even at >1e6 (printed
-# %.6g -> scientific notation with a fractional mantissa) with a no-data row present.
-# Names ANTI-correlate with value (highest value = lexically-first "aaa") and the
-# mantissa is fractional, so a lexical sort, a wrong key column, `-rn` (misreads the
-# exponent), or a comma locale all produce a different order and fail the gate.
+# Contract: ranking is owned by scripts/metrics-rank.sh, RUN here (not grepped) so
+# a real break is caught by execution. The fixture anti-correlates name with value
+# (highest value = lexically-first "aaa"), uses a fractional %.6g mantissa, and
+# multi-point streams, so a lexical sort, wrong key column, `-rn`/`-nr` (misreads
+# the exponent), or a comma locale all produce a wrong order.
+rank_script = os.path.join(SKILL, "scripts", "metrics-rank.sh")
 rank_fixture = "/tmp/verify_rank_resp.json"
 open(rank_fixture, "w").write(json.dumps([
     {"task_id": None, "data": {"dropped": False, "unit": "TIME", "sample_streams": [
-        {"labels": {"_vm": "aaa-hi", "metric_name": "lat"}, "points": [{"t": 1, "v": 1_000_000}, {"t": 2, "v": 81_234_567}]},
-        {"labels": {"_vm": "mmm-mid", "metric_name": "lat"}, "points": [{"t": 1, "v": 30_111_222}, {"t": 2, "v": 5_000_000}]},
-        {"labels": {"_vm": "zzz-lo", "metric_name": "lat"}, "points": [{"t": 1, "v": 955_000}, {"t": 2, "v": 940_000}]},
-        {"labels": {"_vm": "nnn-nd", "metric_name": "lat"}, "points": [{"t": 1, "v": None}]}]}},
+        {"labels": {"_vm": "aaa-hi", "metric_name": "lat"}, "points": [{"t": 1, "v": 20_000_000}, {"t": 2, "v": 81_234_567}]},
+        {"labels": {"_vm": "mmm-mid", "metric_name": "lat"}, "points": [{"t": 1, "v": 10_000_000}, {"t": 2, "v": 30_111_222}]},
+        {"labels": {"_vm": "zzz-lo", "metric_name": "lat"}, "points": [{"t": 1, "v": 940_000}, {"t": 2, "v": 955_000}]},
+        {"labels": {"_vm": "sgl-1pt", "metric_name": "lat"}, "points": [{"t": 1, "v": 999_000_000}]},  # single point: no growth
+        {"labels": {"_vm": "nnn-nd", "metric_name": "lat"}, "points": [{"t": 1, "v": None}]}]}},         # no data
 ]))
 open("/tmp/verify_rank_inv.json", "w").write(json.dumps([
-    {"name": n, "local_id": n} for n in ("aaa-hi", "mmm-mid", "zzz-lo", "nnn-nd")]))
-# top-N recipe verbatim: flatten | tail -n +2 | LC_ALL=C sort -k6 -rg
-pipe = (
-    f"{sys.executable} {flatten} {rank_fixture} /tmp/verify_rank_inv.json "
-    "| tail -n +2 | LC_ALL=C sort -t$'\\t' -k6 -rg | cut -f1"
-)
-order = subprocess.run(["bash", "-c", pipe], capture_output=True, text=True).stdout.split()
-if order[:3] != ["aaa-hi", "mmm-mid", "zzz-lo"] or "nnn-nd" in order[:3]:
-    print(f"  CONTRACT recipe ranking order was {order}, expected [aaa-hi, mmm-mid, zzz-lo, nnn-nd]")
+    {"name": n, "local_id": n} for n in ("aaa-hi", "mmm-mid", "zzz-lo", "sgl-1pt", "nnn-nd")]))
+body = "/tmp/verify_rank_body.tsv"
+subprocess.run(["bash", "-c",
+    f"{sys.executable} {flatten} {rank_fixture} /tmp/verify_rank_inv.json | tail -n +2 > {body}"], check=True)
+
+# max: by the aggregated value; single-point 999M ranks #1, no-data sinks last.
+max_order = subprocess.run(["bash", rank_script, body, "max"], capture_output=True, text=True).stdout.split("\n")
+max_names = [ln.split("\t")[0] for ln in max_order if ln.strip()]
+# growth: last-first; needs >=2 points, so single-point and no-data are EXCLUDED.
+grow_out = subprocess.run(["bash", rank_script, body, "growth"], capture_output=True, text=True).stdout
+grow_names = [ln.split("\t")[1] for ln in grow_out.splitlines() if ln.strip()]
+if (
+    max_names[0] != "sgl-1pt"                                # 999M single point is the largest max
+    or [n for n in max_names if n in ("aaa-hi", "mmm-mid", "zzz-lo")] != ["aaa-hi", "mmm-mid", "zzz-lo"]
+    or max_names[-1] != "nnn-nd"                             # no-data sinks last under -rg
+    or grow_names != ["aaa-hi", "mmm-mid", "zzz-lo"]         # growth order; sgl-1pt & nnn-nd excluded ($4>1)
+):
+    print(f"  CONTRACT metrics-rank.sh wrong: max={max_names} growth={grow_names}")
     flat_fail = 1
 
-# Contract: the guide must actually USE the safe ranking form — grep it so a drift
-# back to `-rn` or a dropped `LC_ALL=C`/`tail -n +2` fails the gate (the pipeline
-# test above runs a hardcoded copy and can't catch guide drift on its own).
-guide = os.path.join(SKILL, "references", "metrics-guide.md")
-gtext = open(guide).read()
-import re as _re
-if (
-    _re.search(r"sort\b[^\n]*-rn", gtext)              # no numeric-sort ranking anywhere
-    or "-k6 -rg" not in gtext                          # top-N max-sort present and correct
-    or gtext.count("LC_ALL=C sort") < 3                # all three sort pipelines locale-pinned
-    or "tail -n +2" not in gtext                       # header stripped before ranking
-    or "$4>0{print $9-$8" not in gtext                 # growth variant guards no-data
-):
-    print("  CONTRACT metrics-guide.md ranking drifted (need -rg, LC_ALL=C, tail -n +2, $4>0 growth guard)")
+# Contract: the recipes must DELEGATE ranking to metrics-rank.sh — a robust,
+# spelling-independent check (unlike grepping sort flags). Reverting to an inline
+# sort would drop these references and fail here; the execution test above proves
+# the script itself ranks correctly.
+gtext = open(os.path.join(SKILL, "references", "metrics-guide.md")).read()
+if gtext.count("metrics-rank.sh") < 2:   # top-N recipe + fleet recipe
+    print("  CONTRACT metrics-guide.md recipes no longer delegate ranking to metrics-rank.sh")
     flat_fail = 1
 
 contract_fail = contract_fail or flat_fail
