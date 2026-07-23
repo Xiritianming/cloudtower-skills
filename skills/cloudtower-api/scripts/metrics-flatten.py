@@ -109,4 +109,10 @@ def main():
 
 
 if __name__ == "__main__":
+    # Behave like a standard Unix filter: if a downstream reader closes the pipe
+    # early (e.g. `... | head` to preview), die on SIGPIPE instead of raising a
+    # BrokenPipeError traceback that reads as a failure. The rows already taken
+    # are correct; the normal (unpiped / fully-read) case is unaffected.
+    import signal
+    signal.signal(signal.SIGPIPE, signal.SIG_DFL)
     sys.exit(main())

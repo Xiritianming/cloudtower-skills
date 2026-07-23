@@ -124,6 +124,22 @@ if (
     print(f"  CONTRACT metrics-flatten.py wrong output: {(r.stderr or r.stdout)[:300]}")
     flat_fail = 1
 
+# Contract: `metrics-flatten.py | head` must not dump a BrokenPipeError traceback
+# when the output exceeds the pipe buffer — `| head` is how a model previews it.
+big_resp = "/tmp/verify_flatten_big.json"
+open(big_resp, "w").write(json.dumps([{"task_id": None, "data": {"dropped": False, "unit": "COUNT",
+    "sample_streams": [{"labels": {"_host": f"u{h}", "_device": f"eth{d}", "metric_name": "m"},
+                        "points": [{"t": 1, "v": 1}, {"t": 2, "v": 2}]}
+                       for h in range(30) for d in range(80)]}}]))
+# stdout -> head (the pipe head closes early), stderr -> captured; a clean script
+# leaves stderr empty of a traceback.
+hp = subprocess.run(["bash", "-c",
+    f"{sys.executable} {flatten} {big_resp} 2>/tmp/verify_flatten_big.err | head -50 >/dev/null; "
+    "cat /tmp/verify_flatten_big.err"], capture_output=True, text=True)
+if any(s in hp.stdout for s in ("Traceback", "BrokenPipe", "Exception ignored")):
+    print(f"  CONTRACT metrics-flatten.py dumps a traceback when piped to head: {hp.stdout[:200]}")
+    flat_fail = 1
+
 # Contract: ranking is owned by scripts/metrics-rank.sh, RUN here (not grepped) so
 # a real break is caught by execution. The fixture DE-correlates the stat columns
 # (max-order != min-order != avg-order) and anti-correlates name with value, uses a
